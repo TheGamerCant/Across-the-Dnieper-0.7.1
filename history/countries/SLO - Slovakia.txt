@@ -1,0 +1,219 @@
+﻿capital = 130
+
+load_nato_doctrine = yes
+
+recruit_character = SLO_Milan_Maxim
+recruit_character = SLO_Branislav_Benka
+recruit_character = SLO_Daniel_Zmeko
+recruit_character = SLO_Ivan_Pach
+recruit_character = SLO_Ján_Balciar
+recruit_character = SLO_Jaroslav_Krám
+recruit_character = SLO_Miroslav_Korba
+recruit_character = SLO_Vladimír_Kubáň
+recruit_character = SLO_jaroslav_nad
+recruit_character = SLO_Lubos_Blaha
+recruit_character = SLO_Eduard_Heger
+recruit_character = SLO_Marián_Čaučik
+recruit_character = SLO_Milan_Mazurek
+recruit_character = SLO_Marian_Kotleba
+recruit_character = SLO_minister_of_economy
+recruit_character = SLO_minister_of_defense
+recruit_character = SLO_Denisa_Sakova
+recruit_character = SLO_minister_of_finance
+recruit_character = SLO_minister_of_foreign_affairs
+recruit_character = SLO_minister_of_education
+recruit_character = SLO_minister_of_culture
+recruit_character = SLO_minister_of_agriculture
+recruit_character = SLO_Lubomír_Gacko
+recruit_character = SLO_Róbert_Klestinec
+recruit_character = SLO_Martin_Michalko
+recruit_character = SLO_Josef_Pokorný
+recruit_character = SLO_Milan_Krajniak
+recruit_character = SLO_Andrej_Danko
+recruit_character = SLO_Juraj_Krúpa
+recruit_character = SLO_Attila_Agócs
+recruit_character = SLO_Richard_Rasi
+recruit_character = SLO_Miroslav_Pomajdík
+recruit_character = SLO_Juraj_Obert
+recruit_character = SLO_Martin_Hojsík
+recruit_character = SLO_Vladimír_Meciar
+
+
+create_country_leader = {
+	name = "Robert Fico"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = slovak_social_democrat_party
+	traits = { eternal_coordinator_of_civil_defense }
+}
+create_country_leader = {
+	name = "Marián Kotleba"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = lsns_subideology
+}
+create_country_leader = {
+	name = "Igor Matovič"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = slovak_neoliberal
+}
+create_country_leader = {
+	name = "Boris Kollár"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = slovak_neoconservative_party
+}
+create_country_leader = {
+	name = "Andrej Danko"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = slovak_fascist_subideology
+}
+create_country_leader = {
+	name = "Daniel Zmeko"
+	desc = ""
+	picture = gfx/leaders/SLO/Portrait_Fico.dds
+	ideology = slovak_military_ideology
+}
+create_country_leader = {
+	name = "Milan Majerský"
+	desc = ""
+	ideology = slovak_eastern_conservative_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Milan Majerský"
+	desc = ""
+	ideology = slovak_libertarian_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "László Sólymos"
+	desc = ""
+	ideology = slovak_anarchist_party_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Vladimir Mečiar"
+	desc = ""
+	ideology = slovak_populist_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Ivan Štefunko"
+	desc = ""
+	ideology = slovak_eastern_liberal_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Peter Pellegrini"
+	desc = ""
+	ideology = slovak_socialist_party_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Artur Bekmatov"
+	desc = ""
+	ideology = slovakian_communist_party_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+create_country_leader = {
+	name = "Jozef Hrdlička"
+	desc = ""
+	ideology = slovak_communist_party_subideology
+	picture = gfx/leaders/SLO/Portrait_Ivan_Gašparovič.dds
+
+}
+
+
+add_ideas = {
+	eu_member
+#   SLO_Corrupt_politicians
+    SLO_visegrad_member
+#	SLO_High_Tatras_Skying_Resort
+#	SLO_bad_spirit_in_the_army
+#	SLO_disorganized_Slovak_Airforce
+	religion_law_religious
+    womens_rights_traditional_values
+    lgbtq_rights_behind_closed_doors
+    minority_rights_societal_discrimination
+    nationalism_laws_interventionist
+    alchohol_narcotics_laws_largely_regulated
+    firearm_laws_restricted
+
+}
+
+2018.1.1 = {
+	create_country_leader = {
+		name = "Zuzana Čaputová"
+		desc = "Test Slovakia"
+		ideology = generic_neoconservative
+		picture = gfx/leaders/SLO/Portrait_Zuzana_Čaputová.dds
+	}
+
+	set_politics = {
+		ruling_party = neoconservative
+		last_election = 2019.6.15
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		social_democracy = 13
+		neoliberal = 11
+		neoconservative = 40
+		fascist = 5
+		ultranationalist = 7
+		military_junta = 3
+		eastern_conservative = 9
+		libertarian = 6
+		anarchism_ideology = 6
+
+	}
+}
+
+
+set_research_slots = 3
+set_stability = 0.78
+set_war_support = 0.45
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = 200
+}
+
+add_equipment_to_stockpile = { type = t_72_equipment amount = 22 }
+add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 170 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 420 }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 452 }
+add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 }
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3500 }
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "2009.4.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	social_democracy = 45
+	neoliberal = 11
+	neoconservative = 8
+	fascist = 5
+	ultranationalist = 7
+	military_junta = 3
+	eastern_conservative = 9
+	libertarian = 6
+	anarchism_ideology = 6
+
+}

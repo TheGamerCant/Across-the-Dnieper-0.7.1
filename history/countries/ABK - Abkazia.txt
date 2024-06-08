@@ -1,0 +1,55 @@
+﻿capital = 1
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Alexander Ankvab"
+	desc = ""
+	ideology = generic_eastern_conservative
+	picture = gfx/leaders/ABK/portrait_Alexander_Ankvab.png
+}
+
+set_research_slots = 3
+set_stability = 0.40
+set_war_support = 0.80
+
+add_ideas = {
+	oligarchy
+	authoritarian_democracy
+	limited_conscription
+	generic_demographic_crisis
+
+	state_controlled_press
+	bipolarist
+	womens_rights_traditional_values
+	lgbtq_rights_tolerated
+	minority_rights_societal_discrimination
+	nationalism_laws_interventionist
+
+
+	ABK_partially_recognized_state
+
+}
+
+give_military_access = SOV
+
+set_variable = {
+	gdp = 0.439
+}
+
+set_politics = {
+	ruling_party = eastern_conservative
+	last_election = "2010.10.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	eastern_conservative = 92
+	populist = 3
+	eastern_liberal = 2
+	socialist = 2
+	moderate_communist = 1
+}
+
+set_convoys = 0

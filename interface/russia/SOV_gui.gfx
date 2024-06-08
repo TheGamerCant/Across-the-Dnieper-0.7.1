@@ -1,0 +1,383 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_SOV_media_leaning_bg"
+		texturefile = "gfx/interface/russia_gui/SOV_media_leaning_bg.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_media_dot"
+		texturefile = "gfx/interface/russia_gui/SOV_media_dot.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_faction_management_button"
+		texturefile = "gfx/interface/russia_gui/SOV_faction_management_button.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_faction_management_bg"
+		texturefile = "gfx/interface/russia_gui/SOV_faction_management_bg.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_faction_overlay"
+		texturefile = "gfx/interface/russia_gui/SOV_faction_overlay.png"
+		transparencecheck = no
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_eastern_liberal_underlay"
+		texturefile = "gfx/interface/russia_gui/SOV_eastern_liberal_underlay.png"
+	}
+	SpriteType = { 
+		name = "GFX_SOV_eastern_conservative_underlay"
+		texturefile = "gfx/interface/russia_gui/SOV_eastern_conservative_underlay.png"
+	}
+	SpriteType = { 
+		name = "GFX_SOV_fascist_underlay"
+		texturefile = "gfx/interface/russia_gui/SOV_fascist_underlay.png"
+	}
+
+	SpriteType = { 
+		name = "GFX_SOV_navalny_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Alexei_Navalny.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_navalny_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Alexei_Navalny_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_yavlinsky_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Grigory_Yavlinski.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_yavlinsky_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Grigory_Yavlinski_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_medvedev_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Dmitry_Medvedev.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_medvedev_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Dmitry_Medvedev_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kadyrov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Ramzan_Kadyrov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kadyrov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Ramzan_Kadyrov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_girkin_icon_large"
+		texturefile = "gfx/leaders/DON/Portrait_Igor_Girkin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_girkin_icon_small"
+		texturefile = "gfx/leaders/DON/Advisors/DON_igor_girkin_advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_prigozhin_icon_large"
+		texturefile = "gfx/leaders/WAG/Portrait_Yevgeny_Prigozhin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_prigozhin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Yevgeny_Prigozhin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_chemezov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Sergey_Chemezov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_chemezov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Sergey_Chemezov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_nemtsov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Boris_Nemtsov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_nemtsov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Boris_Nemtsov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_yuri_kovalchuk_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Yuri_Kovalchuk.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_yuri_kovalchuk_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Yuri_Kovalchuk_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_mikhail_kovalchuk_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Mikhail_Kovalchuk.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_mikhail_kovalchuk_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Mikhail_Kovalchuk_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_zolotov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Viktor_Zolotov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_zolotov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Viktor_Zolotov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_shoigu_icon_large"
+		texturefile = "gfx/leaders/SOV/generals/Portrait_sergei_shoigu.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_shoigu_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Sergei_Shoigu_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_miller_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Alexei_Miller.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_miller_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Alexei_Miller_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_utkin_icon_large"
+		texturefile = "gfx/leaders/WAG/generals/Portrait_Dmitry_Utkin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_utkin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Dmitry_Utkin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_rotenberg_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Arkady_Rotenberg.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_rotenberg_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Arkady_Rotenberg_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_boris_rotenberg_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Boris_Rotenberg.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_boris_rotenberg_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Boris_Rotenberg_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kiriyenko_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Sergey_Kiriyenko.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kiriyenko_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Sergey_Kiriyenko_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_gref_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Herman_Gref.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_gref_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Herman_Gref_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_bortnikov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Alexander_Bortnikov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_bortnikov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Alexander_Bortnikov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_patrushev_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Nikolai_Patrushev.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_patrushev_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Nikolai_Patrushev_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_vaino_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Anton_Vaino.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_vaino_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Anton_Vaino_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kozak_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Dmitry_Kozak.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_kozak_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Dmitry_Kozak_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_mishustin_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Mikhail_Mishustin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_mishustin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Mikhail_Mishustin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_sechin_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Igor_Sechin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_sechin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Igor_Sechin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_katz_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Maxim_Katz.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_katz_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Maxim_Katz_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_timchenko_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Gennady_Timchenko.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_timchenko_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Gennady_Timchenko_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_siluanov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Anton_Siluanov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_siluanov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Anton_Siluanov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_dugin_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Alexandr_Dugin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_dugin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Aleksandr_Dugin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_naryshkin_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Sergey_Naryshkin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_naryshkin_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Sergey_Naryshkin_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_vekselberg_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Viktor_Vekselberg.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_vekselberg_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Viktor_Vekselberg_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_manturov_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Denis_Manturov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_manturov_icon_small"
+		texturefile = "gfx/leaders/SOV/advisors/Portrait_Denis_Manturov_Advisor.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_putin_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Vladimir_Putin.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_security_council_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Security_Council.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_SOV_matviyenko_icon_large"
+		texturefile = "gfx/leaders/SOV/Portrait_Valentina_Matviyenko.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_united_russia_texticon"
+		texturefile = "gfx/interface/decisions/SOV/united_russia_texticon.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_smo_bg"
+		texturefile = "gfx/interface/decisions/SOV/SMO_bg.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_smo_ukr_bg"
+		texturefile = "gfx/interface/decisions/SOV/SMO_UKR_bg.png"
+		legacy_lazy_load = no
+	}
+ }

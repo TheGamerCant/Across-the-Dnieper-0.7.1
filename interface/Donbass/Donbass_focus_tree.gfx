@@ -1,0 +1,2891 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_focus_DON_glory_to_the_republic"
+		texturefile = "gfx/interface/goals/Donbass/DON_glory_to_the_republic.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_glory_to_the_republic_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_glory_to_the_republic.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_glory_to_the_republic.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_glory_to_the_republic.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_storm_the_rsa"
+		texturefile = "gfx/interface/goals/Donbass/DON_storm_the_rsa.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_storm_the_rsa_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_storm_the_rsa.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_storm_the_rsa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_storm_the_rsa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_appoint_new_leadership"
+		texturefile = "gfx/interface/goals/Donbass/DON_appoint_new_leadership.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_appoint_new_leadership_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_appoint_new_leadership.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_appoint_new_leadership.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_appoint_new_leadership.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_hold_referendum_rallies"
+		texturefile = "gfx/interface/goals/Donbass/DON_hold_referendum_rallies.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_hold_referendum_rallies_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_hold_referendum_rallies.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_hold_referendum_rallies.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_hold_referendum_rallies.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_demand_russian_peacekeeping_troops"
+		texturefile = "gfx/interface/goals/Donbass/DON_demand_russian_peacekeeping_troops.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_demand_russian_peacekeeping_troops_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_demand_russian_peacekeeping_troops.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_demand_russian_peacekeeping_troops.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_demand_russian_peacekeeping_troops.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_independence_day"
+		texturefile = "gfx/interface/goals/Donbass/DON_independence_day.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_independence_day_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_independence_day.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_independence_day.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_independence_day.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_closer_to_russia"
+		texturefile = "gfx/interface/goals/Donbass/DON_closer_to_russia.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_closer_to_russia_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_closer_to_russia.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_closer_to_russia.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_closer_to_russia.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_free_pavel_gubarev"
+		texturefile = "gfx/interface/goals/Donbass/DON_free_pavel_gubarev.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_free_pavel_gubarev_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_free_pavel_gubarev.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_free_pavel_gubarev.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_free_pavel_gubarev.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_let_competition_rot"
+		texturefile = "gfx/interface/goals/Donbass/DON_let_competition_rot.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_let_competition_rot_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_let_competition_rot.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_let_competition_rot.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_let_competition_rot.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_DON_impose_martial_law"
+		texturefile = "gfx/interface/goals/Donbass/DON_impose_martial_law.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_impose_martial_law_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_impose_martial_law.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_impose_martial_law.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_impose_martial_law.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+	SpriteType = {
+		name = "GFX_focus_DON_alexander_zakharchenko"
+		texturefile = "gfx/interface/goals/Donbass/DON_alexander_zakharchenko.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_alexander_zakharchenko_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_alexander_zakharchenko.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_alexander_zakharchenko.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_alexander_zakharchenko.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DON_friends_in_the_north"
+		texturefile = "gfx/interface/goals/Donbass/DON_friends_in_the_north.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_friends_in_the_north_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_friends_in_the_north.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_friends_in_the_north.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_friends_in_the_north.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DON_lessons_of_donetsk_airport"
+		texturefile = "gfx/interface/goals/Donbass/DON_lessons_of_donetsk_airport.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_lessons_of_donetsk_airport_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_lessons_of_donetsk_airport.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_lessons_of_donetsk_airport.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_lessons_of_donetsk_airport.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	SpriteType = {
+		name = "GFX_focus_DON_adopt_memorandum"
+		texturefile = "gfx/interface/goals/Donbass/DON_adopt_memorandum.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_adopt_memorandum_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_adopt_memorandum.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_adopt_memorandum.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_adopt_memorandum.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	
+	SpriteType = {
+		name = "GFX_focus_DON_remind_them_of_comrade_artyom"
+		texturefile = "gfx/interface/goals/Donbass/DON_remind_them_of_comrade_artyom.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_remind_them_of_comrade_artyom_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_remind_them_of_comrade_artyom.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_remind_them_of_comrade_artyom.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_remind_them_of_comrade_artyom.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	
+	
+	SpriteType = {
+		name = "GFX_focus_DON_shelling_from_residential_areas"
+		texturefile = "gfx/interface/goals/Donbass/DON_shelling_from_residential_areas.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_shelling_from_residential_areas_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_shelling_from_residential_areas.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_shelling_from_residential_areas.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_shelling_from_residential_areas.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+		
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_diesel_battalion"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_diesel_battalion.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_diesel_battalion_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_diesel_battalion.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_diesel_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_diesel_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+		
+	SpriteType = {
+		name = "GFX_focus_DON_restructure_the_militias"
+		texturefile = "gfx/interface/goals/Donbass/DON_restructure_the_militias.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_restructure_the_militias_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_restructure_the_militias.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_restructure_the_militias.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_restructure_the_militias.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+			
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_oplot_brigade"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_oplot_brigade.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_oplot_brigade_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_oplot_brigade.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_oplot_brigade.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_oplot_brigade.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+				
+	SpriteType = {
+		name = "GFX_focus_DON_introduce_the_death_penalty"
+		texturefile = "gfx/interface/goals/Donbass/DON_introduce_the_death_penalty.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_introduce_the_death_penalty_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_introduce_the_death_penalty.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_introduce_the_death_penalty.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_introduce_the_death_penalty.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+				
+	SpriteType = {
+		name = "GFX_focus_DON_cooperations_with_foreign_far_right_groups"
+		texturefile = "gfx/interface/goals/Donbass/DON_cooperations_with_foreign_far_right_groups.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_cooperations_with_foreign_far_right_groups_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_cooperations_with_foreign_far_right_groups.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_cooperations_with_foreign_far_right_groups.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_cooperations_with_foreign_far_right_groups.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_italy_flag_texticon"
+		texturefile = "gfx/flags/small/ITA.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_spain_flag_texticon"
+		texturefile = "gfx/flags/small/SPR.tga"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_sparta_battalion"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_sparta_battalion.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_sparta_battalion_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_sparta_battalion.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_sparta_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_sparta_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+	
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_somalia_battalion"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_somalia_battalion.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_somalia_battalion_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_somalia_battalion.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_somalia_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_somalia_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+
+	
+	SpriteType = {
+		name = "GFX_focus_DON_fortify_road_checkpoints"
+		texturefile = "gfx/interface/goals/Donbass/DON_fortify_road_checkpoints.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_fortify_road_checkpoints_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_fortify_road_checkpoints.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_fortify_road_checkpoints.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_fortify_road_checkpoints.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_vikings_battalion"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_vikings_battalion.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_vikings_battalion_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_vikings_battalion.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_vikings_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_vikings_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DON_look_to_the_sea"
+		texturefile = "gfx/interface/goals/Donbass/DON_look_to_the_sea.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_look_to_the_sea_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_look_to_the_sea.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_look_to_the_sea.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_look_to_the_sea.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_republican_guard_battalion"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_republican_guard_battalion.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_form_the_republican_guard_battalion_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_form_the_republican_guard_battalion.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_republican_guard_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_form_the_republican_guard_battalion.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+		
+	SpriteType = {
+		name = "GFX_focus_DON_Slightly_Modernized_Military"
+		texturefile = "gfx/interface/goals/Donbass/DON_Slightly_Modernized_Military.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Slightly_Modernized_Military_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Slightly_Modernized_Military.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Slightly_Modernized_Military.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Slightly_Modernized_Military.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+
+		
+	SpriteType = {
+		name = "GFX_focus_DON_Announce_General_Mobilization"
+		texturefile = "gfx/interface/goals/Donbass/DON_Announce_General_Mobilization.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Announce_General_Mobilization_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Announce_General_Mobilization.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Announce_General_Mobilization.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Announce_General_Mobilization.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_DON_Cooperations_With_Luhansk_Militias"
+		texturefile = "gfx/interface/goals/Donbass/DON_Cooperations_With_Luhansk_Militias.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Cooperations_With_Luhansk_Militias_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Cooperations_With_Luhansk_Militias.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Cooperations_With_Luhansk_Militias.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Cooperations_With_Luhansk_Militias.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+			
+	SpriteType = {
+		name = "GFX_focus_DON_Foreign_Far_Left_Group_Cooperations"
+		texturefile = "gfx/interface/goals/Donbass/DON_Foreign_Far_Left_Group_Cooperations.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Foreign_Far_Left_Group_Cooperations_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Foreign_Far_Left_Group_Cooperations.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Foreign_Far_Left_Group_Cooperations.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Foreign_Far_Left_Group_Cooperations.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	
+			
+	SpriteType = {
+		name = "GFX_focus_DON_Seize_Abandoned_Ukrainian_Equipment"
+		texturefile = "gfx/interface/goals/Donbass/DON_Seize_Abandoned_Ukrainian_Equipment.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Seize_Abandoned_Ukrainian_Equipment_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Seize_Abandoned_Ukrainian_Equipment.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Seize_Abandoned_Ukrainian_Equipment.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Seize_Abandoned_Ukrainian_Equipment.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+		
+			
+	SpriteType = {
+		name = "GFX_focus_DON_Training_With_Russian_Soldiers"
+		texturefile = "gfx/interface/goals/Donbass/DON_Training_With_Russian_Soldiers.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Training_With_Russian_Soldiers_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Training_With_Russian_Soldiers.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Training_With_Russian_Soldiers.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Training_With_Russian_Soldiers.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}		
+			
+	SpriteType = {
+		name = "GFX_focus_DON_Young_Patriotism"
+		texturefile = "gfx/interface/goals/Donbass/DON_Young_Patriotism.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DON_Young_Patriotism_shine"
+		texturefile = "gfx/interface/goals/Donbass/DON_Young_Patriotism.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Young_Patriotism.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/DON_Young_Patriotism.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+#  ____   ___  _   _ ____    _    ____ ____    ____  _   _    _    ____  _____ ____  
+# |  _ \ / _ \| \ | | __ )  / \  / ___/ ___|  / ___|| | | |  / \  |  _ \| ____|  _ \ 
+# | | | | | | |  \| |  _ \ / _ \ \___ \___ \  \___ \| |_| | / _ \ | |_) |  _| | | | |
+# | |_| | |_| | |\  | |_) / ___ \ ___) |__) |  ___) |  _  |/ ___ \|  _ <| |___| |_| |
+# |____/ \___/|_| \_|____/_/   \_\____/____/  |____/|_| |_/_/   \_\_| \_\_____|____/ 
+#                                                                                   
+
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_the_novorossiya_project"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_novorossiya_project.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_the_novorossiya_project_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_novorossiya_project.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_novorossiya_project.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_novorossiya_project.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_pool_our_industries"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_pool_our_industries.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_pool_our_industries_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_pool_our_industries.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_pool_our_industries.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_pool_our_industries.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_joint_administration"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_joint_administration.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_joint_administration_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_joint_administration.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_joint_administration.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_joint_administration.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_look_to_the_sea"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_look_to_the_sea.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_look_to_the_sea_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_look_to_the_sea.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_look_to_the_sea.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_look_to_the_sea.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_donetsk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_donetsk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_donetsk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_donetsk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_lugansk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_lugansk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_lugansk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_lugansk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_kharkov"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_kharkov.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_kharkov_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_kharkov.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_odessa"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_odessa.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_odessa_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_odessa.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_novorossiya"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_novorossiya.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_glory_to_the_republic_novorossiya_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_novorossiya.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_glory_to_the_republic_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_peace_and_bread"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_peace_and_bread.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_peace_and_bread_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_peace_and_bread.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_peace_and_bread.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_peace_and_bread.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_ukrainian_collaborators"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_ukrainian_collaborators.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_ukrainian_collaborators_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_ukrainian_collaborators.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_ukrainian_collaborators.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_ukrainian_collaborators.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_the_fight_against_nazism"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_fight_against_nazism.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_the_fight_against_nazism_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_fight_against_nazism.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_fight_against_nazism.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_the_fight_against_nazism.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_urban_warfare"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_urban_warfare.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_urban_warfare_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_urban_warfare.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_urban_warfare.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_urban_warfare.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_seize_ukrainian_equipment"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_seize_ukrainian_equipment.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_seize_ukrainian_equipment_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_seize_ukrainian_equipment.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_seize_ukrainian_equipment.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_seize_ukrainian_equipment.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_mandatory_conscription"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_mandatory_conscription.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_mandatory_conscription_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_mandatory_conscription.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_mandatory_conscription.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_mandatory_conscription.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_training"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_training.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_training_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_training.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_training.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_training.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_officers"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_officers.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_officers_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_officers.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_officers.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_officers.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_new_political_elite"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_new_political_elite.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_new_political_elite_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_new_political_elite.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_new_political_elite.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_new_political_elite.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_central_command"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_central_command.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_central_command_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_central_command.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_central_command.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_central_command.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_domestic_arms"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_domestic_arms.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_domestic_arms_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_domestic_arms.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_domestic_arms.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_domestic_arms.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_grab_whatever_we_can"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_grab_whatever_we_can.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_grab_whatever_we_can_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_grab_whatever_we_can.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_grab_whatever_we_can.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_grab_whatever_we_can.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_donetsk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_donetsk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_donetsk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_donetsk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_lugansk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_lugansk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_lugansk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_lugansk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_kharkov"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_kharkov.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_kharkov_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_kharkov.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_odessa"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_odessa.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_odessa_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_odessa.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_novorossiya"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_novorossiya.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_our_own_administration_novorossiya_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_novorossiya.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_our_own_administration_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_lessons_of_war"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_lessons_of_war.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_lessons_of_war_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_lessons_of_war.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_lessons_of_war.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_lessons_of_war.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_military_bases"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_military_bases.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_military_bases_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_military_bases.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_military_bases.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_military_bases.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_to_fight_a_modern_war"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_to_fight_a_modern_war.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_to_fight_a_modern_war_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_to_fight_a_modern_war.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_to_fight_a_modern_war.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_to_fight_a_modern_war.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_donetsk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_donetsk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_donetsk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_donetsk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_lugansk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_lugansk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_lugansk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_lugansk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_kharkov"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_kharkov.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_kharkov_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_kharkov.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_odessa"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_odessa.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_odessa_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_odessa.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_novorossiya"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_novorossiya.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_fertile_soil_novorossiya_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_novorossiya.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_fertile_soil_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_resource_companies"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_resource_companies.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_russian_resource_companies_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_resource_companies.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_resource_companies.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_russian_resource_companies.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_donetsk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_donetsk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_donetsk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_donetsk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_donetsk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_lugansk"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_lugansk.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_lugansk_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_lugansk.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_lugansk.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_kharkov"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_kharkov.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_kharkov_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_kharkov.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_kharkov.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_odessa"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_odessa.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_odessa_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_odessa.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_odessa.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_novorossiya"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_novorossiya.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_work_for_the_republic_novorossiya_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_novorossiya.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_work_for_the_republic_novorossiya.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_introduce_price_caps"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_introduce_price_caps.png"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_DONBASS_introduce_price_caps_shine"
+		texturefile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_introduce_price_caps.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_introduce_price_caps.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"      
+			animationtype = "scrolling"   
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Donbass/donbass_shared/DONBASS_introduce_price_caps.png"				
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75			
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}

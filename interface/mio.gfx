@@ -1,0 +1,57 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_uralvagonzavod_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_uralvagonzavod.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_omsktransmash_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_omsktransmash.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_kalashnikov_design_bureau_organization"
+		texturefile = "gfx/interface/ideas/idea_kalashnikov.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_oboronprom_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_oboronprom.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_idea_degtyaryov_plant_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_degtyaryov_plant.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_united_shipbuilding_corporation_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_united_shipbuilding_corporation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_tecmash_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_tecmash.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_kmdb_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_kmdb.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_ukroboronprom_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_ukroboronprom.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_kharkiv_plant_special_vehicles_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_kharkiv_plant_special_vehicles.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_malyshev_factory_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_malyshev_factory.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SRDSC_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_SRDSC.png"
+	}
+}

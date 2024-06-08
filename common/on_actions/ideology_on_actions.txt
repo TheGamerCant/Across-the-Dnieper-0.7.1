@@ -1,0 +1,13 @@
+on_actions={	
+	# the on_startup onaction was moved to the event generic.1
+	on_monthly = {		#Changed to monthly do reduce lag
+		effect = {
+			get_marco_modifier_effects = yes
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			get_marco_modifier_effects = yes
+		}
+	}
+}

@@ -1,0 +1,177 @@
+﻿capital = 186
+
+load_soviet_doctrine = yes
+
+set_variable = { maximum_number_of_offensives = 1 }
+set_variable = { number_of_undertaken_offensives = 0 }
+
+recruit_character = DON_denis_pushilin
+recruit_character = DON_denis_sinenkov
+recruit_character = DON_igor_girkin
+recruit_character = DON_arsen_pavlov
+recruit_character = DON_vladimir_zhoga
+recruit_character = DON_mikhail_tolstykh
+recruit_character = DON_andrei_purgin
+
+recruit_character = DON_igor_khakimzyanov
+recruit_character = DON_alexander_borodai
+recruit_character = DON_pavel_gubarev
+
+add_ideas = DON_igor_khakimzyanov
+add_ideas = DON_alexander_borodai
+add_ideas = DON_andrei_purgin
+
+if = {
+	limit = { NOT = { has_dlc = "La Resistance" } }
+	
+	remove_trait = {
+		character = DON_igor_girkin
+		slot = political_advisor
+		trait = retired_fsb_agent
+	}
+	add_trait = {
+		character = DON_igor_girkin
+		slot = political_advisor
+		trait = retired_fsb_agent_no_lar
+	}
+}
+
+
+create_country_leader = {
+	name = "Alexander Zakharchenko"
+	desc = "leader_alexander_zakharchenko_desc"
+	picture = gfx/leaders/DON/Portrait_Alexander_Zakharchenko.png
+	ideology = donetsk_party
+	traits = { DON_resolute_leader }
+}
+
+create_country_leader = {
+	name = "Pavel Gubarev"
+	desc = ""
+	picture = gfx/leaders/DON/Portrait_Boris.png #pls make a portrait for him
+	ideology = generic_ultranationalist
+}
+
+create_country_leader = {
+	name = "Boris Litvinov"
+	desc = ""
+	picture = gfx/leaders/DON/Portrait_Boris.png #pls make a portrait for him
+	ideology = generic_moderate_communist
+}
+
+2018.1.1 = {
+	set_politics = {
+		ruling_party = eastern_conservative
+		last_election = "2018.11.20"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Denis Pushilin"
+		desc = ""
+		picture = gfx/leaders/DON/Portrait_Denis_Pushilin.png
+		ideology = donetsk_party
+	}
+	
+	retire_character = DON_igor_girkin
+	
+	complete_national_focus = DONBASS_glory_to_the_republic
+	complete_national_focus = DONBASS_ukrainian_collaborators
+	complete_national_focus = DONBASS_peace_and_bread
+	complete_national_focus = DONBASS_independence_day_parades
+	complete_national_focus = DONBASS_rely_on_russia
+	complete_national_focus = DONBASS_little_green_men
+	complete_national_focus = DONBASS_destroy_all_opposition
+	complete_national_focus = DONBASS_all_power_to_the_party
+	complete_national_focus = DONBASS_work_for_the_republic
+	complete_national_focus = DONBASS_old_soviet_factories
+	complete_national_focus = DONBASS_dig_deeper
+	complete_national_focus = DONBASS_russian_resource_companies
+	
+	
+	unlock_national_focus = DONBASS_the_fight_against_nazism
+	complete_national_focus = DONBASS_urban_warfare
+	complete_national_focus = DONBASS_seize_ukrainian_equipment
+	complete_national_focus = DONBASS_mandatory_conscription
+	complete_national_focus = DONBASS_grab_whatever_we_can
+	complete_national_focus = DONBASS_central_command
+	
+	complete_national_focus = DON_lessons_of_donetsk_airport
+	complete_national_focus = DON_shelling_from_residential_areas
+	complete_national_focus = DON_restructure_the_militias
+	complete_national_focus = DON_form_the_diesel_battalion
+	complete_national_focus = DON_form_the_vikings_battalion
+	complete_national_focus = DON_form_the_republican_guard_battalion
+	complete_national_focus = DON_youth_patriotism
+	complete_national_focus = DON_cooperations_with_luhanks_militias
+	complete_national_focus = DON_training_with_russian_commanders
+	complete_national_focus = DON_look_to_the_sea
+	complete_national_focus = DON_form_the_oplot_brigade
+	complete_national_focus = DON_form_the_sparta_battalion
+	complete_national_focus = DON_form_the_somalia_battalion
+	complete_national_focus = DON_cooperations_with_foreign_far_right_groups
+	complete_national_focus = DON_cooperations_with_foreign_far_left_groups
+}
+
+2022.1.1 = {
+	add_ideas = assisting_russia
+}
+
+set_research_slots = 2
+set_stability = 0.40
+set_war_support = 0.80
+
+set_variable = { impromptu_militias_war_support_factor = -0.5 }
+set_variable = { impromptu_militias_stability_factor = -0.1 }
+set_variable = { impromptu_militias_conscription = 0.04 }
+set_variable = { impromptu_militias_army_morale_factor = -0.08 }
+set_variable = { impromptu_militias_army_attack_factor = -0.19 }
+set_variable = { impromptu_militias_army_core_defence_factor = 0.02 }
+set_variable = { impromptu_militias_army_speed_factor = -0.35 }
+set_variable = { impromptu_militias_army_org_factor = -0.1 }
+set_variable = { impromptu_militias_surrender_limit = 0.35 }
+set_variable = { impromptu_militias_ai_focus_defense_factor = 0.6 }
+set_variable = { impromptu_militias_org_loss_when_moving = -0.15 }
+set_variable = { impromptu_militias_command_power_gain_mult = -0.40 }
+set_variable = { impromptu_militias_experience_gain_army_factor = -0.40 }
+set_variable = { impromptu_militias_max_command_power = -80 }
+
+add_dynamic_modifier = { modifier = DONBASS_impromptu_militias }
+add_dynamic_modifier = { modifier = DONBASS_hidden_ai_defence_modifier }
+
+set_variable = { DONBASS_BCOAS_stability_factor = -0.1 }
+set_variable = { DONBASS_BCOAS_political_power_cost = 1.2 }
+set_variable = { DONBASS_BCOAS_inflation_monthly = 0.04}
+set_variable = { DONBASS_BCOAS_research_speed_factor = -0.2 }
+set_variable = { DONBASS_BCOAS_industrial_capacity_dockyard = -0.5 }
+set_variable = { DONBASS_BCOAS_industrial_capacity_factory = -0.5 }
+set_variable = { DONBASS_BCOAS_ruling_party_drift = 0 }
+
+
+add_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state  }
+add_ideas = oligarchy
+add_ideas = authoritarian_democracy
+add_ideas = extensive_conscription
+add_ideas = state_controlled_press
+add_ideas = bipolarist
+add_ideas = womens_rights_traditional_values
+add_ideas = lgbtq_rights_banned
+add_ideas = minority_rights_societal_discrimination
+add_ideas = nationalism_laws_jingoistic
+add_ideas = government_trade_unions
+
+set_politics = {
+	ruling_party = eastern_conservative
+	last_election = "2010.10.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	eastern_conservative = 80
+	eastern_liberal = 2
+	socialist = 2
+	moderate_communist = 3
+	ultranationalist = 13
+}

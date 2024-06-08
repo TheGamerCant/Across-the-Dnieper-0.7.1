@@ -1,0 +1,190 @@
+dont_build_divisions_trigger={
+	is_ai = yes
+	has_war = no
+	has_game_rule = {
+		rule = allow_wargoals
+		option = BLOCKED
+	}
+	NOT = {
+		OR={
+			original_tag = UKR		#Only these countries will make divisions
+			original_tag = SOV
+			original_tag = BLR
+			original_tag = MOL
+			original_tag = TRZ
+			original_tag = DON
+			original_tag = LHK
+			original_tag = KHK
+			original_tag = ODS
+			original_tag = NOV
+			original_tag = UGE
+			original_tag = GEO
+		}
+	}
+}
+
+
+
+has_far_right_government={
+	custom_trigger_tooltip={
+		tooltip = has_far_right_government_tt
+		OR={
+			has_government = fascist
+			has_government = ultranationalist
+			has_government = military_junta
+		}
+	}
+}
+
+has_illiberal_government={
+	custom_trigger_tooltip={
+		tooltip = has_illiberal_government_tt
+		OR={
+			has_government = eastern_conservative
+			has_government = populist
+		}
+	}
+}
+
+has_western_government={
+	custom_trigger_tooltip={
+		tooltip = has_western_government_tt
+		OR={
+			has_government = neoliberal
+			has_government = neoconservative
+			has_government = eastern_liberal
+			has_government = social_democracy
+			has_government = libertarian
+		}
+	}
+}
+
+has_far_left_government={
+	custom_trigger_tooltip={
+		tooltip = has_far_left_government_tt
+		OR={
+			has_government = socialist
+			has_government = moderate_communist
+			has_government = hardline_communist
+		}
+	}
+}
+
+has_non_aligned_government={
+	custom_trigger_tooltip={
+		tooltip = has_non_aligned_government_tt
+		OR={
+			has_government = anarchism_ideology
+			has_government = absolute_monarchy_ideology
+			has_government = theocracy_ideology
+		}
+	}
+}
+
+is_non_aligned_or_illiberal={	#For Peace conferances
+	OR={
+		has_government = anarchism_ideology
+		has_government = absolute_monarchy_ideology
+		has_government = theocracy_ideology
+		has_government = populist
+		has_government = eastern_conservative
+	}
+}
+
+is_in_nato={
+	is_in_faction_with = USA
+}
+
+any_donbass_country_exists={
+	OR={
+		country_exists = DON
+		country_exists = LHK
+		country_exists = KHK
+		country_exists = ODS
+		country_exists = NOV
+	}
+}
+
+ROOT_has_same_government_type_as_FROM={
+	OR={
+		AND={
+			ROOT = { has_far_right_government = yes }
+			FROM = { has_far_right_government = yes }
+		}
+		AND={
+			ROOT = { has_illiberal_government = yes }
+			FROM = { has_illiberal_government = yes }
+		}
+		AND={
+			ROOT = { has_western_government = yes }
+			FROM = { has_western_government = yes }
+		}
+		AND={
+			ROOT = { has_far_left_government = yes }
+			FROM = { has_far_left_government = yes }
+		}
+		AND={
+			ROOT = { has_government = anarchism_ideology }
+			FROM = { has_government = anarchism_ideology }
+		}
+		AND={
+			ROOT = { has_government = absolute_monarchy_ideology }
+			FROM = { has_government = absolute_monarchy_ideology }
+		}
+		AND={
+			ROOT = { has_government = theocracy_ideology }
+			FROM = { has_government = theocracy_ideology }
+		}
+	}
+}
+
+ROOT_is_singleplayer={
+	ROOT ={ is_ai = no }
+	NOT = { any_other_country={ is_ai = no } }
+}
+
+is_on_easy_mode={
+	any_country={
+		OR={
+			has_dynamic_modifier = { modifier = EASY_2014_start_ai }
+			has_dynamic_modifier = { modifier = EASY_2022_start_ai }
+		}
+	}
+}
+is_on_normal_mode={
+	NOT={
+		any_country={
+			OR={
+				has_dynamic_modifier = { modifier = EASY_2014_start_ai }
+				has_dynamic_modifier = { modifier = EASY_2022_start_ai }
+				has_dynamic_modifier = { modifier = HARD_2014_start_ai }
+				has_dynamic_modifier = { modifier = HARD_2022_start_ai }
+				has_dynamic_modifier = { modifier = IMPOSSIBLE_2014_start_ai }
+				has_dynamic_modifier = { modifier = IMPOSSIBLE_2022_start_ai }
+			}
+		}
+	}
+}
+is_on_hard_mode={
+	any_country={
+		OR={
+			has_dynamic_modifier = { modifier = HARD_2014_start_ai }
+			has_dynamic_modifier = { modifier = HARD_2022_start_ai }
+		}
+	}
+}
+is_on_impossible_mode={
+	any_country={
+		OR={
+			has_dynamic_modifier = { modifier = IMPOSSIBLE_2014_start_ai }
+			has_dynamic_modifier = { modifier = IMPOSSIBLE_2022_start_ai }
+		}
+	}
+}
+
+normal_or_higher_achievement_trigger={
+	custom_trigger_tooltip={
+		tooltip = normal_or_higher_difficulty
+		NOT = { is_on_easy_mode = yes }
+	}	
+}

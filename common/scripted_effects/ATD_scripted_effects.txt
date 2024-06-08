@@ -1,0 +1,236 @@
+DEBUG_research_all_BBA_air={
+	set_technology = {
+		popup = no
+		
+		
+		basic_small_airframe = 1
+		improved_small_airframe = 1
+		advanced_small_airframe = 1
+		basic_large_airframe = 1
+		improved_large_airframe = 1
+		advanced_large_airframe = 1
+		bombs2 = 1
+		bombs3 = 1
+		bombs4 = 1
+		aa_am2 = 1
+		aa_am3 = 1
+		aa_am4 = 1
+		aa_mmg = 1
+		aa_hmg = 1
+		aa_shmg = 1
+		aircraft_construction = 1
+		survivability_studies = 1
+	}
+}
+
+nuclear_war={
+	set_global_flag = nuclear_war_flag
+	every_country={
+		scoped_sound_effect = "super_event_nuclear_war"		
+		scoped_play_song = "Nuclear War"
+	}
+}
+
+load_ww3={
+	hidden_effect={	
+		every_state={
+			limit={
+				OR={
+					state = 24
+					state = 212
+					state = 319
+					state = 422
+					state = 419
+					state = 5
+				}
+				OWNER = { is_in_faction_with = USA }
+			}
+			NAT={ transfer_state = PREV }
+			add_core_of = NAT
+		}
+		
+		if={
+			limit = { 24 = { is_owned_by = NAT } }
+			24={
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 20305
+				}
+			}
+			
+			build_railway = {
+				level = 3
+				start_state = 24
+				target_state = 427
+			}
+		}
+		
+		NAT = { 
+			leave_faction = yes
+			create_faction = "North Atlantic Treaty Organisation"
+			
+			every_country={
+				limit = { OR = { is_in_faction_with = USA tag = USA } }
+				leave_faction = yes
+				NAT = {
+					add_to_faction = PREV
+				}
+			}
+			
+			division_template = {
+				name = "NATO Infantry Battalion"
+				division_names_group = NAT_INF_01
+				template_counter = 303
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }	
+					infantry = { x = 1 y = 3 }	
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					apc = { x = 2 y = 3 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					apc = { x = 3 y = 2 }
+					apc = { x = 3 y = 3 }
+				}
+				support = {
+					maintenance_company = { x = 0 y = 0 }   
+					logistics_company = { x = 0 y = 1 }  
+					signal_company = { x = 0 y = 2 }  
+					mot_recon = { x = 0 y = 3 } 
+				}
+				is_locked = yes
+			}
+			
+			for_loop_effect = {
+				end = 80				#Remember, NATO doctrine was basically hold the Vistula until the yanks get here... at least until we discovered Russia was lacking in the 'competent army' department. lol. Anyways, these are spawned in because AI is hard-coded to not make divisions, so these are just to hold Russia until NATO completes their focuses
+				value = temp																		#Across the Vistula when?
+				random_state = {
+					limit = { OWNER = { has_full_control_of_state = PREV is_in_faction_with = NAT } }
+					create_unit = {
+						division = "name = \"NATO Infantry\" division_template = \"NATO Infantry Battalion\" start_experience_factor = 0.2" 
+						owner = NAT
+					}
+				}
+			}
+			
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_3
+				amount = 60000
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_anti_air_equipment_2
+				amount = 12000
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_anti_tank_equipment_2
+				amount = 4500
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_anti_tank_equipment_3
+				amount = 10000
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = artillery_equipment_3
+				amount = 7200
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment_1
+				amount = 10400
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = mechanized_equipment_2
+				amount = 4200
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = apc_equipment_3
+				amount = 2200
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = train_equipment_1
+				amount = 430
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = apc_equipment_3
+				amount = 2200
+				producer = NAT
+			}
+			add_equipment_to_stockpile = { 
+				type = motorized_equipment_1
+				amount = 5800
+				producer = NAT
+			}
+			
+			if={
+				limit={
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = { type = leopard2_chassis amount = 620 variant_name = "Leopard 2" }
+				add_equipment_to_stockpile = { type = challenger2_chassis amount = 90 variant_name = "Challenger 2" }
+				add_equipment_to_stockpile = { type = abrams_chasis amount = 180 variant_name = "M1 Abrams" }
+				
+				add_equipment_to_stockpile = { type = t72_chasis amount = 220 variant_name = "T-72b" }
+				add_equipment_to_stockpile = { type = t80_chasis amount = 100 variant_name = "T-80bv" }
+			}	
+			else={
+				add_equipment_to_stockpile = {
+					type = t_72_equipment
+					amount = 320
+				}
+				
+				add_equipment_to_stockpile = {
+					type = m1_abrams_equipment
+					amount = 180
+				}
+				add_equipment_to_stockpile = {
+					type = challenger_2_equipment
+					amount = 90
+				}
+				add_equipment_to_stockpile = {
+					type = leopard_2_equipment
+					amount = 620
+				}
+			}
+			
+			country_event = { id = nato.1 days = 14 }
+			if={
+				limit = { has_dlc = "No Step Back" }
+				set_technology = { railway_gun = 1 }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 1" }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 2" }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 3" }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 4" }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 5" }
+				create_railway_gun = { equipment = railway_gun_equipment_1 name = "HIMARS 6" }
+			}
+		}
+
+		if = {
+			limit = { country_exists = NIT }
+
+			NAT = { 
+				annex_country = {
+					target = NIT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}

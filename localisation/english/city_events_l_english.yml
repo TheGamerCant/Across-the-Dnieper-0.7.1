@@ -1,0 +1,151 @@
+﻿l_english:
+city_captures.1.t:0 "Fall of [264.GetName]" #Kherson
+city_captures.1.d:0 "In a major breakthrough, Russian forces have captured the strategically important city of [264.GetName] in southern Ukraine. The loss of [264.GetName] is a significant blow to Ukrainian forces, as it opens up a direct route to the city of [236.GetName] and the port of [269.GetName]."
+city_captures.1.a:0 "Tensions are rising."
+city_captures.1.b:0 "Another victory for Russia!"
+city_captures.1.c:0 "Not good.."
+
+city_captures.2.t:0 "Fall of [230.GetName]" #Mariupol
+city_captures.2.d:0 "After a brutal siege, Russian forces have finally captured the strategically important city of [230.GetName] in southern Ukraine. A major industrial hub and port city, [230.GetName] was a crucial target for the Russians, as its capture would give them control of the entire Sea of Azov coast and open a direct route to mainland Ukraine."
+city_captures.2.a:0 "Tensions are high."
+city_captures.2.b:0 "Another victory for Russia!"
+city_captures.2.c:0 "A big loss for us.."
+
+city_captures.3.t:0 "[250.GetName] Falls" #Melitipol
+city_captures.3.d:0 "In a swift and decisive operation, Russian forces have captured the strategically important city of [250.GetName] in southern Ukraine. The fall of [250.GetName] is a major setback for Ukraine, as it opens up a direct route to the city of [196.GetName] and the [196.GetName] nuclear power plant."
+city_captures.3.a:0 "Hmm."
+city_captures.3.b:0 "For Russia!"
+city_captures.3.c:0 "Not good at all."
+
+city_captures.4.t:0 "Fall of [146.GetName]" #Bachmut
+city_captures.4.d:0 "In a major victory, Russian forces have captured the strategically important city of [146.GetName] in eastern Ukraine. [146.GetName] is a key transportation hub and a major industrial center, and its capture has opened up a direct route for Russian forces to push deeper into Ukrainian territory."
+city_captures.4.a:0 "How long did that take them again?"
+city_captures.4.b:0 "For Russia!"
+city_captures.4.c:0 "What do we do?"
+
+city_captures.5.t:0 "[230.GetName] Liberated" #Mariupol
+city_captures.5.d:0 "After a brutal siege of several months, Ukrainian forces have finally liberated the strategically important city of [230.GetName] in southern Ukraine, defeating the Russian forces that had been occupying for some time. A major industrial hub and port city, [230.GetName] was a crucial target for the Russians, as its capture would give them control of the entire Sea of Azov coast and open a direct route to mainland Ukraine."
+city_captures.5.a:0 "How the tables have turned."
+city_captures.5.b:0 "Impossible!"
+city_captures.5.c:0 "Slava Ukraini!"
+
+city_captures.6.t:0 "[146.GetName] Liberated" #Bachmut
+city_captures.6.d:0 "[146.GetName] was previously captured by Russian forces, but Ukrainian forces launched a surprise counterattack. The Ukrainian counterattack was preceded by a series of successful offensives. Ukrainian soldiers pushed back Russian forces and reclaimed control of [146.GetName]. The city was severely damaged in the fighting, but Ukrainian forces were able to quickly restore order."
+city_captures.6.a:0 "Let's hope they don't come back here."
+city_captures.6.b:0 "WHAT!"
+city_captures.6.c:0 "Interesting turn of events!"
+
+city_captures.7.t:0 "Russian Forces Capture [344.GetName]" #CRI Simfertopol
+city_captures.7.d:0 "In a rapid and decisive military operation, Russian forces captured the Crimean capital of [344.GetName]. The capture of [344.GetName] is a major victory for Russia, as it paves the way for the annexation of Crimea from Ukraine. "
+city_captures.7.a:0 "Expected."
+city_captures.7.b:0 "That was easy!"
+city_captures.7.c:0 "Bastards!"
+
+city_captures.8.t:0 "Fall Of [243.GetName]" #Berdyansk
+city_captures.8.d:0 "The city of [243.GetName], located in eastern Ukraine, has fallen to the Russian-backed separatist forces after a prolonged and brutal battle. The Ukrainian government and military leaders are deeply concerned about the situation and are seeking solutions to prevent further enemy advances and regain control over the city"
+city_captures.8.a:0 "The Russians aren't stopping."
+city_captures.8.b:0 "Cry about it."
+city_captures.8.c:0 "Damn."
+
+city_captures.9.t:0 "Ukraine Regains Control of Crimea" #Crimean Liberation!
+city_captures.9.d:0 "On [GetDateText], following months of conflict and negotiations, Ukrainian forces successfully regain full control of Crimea, marking a significant victory for the Ukrainian government. The Ukrainian military has been preparing for this operation for months, gathering intelligence and building up its forces in the region. The operation involved a multi-pronged approach, with Ukrainian forces launching simultaneous attacks across the Crimean peninsula."
+city_captures.9.a:0 "Let's hope they don't come back here."
+city_captures.9.b:0 "BLYAAAAAT! Someone's getting shot!"
+city_captures.9.c:0 "The end of the conflict seems near."
+
+city_captures.10.t:0 "Liberation Of Donetsk Oblast" #Donetsk Liberation!
+city_captures.10.d:0 "Ukrainian forces have successfully retaken the entire Donetsk Oblast from separatist and Russian forces. This monumental achievement marks a turning point in the conflict, restoring Ukrainian sovereignty over this crucial region."
+city_captures.10.c:0 "Let's hope they don't come back here."
+city_captures.10.b:0 "Impossible!"
+city_captures.10.a:0 "Ok."
+
+city_captures.11.t:0 "Liberation Of Luhansk Oblast" #luhansk Liberation!
+city_captures.11.d:0 "Ukrainian forces have successfully retaken the entire Luhansk Oblast from separatist and Russian forces. This crucial achievement strengthens Ukraine's position in the conflict and restores full control over this strategic region."
+city_captures.11.c:0 "Let's hope they don't come back here."
+city_captures.11.b:0 "Impossible!"
+city_captures.11.a:0 "Ok."
+
+city_captures.12.t:0 "Liberation of [331.GetName]" #kerch Liberation!
+city_captures.12.d:0 "Ukrainian militia has successfully liberated the city of [331.GetName] from Russian government forces, marking a significant victory in the ongoing conflict in eastern Ukraine."
+city_captures.12.a:0 "Hmm."
+city_captures.12.b:0 "Not good at all."
+city_captures.12.c:0 "Opa!"
+
+city_captures.13.t:0 "The Fall of [92.GetName]" #kyiv ruzzia!
+city_captures.13.d:0 "Despite the efforts of the Ukrainian military and its allies, on [GetDateText], Russian forces successfully invaded and captured the city of [92.GetName]. This marks a significant turning point in the conflict, as Kyiv has long been considered the cultural and political heart of Ukraine. The Ukrainian government must now regroup and reassess its strategy for regaining control of the city and defending its territorial integrity."
+city_captures.13.a:0 "Hmm."
+city_captures.13.b:0 "For Russia!"
+city_captures.13.c:0 "Not good at all."
+
+city_captures.14.t:0 "The Liberation of [92.GetName]" #kyivLiberation!
+city_captures.14.d:0 "After months of intense fighting, Ukrainian forces have successfully liberated the city of [92.GetName] from Russian occupation. This marks a significant victory for Ukrainian sovereignty and territorial integrity, as [92.GetName] has long been considered the cultural and political heart of Ukraine. The Ukrainian government must now focus on rebuilding and stabilizing the city, while also defending against potential Russian retaliation."
+city_captures.14.a:0 "Let's hope they don't come back here."
+city_captures.14.b:0 "Impossible!"
+city_captures.14.c:0 "Interesting turn of events!"
+
+city_captures.15.t:0 "The Fall of [94.GetName]" #fall kharkov!
+city_captures.15.d:0 "Russian forces have launched a major offensive against Ukrainian positions in the city of [94.GetName], resulting in the city falling to Russian control. The fall of [94.GetName] marks a significant loss for Ukraine, as the city has long been considered a key strategic and economic center in the country."
+city_captures.15.a:0 "Hmm."
+city_captures.15.b:0 "Glory to our soldiers!"
+city_captures.15.c:0 "Interesting turn of events!"
+
+city_captures.16.t:0 "The Liberation of [94.GetName]" #lib kharkov!
+city_captures.16.d:0 "After months of intense fighting, Ukrainian forces have successfully liberated the city of [94.GetName] from Russian control. The liberation of [94.GetName] is a significant victory for Ukraine, as the city has long been considered a key strategic and economic center in the country."
+city_captures.16.a:0 "Let's hope this was their last visit here!"
+city_captures.16.b:0 "Impossible!"
+city_captures.16.c:0 "Interesting turn of events!"
+
+city_captures.17.t:0 "The Fall of [236.GetName]" #fall Mykolaiv!
+city_captures.17.d:0 "Ukrainian military forces responded almost immediately to the Russian attack and sought to stop the Russian advance. Ukrainian soldiers and volunteers fought heroically in the city to defend it from the Russian army.  Russia attacking the city with heavy weapons, airstrikes and drones. Ukrainian soldiers fought to defend the city at several stages, but in the end they were unable to maintain the defense."
+city_captures.17.a:0 "We won't let that happen!"
+city_captures.17.b:0 "Victory is on Our side!"
+city_captures.17.c:0 "[236.GetName] is important?"
+
+city_captures.18.t:0 "The Liberation of [236.GetName]" #lib Mykolaiv!
+city_captures.18.d:0 "The Ukrainian army did not leave the people in [236.GetName] alone. They spent months preparing to recapture the city and finally launched their attack. The Russian soldiers fought hard, but the Ukrainian soldiers pushed them back. Eventually, Ukrainian forces managed to capture the center of the city and the Russians were forced to withdraw from [236.GetName]."
+city_captures.18.a:0 "Slava Ukraini!"
+city_captures.18.b:0 "This must be some mistake!"
+city_captures.18.c:0 "[236.GetName] is important?"
+
+city_captures.19.t:0 "The Fall of [354.GetName]" #fall Sevastopol!
+city_captures.19.d:0 "[354.GetName], a city located on the Crimean Peninsula in the Black Sea, fell to Russian forces on [GetDateText], during the conflict between Russia and Ukraine. The city's strategic location and natural harbor made it a key target for Russian troops, who seized control of vital installations, including the airport, naval base, and government buildings."
+city_captures.19.a:0 "This can't continue!"
+city_captures.19.b:0 "Victory is on Our side!"
+city_captures.19.c:0 "We will return... at some point."
+
+city_captures.20.t:0 "The Liberation of [354.GetName]" #lib Sevastopol!
+city_captures.20.d:0 "The city of [354.GetName], located on the Crimean Peninsula, has been liberated from Russian control by the Ukrainian military. The people of [354.GetName] are overjoyed to be free once again, and the Ukrainian government and military leaders are proud of their soldiers' bravery and determination."
+city_captures.20.a:0 "Slava Ukraini!"
+city_captures.20.b:0 "This must be some mistake!"
+city_captures.20.c:0 "When will all this stop?"
+
+
+city_captures.21.t:0 "The Fall of [135.GetName]" #fall Sloviansk!
+city_captures.21.d:0 "The strategically important city of [135.GetName] in eastern Ukraine has fallen to Russian forces. The fall of [135.GetName] is a significant blow to Ukraine's hopes of holding on to its eastern territories, and it could signal a further Russian advance towards [122.GetName] and [128.GetName]."
+city_captures.21.a:0 "We will take this city back!"
+city_captures.21.b:0 "Novorossiya will be ours!"
+city_captures.21.c:0 "When will the bloodshed end?"
+
+city_captures.22.t:0 "The Liberation of [135.GetName]" #lib Sloviansk!
+city_captures.22.d:0 "Ukrainian forces have liberated the strategically crucial city of [135.GetName] from Russian occupation. This momentous victory marks a turning point in the war, demonstrating Ukraine's unwavering determination to reclaim its sovereign territory and defend its freedom."
+city_captures.22.a:0 ""Slava Ukraini!"
+city_captures.22.b:0 "Dammit!"
+city_captures.22.c:0 "Ok."
+
+city_captures.23.t:0 "Fall Of Avdiivka"
+city_captures.23.d:0 "Today, after fierce fighting, Armed Forces of Ukraine announced their withdrawal from the city of Avdiivka, which was almost completely destroyed during the fighting. "
+city_captures.23.a:0 "Interesting..."
+city_captures.23.b:0 "Heroes of Glory!"
+city_captures.23.c:0 "Shit."
+
+city_captures.24.t:0 "Fall Of Belgorod City"
+city_captures.24.d:0 "Ukrainian forces, supported by Russian liberation volunteers, have successfully entered and seized control of Belgorod. With Belgorod now under their control, the coalition forces aim to consolidate their gains and push forward in their campaign to "liberate Russian territory from [SOV.GetLeader]'s regime.""
+city_captures.24.a:0 "Interesting..."
+city_captures.24.b:0 "We can't let this happen ever again!"
+city_captures.24.c:0 "Onwards soldiers!"
+
+city_captures.25.t:0 "Fall Of [96.GetName]"
+city_captures.25.d:0 "Russian forces have successfully captured the city of [96.GetName]. This major loss marks a critical point in the ongoing conflict, potentially disrupting the flow of Western aid to Ukraine. As one of their key logistical hubs, [96.GetName]'s fall may severely impact Ukraines ability to receive and distribute much-needed military and humanitarian assistance from Western allies."
+city_captures.25.a:0 "Interesting..."
+city_captures.25.b:0 "URAAAA!!"
+city_captures.25.c:0 "We will take it back!"

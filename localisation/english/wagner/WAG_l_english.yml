@@ -1,0 +1,14 @@
+﻿l_english: 
+ wagner.1.t:0 "Possible Compromise"
+ wagner.1.d:0 "A squad of Wagnerites have successfully intercepted the President at the airport. With him in our grasp, we are at a critical crossroad that will determine the future of Wagner PMC and Russia.\n\nOur options are clear: we can push for reforms in Russia's Ministry of Defense to improve their effectiveness in Ukraine. Alternatively, we have the daring option of installing Prigozhin, one of our own, as the new leader of Russia."
+ wagner.1.a:0 "Reform the MoD!"
+ wagner.1.a_tt:0 "Will result in white peace."
+ wagner.1.b:0 "Install Prigozhin as president."
+
+ wagner.2.t:0 "Shoigu Angered"
+ wagner.2.d:0 "Defense Minister Sergei Shoigu has received alarming news. It has come to his attention that Prigozhin, leader of the current government, is orchestrating a purge of the high command, with Shoigu himself on the list of those targeted for removal. Fueled by a deep sense of anger and loyalty to the nation, Shoigu has taken to the airwaves, calling on all Russians to rise up against Prigozhin's illegitimate government."
+ wagner.2.a:0 "Make him disappear."
+
+ wagner.3.t:0 "Shoigu Dead"
+ wagner.3.d:0 "The highly esteemed Defense Minister Sergey Shoigu has met an untimely end. The circumstances surrounding his demise are as puzzling as they are tragic, as he is said to have somehow fallen from a high-story building.\n\nThis unfortunate turn of events has left the nation in mourning and disbelief."
+ wagner.3.a:0 "Interesting..."

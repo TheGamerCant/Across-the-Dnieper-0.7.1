@@ -1,0 +1,26 @@
+﻿capital = 214
+
+load_ukraine_doctrine = yes
+
+set_politics = {
+	ruling_party = anarchism_ideology
+	elections_allowed = no
+}
+
+add_ideas = anarchist_system
+
+2019.5.29 = {
+	set_stability = 0.45
+	set_war_support = 0.74
+	set_party_name = { ideology = anarchism_ideology long_name = UKR_anarchism_ideology_party_long name = UKR_anarchism_ideology_party }
+}
+
+set_research_slots = 4
+set_stability = 0.4
+set_war_support = 0.24
+
+set_convoys = 57
+
+set_popularities = {
+	anarchism_ideology = 100
+}

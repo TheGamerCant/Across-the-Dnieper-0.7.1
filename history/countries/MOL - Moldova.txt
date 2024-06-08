@@ -1,0 +1,88 @@
+﻿capital = 258
+
+load_soviet_doctrine = yes
+
+complete_national_focus = MOL_timofti_presidency
+
+create_country_leader = {
+	name = "Nicolae Timofti"
+	desc = "Test Moldova"
+	picture = gfx/leaders/MOL/Portrait_Nicolae_Timofti.dds
+	ideology = generic_neoconservative
+	expire = 2018.1.1
+}
+
+2018.1.1 = {
+	set_politics = {
+		ruling_party = libertarian
+		last_election = "2020.11.15"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Maia Sandu"
+		desc = "Test Moldova"
+		picture = gfx/leaders/MOL/Portrait_Maia_Sandu.dds
+		ideology = generic_libertarian
+	}
+	set_popularities = {
+		socialist = 2
+		populist = 3
+		social_democracy = 33
+		neoliberal = 3
+		neoconservative = 17
+		libertarian = 36
+		eastern_conservative = 6
+}
+}
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.6
+
+set_truce = {
+    target = TRZ
+    days = 365
+}
+
+add_ideas = {
+	#MOL_transnistria_war_legacy_1
+	#MOL_Transnistria_Truce
+	#MOL_Transnistria_question
+	#MOL_Gagauzia_question
+	#MOL_foreign_investment_starting
+	#MOL_Russian_influence
+	#MOL_Romanian_Speical_Relationship
+	#MOL_Moldovan_Army
+	#MOL_Moldovan_Airforce
+
+	limited_conscription
+	liberal_democracy
+	oligarchy
+	free_press
+	free_trade_unions
+	western_aligned
+	religious_law_religious
+	equality
+	lgbtq_rights_behind_closed_doors
+	minority_rights_full_equality
+	nationalism_laws_pacifist
+	alchohol_narcotics_laws_largely_regulated
+	firearm_laws_loose
+}
+
+set_politics = {
+	ruling_party = neoconservative
+	last_election = "2012.3.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	socialist = 6
+	populist = 6
+	social_democracy = 18
+	neoliberal = 35
+	neoconservative = 35
+}

@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_artillery_officer"
+		texturefile = "gfx/interface/traits/trait_artillery_officer.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_trait_militia_leader"
+		texturefile = "gfx/interface/traits/trait_militia_leader.png"
+	}
+
+	spriteType = {
+		name = "GFX_trait_river_crossing_preparations"
+		texturefile = "gfx/interface/traits/trait_naval_invader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_vdv_expert"
+		texturefile = "gfx/interface/traits/trait_vdv_expert.png"
+	}
+
+	spriteType = {
+		name = "GFX_trait_one_with_the_army"
+		texturefile = "gfx/interface/traits/trait_one_with_the_army.png"
+	}
+
+	spriteType = {
+		name = "GFX_trait_POL_iraq_veteran"		#https://en.wikipedia.org/wiki/Polish_campaign_stars   #Iraq + Afghanistan from here
+		texturefile = "gfx/interface/traits/iraq_veteran.png"
+	}
+	spriteType = {
+		name = "GFX_trait_POL_afghanistan_veteran"
+		texturefile = "gfx/interface/traits/afghanistan_veteran.png"
+	}
+	spriteType = {
+		name = "GFX_trait_POL_kosovo_veteran"		#https://en.m.wikipedia.org/wiki/NATO_Medal#NATO_Medal_service_and_campaign_versions
+		texturefile = "gfx/interface/traits/kosovo_veteran.png"
+	}
+	spriteType = {
+		name = "GFX_trait_LIT_january13th_defender"
+		texturefile = "gfx/interface/traits/january_fighter.png"
+	}
+	spriteType = {
+		name = "GFX_trait_small_militia_leader"
+		texturefile = "gfx/interface/traits/belarus_trait.png"
+	}
+}

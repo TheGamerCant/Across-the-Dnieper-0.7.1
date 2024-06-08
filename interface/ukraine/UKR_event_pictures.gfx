@@ -1,0 +1,402 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_generic_pride_parade"
+		texturefile = "gfx/event_pictures/generic/generic_pride_parade.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_no_collaborators"
+		texturefile = "gfx/event_pictures/generic/UKR_no_collaborators.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_maidan_protests"
+		texturefile = "gfx/event_pictures/UKR/UKR_maidan_protests.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_maidan_barricades"
+		texturefile = "gfx/event_pictures/UKR/UKR_maidan_barricades.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_UKR_avdiivka_fall"
+		texturefile = "gfx/event_pictures/city/avdiivka_fall.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_maidan_clashes"
+		texturefile = "gfx/event_pictures/UKR/UKR_maidan_clashes.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_maidan_protestor_victory"
+		texturefile = "gfx/event_pictures/UKR/UKR_maidan_protestor_victory.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_maidan_police"
+		texturefile = "gfx/event_pictures/UKR/UKR_maidan_police.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_rada"
+		texturefile = "gfx/event_pictures/UKR/UKR_rada.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_right_sector"
+		texturefile = "gfx/event_pictures/UKR/UKR_right_sector.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_pro_russian_protests"
+		texturefile = "gfx/event_pictures/UKR/UKR_pro_russian_protests.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_crimean_dam"
+		texturefile = "gfx/event_pictures/UKR/UKR_crimean_dam.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_tymoshenko_at_maidan"
+		texturefile = "gfx/event_pictures/UKR/UKR_tymoshenko_at_maidan.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_ships"
+		texturefile = "gfx/event_pictures/UKR/UKR_ships.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_little_green_men"
+		texturefile = "gfx/event_pictures/UKR/UKR_little_green_men.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_azov_battalion"
+		texturefile = "gfx/event_pictures/UKR/UKR_azov_battalion.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_donbass"
+		texturefile = "gfx/event_pictures/UKR/UKR_donbass.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_dmytro_yarosh_speech"
+		texturefile = "gfx/event_pictures/UKR/UKR_dmytro_yarosh_speech.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_petro_poroshenko_podium"
+		texturefile = "gfx/event_pictures/UKR/UKR_petro_poroshenko_podium.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_yulia_tymoshenko_speech"
+		texturefile = "gfx/event_pictures/UKR/UKR_yulia_tymoshenko_speech.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_minsk_agreement"
+		texturefile = "gfx/event_pictures/UKR/UKR_minsk_agreement.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_petro_poroshenko"
+		texturefile = "gfx/event_pictures/UKR/UKR_petro_poroshenko.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_ukraine_army"
+		texturefile = "gfx/event_pictures/UKR/UKR_ukraine_army.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_statue_1"
+		texturefile = "gfx/event_pictures/UKR/UKR_statue_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_statue_2"
+		texturefile = "gfx/event_pictures/UKR/UKR_statue_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_statue_3"
+		texturefile = "gfx/event_pictures/UKR/UKR_statue_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_statue_4"
+		texturefile = "gfx/event_pictures/UKR/UKR_statue_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_lessons_of_donetsk"
+		texturefile = "gfx/event_pictures/UKR/UKR_lessons_of_donetsk.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_lessons_of_crimea"
+		texturefile = "gfx/event_pictures/UKR/UKR_lessons_of_crimea.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_sluha_narodu"
+		texturefile = "gfx/event_pictures/UKR/UKR_sluha_narodu.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_zelenskyy"
+		texturefile = "gfx/event_pictures/UKR/UKR_zelenskyy.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_zelenskyy_in_rada"
+		texturefile = "gfx/event_pictures/UKR/UKR_zelenskyy_in_rada.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_transnistria"
+		texturefile = "gfx/event_pictures/UKR/UKR_transnistria.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_russia_arty"
+		texturefile = "gfx/event_pictures/UKR/UKR_russia_arty.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_liberals_protest"
+		texturefile = "gfx/event_pictures/UKR/UKR_liberals_protest.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_greater_ukraine"
+		texturefile = "gfx/event_pictures/UKR/UKR_greater_ukraine.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_kolomoyskyi"
+		texturefile = "gfx/event_pictures/UKR/UKR_kolomoyskyi.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_pandora_papers"
+		texturefile = "gfx/event_pictures/UKR/UKR_pandora_papers.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_zelenskyy_feb_24"
+		texturefile = "gfx/event_pictures/UKR/UKR_zelenskyy_feb_24.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_stepan_bandera"
+		texturefile = "gfx/event_pictures/UKR/UKR_stepan_bandera.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_russia_withdraws"
+		texturefile = "gfx/event_pictures/UKR/UKR_russia_withdraws.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_no_collaborators"
+		texturefile = "gfx/event_pictures/UKR/UKR_no_collaborators.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_parade"
+		texturefile = "gfx/event_pictures/UKR/UKR_parade.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_anti_oligarch_raids"
+		texturefile = "gfx/event_pictures/UKR/UKR_anti_oligarch_raids.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_odesa_riots"
+		texturefile = "gfx/event_pictures/UKR/UKR_odesa_riots.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_medvedchuk_arrested"
+		texturefile = "gfx/event_pictures/UKR/UKR_medvedchuk_arrested.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_anti_anti_maidan"
+		texturefile = "gfx/event_pictures/UKR/UKR_anti_anti_maidan.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_assessing_the_situation"
+		texturefile = "gfx/event_pictures/UKR/UKR_assessing_the_situation.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_zaluzhnyi"
+		texturefile = "gfx/event_pictures/UKR/UKR_zaluzhnyi.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UKR_winter"
+		texturefile = "gfx/event_pictures/UKR/UKR_winter.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_choclateman_announces_donbass_russian_troops"
+		texturefile = "gfx/event_pictures/news/news_choclateman_announces_donbass_russian_troops.png"
+	}
+	
+	spriteType = {
+		name = "GFX_Yanukovych_signs_settlment"
+		texturefile = "gfx/event_pictures/news/Yanukovych_signs_settlment.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_Protesters_seize_state_administrations"
+		texturefile = "gfx/event_pictures/news/news_Protesters_seize_state_administrations.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_drones"
+		texturefile = "gfx/event_pictures/UKR/UKR_drone.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_ghost_of_kyiv"
+		texturefile = "gfx/event_pictures/UKR/UKR_ghost_of_kyiv.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_western_weapons"
+		texturefile = "gfx/event_pictures/UKR/UKR_western_weapons.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_weapons"
+		texturefile = "gfx/event_pictures/UKR/UKR_weapons.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_crimea_raid_success"
+		texturefile = "gfx/event_pictures/UKR/UKR_crimea_raid_success.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_crimea_raid_escaped"
+		texturefile = "gfx/event_pictures/UKR/UKR_crimea_raid_escaped.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_crimea_raid_fail"
+		texturefile = "gfx/event_pictures/UKR/UKR_crimea_raid_fail.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_refugees"
+		texturefile = "gfx/event_pictures/UKR/UKR_refugees.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_azov_flag"
+		texturefile = "gfx/event_pictures/UKR/UKR_azov_flag.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_belarussian_volunteers"
+		texturefile = "gfx/event_pictures/UKR/UKR_belarussian_volunteers.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_kraken_dechatment"
+		texturefile = "gfx/event_pictures/UKR/UKR_kraken_dechatment.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_2022_eurovision"
+		texturefile = "gfx/event_pictures/UKR/UKR_2022_eurovision.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_shelling"
+		texturefile = "gfx/event_pictures/UKR/UKR_shelling.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_zelenskyy_and_boris"
+		texturefile = "gfx/event_pictures/UKR/UKR_zelenskyy_and_boris.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_incursion"
+		texturefile = "gfx/event_pictures/UKR/UKR_incursion.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_incursion_failed"
+		texturefile = "gfx/event_pictures/UKR/UKR_incursion_failed.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_more_soldiers"
+		texturefile = "gfx/event_pictures/UKR/UKR_more_soldiers.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_grain_blockade"
+		texturefile = "gfx/event_pictures/UKR/UKR_grain_blockade.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_australia_aid"
+		texturefile = "gfx/event_pictures/UKR/UKR_australia_aid.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_arms_factory"
+		texturefile = "gfx/event_pictures/UKR/UKR_arms_factory.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_zelenskyy_deepfake"
+		texturefile = "gfx/event_pictures/UKR/UKR_zelenskyy_deepfake.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_war_bonds"
+		texturefile = "gfx/event_pictures/UKR/UKR_war_bonds.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_pro_russian_politicians"
+		texturefile = "gfx/event_pictures/UKR/UKR_pro_russian_politicians.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_partisans"
+		texturefile = "gfx/event_pictures/UKR/UKR_partisans.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_preparing_aid"
+		texturefile = "gfx/event_pictures/UKR/UKR_preparing_aid.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_aid_is_here"
+		texturefile = "gfx/event_pictures/UKR/UKR_aid_is_here.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_cool_soldier"
+		texturefile = "gfx/event_pictures/UKR/UKR_cool_soldier.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_soldiers_training"
+		texturefile = "gfx/event_pictures/UKR/UKR_soldiers_training.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_wagner_in_sudan"
+		texturefile = "gfx/event_pictures/UKR/UKR_wagner_in_sudan.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_usa"
+		texturefile = "gfx/event_pictures/UKR/UKR_usa.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_nato"
+		texturefile = "gfx/event_pictures/UKR/UKR_nato.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_nato_2"
+		texturefile = "gfx/event_pictures/UKR/UKR_nato_2.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_injured_soldier"
+		texturefile = "gfx/event_pictures/UKR/UKR_injured_soldier.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_UKR_fall_lviv"
+		texturefile = "gfx/event_pictures/UKR/UKR_fall_lviv.png"
+	}
+}

@@ -1,0 +1,61 @@
+on_actions={
+	on_weekly_ZZZ={
+		effect={
+			if={
+				limit = { SOV = { has_war_with = UKR } has_global_flag = a_harsh_war_active_flag }
+				load_russia_ukraine_war_state_modifiers = yes
+			}
+		}
+	}
+	on_monthly_ZZZ={
+		effect={
+			every_country={
+				limit = { 
+					OR={
+						tag = DON
+						tag = LHK
+						tag = KHK
+						tag = ODS
+						tag = NOV
+					}
+					exists = yes
+					is_puppet_of = SOV
+				}
+				every_state={
+					limit={
+						OR={
+							is_claimed_by = PREV
+							is_core_of = PREV
+						}
+						is_fully_controlled_by = SOV
+					}
+					set_state_controller_to = PREV
+				}
+			}
+			
+			if={
+				limit = { OR={ country_exists = SMA country_exists = SMB country_exists = SMC } NOT = { SOV = { has_war_with = UKR } } }
+				SOV_remove_smo_tags_from_map = yes
+			}
+		}
+	}
+
+	on_peace={
+		effect={
+			if={
+				limit={
+					OR={
+						tag = UKR
+						tag = SOV
+					}
+				}
+				clr_global_flag = russia_ukraine_war
+				clr_global_flag = a_harsh_war_active_flag
+				if={
+					limit = { OR={ country_exists = SMA country_exists = SMB country_exists = SMC } NOT = { SOV = { has_war_with = UKR } } }
+					SOV_remove_smo_tags_from_map = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,237 @@
+﻿#RANDOM POLAND ARTICLES I MIGHT USE FOR CONTENT
+#https://www.aljazeera.com/news/2015/9/30/poland-to-bring-in-exiled-ethnic-poles		-> tens of thousands of Poles from Ukraine, Kazakhstan, return to Poland
+#https://www.reuters.com/article/us-poland-government-kopacz-idUSKBN0HA0Z320140915/
+#https://www.reuters.com/article/poland-government-kopacz-idUSL5N0YX3T920150611/		-> Waitergate and later purge
+#https://www.macrotrends.net/countries/POL/poland/military-spending-defense-budget		-> use this for budget stuff
+#https://www.lse.ac.uk/GranthamInstitute/wp-content/uploads/2015/05/POLAND.pdf 			-> Poland climate change bill
+#https://wiiw.ac.at/different-choices-divergent-paths-poland-and-ukraine-dlp-6419.pdf	-> analysis of polish and ukrainian economic development
+#https://ec.europa.eu/commission/presscorner/detail/en/ip_16_2015						-> Polish rule of law review by EC
+#https://ec.europa.eu/commission/presscorner/detail/en/IP_17_5367
+#https://en.wikipedia.org/wiki/Polish_Constitutional_Tribunal_crisis_(2015_%E2%80%93_ongoing)#Inclusion_of_the_new_judges	->Specifics of 22nd December law
+#https://web.archive.org/web/20190213022413/https://freedomhouse.org/report/special-reports/assault-press-freedom-poland	->Press freedom report and summary (note, i say summary, it is NOT short)
+#https://www.dziennikustaw.gov.pl/DU/2016/25											->Full text of the "small media law"
+
+
+capital = 427
+add_offsite_building = { type = industrial_complex level = 2 }
+add_offsite_building = { type = arms_factory level = 2 }
+
+load_nato_doctrine = yes
+
+POL_make_donald_tusk_pm = yes
+set_country_flag = ewa_kopacz_shoes_to_fill_trait
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POL_2014_navy_mtg"
+	else = {
+		set_naval_oob = "POL_2014_navy"
+	}
+}
+2022.1.1={
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "POL_2022_navy_mtg"
+		else = {
+			set_naval_oob = "POL_2022_navy"
+		}
+	}
+}
+
+
+set_country_flag = POL_its_all_chill_in_da_hood
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = civic_platform
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_pis_party
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_kukiz_15
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_democratic_left_alliance
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+create_country_leader = {
+	name = "Bronisław Komorowski"
+	picture = gfx/leaders/POL/Portrait_Bronisław_Komorowski.png
+	ideology = poland_PSL
+	
+	traits = { POL_former_minister_of_defence POL_liberal_reformer }
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = 200
+}
+
+#PO
+recruit_character = POL_donald_tusk
+recruit_character = POL_radoslaw_sikorski
+recruit_character = POL_jacek_rostowski
+recruit_character = POL_grzegorz_schetyna
+
+#PiS
+recruit_character = POL_jaroslaw_kaczynski
+recruit_character = POL_mateusz_morawiecki
+recruit_character = POL_antoni_macierewicz
+recruit_character = POL_andrzej_duda
+
+#RIGHT
+recruit_character = POL_grzegorz_braun
+
+#PSL
+recruit_character = POL_wladyslaw_kosiniak_kamysz
+recruit_character = POL_waldemar_pawlak
+
+#Generals
+recruit_character = POL_mieczyslaw_gocul
+recruit_character = POL_leszek_surawski
+recruit_character = POL_rajmund_andrzejczak
+recruit_character = POL_tomasz_piotrowski
+recruit_character = POL_waldemar_skrzypczak
+recruit_character = POL_roman_polko
+recruit_character = POL_stanislaw_koziej
+recruit_character = POL_piotr_trytek
+
+
+add_ideas = {
+	eu_member
+	SLO_visegrad_member
+	POL_religious_population
+	POL_progressive_youth
+	
+	volunteer_only
+	liberal_democracy
+	western_economy
+	free_press
+	free_trade_unions
+	western_aligned
+
+	religion_law_religious
+	womens_rights_traditional_values
+	lgbtq_rights_behind_closed_doors
+	minority_rights_full_equality
+	nationalism_laws_interventionist
+	firearm_laws_restricted
+	alchohol_narcotics_laws_largely_regulated
+}
+
+set_research_slots = 3
+set_stability = 0.05
+set_war_support = 0.35
+
+set_convoys = 342
+
+set_politics = {
+	ruling_party = neoliberal
+	last_election = "2011.10.9"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neoconservative = 32
+	eastern_liberal = 9
+	populist = 10
+	libertarian = 3
+	social_democracy = 6
+	neoliberal = 34
+	ultranationalist = 4
+	eastern_conservative = 2
+}
+
+set_country_flag = POL_donald_tusk_is_PO_leader
+set_country_flag = POL_jaroslaw_kaczynski_is_PiS_leader
+set_country_flag = POL_pawel_kukiz_is_RIGHT_leader
+set_country_flag = POL_leszek_miller_is_LEFT_leader
+set_country_flag = POL_janus_piechocinski_is_PSL_leader
+
+
+POL_load_sejm_460_seats = yes
+
+set_variable = { POL.cost_of_lobby_decisions = 40 }
+
+set_variable = { POL_PO_seats = 207 }
+set_variable = { POL_PiS_seats = 157 }
+set_variable = { POL_RIGHT_seats = 0 }
+set_variable = { POL_LEFT_seats = 27 }
+set_variable = { POL_PSL_seats = 28 }
+set_variable = { POL_OTHER_seats = 0 }
+
+set_country_flag = PO_in_power
+set_country_flag = PiS_in_opposition
+set_country_flag = PSL_in_power	
+
+POL_get_non_aligned_seats = yes
+POL_get_sejm_seats = yes
+POL_get_government_majority_status = yes
+
+set_country_flag = POL_rightist_party_is_kukiz
+set_country_flag = POL_leftist_party_is_democratic_left_alliance
+2015.1.1={
+	clr_country_flag = POL_leftist_party_is_democratic_left_alliance
+	set_country_flag = POL_leftist_party_is_united_left
+}
+2016.1.1={
+	clr_country_flag = POL_leftist_party_is_united_left
+	set_country_flag = POL_leftist_party_is_lewica
+}
+2018.10.1={
+	clr_country_flag = POL_rightist_party_is_kukiz
+	set_country_flag = POL_rightist_party_is_konfederacja
+}
+
+2022.1.1 = {
+	set_politics = {
+		ruling_party = neoconservative
+		last_election = "2019.10.13"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	POL_make_mateusz_morawiecki_pm = yes
+	POL_make_andrzej_duda_president = yes
+	
+	remove_ideas = POL_PO_PSL_coalition
+	
+	set_variable = { POL_PO_seats = 134 }
+	set_variable = { POL_PiS_seats = 235 }
+	set_variable = { POL_RIGHT_seats = 11 }
+	set_variable = { POL_LEFT_seats = 49 }
+	set_variable = { POL_PSL_seats = 30 }
+	set_variable = { POL_OTHER_seats = 0 }
+	
+	POL_clr_party_flags = yes
+	set_country_flag = PO_in_opposition
+	set_country_flag = PiS_in_power
+	set_country_flag = PSL_in_opposition
+	set_country_flag = LEFT_in_opposition
+	
+	POL_get_non_aligned_seats = yes
+	POL_get_sejm_seats = yes
+	POL_get_government_majority_status = yes
+	
+	load_focus_tree = generic_focus
+}

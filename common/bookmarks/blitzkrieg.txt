@@ -1,0 +1,58 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 2014.1.1.1
+		picture = "GFX_select_date_1939"
+		default_country = "UKR"
+		default = yes
+		
+		"UKR"={
+			minor = yes
+			history = "UKR_BLITZKRIEG_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Ukraine_2014_bg
+			}
+			focuses = {
+				UKR_root_out_corruption
+				UKR_never_forgive
+				UKR_president_zelenskyy
+			}
+		}
+
+		"SOV"={
+			minor = yes
+			history = "SOV_BLITZKRIEG_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Russia_2014_bg
+			}
+			focuses = {
+				SOV_the_angry_patriots
+				SOV_the_coup
+				SOV_one_country_one_people_one_leader
+			}
+		}
+
+		"BLR"={
+			minor = yes
+			history = "BLR_BLITZKRIEG_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Belarus_2014_bg
+			}
+
+			focuses = {
+				BLR_the_last_dictator_of_europe
+				BLR_Union_state
+				BLR_the_flames_of_revolution
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

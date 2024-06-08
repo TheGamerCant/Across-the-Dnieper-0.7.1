@@ -1,0 +1,784 @@
+﻿l_english: 
+ event_tt_historical:0 "§GHistorical Decision!§!"
+ 
+ russia.1000.t:0 "Sochi Winter Olympics Begin!"
+ russia.1000.desc:0 "With the successful completion of preparations, the Sochi Winter Olympics have officially begun. Athletes from around the world have gathered to compete in a variety of winter sports, while spectators enjoy the festivities and cheer on their favorite athletes. The Russian government has spared no expense in making this a memorable event, with state-of-the-art facilities and a lively atmosphere, with these games being the most expensive in Olympic history.\n\nThe event is also a chance to show off our best side to the world, and Putin is all smiles as he personally attends the Olympics."
+ russia.1000.a:0 "Best of luck to the athletes!"
+
+ russia.1001.t:0 "Meeting With Ukrainian Athletes"
+ russia.1001.desc:0 "While protests sweep their nation, the atmosphere in Sochi has reportedly been a nice break for the Ukrainian delegation. Earlier today, they met with president Putin for dinner, a show of close co-operation and friendliness between our two brotherly nations."
+ russia.1001.a:0 "Let's hope things stay that way"
+
+ russia.1002.t:0 "Blades On The Ice"
+ russia.1002.desc:0 "A known lover of winter sports, Vladimir Putin has made sure to attend as many events as possible during the winter Olympics. Today's event, is a special one to him - ice hockey. His favourite sport, Putin is known to practice his skills almost every day, and has played in front of the cameras before."
+ russia.1002.a:0 "It's always good to take an interest in something"
+ russia.1002.b:0 "Putin requests to play in front of the cameras"
+
+ russia.1003.t:0 "Putin Scores The Winning Goal!"
+ russia.1003.desc:0 "As part of a charity event with both amateur and retired players, our president Vladimir Vladimirovich scored the winning goal in the ice hockey game, winning the game 9-8 for his 'Legends' team.\n\nThe event has become a media sensation, and has only made Putin more popular both domestically and abroad, as Putin shows his physical youth and prowess in front of the cameras."
+ russia.1003.a:0 "Best president ever!"
+
+ russia.1004.t:0 "The Closing Ceremony"
+ russia.1004.desc:0 "After 16 days of sporting events, the Sochi winter Olympics have come to a close. Russia came first in the tournament with 11 golds, 10 silver and 9 bronze medals, followed by Norway in second and Canada in third."
+ russia.1004.a:0 "Too bad it's over"
+
+ russia.1005.t:0 "Happenings In Kiev"
+ russia.1005.desc:0 "Amidst the winter Olympics, president Putin met with top advisors to discuss the situation in Kiev. Put simply, it was not going well.\n\nPutin had spent years getting pro Kremlin politicians into key positions in Ukraine, including the presidency, and it seemed to be all for nothing. Anti-Yanukovych protestors appeared to be getting the upper hand, so much so that the FSB believes Yanukovych to already be planning an escape route. As such, Putin ordered that contingency plans be made for a potential intervention by the FSB, in order to secure Russian interests in the region should the worst come to fruition."
+ russia.1005.a:0 "You can never be too prepared"
+
+ russia.1006.t:0 "Little Green Men"
+ russia.1006.desc:0 "Today, to worst has happened, as Viktor Yanukovych has fled Ukraine. Years of efforts to bring Ukraine into our fold ruined, as our brothers have become another damned western puppet. Not to worry, we prepared for this day."
+ russia.1006.a:0 "It is time to establish ourselves again"
+
+ russia.1007.t:0 "The Fate Of Remaining Ukrainian Soldiers"
+ russia.1007.desc:0 "After our rapid takeover of Crimea, many Ukrainian troops still remain stranded in the peninsula. President [SOV.GetLeader] has been presented with two options: The first is to let them go back to Ukraine, which would paint us in a good light and give off the impression that we mean their nation no harm. The second is to treat them as we would treat enemy soldiers, and demand they either surrender to us or else."
+ russia.1007.a:0 "We seek no hostilities with a brother nation"
+ russia.1007.b:0 "They are occupying rightful Russian territory, and will be treated as such"
+
+ russia.1008.t:0 "The Crimean Referendum"
+ russia.1008.desc:0 "In a result that surprised nobody, the people of Crimea have made their voices heard - and they demand to join Russia. The votes have been counted, and over 90% of the local population wants to leave the sinking ship that is Ukraine in favour of their historical homeland.\n\nCelebrations and rallies have been held all over Russia, and the words on peoples lips are..."
+ russia.1008.a:0 "A stunning victory for [ROOT.GetLeader]"
+ russia.1008.b:0 "Krym has returned home, it will not be the last place to do so"
+
+ russia.1009.t:0 "Meeting With Iran"
+ russia.1009.desc:0 "President Putin meet with Iranian officials earlier to discuss increasing co-operation with the regime in Tehran. On the surface, this was a diplomatic mission to improve ties between the two now sanctioned regimes, under the table the largest area of concern was for Russia to learn from Iran's economy.\n\nSince 1979, Iran has been a pariah to the west, and as such have become experts in getting around sanctions. Iran has agreed to let us in on their secrets, in exchange for increased trade, mostly of military gear to help put down any potential revolts or protests in their country.\n\nThe question is, what is the main field we want help in?"
+ russia.1009.a:0 "We want help with our arms industry"
+ russia.1009.b:0 "Civilian industries are the most important"
+
+ russia.1010.t:0 "Revolt Against The West"
+ russia.1010.desc:0 "As part of our government's ban on western food products as part of their so-called 'counter-sanctions' package, Russian state media has aired segments showing the destruction of western food products, whether it be via demolition, stamping or burning. More restrictions on what food can be imported into Russia from western countries are being discussed in the Duma, as the media celebrates these 'heroes' actions against the collective west."
+ russia.1010.a:0 "Seems a bit much?"
+
+ russia.1011.t:0 "Putin's [GetYear] SOTN Address"
+ russia.1011.desc:0 "Every year, the president of the Russian Federation gives a speech, detailing the state of our nation. This year, however, is special.\n\nWe have welcomed new territories into our nation and are helping our brothers in Donbass resist their western government, but the year has not been all sunshine and rainbows. The west has launched co-ordinated attacks against us, and our economy has suffered greatly because of it.\n\nPresident Putin's speech is expected to be an important one, and as such, he focuses his attention towards..."
+ russia.1011.a:0 "Attacking the collective west"
+ russia.1011.b:0 "Reclaiming Russia's lost glory"
+ russia.1011.c:0 "The need for reforms"
+
+ russia.1012.t:0 "Boris Nemtsov Assassinated!"
+ russia.1012.desc:0 "Tragedy strikes the nation, as at 23:31 [?global.date.GetDateStringNoHourLong], Russian opposition figure Boris Nemtsov was assassinated.\n\nAfter continuing to speak out against our operations in Ukraine, Boris Nemtsov had become convinced in his final days that Putin was out to kill him. He unfortunately may have been proven right, as he was shot seven or eight times while walking on Bolshoy Moskoretsky Bridge in Moscow. While our government has denied any involvement in the assassination, many of Nemtsov's colleagues and western analysts are suspicious of our claim, due to suspicious circumstances surrounding his death."
+ russia.1012.a:0 "Deny any and all allegations"
+ russia.1012.b:0 "Eh, good riddance"
+ russia.1012.tt:0 "\n§YBoris Nemtsov§! dies.\n§YAlexei Navalny§! will become the leader of the §eLiberal§! faction."
+
+ russia.1013.t:0 "Securing Chemezov's Loyalty"
+ russia.1013.desc:0 "Sergey Viktorovich Chemezov is a powerful oligarch within Russia, due to his status as CEO of Rostec. This gives him immense influence over our military industry, and makes him a possible king-maker for many factions within Russia.\n\nVladimir Putin has set up a meeting between the two men, in hopes of swaying Chemezov to his side - the question is, what does Putin offer him?"
+ russia.1013.a:0 "Offer him some lucrative arms contracts"
+ russia.1013.b:0 "Perhaps some diversification couldn't hurt?"
+ russia.1013.c:0 "Give him a hand dealing with some mutual enemies"
+ russia.1013.tt:0 "§YSergey Chemezov§! will become a member of the §EPutinist§! faction.\n§YNikolai Patrushev§! will become the leader of the §ESiloviki§! faction."
+
+ russia.1014.t:0 "Leaders Of Russia"
+ russia.1014.desc:0 "Today marks a historic day for the Federation. The institute 'Leaders of Russia' has been given large sums of government funding, with more to come. This is noteworthy as it marks a shift away from the traditional power politics of Russia, instead seeking to take promising bureaucrats and teach them in the art of governance.\n\nUnsurprisingly, much of the political establishment are opposed to the institute, as they see it as a direct challenge to their power."
+ russia.1014.a:0 "Za Bushchego!"
+
+ russia.1015.t:0 "Patriots From A Young Age"
+ russia.1015.desc:0 "After the attack on us from the collective west, many of Russia's young foolishly believed them to be in the right, and believing us to be the aggressor. To counter this, Putin and the Duma have signed into law a new curriculum, with special patriotic classes each week, called 'conversations about the important'. In these classes, we will teach the youth about what the motherland should mean to them, as well as give them the correct worldview on international affairs."
+ russia.1015.a:0 "Papya knows best"
+
+ russia.1016.t:0 "Philosophy Class"
+ russia.1016.desc:0 "As part of the patriotic classes, our nation's best and brightest have been given the correct worldview on many current affairs, but there still remains some doubts in the mind of our youth. As such, schools are now to teach philosophy as part of these lessons, taking from the works of Solovyov, Gumilyov, and above all, Ilyin. These philosophers have been chosen as they teach our students about the greatness of Russia and her culture, as well as the need to expand Russia's borders for the good of us all.\n\nStudents are expected to go home and study these philosophers, and report their findings back to their teachers."
+ russia.1016.a:0 "May we all be in service to our motherland"
+
+ russia.1017.t:0 "Anti-War Protests"
+ russia.1017.desc:0 "In response to our intervention in Crimea, many liberal Russians have taken to the street in protest. So far, their movement is contained to the streets of Moscow, but there are no signs of the protests slowing down."
+ russia.1017.a:0 "Ok"
+
+ russia.1018.t:0 "The March Of Peace"
+ russia.1018.desc:0 "Today, anti-war politicians and organisers held their largest protest so far - the so-called 'march of peace'. In attendance were some of the most vocal of Russia's opposition, notably Boris Nemtsov and Alexei Navalny, as well as some estimated 20,000 other protestors.\n\nMembers of the Duma have gone on fiery rampages against these 'traitors to the motherland', and tensions within Russia only seem to be growing."
+ russia.1018.a:0 "Hopefully this will be over soon"
+
+ russia.1019.t:0 "Protests Escalate"
+ russia.1019.desc:0 "Emboldened by our government's failures in Crimea, the protests have swelled to never before seen heights. Over a hundred thousand people have demonstrated against our government's actions in Moscow, and thousands more have held smaller protests in the countryside.\n\nThe situation is deteriorating rapidly, and only extreme measures can help us now."
+ russia.1019.a:0 "Send in the police to disperse the crowd"
+ russia.1019.b:0 "Putin personally addresses the crowd to explain"
+
+ russia.1020.t:0 "Protests Disperse"
+ russia.1020.desc:0 "After violent clashes in Moscow, the protests against our intervention in Crimea seem to have ended. Many of the top protestors are currently in custody, and thus they are unable to organise a counter-action against our forces."
+ russia.1020.a:0 "Thank God that's over"
+
+ russia.1021.t:0 "Vladimir Putin Assassinated!"
+ russia.1021.desc:0 "Unable to get his opinions across to the crowds in an orderly manner, Putin eventually called upon the police to disperse the crowds. However, this ended up being his greatest, and final, mistake. While trying to leave the stadium, Vladimir Vladimirovich Putin was shot three times by an anti-war protestor. After being rushed to the hospital, he was pronounced dead at [?global.date.GetDateString].\n\nIn his place, the Security Council of the Russian Federation has taken over official control of the country, as the world watches to see what comes next."
+ russia.1021.a:0 "Rest easy Papya, for we shall not"
+ russia.1021.tt:0 "This will end the §EUnited Russia, Divided Country§! mechanic.\n§YVladimir Putin§! dies"
+
+ russia.1022.t:0 "Opposition Parties Demand Elections"
+ russia.1022.desc:0 "After the death of Putin, many opposition parties in the duma, as well as many Liberals have been demanding new elections. They claim the Security Council is unfit to govern our nation during these trying times and claim that we have no electoral mandate from the people."
+ russia.1022.a:0 "Ignore these babbling morons"
+ russia.1022.b:0 "Holding ceremonial elections will bring stability to the country"
+ russia.1022.tt_1:0 "We will hold elections, and take a page from Putin's book to ensure Yedínaya Rossíya's victory"
+ russia.1022.c:0 "The future is uncertain, we must let the people decide"
+ russia.1022.tt_2:0 "We will hold free and fair elections. This will start the §YParliament§! mechanic and GUI"
+
+ russia.1023.t:0 "The Rise Of Kiriyenko"
+ russia.1023.desc:0 "Nicknamed the 'Kinder Surprise' back in the nineties, former prime minister Sergey Kiriyenko has been winning over Putin's ear. As well as this, many institutes linked to him have been producing more and more regional administrators, growing his connections to all factions of the Russian elite.\n\nHowever, Kiriyenko's meteoric growth in recent years has not gone unnoticed. Several people in Putin's inner circle are demanding that he puts Kiriyenko in his place, and view him as a direct threat to their power."
+ russia.1023.a:0 "He has proven himself to be very competent"
+ russia.1023.tt:0 "\n§YSergey Kiriyenko§! will become the leader of the §ETechnocrat§! faction."
+ russia.1023.b:0 "We don't want him getting any funny ideas"
+
+ russia.1024.t:0 "Sergei Shoigu Accused Of Corruption"
+ russia.1024.desc:0 "Over the past several weeks, defence minister Sergei Shoigu has been investigated by Alexei Navalny's Anti-Corruption Foundation, where they have linked his daughter's name to an 18 million dollar mansion in the outskirts of Moscow. This has caused many to speculate that Putin want him gone, as Shoigu's predecessor Anatoly Serdyukov was dismissed and investigated over a similar corruption scandal in 2012."
+ russia.1024.a:0 "Let's sweep this under the rug"
+ russia.1024.b:0 "He needs to be punished for this"
+
+ russia.1025.t:0 "Moscow Seeks To Strengthen The Union State"
+ russia.1025.desc:0 "Since the Union State Treaty on the 8th of December 1999, ties have grown between ourselves and Russia. However, many in Moscow are growing dissatisfied with our supposed feet dragging at the negotiations. This narrative fools nobody. It is clear that Russia seeks to annex us outright, or at the very least force us to be entirely dependent on their good graces."
+ russia.1025.a:0 "Oh well, it was inevitable"
+ russia.1025.b:0 "Perhaps  a closer relationship should suffice"
+ russia.1025.c:0 "We did not fight for our independence to give it up so easily!"
+
+ russia.1026.t:0 "Belarus Accepts Annexation"
+ russia.1026.desc:0 "After some diplomatic talks between our two governments, Belarus has officially joined the Russian Federation!"
+ russia.1026.a:0 "Welcome to the Federation!"
+
+ russia.1027.t:0 "Belarus Agrees To A Closer Relationship"
+ russia.1027.desc:0 "After some diplomatic talks between our two governments, the Belarussian government and ours have signed new legislation, bringing our relationship closer together."
+ russia.1027.a:0 "What took so long?"
+
+ russia.1028.t:0 "Belarus Leaves The CSTO!"
+ russia.1028.desc:0 "It would seem our peaceful envoy to Belarus has rubbed them the wrong way. Believing us to try to be annexing them, Belarussian leader [BLR.GetLeader] has announced that his country will leave the CSTO and Union State Treaty effective immediately."
+ russia.1028.a:0 "Who does that potato farmer think he is!"
+ russia.1028.b:0 "Oh well."
+
+ russia.1029.t:0 "Start Of The World Cup"
+ russia.1029.desc:0 "Today, the World Cup has now officially kicked off in Luzhniki Stadium, Moscow. Thousands of fans have flocked from all over the world to see their teams play, and the Russian economy is booming because of it.\n\nIn the first game of the tournament, Russia thrashed Saudi Arabia 5-0, and Russia has been overcome with a sense of patriotism and joy."
+ russia.1029.a:0 "May the best team win!"
+
+ russia.1030.t:0 "Raise The Retirement Age?"
+ russia.1030.desc:0 "With support for Putin at an all-time high, and the nation's attention focused on the world cup, it has been suggested in the Duma that the retirement age substantially - from 60 to 65 for men, and 55 to 63 for women. This would be controversial for a multitude of reasons, such as Putin's repeated promises not to raise the retirement age during his term, the substantial increase all at once, and most importantly - the fact that many poor Russians will die before they reach this new retirement age.\n\nHowever, it is known to all that not implementing the reforms will only lead to more economic woes at a time when the economy is far from stable, and will likely lead to a large economic collapse not too long in the future. Furthermore, we would avoid any immediate protests, as public demonstrations are currently banned in Russia due to the ongoing world cup.\n\nLike most decisions in Russia, the choice comes down to Putin."
+ russia.1030.a:0 "Implement the reforms."
+ russia.1030.b:0 "It is a problem for tomorrow’s leaders, not us"
+
+ russia.1031.t:0 "Protests In Hyde Park"
+ russia.1031.desc:0 "In response to our unpopular pension reforms, thousands of ordinary Russians have come out in protest. However, it is too late for many of them. Due to not being able to protest in the immediate aftermath of the announcement due to the ban on protests during the world cup, the protests are less severe than expected, although still not insignificant.\n\nDue to the pension reforms, as well as the perception of misusing the world cup to prevent protests, the approval rating of all members of government, including [SOV_current_leader_surname], has plummeted."
+ russia.1031.a:0 "Can't they see it was necessary?"
+
+ russia.1032.t:0 "Patriot PMC Formed"
+ russia.1032.desc:0 "Over the past decades, global wars have been dominated by the need for plausible deniability, and as such the world has seen an exponential rise in PMC activity. The Americans have Blackwater, the Brits have Aegis, the Germans have Asgaard, and we have Wagner. In order to capitalise on this growth, Sergey Shoigu has been involved in the founding of 'Patriot PMC', an they have already received contracts in Syria due to Shoigu's top position within the military."
+ russia.1032.a:0 "War is just another market"
+
+ russia.1033.t:0 "Continued Stagnation"
+ russia.1033.desc:0 "Despite our government's best attempts, we have not been able to fully recover from the west's sanctions imposed on us. Our GDP remains low, and wealth inequality has only gone up. This has only exacerbated our country's brain drain, leaving us with a bleak future."
+ russia.1033.a:0 "Oh well"
+ russia.1033.tt:0 "Modify §YSanctioned Economy§! by:\nResearch Speed: §R-12.00%§!\nExpected number of factories put on Consumer Goods: §Y+5.0%§!\nDaily Political Power Cost: §R+0.10§!"
+
+ russia.1034.t:0 "Issues With The Oligarchy"
+ russia.1034.desc:0 "In a surprise to no-one, our government's heavy-handed measures in dealing with protests and opposition has lead to a sharp decline in organised resistance to our regime. An unfortunate result of this, at least for ordinary Russians, is that it is increasingly harder to combat the oligarchs, leaving said oligarchs with more power than ever before under Putin's regime."
+ russia.1034.a:0 "Oh well"
+
+ russia.1035.t:0 "Head Of The Conspiracy"
+ russia.1035.desc:0 "For decades, Putin has been using the security apparatus to maintain his power within the country, but his grip weakening. Many people in Russian society want to see the current regime gone, so action must be taken to secure our control, with or without Putin. However, there is considerable debate over who the leader of our coup should be."
+ russia.1035.a:0 "Sergey Shoigu, head of the MoD"
+ make_shoigu_siloviki_leader_tt:0 "§YSergey Shoigu§! will become leader of the §ESiloviki§! faction."
+ russia.1035.b:0 "Nikolai Patrushev, head of the Security Council"
+ make_patrushev_siloviki_leader_tt:0 "§YNikolai Patrushev§! will become leader of the §ESiloviki§! faction."
+ russia.1035.c:0 "Alexander Bortnikov, head of the FSB"
+ make_bortnikov_siloviki_leader_tt:0 "§YAlexander Bortnikov§! will become leader of the §ESiloviki§! faction."
+
+ russia.1036.t:0 "The Coup D'état"
+ russia.1036.desc:0 "In a bloodless coup, FSB security forces stormed the Kremlin and arrested Vladimir Putin for 'anti-Russian activities'."
+ russia.1036.a:0 "Great news!"
+ russia.1036.tt:0 "This will end the §EUnited Russia, Divided Country§! mechanic."
+
+ russia.1037.t:0 "Putin Defunds The FSB"
+ russia.1037.desc:0 "Suspecting that some of his underlings may not be entirely loyal, Vladimir Putin has set about securing his position. In his most recent move, he defunded several FSB agencies, redirecting their funds to organisations he believes to be more loyal to him."
+ russia.1037.a:0 "We need to react somehow"
+
+ russia.1038.t:0 "Putin Empowers Technocrats"
+ russia.1038.desc:0 "Likely distrusting parts of his old guard, Vladimir Putin has been listening more and more to people belonging to the more reformist 'technocrat' faction. Given that these people are defined by their anti-corruption stances and wish to see Putin as the head of state, getting them onto our side is all but impossible."
+ russia.1038.a:0 "Ok"
+
+ russia.1039.t:0 "[UKR.GetLeader] Killed!"
+ russia.1039.desc:0 "As part of our special military operation, our elite forces went into Kiev ahead of our main army, tasked with killing Ukrainian President [UKR.GetLeader], with which they have succeeded. Ukrainian morale is low, and government infighting only helps our troops on the ground."
+ russia.1039.a:0 "Mission accomplished!"
+
+ russia.1040.t:0 "The Fate Of Ukraine"
+ russia.1040.desc:0 "With victory imminent, the question of how to administer Ukraine has come up. In the halls of the Kremlin there are two main factions.\n\nOne side argues that it should be directly incorporated into Russia, as doing so would help eliminate the notions of Ukraine being a separate state from Russia, as well as appease nationalist factions within our government. Doing this would likely help in administrating it, as it would allow our internal security forces to have greater control over the territory than they would if it were a seperate country, although it would make us even more unpopular with the west.\n\nThe other faction suggests installing a puppet regime in Kiev, arguing that it would give legitimacy to our claims of 'respecting our brother nation', as well as reduce overall opposition."
+ russia.1040.a:0 "We should annex it outright"
+ russia.1040.b:0 "Give most of it to a local government"
+
+ russia.1041.t:0 "Mobilisation"
+ russia.1041.desc:0 "In face of continued setbacks during the special military operation, [ROOT.GetLeader] has announced a so called 'partial mobilisation'. In it, he claims that only reservists will be called up for service, although many report that people who are unfit for service have already started being drafted."
+ russia.1041.a:0 "But I thought the SMO was all going to plan?"
+
+ russia.1042.t:0 "Aftermath Of The Mobilisation"
+ russia.1042.desc:0 "After the mobilisation, Russia has been swept by protests even more extensive than those that happened at the start of the SMO. But that is not what keeps [ROOT.GetLeader] up at night.\n\nHundreds of thousands of Russians, mostly young men, have fled the country, mostly for Kazakhstan, Turkey and Georgia. Given that these men are some of Russia's most productive, it would seems that the mobilisation has not gone to plan in the slightest."
+ russia.1042.a:0 "Do they want to see us lose?"
+
+# russia.1043 is hidden event that causes frontlines to solidify
+
+ russia.1044.t:0 "Struggles In The North"
+ russia.1044.desc:0 "Despite global media coverage of the build up of our troops on the Ukrainian border over for the solid part of a year, we continued to insist that they were simple troop exercises to the world, and to our troops. This was to maintain secrecy about our true intentions, but this approach has backfired horrendously.\n\nWhile stationed in Belarus, many of our troops sold off vital equipment and supplies, and were given only a day or two's notice about the invasion, too little to undo the damage. As a result, our northern thrust has spluttered and ground to a halt."
+ russia.1044.a:0 "Oh"
+
+ russia.1045.t:0 "A Harsh War"
+ russia.1045.desc:0 "With both sides unable to get a decisive victory, the war seems to be becoming a drawn-out conflict."
+ russia.1045.a:0 "Ok"
+
+ russia.1046.t:0 "Withdrawing From The Northern Front?"
+ russia.1046.desc:0 "With the war becoming more prolonged that we hoped and our northern front becoming a global laughing stock, many advise president [ROOT.GetLeader] to withdraw the troops in the north to Donbass, to help us focus on that front instead."
+ russia.1046.a:0 "It is necessary for our success"
+ russia.1046.b:0 "Never!"
+
+ russia.1047.t:0 "On The Unity Of Russians And Ukrainians"
+ russia.1047.desc:0 "Today, the office of the president of Russia has put out a new essay written by Vladimir Putin, titles 'On the historical unity of Russians and Ukrainians'. In the essay, Putin claims that the fates of Russians and Ukrainians are interlocked, as we are but one people. Putin also brings into question Ukraine's sovereignty, and 'right to exist as a nation', as he sees Ukraine as and artificial creation of the Bolsheviks. He also claims that the government of Ukraine is one of globalist Banderites, who oppress the ethnic Russians in the east as part of a 'western anti-Russia project'. As such, he ends the essay with highlighting how it is not only a right, but a necessity for Russia to interfere, and perhaps intervene directly in Ukrainian affairs, and to take what is rightfully ours."
+ russia.1047.a:0 "An interesting read"
+
+ russia.1048.t:0 "Western Sanctions"
+ russia.1048.desc:0 "As a response to our invasion of 'sovereign' Ukraine, the west has imposed sanctions on Russia, notably disconnecting us from SWIFT and cracking down on our ability to import certain goods for the production of arms. While they are not believed to be so harsh as to cause and immediate collapse of society and the government, left unchecked most economists believed they will have serious long-term consequences for us."
+ russia.1048.a:0 "It will hurt them more than it will hurt us!"
+ russia.1048.tt:0 "Modify §YSanctioned Economy§! by:\nMonthly §YInflation§!: §R+0.08%§!\nExpected number of factories put on Consumer Goods: §Y+5.0%§!\n£prod_eff_cap  Production Efficiency Cap: §R-35.00%§!\nWeekly Stability: §R-0.10%§!"
+
+ russia.1049.t:0 "Emergency Meeting In The Central Bank"
+ russia.1049.desc:0 "In response to the new western sanctions imposed on our country, bureaucrats in the economic sector have been scrambling to prevent a major economic collapse. They have come to [ROOT.GetLeader] with a plan, whereby they would try to use any means necessary to acquire western currencies and more reserve funds. This plan would help alleviate some short-term consequences, but cannot be sustained forever."
+ russia.1049.a:0 "Anything to help the economy"
+ russia.1049.b:0 "Bah! Why so much fuss over some sanctions"
+
+ russia.1050.t:0 "The [GetYear] Sochi Grand Prix"
+ russia.1050.desc:0 "After the Sochi Winter Olympics, the Russian government has decided to use the sporting facilities for other purposes, with the most notable being the Sochi Autodrom, which is now used to host the annual Sochi Grand Prix.\n\nThe Sochi Autodrom is a 5.848 km long track that features 18 turns and several long straights. The track is known for its high-speed corners and long straights, which provide plenty of opportunities for overtaking. The Russian Grand Prix is usually held in late September or early October, and it is one of the last races of the season. The race attracts a large number of fans from all over the world, who come to witness the high-speed action and the intense competition between the drivers. The Russian Grand Prix is known for its spectacular opening ceremony, which features a parade of Russian cultural icons and a display of fireworks. The race itself is always exciting, with drivers pushing their cars to the limit in an attempt to win the race and score valuable championship points.\n\nOverall, the Russian Grand Prix is a thrilling and exciting event that attracts fans from all over the world. With its high-speed corners, long straights, and intense competition, it is a must-see event for any Formula One fan."
+ russia.1050.a:0 "May the best driver win!"
+
+ russia.1051.t:0 "Out With A Whimper, Not A Bang"
+ russia.1051.desc:0 "Decades ago, the Russian people stood up to their oppressive government and chose democracy, freedom and liberty. Now, once again, Russia descends into tyranny.\n\nThe Duma earlier today voted overwhelmingly for a bill that would do away with themselves and the Federation Council, putting all power in the hands of the Security Council and the president, [SOV.GetLeader]. Some protests have hit the streets, but for most Russians, this was hardly considered front-page news.\n\nA new dawn rises in Russia, one of centralised power and tyranny..."
+ russia.1051.a:0 "And nobody seemed to care"
+
+ russia.1052.t:0 "Conversations About The Important"
+ russia.1052.desc:0 "Years had passed since the first 'conversations about the important' lessons were taught in schools. Many parents had pleaded with their kids not to pay attention during them, and that they would feed them awful ideas. Some listened to their parents, most didn't.\n\nNow, it was time for the children to become the teachers. They were instructed by their teachers to go home and hang a picture of Putin on their walls, and to instruct their parents to do the same. Any parent who refused to do so, the teacher said, should be reported to the police for unpatriotic activities."
+ russia.1052.a:0 "Glory to Putin, the leader of all Rus'!"
+
+ russia.1053.t:0 "Fate Of The Trade Unions"
+ russia.1053.desc:0 "Ironically, the Soviet Union never had strong unions, as why would one need unions in the workers paradise? As such, the Russia of today inherited a culture of indifference when it came to unionisation and workers' rights, as although the workers were in theory able to form free trade unions, in practice any serious attempt to by the workers to challenge their overlords was put down harshly, like most things in modern Russia.\n\nTimes are different now. As Putin builds a great Russia, it is time to change the law to not only better reflect the situation on the ground, but to also give the government more powers in dealing with unruly labour."
+ russia.1053.a:0 "Form government-sponsored trade unions"
+ russia.1053.b:0 "Ban them outright"
+
+ russia.1054.t:0 "Oil Revenues Collapse"
+ russia.1054.desc:0 "Due to the west's oil price cap, we have been forced to sell our oil at greatly discounted prices to other countries, notably India and China. Despite being nominal allies, they are well aware of our dire situation, and have taken full advantage. Due to the heavily one-sided nature of these deals, oil profits are down by approximately 80%."
+ russia.1054.a:0 "More bad news"
+
+#russia.1055 is hidden event that causes russia.1056 to trigger
+
+ russia.1056.t:0 "Recognising The People's Republics"
+ russia.1056.desc:0 "With our troops on the border, Putin has convened the Security council, whereby all have agreed to recognise the independence of the Donbass People's republics."
+ russia.1056.a:0 "Everything is falling into place"
+
+ russia.1057.t:0 "Withdrawing from Ukraine"
+ russia.1057.desc:0 "With the last of our troops pushed out of Crimea, the war seems to be over. Any chances of total victory have gone, and all that we can do now is leave on our terms."
+ russia.1057.a:0 "It's over"
+ russia.1057.b:0 "Never - One more push!"
+
+ russia.1058.t:0 "Everything Has Changed..."
+ russia.1058.desc:0 "One of Putin's main pillars of support, and one of the main ideas of his cult of personality is the notion that he lifted Russia from poverty, and transformed Russia into a thriving nation equal to, if not surpassing the west. And that's all this is really - an idea.\n\nIn truth, Vladimir Putin simply replaced Yeltsin's oligarchs with his own, to disastrous effect for the Russian people. Half of Russia's already middling GDP is stored outside of the country, and what remains inside is concentrated in the hands of a few wealthy and powerful men. About a fifth of all Russians live under the poverty line, and many of the rural areas are without proper water, sewage and heating systems. Most live paycheck to paycheck, unable to make ends meet.\n\nMeanwhile, the supposed 'Saviour of Russia' relaxes in his Black Sea mansion, reading whatever report a lackey of his put on his desk that morning."
+ russia.1058.a:0 "...Just for nothing to change"
+
+ russia.1059.t:0 "Don't Call Him Dimon"
+ russia.1059.desc:0 "'Don't call him Dimon' is a 10-part documentary created by Alexei Navalny's anti-corruption foundation, accusing Dmitry Medvedev of embezzling an estimated $1.2 billion. In it, the documentary delves into the intricacies of how Medvedev was able to acquire these funds as well as how he laundered them through his friends and many private firms.\n\nThe video has been viewed millions of times already at a time when Medvedev is extremely unpopular, even according to official state polls."
+ russia.1059.a:0 "Bah! Fake news!"
+ russia.1059.b:0 "Unsurprising, unfortunately"
+
+ russia.1060.t:0 "New Russia, New Anthem"
+ russia.1060.desc:0 "Shortly after becoming the President, Vladimir Putin changed the unpopular anthem of Yeltsin's Russia with a rewritten version of the Soviet anthem, which only served to boost his popularity among those who remembered the Union fondly. But the Russia of [GetYear] is unfathomably different to the Russia of the early 2000s, let alone the Russia of a few years ago - thus, Russia is to get a new anthem.\n\nAfter much deliberation, the new anthem is to keep the beat of the Soviet one, but with new lyrics, depicting our great leader in all of his eternal glory!"
+ russia.1060.a:0 "Putin nash velikiy vozhd' vsey Rusi..."
+
+ russia.1061.t:0 "Raspizdyaystvo"
+ russia.1061.desc:0 "Over the past 25 or so years, Putin has been able to strip the Russian people of their rights, their power, their wallets, and nobody batted an eye.\n\nPutin invaded several countries, isolating Russia and destroying her economy, and nobody batted an eye.\n\nWhy was this? If you were to ask Putin, it was because they loved him. Because he was a great man of history, and that ordinary Russians knew without him, they would be living in destitute. But after Putin's total consolidation of power, not much changed. There was no mass sense of patriotism, pride and admiration for one's leader. There was just indifference. People went to work and carried on their lives like nothing had happened, leaving Putin to wonder..."
+ russia.1061.a:0 "Do they not love their leader?"
+ russia.1061.tt:0 "Modify §YRaspizdyaystvo§! by\nDaily Political Power Cost: §R+0.30§!"
+
+ russia.1062.t:0 "Prigozhin's Request"
+ russia.1062.desc:0 "With the Special Military Operation struggling to achieve it's objectives, Yevgeny Prigozhin's Wagner have helped to provide a small and elite fighting force in Donbass, while helping to obscure our casualty figures form the public. Today, Prigozhin has come to Putin with a new request - to allow Wagner to swell their ranks by recruiting prison convicts with the promise of freedom after 6 months at the front. Doing so would allow us to empty our prisons while bolstering our foces, although doing so is almost certain to have unforseen military and political ramifications, some good, some bad."
+ russia.1062.a:0 "An excellent suggestion"
+ russia.1062.b:0 "The MoD is competent enough to win alone"
+
+ russia.1063.t:0 "Gazprom Security Forces"
+ russia.1063.desc:0 "In response to Wagner's growing popularity and profitability, many other PMCs have tried their hand at helping us in the war. Today, Gazprom officials have approached [SOV.GetLeader] with a request to bolster Gazprom's security forces and send them to Ukraine. Officially they would be there to guard assets, although in practice they would be another PMC. With Gazprom being Russia's largest company and Putin's personal cash cow, allowing this would challenge Prigozhin's effective monopoly over PMCs in Ukraine."
+ russia.1063.a:0 "We don't want Prigozhin getting too powerful"
+ russia.1063.b:0 "Wagner is doing fine"
+
+ SOV_move_towards_wagner_rebellion_tt:0 "§RThis will further divide the army and anger Prigozhin.§!"
+ SOV_wagner_is_not_on_the_road_tt:0 "§GCrisis will be avoided, for now...§!"
+
+ russia.1064.t:0 "Prigozhin Slates The MoD"
+ russia.1064.desc:0 "In a viral video, Yevgeny Prigozhin has lashed out against percieved incompetence by the MoD, claiming to have a 70% shortage of artillery shells, garnering him support among many nationalists and soldiers who are looking for someone to blame for our apparant failures. This level of infighting among the elites is nothing new, although it's publicity most certainly is. Allowing them to fight like this in the future, with public outbursts and statements may lead to the issue resolving on it's own as well as taking the blame off of Putin, although it could also have drastic consequences."
+ russia.1064.a:0 "Keep them divided, let's see what happens"
+ russia.1064.b:0 "Get Prigozhin in line NOW!"
+ russia.1064.tt:0 "§YYevgeny Prigozhin§! will switch to and become the leader of the §FNationalist§! faction."
+
+ russia.1065.t:0 "Shoigu's Announcement"
+ russia.1065.desc:0 "As part of a thinly veiled attack at Yevgeny Prigozhin and his Wagner group, defence minister Sergei Shoigu has announded that all private contracters are to be integrated into the MoD within two months."
+ russia.1065.a:0 "Ok"
+ 
+ russia.1066.t:0 "The March Of Justice"
+ russia.1066.desc:0 "After supposedly being attacked by MoD forces, Yevgeny Prigozhin has declared war on the Ministry of Defence! He has taken his forces out of Ukraine and captured the city of Rostov-on-Don and has taken several members of the MoD as prisoners. A column of several thousand Wagner fighters is heading towards Moscow, as the world holds it's breath."
+ russia.1066.a:0 "Fuck"
+
+ russia.1067.t:0 "Putin's Address To The Nation"
+ russia.1067.desc:0 "As Wagner speeds towards Moscow at full steam, Vladimir Putin goes over his options. The first option is to give in. To fire Shoigu and Gerasimov, and give in to any and all of Prigozhin's demands. But for Putin, this is impossible. A man whose entire claim to power is being an untouchable, and more importantly an unchallengable autocrat.\n\nThe second option is to ignore them, for lack of a better word. Let them come to Moscow, but refuse any and all of their demands. Doing this would put the ball in Wagner's court, as they would be forced to fire upon their own countrymen should they try to achieve any of their goals.\n\nThe third and final option is the most likely - to demand that these mutineers be crushed and declare them public enemy number one."
+ russia.1067.a:0 "Let them come, we have nothing to fear"
+ russia.1067.b:0 "Demand they be crushed like ants!"
+
+ russia.1068.t:0 "A Deal Is Reached"
+ russia.1068.desc:0 "Hours before reaching Moscow, both sides have come to an agreement - Prigozhin is to go into exile in Belarus in return for the dropping of all charges, and Wagner soldiers will be offered amnesty for their actions."
+ russia.1068.a:0 "Thankfully that's over, for now at least"
+
+ russia.1069.t:0 "Prigozhin Killed"
+ russia.1069.desc:0 "Two months exactly after the mutiny, Yevgeny Prigozhin, Dmitry Uktin, Valeriy Chekalov and seven other top Wagner members have died in a plane crash in Tver oblast. For most people, what happened is pretty clear cut. [SOV.GetLeader] ordered Prigozhin to be killed, and his plane came tumbling down, likely due to an SAM missile system. For most, this represents the end to the Wagner saga, the end to all of it's twists and turns."
+ russia.1069.a:0 "Mission accomplished"
+ russia.1069.tt:0 "§YYevgeny Prigozhin§! and §YDmitry Utkin§! will die."
+
+ russia.1070.t:0 "The Battle Of Moscow"
+ russia.1070.desc:0 "For the first time in over a century, Russian blood has been split in Moscow during war. The situation has come to a point where neither side is willing to back down, and military engagements will decide the fate of the nation."
+ russia.1070.a:0 "God save Russia, for no one else can"
+ russia.1070.b:0 "Welcome to hell... (Play As Wagner)"
+
+ russia.1071.t:0 "Military Desertions"
+ russia.1071.desc:0 "A significant number of Wagner sympathizers within our military have deserted to join the Group's side, actively participating in hostilities against Russia."
+ russia.1071.a:0 "Traitors!"
+ russia.1071.b:0 "They have done the right thing."
+
+ russia.1072.t:0 "[SOV.GetLeader]'s Next Move"
+ russia.1072.desc:0 "As the situation within our nation becomes increasingly volatile, there is a growing division on whether [SOV.GetLeader] should stay in Moscow or attempt an escape via a plane.\n\nThis question holds profound implications for the future of our leadership and the direction of our nation. It is a decision that cannot be taken lightly, as it carries risks and possible deaths."
+ russia.1072.a:0 "I need a ride, not ammunition."
+ russia.1072.b:0 "Russia is not yet lost!"
+
+ russia.1073.t:0 "Problems At The Airport"
+ russia.1073.desc:0 "The attempt to transport President [SOV.GetLeader] to the airport for an escape via his jet has ended in disaster. The Wagner Group, intercepted the convoy and managed to capture President [SOV.GetLeader]."
+ russia.1073.a:0 "So, what now?"
+
+ russia.1074.t:0 "[SOV.GetLeader] Succesfully Escapes"
+ russia.1074.desc:0 "President [SOV.GetLeader] has successfully escaped from Moscow, evading capture by the Wagner Group and hostile forces.\n\nThe details of this operation are closely guarded, and the President's exact whereabouts remain confidential for security reasons."
+ russia.1074.a:0 "So, what now?"
+
+ russia.1075.t:0 "Military Desertions"
+ russia.1075.desc:0 "A second wave of military desertions is underway, fueled by growing discontent within our ranks. The perceived incompetence in dealing with the Wagner Group and the internal strife has further eroded confidence in our military leadership."
+ russia.1075.a:0 "NO!"
+ russia.1075.b:0 "Nothing stands in our way."
+
+ russia.1076.t:0 "Vladimir Putin Released"
+ russia.1076.desc:0 "President Vladimir Putin has been released from captivity and has returned to Moscow. During his captivity, he was compelled to take decisive action to reform the Ministry of Defense. As a result, he has initiated sweeping changes, including the removal of key figures like Shoigu and Gerasimov, in a bid to restructure Russia's military strategy."
+ russia.1076.a:0 "Atleast He's alive."
+ full_high_command_reforms_tt_2:0 "In 50 days:\n\n"
+ full_high_command_reforms_tt:0 "Modify §YRaspizdyaystvo§! by\nDaily Political Power Cost: §G-0.8§!\nDivision Attrition: §G-0.02%§!\nAir Accidents Chance: §G-0.06%§!\nExpected number of factories put on Consumer Goods: §Y-0.10%§!\nDivision Recovery Rate: §G+0.06%§!\nDivision Attack: §G+0.05%§!\nDivision Defense: §G+0.05%§!\nResearch Speed: §G+0.15%§!\nAgency upgrade time: §G-0.80%§!\nSupply Range: §G+0.12%§!\nAir Doctrine Cost: §G-0.35%§!\nLand Doctrine Cost: §G-0.35%§!\nNaval Doctrine Cost: §G-0.35%§!\nPolitical Advisor Cost: §G-0.10%§!\nRetire §YSergei Shoigu§! from §YRussian Federation§!\nRetire §YValery Gerasimov§! from §YRussian Federation§!\nRetire §YYevgeny Nikiforov§! from §YRussian Federation§!\nRetire §YSergey Kuzovlev§! from §YRussian Federation§!\nRetire §YRustam Muradov§! from §YRussian Federation§!"
+
+ russia.1077.t:0 "High Command Reformed"
+ russia.1077.desc:0 "After a rigorous and lengthy process, the high command has been successfully reformed. The changes in leadership, strategy, and coordination have been undertaken to enhance our military effectiveness and efficiency."
+ russia.1077.a:0 "Good."
+
+ russia.1078.t:0 "Wagner Forces"
+ russia.1078.desc:0 "With the recent passing of Yevgeny Prigozhin, an opportunity has arisen for Russia to assert control over the Wagner Group. The vacuum in leadership and the need for stability have prompted us to implement a significant change.\n\nIn this vein, we have initiated a program to have all Wagner forces sign an oath of allegiance to the Russian state. This measure is intended to integrate the Wagner Group more closely with our national interests and ensure their alignment with our objectives."
+ russia.1078.a:0 "They won't be a problem anymore."
+ russia.1078.tt:0 "Some §YWagnerites§! will return to the frontlines."
+
+ russia.1079.t:0 "Cleaning House"
+ russia.1079.desc:0 "As expected, our coup d'état drew much backlash from both the public and elites. There have been protests in the streets by supporters of Putin, and many members of United Russia were initially quite vocal in their opposition to us. However, one by one, they fell into line. As for the public, well we know how do deal with those..."
+ russia.1079.a:0 "They won't be a problem anymore."
+
+ russia.1080.t:0 "Strelkov Returns From Donbass"
+ russia.1080.desc:0 "Serving as defence minister of the DNR, Igor Girkin, also known by his alias 'Strelkov', has become a popular face amongst nationalist and pro-Donbass circles within Russia. Known for being a cunning commander, Strelkov lead his forces in Donbass to many victories.\n\nHowever, Strelkov the past several weeks have seen rumours circulate about his health and about his future in Donbass. Strelkov has become known world-wide as the man behind the downing of MH-17 and known among the more nationalistic parts of Russia for disagreeing with the Kremlin about what the future of the Donbass people's republics should be. This culminated in him being dismissed as defence minister, where he has returned home to Russia with a mixed reception. Some view him as a great war hero, cementing Russia's place in the world, whereas others view him as a brute, and a loose cannon."
+ russia.1080.a:0 "A modern war hero!"
+ russia.1080.b:0 "Best to keep an eye on him"
+
+ russia.1081.t:0 "The Fate Of [?SOV.SOV_general_to_be_purged.GetName]"
+ russia.1081.desc:0 "As part of our attempts so secure loyalty to our new regime, we have begun to look back to Putin's military appointments and see which of them are required going forward, and which ones may pose a threat to our regime in the future.\n\nToday, a file containing all neccessary information about [?SOV.SOV_general_to_be_purged.GetName] has arrived on the desk of [SOV.GetLeader], and it is up to him to decide the future of [?SOV.SOV_general_to_be_purged.GetName] within the armed forces."
+ russia.1081.a:0 "He has to go"
+ russia.1081.b:0 "His knowledge is too useful to us"
+
+ russia.1082.t:0 "Anti-Corruption Raids"
+ russia.1082.desc:0 "Corruption within Yedínaya Rossíya has been an open secret for years now, and many people within the country wish to see it eradicated from politics. This gives us a great opportunity to instruct the police forces under our control to launch investigations and arrests against members of Yedínaya Rossíya of whom we wish to dispatch of, although there is some conflict over how far these raids should go. Some wish for a small anti-corruption purge, only targeting the most unpopular and corrupt, and importantly the most loyal to Putin. Some however, believe no expense should be spared in the raids, lest somebody who could pose a threat to our rule slip through the cracks."
+ russia.1082.a:0 "Try and keep the raids to a minimum"
+ russia.1082.b:0 "Get rid of them all"
+
+ russia.1083.t:0 "Enemies Of Russia"
+ russia.1083.desc:0 "Despite it being months after the coup, many Russians were still worried and anxious about their future. Sensing opportunity, [SOV.GetLeader] made an appearance on Russian state television tonight, talking about Russia's outside threats.\n\n'We have many strengths, but we also have many enemies who seek to weaken Russia,' [SOV.GetLeader] opened with, 'and part of the reason we have had to detain Putin was his inability to deal with them correctly. I mean, the Anglo-Saxon world order has turned our Ukrainian brothers into a Neo-Nazi state, a cannon ponted at the heart of Russia, as well as launching an economic and propaganda war against us - and he chooses to try and play friendly with them!'\n\nThe host of the show asked him 'But many at home believed Putin was doing a good job fighting the collective west's attempts to weaken Russia, what do you plan to do differently than him?'\n\n'Putin and his cronies were far more concerned with lining their own pockets than with the safety of the Russian Federation, and allowed many enemies into our security apparatus. But don't worry, they are already being dealt with.'"
+ russia.1083.a:0 "'We will keep you safe'"
+
+ russia.1084.t:0 "[SOV.GetLeader]'s Leadership"
+ russia.1084.desc:0 "With the Silovk control over Russia secured, [SOV.GetLeader] is faced with what style of leadership is going to be going forward. Many of his subordinates could be plotting against him, but any moves against them could only lead to his downfall, a self-fufilling prophecy. But, by having subordinates voice their concerns and giving them autonomy, a counter-coup could be avoided."
+ russia.1084.a:0 "Surrounding oneself with yes-men has never worked well."
+ russia.1084.b:0 "Internal instability and dissent will only weaken Russia"
+
+ russia.1085.t:0 "Patriots From A Young Age"
+ russia.1085.desc:0 "With our enemies on all sides, [SOV.GetLeader] has made the announcement of 'Patriotic lessons' in schools across Russia. The children of Russia are set to learn about the greatness and uniqueness of our country, and are expected to understand, that if it comes to it, they must give their lives for Russia.\n\nDespite some critisisms, most schools are willing to follow the government's orders, out of fear of what happens if they don't."
+ russia.1085.a:0 "They learn from heroes so one day they may become heroes!"
+
+ russia.1086.t:0 "NATO Expansion"
+ russia.1086.desc:0 "Today began as any normal day would. Ordinary Russians went to work and though no differently of today than they had yesterday, and that was no different from the Russians who work at the state-owned media companies. Or at least, so it was until they opened their e-mails. As of today, they were informed, they were to amp up the jingoism. Various stories had all been provided to them about NATO biolabs, about genocide in Donbass, about Satanistic cults, all with various seemingly credible yet untracable sources.\n\nTonight ended as any normal day would. Millions of Russians came home from work, met their families, had dinner and sat down to watch the news, as one does. But tonight, something new was going on. On every channel was a story about the evils of NATO and the Kiev regime, about the destruction of Christian values, the oppression of Russian speakers and the decline of the west.\n\nTomorrow was the same story. As was the day after that. And the day after that. Until one by one, millions of Russians thought, almost in unison-"
+ russia.1086.a:0 "We must stop this madness, it is our right!"
+
+ russia.1087.t:0 "[SOV.GetNameDefCap] Demands Our Subjugation!"
+ russia.1087.desc:0 "After months of increased troop build up on our shared border, [SOV.GetNameCap] has demanded that we cease the so-called 'oppression of Russian speakers' within our territories, and that they are ready to take any action neccessary to secure rights for Russian speakers. This of course, is just a thinly veiled threat. It is clear that the expansionist government in [SOV.Capital.GetCapitalVictoryPointName] has desires on our territory, and we must respond with caution."
+ russia.1087.a:0 "We must submit to any demands they wish to"
+ russia.1087.b:0 "Perhaps a change of government was in order anyway"
+ russia.1087.c:0 "They can go fuck themselves"
+
+ russia.1088.t:0 "[FROM.GetName] Submits"
+ russia.1088.desc:0 "The government in [FROM.Capital.GetCapitalVictoryPointName] has caved to our pressure and allowed Russian peacekeepers into their territories, giving us almost total control over their country."
+ russia.1088.a:0 "As expected"
+
+ russia.1089.t:0 "[FROM.GetName] Agrees To A Change In Government"
+ russia.1089.desc:0 "The government in [FROM.Capital.GetCapitalVictoryPointName] has caved to our pressure and has changed their government to be more aligned with our own."
+ russia.1089.a:0 "As expected"
+
+ russia.1090.t:0 "[FROM.GetName] Ceases All Diplomacy"
+ russia.1090.desc:0 "The government in [FROM.Capital.GetCapitalVictoryPointName] has gone to the UN and exposed our totally reasonable demands to the public, claiming us to be unjust and bloodthirsty warmongers. World leaders watch our every step, and both nations seem poised for war."
+ russia.1090.a:0 "Who does [FROM.GetLeader] think he is?"
+ russia.1090.b:0 "It's not worth the hassle"
+
+ russia.1091.t:0 "After Action Report: Success"
+ russia.1091.desc:0 "Good news hit the desk of [ROOT.GetLeader] today, as our daring plan to cross into NATO airspace in Poland today went off without a hitch. Three helicopters crossed the border from Kaliningrad into Poland, flying over civilian areas and taking reconnaissance of any military activity in the area.\n\nUnsurprisingly, the west has launched a diplomatic uproar over it, although anything other than meanly-worded letters seems unlikely."
+ russia.1091.a:0 "The decadent west truly is a paper tiger!"
+
+ russia.1092.t:0 "After Action Report: Failure"
+ russia.1092.desc:0 "After spending several hours too many in Polish airspace, one of the helicopters sent on the mission across the border was shot down by NATO air defences. NATO article 4 has been convened due to the incident, though we were smart enough to make sure no documents officially tying the men onboard the helicopters to the Russian military. Despite the west not taking any military action over the response, it would seem we have over-estimated our advantage over the west. Slightly."
+ russia.1092.a:0 "At least two made it out"
+
+ russia.1093.t:0 "The Trial Of Vladimir Putin"
+ russia.1093.desc:0 "It had been weeks since the coup d'état, and Vladimir Putin still couldn't quite believe it. For years now, he was in the eyes of most the most powerful and untouchable man in the world, and yet it seemed so long ago.\n\n'The people loved me,' he thought to himself in his cell, 'how did I let the bastards do this to me. Why haven't the people freed me yet? Did... they not love me?'\n\nPerhaps then he realised, that most Russians in fact did not love him as much as they say. They liked the stability, aura and strength he presented, and now that people who matched him in those aspects were in power, most Russians were ready to let him be thrown to the dogs, forgotten as just another Russian dictator to the history books. Not as Putin the great, not as Putin the conqueror, but just as Vladimir Vladimirovich Putin.\n\nThe day after he was woken up by his guard. He was escorted out of his cell and put in a suit. Putin already knew what was coming. He knew it would come eventually, and yet it it still seemed unreal how quickly it had all happened. He was driven to the Moscow City Court to a mass of media press. He knew what was going on. They were going to make an example of him, show to the world that anyone who stands in their way will meet the same fate he is about to meet. He smirked to himself - he would've done the exact same thing.\n\nIn the courtroom, the media cameras followed Putin like vultures following a lost, lonely wanderer in the desert. The judge stood. 'We are gathered here today for the case of Vladimir Vladimirovich Putin versus the state. For the crimes of corruption, bribery and high treason, how does the defendant plead?'"
+ russia.1093.a:0 "Not Guilty!"
+
+ russia.1094.t:0 "Dedovshchina"
+ russia.1094.desc:0 "Twice every year, hundreds of thousands of yound Russian men get called up for the army for a year of service. They are promised great service to the motherland, the finest equipment and training, but like much of Russia, this is blatently false. Many new conscripts in the army are beaten and abused by their superiors and get given the old Kalashnikovs that the last poor bastard in their position was given, if they are lucky.\n\nFor the next twelve months of their lives, they are expected to follow whatever bizzare orders their commander may give to them, usually some form of degrading physical labour in service of some local oligarch."
+ russia.1094.a:0 "Same old, same old"
+ russia.1094.tt:0 "Modify §YRaspizdyaystvo§! by:\nExpected number of factories put on Consumer Goods: §Y+3.0%§!"
+
+ russia.1095.t:0 "The Status Of Ukraine"
+ russia.1095.desc:0 "As we prepare for our war to reconquer our lost territories, the question arises about what to do with Ukraine? Whilst invading it seems like the obvious ideological choice and shouldn't be too hard, it would undoubtedly stretch our supply lines and the front to the point where other parts of the sector are dangerously undermanned."
+ russia.1095.a:0 "Every inch we lost in 1991 must be avenged!"
+ russia_invade_ukraine_when_focus_done_tt:0 "Upon entering a state of war with the NATO bloc, we will launch a surprise invasion of Ukraine"
+ russia.1095.b:0 "Better to leave them neutral"
+
+ russia.1096.t:0 "The Status Of Moldova"
+ russia.1096.desc:0 "As we prepare for our war to reconquer our lost territories, the question arises about what to do with Moldova? Whilst invading it seems like the obvious ideological choice and shouldn't be too hard, it would undoubtedly stretch our supply lines and the front to the point where other parts of the sector are dangerously undermanned."
+ russia.1096.a:0 "Every inch we lost in 1991 must be avenged!"
+ russia_invade_moldova_when_focus_done_tt:0 "Upon entering a state of war with the NATO bloc, we will launch a surprise invasion of Moldova"
+ russia.1096.b:0 "Better to leave them neutral"
+
+ # russia.1097 is trigger for angry patriots focus
+
+ russia.1098.t:0 "Girkin's Influence Grows In The FSB"
+ russia.1098.desc:0 "As a former FSB agent, Igor Girkin has many friends and Contacts within the FSB. While this is to be expected, it would seem that Girkin is using these connections to prevent any issues with the authorities and evade punishment for critiquing our government - allowing him to say much more in public than almost anyone else within the country.\n\nAlthough not a major issue, it is something for [SOV.GetLeader] to be aware of, in case Girkin gets any funny ideas."
+ russia.1098.a:0 "Eh, who cares?"
+ russia.1098.b:0 "Crack down on it at once"
+
+ russia.1099.t:0 "The Club Of Angry Patriots"
+ russia.1099.desc:0 "In response to our lackluster performance in the SMO, Igor Girkin, Pavel Gubarev, Maxim Kalashnikov and others have come together to create the 'Club of Angry Patriots', a group that criticizes the MoD for percieved corruption and incompetence in their conduct of the Special Military Operation. It also calls for the total mobilisation of Russian society for the war effort and holds many other Russian nationalist values.\n\nPresident of the DNR Denis Pushilin has criticized Girkin for this move, accusing him of plotting a coup d'état against our government, accusations Girkin strongly denies."
+ russia.1099.a:0 "Girkin has gone too far! Arrest him!"
+ russia.1099.b:0 "A great initiative!"
+
+ russia.1100.t:0 "The March Of The Patriots"
+ russia.1100.desc:0 "Today, unexpected news has reached the furthest corners of Russia and the world - Igor Girkin has declared war on the Russian MoD!\n\nIn his address he called out Sergey Shoigu for his corruption and incompotence, but importantly also called out Putin - 'A lot of empty talk, the minimum of action and the utter lack of responsibility for failures - that is Putin's governance of late. He has proven himself to be unfit to rule Russia over and over again'.\n\nThe world holds it's breath..."
+ russia.1100.a:0 "The people rise for Strelkov!"
+
+ russia.1101.t:0 "Troops defect to our cause"
+ russia.1101.desc:0 "Dissatisfied with our government's incompetence and lack of will to win the SMO, many troops have turned on their commanders and joined our ranks!"
+ russia.1101.a:0 "Our strength grows!"
+
+ russia.1102.t:0 "Putin's Plane Shot Down!"
+ russia.1102.desc:0 "The orchestra has reached it's crescendo, with Girkin able to call in some of his FSB connections to take down a plane over Tver region with an S-300 SAM system, no questions asked. As the plane came tumbling to the ground, global media picked up on it's make in horror - It was an Ilyushin II-96-300PU, callsign 'RSD' - belonging to the President of Russia.\nTheories spread like wildfire about whether it in fact belonging to Putin, all the while Girkin's forces took over key areas in Moscow and St. Petersburg"
+ russia.1102.a:0 "Now what?"
+
+ russia.1103.t:0 "[THIS.GetName] Arrested"
+ russia.1103.desc:0 "Our search for [THIS.GetName] have come back positive, and [THIS.GetName] has been brought into police custody in Zabaykalsky Krai, trying to cross the border into China. Moscow authorities have been contacting their counterparts in Chita for the quick transport of [THIS.GetName] to FSB headquarters in Moscow, where [THIS.GetSheHe] will be brought in for interrogation."
+ russia.1103.a:0 "Great news!"
+
+ russia.1104.t:0 "[THIS.GetName] Has Fled The Country"
+ russia.1104.desc:0 "In an unfortunate turn of events, [THIS.GetName] is believed to have fled into exile in Saudi Arabia, taking a not inconsiderable amount of state funds with [THIS.GetHerHim]."
+ russia.1104.a:0 "Shame"
+ russia.1104.b:0 "It is what it is"
+
+ russia.1105.t:0 "[THIS.GetName] Found Dead"
+ russia.1105.desc:0 "Upon breaching teh household we suspected [THIS.GetName] to be at, FSB agents were shocked to find [THIS.GetName] dead at the scene. The believed cause of death is suicide via gunshot, though investigators haven't ruled out the possibility of foul play just yet."
+ russia.1105.a:0 "Shame we couldn't get the bastard first"
+
+ russia.1106.t:0 "No Signs Of [THIS.GetName]"
+ russia.1106.desc:0 "It would appear that our attempts to track down [THIS.GetName] have been unsuccessful. We have turned over every corner of Russia in the search for [THIS.GetHerHim], with disappointing results. The only good news of this is that it likely means [THIS.GetSheHe] is not trying to reach out to any of [THIS.GetHerHis] old acquaintances in any serious capacity, though only time will tell if this assessment is accurate."
+ russia.1106.a:0 "Shit"
+
+ russia.1107.t:0 "Increase Troop Deployments In Transnistria?"
+ russia.1107.desc:0 "When the guns fell silent after the Transnistrian war of 1992, the 14th Guards Army of the Russian Federation was sent to 'maintain order' until a solution could be found. Needless to say, one hasn't.\n\nNearly three decades later, the amount of troops garrisoning Transnistria remains the same - around six thousand. With Moldova, Ukraine and Romania all a lot stronger than they were in 1992 and more western-leaning, [SOV.GetLeader] has a choice - send more troops to 'keep the peace', or to maintain the status quo in Transnistria and not dig up old graves."
+ russia.1107.a:0 "It only makes sense to strengthen our presence there"
+ russia.1107.b:0 "There is no need to"
+ russia_increases_troops_in_transnistria:0 "Troop Deployments In Transnistria"
+
+ russia.1108.t:0 "[SOV.GetLeader] Demands Our Entry Into The Special Military Operation!"
+ russia.1108.desc:0 "[SOV.GetLeader] has sent a formal delegation to our country, demanding our entry into their so-called 'Special Military Operation'. Despite our best efforts, this is not a question we can avoid for much longer - what should our response be?"
+ russia.1108.a:0 "We knew this would happen eventually..."
+ russia.1108.b:0 "Idzi nachier!"
+ belarus_joined_smo:0 "Belarus Joined The SMO"
+
+ russia.1109.t:0 "Friends In Europe"
+ russia.1109.desc:0 "Great news from our agents in Europe! We have reached out to many far-right and far-left parties within the EU, and most seem willing to co-operate in the destruction of American hegemony on the continent. Neoliberalism shall crumble like the false god it is!"
+ russia.1109.a:0 "It's all coming together..."
+ SOV_european_allies_tt_2:0 "Modify §YThe Siloviki State§! by:\nStarting Compliance: §G+8%§!"
+
+ russia.1110.t:0 "Pro-Russian Protests"
+ russia.1110.desc:0 "Over the past 24 hours, several cities within our country have been rocked by anti-government protests, demanding a more lenient policy towards [SOV.GetNameDef]. Security services have arrested several people involved with these 'protests', and have found significant financial links to the Kremlin."
+ russia.1110.a:0 "Of course Moscow is behind this"
+
+ russia.1111.t:0 "Increases To Military Spending?"
+ russia.1111.desc:0 "In preparation for our upcoming war against the western tyranny, some advisors to [ROOT.GetLeader] have suggested increases to military spending. They aregue that current expenditure is insufficient to fully conquer the NATO bloc, while others argue such a move is unnecessary and would only alert our enemies as to our next move."
+ russia.1111.a:0 "Such an increase is necessary"
+ russia.1111.b:0 "There is no need, the war will be won quickly"
+
+ russia.1112.t:0 "Red Sand"
+ russia.1112.desc:0 "As the Syrian civil war wages on, our soldiers have only gotten more cocky. More mercenaries are being sent into Syria to perform more dangerous tasks deeper in the Syrian desert, and are coming up on more fierce resistance.\n\nEarlier today, PMC Wagner mercenaries were ordered to take the stragicially important oil fields of Conoco Fields, where Syrian officials and Prigozhin had agreed to split the profits from their extraction as 'payment' for Wagner's assisstance. Wagner soldiers, assissted by several hundred Syrian troops launched their offensive on these oil fields earlier today expecting minimal resistance. It was at this point that a subordinate to General [SOV.get_russian_commander_in_syria] was rung up by an American counterpart of his.\n\n"We've got reconnaissance here that approximately five-hundred hostiles are approaching Conoco Fields. Are these your guys?"\n\nAs per official Russian state policy, the Russian liaison respnded simply and clearly.\n\n"No."\n\nUnbeknownst to the soldiers, these oil fields were guarded by the United States, who swiftly mobilised local air forces and artillery to rain down on the encroaching convoy. F-22s and an AC-130 circled the skies, firing upon anything that moved. Artillery turned the convoy into a fresh red mist, and within 15 minutes, it was over."
+ russia.1112.a:0 "We don't know them, they're not our guys."
+
+ russia.1113.t:0 "Politicians Arrested For Accepting Bribes"
+ russia.1113.desc:0 "In recent revalations, a group of politicians from [?ROOT.random_state_selected.GetName] have been exposed for accepting bribes from comanpies linked to Russian Oligarchs loyal to the Kremlin."
+ russia.1113.a:0 "Of course Moscow is behind this"
+
+ russia.1114.t:0 "Ukrainian Offensive in Kherson"
+ russia.1114.desc:0 "Ukrainian forces have launched a major offensive in the Kherson region, targeting the strategically important city of Kherson itself. The offensive has caught the Russian forces off guard and is making rapid progress."
+ russia.1114.b:0 "Stay and fight!"
+ russia.1114.a:0 "Regroup and withdraw!"
+ SOV_withdraw_tt:0 "§RWill be removed after withdrawing from state§!"
+
+ russia.1115.t:0 "The Future Of Warfare"
+ russia.1115.desc:0 "The era of conventional warfare is drawing to a close, as FPV drones and other autonomous systems begin to reshape the battlefield. These unmanned vehicles offer a number of advantages over their human-operated counterparts, including increased endurance, maneuverability, and precision. As a result, they are becoming increasingly important tools for both offense and defense."
+ russia.1115.a:0 "We must use them to our advantage!"
+
+ russia.1116.t:0 "[CHN.GetLeader] Questions Russian Leadership"
+ russia.1116.desc:0 "Chechen leader [CHN.GetLeader] has publicly questioned the Russian leadership's conduct of the war in Ukraine. In a Telegram post, [CHN.GetLeader] said that the Russian military has made mistakes and that he believes they will "draw the necessary conclusions." He also warned that if the Russian leadership does not make changes to its strategy in the next day or two, he will be forced to "contact the leadership of the Defense Ministry and the leadership of the country to explain the real situation on the ground.""
+ russia.1116.a:0 "Has he forgot his place?"
+
+ russia.1117.t:0 "Crackdown On Independent Media"
+ russia.1117.desc:0 "As our military continues its special military operation in Ukraine, the Kremlin is increasingly concerned about the spread of negative information about the war. One way the Kremlin is trying to control the narrative is by possibly suppressing and banning independent media outlets.\n\nIndependent media outlets have been reporting on the war in Ukraine from a variety of perspectives, including those that are critical of the Russian government."
+ russia.1117.a:0 "We must ban these western propagandists!"
+
+ russia.1118.t:0 "Second Raid On Belgorod"
+ russia.1118.desc:0 "The Freedom of Russia Legion and Russian Volunteer Corps, have announced that they have launched a second raid into Belgorod Oblast. The two groups claim that they have captured several Russian villages and towns, and that they are continuing to advance towards Belgorod, the region's capital city."
+ russia.1118.a:0 "We will crush these Ukrainian terrorists!"
+
+
+ russia.1119.t:0 "Raid On Belgorod"
+ russia.1119.desc:0 "The Freedom of Russia Legion and Russian Volunteer Corps, two anti-war groups based in Ukraine, launched a surprise raid into Belgorod Oblast. The raid, which commenced on [?global.date.GetDateStringNoHourLong], lasted only a day, but it caused significant damage and disruption within the region.\n\nThe two groups, equipped with tanks, armored vehicles, and light infantry, managed to briefly seize control of several villages and towns before being repelled by our brave forces."
+ russia.1119.a:0 "Let's hope they don't come back."
+
+ russia.1120.t:0 "Information Warfare"
+ russia.1120.desc:0 "In the modern age, information warfare has become an indispensable tool for achieving strategic objectives. It is no longer sufficient to rely solely on conventional military means to prevail in conflicts. We must adapt to this new reality and utilize information warfare to its full potential in the ongoing special military operation in Ukraine.\n\nEffective information warfare can be employed to gather more support from the Russian public, both at home and abroad. By disseminating accurate and compelling information about the operation, the Russian government can dispel misinformation and build public trust in its leadership. This can help to deter internal dissent and bolster support for the operation."
+ russia.1120.a:0 "This is the future of warfare."
+ russia.1120.tt:0 "§YThe Media§! decision tab will now grant: \n§E(Dependant On Putinism Agenda)§! \n - §EPolitical Power§! \n - §EWeekly Stability Factor§!\n\n§F(Dependant On Nationalism Agenda)§!\n - §FDivision Recovery Rate§!\n - §FWeekly War Support (Combat Casualties)§!\n\n§B(Dependant On Westernisation Agenda)§!\n - §BTrade deal opinion factor§!\n - §BPolitical Advisor Cost§!"
+
+ russia.1121.t:0 "The Shelling Intensifies..."
+ russia.1121.desc:0 "Recent reports indicate an alarming increase in shelling of civilian infrastructure by enemy forces. This indiscriminate targeting of critical infrastructure, including power plants, water treatment facilities, and transportation hubs, is causing widespread damage and disrupting essential services across Ukraine.\n\nThe Russians actions are a blatant violation of international law and a clear attempt to inflict maximum damage on the Ukrainian people. This indiscriminate shelling is causing unnecessary civilian casualties, destroying valuable infrastructure, and hindering Ukraine's ability to defend itself."
+ russia.1121.a:0 "They are war criminals!"
+
+ russia.1122.t:0 "...The Shelling Continues"
+ russia.1122.desc:0 "Enemy forces have begun targeting cultural heritage sites across Ukraine. This deliberate destruction of irreplaceable cultural treasures is a blatant attack on Ukraine's national identity and a war crime under international law, although for the Russians, such accusations are just another average Tuesday.\n\nNumerous reports have emerged of enemy forces shelling historical landmarks, museums, and churches. These attacks have caused widespread damage to these irreplaceable structures, many of which have stood for centuries as testaments to Ukraine's rich history and culture."
+ russia.1122.a:0 "Oh god."
+
+ russia.1123.t:0 "Easing The Manpower Shortage"
+ russia.1123.desc:0 "In an effort address the growing manpower shortage in Ukraine, the Russian government has authorized the deployment of 20 volunteer units across various regions of Russia. These units, composed of thousands of eager volunteers, will be tasked with bolstering the Russian military's presence in Ukraine and supporting ongoing operations."
+ russia.1123.a:0 "Perfect."
+ russia.1123.tt:0 "Spawns 20 basic volunteer battalions"
+
+ russia.1124.t:0 "Western Companies Pull Out"  #Unlike me :3
+ russia.1124.desc:0 "A growing number of Western companies are announcing their departure from Russia in response to the ongoing conflict in Ukraine. These companies are citing the sanctions imposed on Russia, the deteriorating business environment, and the ethical concerns surrounding the war as reasons for their withdrawal."
+ russia.1124.a:0 "They will regret this!"
+ russia.1124.tt:0 "Modify §YSanctioned Economy§! by:\nResearch Speed: §R-3.00%§!\nExpected number of factories put on Consumer Goods: §Y+3.0%§!\nWeekly Stability: §R-0.10%§!"
+
+ russia.1125.t:0 "The State Of Our Economy"
+ russia.1125.desc:0 "Despite the severe economic sanctions imposed by the West in response to the special military operation in Ukraine, the Russian economy has shown remarkable resilience. The government has taken a number of measures to mitigate the impact of the sanctions, including diversifying trade partners, promoting domestic production, and providing financial assistance to businesses.\n\nThe Russian government has been actively working to reduce its reliance on Western imports and increase its cooperation with other countries, particularly in Asia. Russia has signed a number of trade agreements with China and India, and it is also exploring new trade opportunities with countries in the Middle East and Africa.\n\nThe government has also encouraged domestic production of goods and services that were previously imported. This has led to a surge in investment in Russian industries, and it is helping to create new jobs."
+ russia.1125.a:0 "We have the strongest economy!"
+ russia.1125.tt:0 "Modify §YSanctioned Economy§! by:\nFactory Output: §G+5.00%§!\nConstruction Speed: §G+6.00%§!\nResearch Speed: §G+6.00%§!\nExpected number of factories put on Consumer Goods: §Y-6.0%§!\nProduction Efficiency Cap: §G+5.00%§!\nProduction Efficiency Retention: §G+5.00%§!\nProduction Efficiency growth: §G+5.00%§!\nMonthly §YInflation§!: §G-0.02%§!\n§YMilitary Factory§! construction speed: §G+7.00%§!"
+
+ russia.1126.t:0 "Equipment From North Korea"
+ russia.1126.desc:0 "North Korea has provided us with military equipment and supplies. This will significantly boost Russia's military capabilities and allow it to continue its operations in Ukraine."
+ russia.1126.a:0 "Perfect!"
+
+ russia.1127.t:0 "Equipment From Iran"
+ russia.1127.desc:0 "Iran has provided us with military equipment and materials. This will significantly boost Russia's military capabilities and allow it to continue its operations in Ukraine."
+ russia.1127.a:0 "Perfect!"
+
+ russia.1128.t:0 "Equipment From Myanmar"
+ russia.1128.desc:0 "Myanmar has delivered a significant amount of military equipment they have produced to Russia, bolstering Russia's capabilities in the ongoing special military operation in Ukraine."
+ russia.1128.a:0 "Perfect!"
+
+ russia.1129.t:0 "Withdrawing From The West"
+ russia.1129.desc:0 "Unable to take major cities such as Lvov and Lutsk and facing growing resistance from Ukrainian partisans, the Ministry of Defence has made the tough decision to cease operations in the western front of the Special Military Operation in order to focus our military capabilities elsewhere."
+ russia.1129.a:0 "We will return... at some point"
+
+ russia.1130.t:0 "Withdrawing From The North"
+ russia.1130.desc:0 "Unable to take major cities such as Kiev and Chernigov and facing growing resistance from Ukrainian partisans, the Ministry of Defence has made the tough decision to cease operations in the northern front of the Special Military Operation in order to focus our military capabilities elsewhere."
+ russia.1130.a:0 "We will return... at some point"
+
+ russia.1131.t:0 "Withdrawing From The East"
+ russia.1131.desc:0 "Unable to take major cities such as Kharkov and Izyum and facing growing resistance from Ukrainian partisans, the Ministry of Defence has made the tough decision to cease operations in the eastern front of the Special Military Operation in order to focus our military capabilities elsewhere."
+ russia.1131.a:0 "We will return... at some point"
+
+ russia.1132.t:0 "Withdrawing From The Donbass"
+ russia.1132.desc:0 "Unable to take major cities such as Donetsk and Lugansk and facing growing resistance from Ukrainian partisans, the Ministry of Defence has made the tough decision to cease operations in the Donbass front of the Special Military Operation in order to focus our military capabilities elsewhere."
+ russia.1132.a:0 "We will return... at some point"
+
+ russia.1133.t:0 "Withdrawing From The South"
+ russia.1133.desc:0 "Unable to take major cities such as Odessa and Sevastopol and facing growing resistance from Ukrainian partisans, the Ministry of Defence has made the tough decision to cease operations in the southern front of the Special Military Operation in order to focus our military capabilities elsewhere."
+ russia.1133.a:0 "We will return... at some point"
+
+ russia.1134.t:0 "2018 Elections Conclude"
+ russia.1134.desc:0 "In the recent presidential elections, Vladimir Putin has once again emerged victorious, securing another term in office. The Russian people have spoken, and their choice is clear – Putin will continue to lead the nation."
+ russia.1134.a:0 "Glory to Russia!"
+
+ russia.1135.t:0 "Troops Flee The Battlefield"
+ russia.1135.desc:0 "Disturbing reports and footage have emerged from the Eastern Front revealing scenes of chaos and disorder as Russian soldiers hastily retreat from the Ukrainian theater of war. In some instances, injured soldiers are left stranded without medical assistance, exacerbating the humanitarian crisis on the front lines.\n\nSome suggest that morale within the Russian ranks has plummeted due to the unexpected ferocity of the Ukrainian resistance."
+ russia.1135.a:0 "They are traitors of the motherland!"
+
+ russia.1136.t:0 "The Surovikin Line Finishes Construction"
+ russia.1136.desc:0 "The Surovikin Line, a formidable defensive network spanning southeastern Ukraine, has finally been completed. This strategic masterpiece, masterminded by General Sergey Surovikin, stands as a testament to Russian engineering prowess and a bulwark against any future Ukrainian incursions.\n\nThe Surovikin Line encompasses a maze of trenches, bunkers, and pillboxes, strategically positioned to provide maximum coverage and resistance to any enemy advance,"
+ russia.1136.a:0 "Very Well."
+ russia.1136.tt:0 "Will Construct Heavy §YFortifications§! In Strategic Areas."
+
+ russia.1137.t:0 "European Union Sanctions"
+ russia.1137.desc:0 "In response to Russia's recognition of the donbass republics, the European Union has imposed a package of sanctions on us and the breakaway republics. The sanctions target individuals and entities involved in the recognition of the republics, as well as Russian banks and financial institutions."
+ russia.1137.a:0 "They can't tell us what to do."
+
+ russia.1138.t:0 "Meeting With Ukraine War Veterans"
+ russia.1138.desc:0 "During a ceremony awarding Ukrainian war veterans with Russia's highest military honor, Artyom Zhoga, a lieutenant colonel, publicly appealed to President Putin to run for re-election in the upcoming presidential election. Putin responded with:"
+ russia.1138.a:0 "There is no other way. I will run for the post of president."
+
+ russia.1139.t:0 "New Opposition"
+ russia.1139.desc:0 "Yekaterina Duntsova, a journalist and former city council member, has announced her intention to run in the 2024 Russian presidential election. Duntsova runs as an independent, breaking away from the established political landscape and presenting a stark contrast to the current administration.\n\nDuntsova's platform deviates significantly from the ruling party's narrative. She openly criticizes the ongoing operation in Ukraine, calling it a "self-destructive course" and advocates for immediate de-escalation and peace negotiations. Additionally, she proposes democratic reforms, including the release of political prisoners like Alexei Navalny. Her economic platform focuses on changing budget priorities, shifting resources from military spending towards social programs and infrastructure development. She also champions inclusivity and respect for minorities, including the LGBTQ+ community, a stance unheard of in mainstream Russian politics."
+ russia.1139.a:0 "Puny woman..."
+
+ russia.1140.t:0 "Yekaterina Duntsova Rejected"
+ russia.1140.desc:0 "Yekaterina Duntsova, the independent candidate who shook up the Russian political scene with her bold platform for change, has been dealt a major blow as the Central Election Commission rejected her nomination documents, barring her from the 2024 presidential election."
+ russia.1140.a:0 "Good."
+
+ russia.1141.t:0 "Nadezhdin Challenges Our Rule"
+ russia.1141.desc:0 "Amidst ongoing dissent and rising dissatisfaction with the operations in Ukraine, Boris Nadezhdin, a former State Duma member, has boldly challenged the status quo. Nadezhdin has become a voice for many yearning for peace and change, calling for the election of a new government and a shift in foreign policy."
+ russia.1141.a:0 "Does he want to fall out of a window or something?"
+
+ russia.1142.t:0 "Nadezhdin's Candidacy Announced"
+ russia.1142.desc:0 "Dmitry Kisiyev, founder of the Candidates' Headquarters, has made the announcement of Nadezhdin's candidacy on his social media platforms. Nadezhdin himself confirmed his intention to run under the banner of the Civic Initiative party, a small liberal party advocating for democracy, human rights, and social justice.\n\n Boris will now need to collect enough signatures in support of his candidacy so he could officially run for office."
+ russia.1142.a:0 "No one will vote for him, right?"
+
+ russia.1143.t:0 "Nadezhdin Collects Required Signatures"
+ russia.1143.desc:0 "Boris Nadezhdin, the outspoken critic of the war in Ukraine, has achieved a significant milestone. His team announced today that they have successfully collected the required number of signatures from Russian citizens in support of his bid for the 2024 presidency. This paves the way for Nadezhdin to submit his nomination papers to the Central Election Commission and officially become a candidate."
+ russia.1143.a:0 "He has gone too far, it's time to stop this."
+ russia.1143.a_tt:0 "We will make sure that Boris Nadezhdin doesn't become a candidate."
+ russia.1143.b:0 "Very well, he deserves it."
+
+ russia.1144.t:0 "2024 Elections"
+ russia.1144.desc:0 "The dust has settled after the highly anticipated Russian elections, and the nation holds its breath. With various figures vying for power, the results could significantly impact the future of the Bear. The fate of Russia rests on these elections.\n\nThe winner is..."
+ russia.1144.a:0 "Vladimir Putin!"
+ russia.1144.b:0 "Boris Nedezhdin!"
+
+ russia.1145.t:0 "Ending The War"
+ russia.1145.desc:0 "In a televised address to the nation, President Nedezhin has announced his immediate plans for peace in Ukraine. He acknowledged the devastating human cost of the war and emphasized the need for a swift and decisive end to the bloodshed.\n\n He declares:"
+ russia.1145.a:0 "Immediate withdrawl from Ukraine!"
+ russia.1145.b:0 "Keeping Novorossiya under Russian control."
+ russia.1145.tt:0 "§RTHIS MIGHT FREEZE THE GAME UNTIL THE STATE OWNERSHIP CHANGES§!"
+
+ russia.1146.t:0 "Women Protest In The Alexander Garden"
+ russia.1146.desc:0 "Today, hundreds of women gathered at the Alexander Garden, clad in white headscarves and holding carnations as they approached the eternal flame. This event was organized to mark the 500th day of mobilization. The women not only called for the demobilization of those already mobilized but also advocated for the total abolition of mobilization."
+ russia.1146.a:0 "These little protests won't achieve anything."
+
+ russia.1147.t:0 "A Nation in Turmoil"
+ russia.1147.desc:0 "The weight of war and political upheaval hangs heavy. The once mighty bear of Russia lies wounded, its internal wounds mirroring the shattered landscape of Ukraine. The people are weary, disillusioned, and divided."
+ russia.1147.a:0 "It's time to rebuild the nation."
+
+ russia.1148.t:0 "A Nation Remembers"
+ russia.1148.desc:0 "Today, Russia holds a day of mourning for the countless lives lost in the conflict with Ukraine. Flags fly at half-mast, wreaths are laid at memorials, and families gather to remember loved ones. President Nadezhdin delivers a moving address, acknowledging the pain and sacrifice endured, and pledging to build a future where such tragedy never repeats."
+ russia.1148.a:0 "Peace is here."
+
+ russia.1149.t:0 "Storm Ossetia Joins"
+ russia.1149.desc:0 "As the conflict in Ukraine rages on, volunteer battalions from various corners of Russia continue to bolster the country's forces. Today, the "Storm Ossetia" battalion, formed by North Ossetian volunteers, arrives at the eastern front."
+ russia.1149.a:0 "We thank our brothers!"
+
+ russia.1150.t:0 "DShRG Rusich Returns"
+ russia.1150.desc:0 "The renowned Rusich Group has redeployed to the frontlines in Ukraine."
+ russia.1150.a:0 "Perfect!"
+
+ russia.1152.t:0 "Ukrainians In Africa"
+ russia.1152.desc:0 "Reports have surfaced of Ukrainian special forces operating in Africa. It appears they have captured several Wagner Group personnel stationed near our gold depot."
+ russia.1152.a:0 "They will regret that decision..."
+
+ russia.1153.t:0 "Successful Offensive In [146.GetName]"
+ russia.1153.desc:0 "The recent offensive in [146.GetName] has been a success. [146.GetName] is now in our control."
+ russia.1153.a:0 "Glory to the soldiers!"
+
+ russia.1154.t:0 "Fate Of Shoigu"
+ russia.1154.desc:0 "Despite being a trusted figure within our government, Minister of Defense Shoigu's decisions on the Ukrainian front have led to sluggish progress in our operations. It's becoming clear that a change is needed. The time has come to reassess our strategies and consider reshuffling the cabinet to ensure more effective leadership in addressing the challenges we face."
+ russia.1154.a:0 "Fire him and put Belousov in his place!"
+ russia.1154.b:0 "Demote him and put Belousov in his place!"
+
+ russia.1155.t:0 "Fate Of Lavrov"
+ russia.1155.desc:0 "Despite his prominence in our government, Sergey Lavrov's handling of diplomatic affairs has failed to yield significant breakthroughs, particularly in the context of the Ukrainian conflict. As progress remains stagnant, it is evident that a reassessment of leadership is necessary. The time has come to reconsider our reliance on Lavrov's strategies and explore alternatives to drive more fruitful diplomatic outcomes in the face of ongoing challenges."
+ russia.1155.a:0 "He will stay."
+ russia.1155.b:0 "Fire him."
+
+ russia.1156.t:0 "Fate Of Patrushev"
+ russia.1156.desc:0 "While Patrushev holds a significant position within our government, his leadership and decision-making on critical security matters, notably regarding the Ukrainian conflict, have yielded limited progress. It is increasingly evident that a reevaluation of leadership is essential. We must contemplate alternatives to Patrushev's approach to ensure more effective strategies in addressing the challenges we confront."
+ russia.1156.a:0 "Demote him."
+ russia.1156.b:0 "Let him stay."
+
+ russia.1157.t:0 "NATO Troops Mobilize In The East"
+ russia.1157.desc:0 "Our intelligence reports indicate unusual and significant mobilization of NATO troops in Eastern Europe. This unprecedented build-up raises the alarming possibility of a direct attack on our territories. In response, we must consider preemptive measures to safeguard our nation."
+ russia.1157.a:0 "We must strike before they do!"
+ russia.1157.b:0 "This is not a risk to our nation."
+
+ russia_propaganda.1.t:0 "Ukrainian Teachers Fired For Speaking Russian"
+ russia_propaganda.1.desc:0 "The news agency Novosti TV has put out a story about a Russian language teacher at Kharkiv university being fired for refusing to speak the Ukrainian language.\n\nAlexander Mikhelev claims he was forced out for his 'love of Russian Culture in Ukraine'. His brother, Oleksandr, has described the situation as 'Nationalist insanity, which in pseudo-democratic Ukraine has so influenced the mentality that university leaders are afraid to even say an extra word, they are afraid to speak out in defence of the Russian language and culture.'"
+ russia_propaganda.1.a:0 "Insanity"
+
+ russia_propaganda.2.t:0 "American Mercenaries In Ukraine"
+ russia_propaganda.2.desc:0 "Today, the official Ministry of Foreign Affairs of Russia put out a report detailing the presence of US mercenaries in Ukraine. The MFA believes them to be PMC Greystone contractors, and has given the image below of said Greystone mercenaries at an unidentified location in Ukraine.\n\nThe news of NATO-backed mercenaries has already appeared on Russian news channels, as the nation cannot believe what they are seeing in our supposed 'brother nation' - a US-backed takeover."
+ russia_propaganda.2.a:0 "NATO creeps closer"
+
+ russia_propaganda.3.t:0 "Ukraine Plans To Jail Anti-Maidan Journalists"
+ russia_propaganda.3.desc:0 "Today, the media channel 'Rossiya 24' aired reports on both television and their website about a new law coming into effect in Ukraine. According to them, the government of [UKR.GetLeader] will begin to arrest dissenting journalists in the name of 'national security'.\n\nThe State Committee on Television and Radio Broadcasting of Ukraine called on local journalists to "strictly adhere to the information line of the current leadership of the country." In particular, to blame the initiators of all rallies, the participants of which are dissatisfied with the policies of Kiev, and to convict them of separatism. Otherwise, the SBU will regard the actions of journalists as "assisting pro-Russian separatist forces" with subsequent criminal prosecution, the Rossiya 24 channel reports."
+ russia_propaganda.3.a:0 "As if there was any doubt about a fascist takeover"
+
+ russia_propaganda.4.t:0 "Yarosh Predicted Victory In Ukraine Elections"
+ russia_propaganda.4.desc:0 "Displaying figures taken from Ukraine's official election website, tonight Rossiya channel One anchorwoman Irada Zeinalova announced that Right Sector leader Dmytro Yarosh was comfortably ahead in the race, with approximately 37.1 percent of the vote. This has only hardened our and our Donbass brothers' resolve, due to previous reports by various news agencies of Yarosh's Fascistic tendencies and genocidal ambitions."
+ russia_propaganda.4.a:0 "Madness sweeps their nation"
+
+ russia_propaganda.5.t:0 "Fascists Fire On Police In Maidan"
+ russia_propaganda.5.desc:0 "For months now, anti-Russian and US-backed extremist protests have swept Ukraine, RT reports. Today, they released video footage showing dangerous thugs firing unprovoked at police officers in Maidan square, with RT implicating to the viewer that a CIA-backed Fascist coup was imminent in Ukraine."
+ russia_propaganda.5.a:0 "A terrifying prospect"
+
+ russia_propaganda.6.t:0 "Ukrainian Military Burns Donetsk"
+ russia_propaganda.6.desc:0 "Struggling against our Donbass brothers, the Kiev regime has resorted to more desperate tactics. Today, military saboteurs were able to set off incendiary bombs in Donetsk, hoping to raze the city to the ground out of spite.\n\nDespite this, our brothers in Donbass carry on their brave fight against Fascist tyranny, as the brutality of the Kiev regime goes unnoticed in the west, but not here."
+ russia_propaganda.6.a:0 "Have they got no sympathy?"
+
+ russia_propaganda.7.t:0 "Neo-Nazi Fighters In Ukraine"
+ russia_propaganda.7.desc:0 "Unable to counter the righteous revolution of our brothers in Donbass, Novini Rosyi has published secret images from a Ukrainian national guard station, showing the Right Sector recruiting far-right thugs to fight for them."
+ russia_propaganda.7.a:0 "Truely a nation of Fascists"
+
+ russia_propaganda.8.t:0 "Ukraine Uses Phosphorous Gas On Semyonovka"
+ russia_propaganda.8.desc:0 "Unable to break the iron will of the Donbass people, the Ukrainian national guard has bombed to village of Semyonovka (near Slavyansk) with phosphorous gas. This is in blatant violation of the Geneva conventions, as phosphorous gas can reach up to 800 degrees celcius.\n\nAs a result of this brutal attack on innocent civilians by Ukraine, dozens are believed to be dead, and hundreds more are wounded, with no clear way of getting treatment due to the ongoing siege of the area by Ukrainian forces."
+ russia_propaganda.8.a:0 "Horrifying"
+
+ russia_propaganda.9.t:0 "Evidence Emerges That Kiev Was Behind MH17"
+ russia_propaganda.9.desc:0 "After the tragic downing of Malaysian Airlines flight 17 over Donbass, the world has been looking for someone to blame. The collective west has naively pointed the finger at us, but we know better.\n\nRT has published an article detailing to account of a certain 'Carlos', and air traffic controller at Boryspil airport. He writes that two fighter jets were mysteriously seen tailing the doomed plane, and that the 'When the Boeing simply disappeared from the radar, the Kiev authorities told us that it had crashed. How could they find out so quickly?'. This account has further been corroborated by the Chief of General Staff of the Armed Forces Lt. Gen. Andrey Kartopolov and the Chief of the Air Force Main Staff Lt. Gen. Igor Makushev, who have gone on scathing attacks on Kiev and Washington, expertly refuting their claims that the Donbass freedom fighters were behind the shootdown."
+ russia_propaganda.9.a:0 "We knew it!"
+
+ russia_propaganda.10.t:0 "Ukraine Plans 'Filtration Camps' In The East"
+ russia_propaganda.10.desc:0 "In a shocking leaked plan from the CIA-backed RAND Corporation, Ukraine has been told by their US overlords to begin the construction of 'filtration camps' to ensure Eastern Ukraine's loyalty. These camps would include the rounding up of civilians and people considered 'disloyal to Ukraine' and shutting them off from the outside world by restricting their contact with the outside world."
+ russia_propaganda.10.a:0 "Worrying..."
+
+ russia_propaganda.11.t:0 "Ukraine Crucifies A Three-Year-Old"
+ russia_propaganda.11.desc:0 "Shocking news comes out of Ukraine tonight, as Alexandr Dugin brings forth a story that has shocked the nation. According to Dugin and the supposed mother of the boy, a woman named 'Galina Pyshnyak', the young child was crucified in Lenin Square in Slavyansk, solely for the crime of being Russian.\n\nNo photos of the crucifixion have emerged thus far, prompting many to believe that the Ukrainian bastards who did this promptly hid the body, so that the people of Slavyansk would not know of their crimes."
+ russia_propaganda.11.a:0 "Oh God"
+
+ russia_propaganda.12.t:0 "Ukrainian Embassy In Geneva Flies A Swastika"
+ russia_propaganda.12.desc:0 "As if there was any doubt about the rise of Nazism in Ukraine, the Ukrainian embassy in Geneva has been spotted raising a swastika alongside their national flag."
+ russia_propaganda.12.a:0 "Banderite Bastards!"
+
+ russia_propaganda.13.t:0 "Results Of The Year With [SOV.GetLeader]"
+ russia_propaganda.13.desc:0 "President [SOV.GetLeader] is set to engage in the annual "Results of the Year with [SOV.GetLeader]" live broadcast. This highly anticipated event provides a platform for the President to address crucial questions posed by journalists and citizens across Russia and the world at large."
+ russia_propaganda.13.a:0 "Let's prepare to answer some questions."
+
+ russia_propaganda.14.t:0 "The Conflict In Ukraine"
+ russia_propaganda.14.desc:0 "A journalist posed a series of pressing questions regarding the ongoing conflict in Ukraine, reflecting the concerns and queries of the Russian public.\n\nThe journalist inquired about the assessment of the nearly two-year-long special military operation in Ukraine and sought President [SOV.GetLeader]'s evaluation of the current situation and its dynamics. Furthermore, the journalist pressed on whether the goals and objectives of the operation have evolved from their initial inception, but the most important and pivotal question still resonated: "When will there be peace with Ukraine?""
+ russia_propaganda.14.a:0 ""There will be peace when we achieve our goals.""
+ russia_propaganda.14.b:0 ""How can we have peace with a regime bent on genociding our people?""
+
+ russia_propaganda.15.t:0 "Relations With The West"
+ russia_propaganda.15.desc:0 "A journalist inquired about the prospects of restoring relations with the European Union, seeking insights into the potential re-normalization of diplomatic ties.\n\nThe journalist's query specifically focused on President [SOV.SOV_current_leader_surname]'s perspective on re-establishing a sense of normalcy in relations between Russia and the EU, hinting at the complexities and tensions surrounding our necessary Special Military Operation that have strained the bilateral relationship."
+ russia_propaganda.15.a:0 ""There is enough room in the world for both of us to prosper""
+ russia_propaganda.15.b:0 ""It will take a while for us to forgive them for what they've done""
+
+ russia_propaganda.17.t:0 "Miroporyadok 2018"
+ russia_propaganda.17.desc:0 "A new documetary has been released today titled 'Miroporyadok 2018', translating into English as 'World Order 2018'. The documentary is filmed by Rossiya-One television hosts Saida Medvedeva and Vladimir Solovyov, interviewing President Putin to seek his insights into his assessment of internal and external affairs. Putin started by claiming that Russia's actions in Crimea were a direct and necessary response to the growing anti-Russia bloc, and put Russia on the world stage once more as a great power .President Putin also railed against those who, in his eyes, were trying to expand this anti-Russia bloc, warning their actions would hurt themselves, not Russia - "Those who drop poison somewhere will swallow it themselves in the end, they themselves will be poisoned by this poison."\n\nThe documentary has further propelled Solovyov's career and de-facto title of 'Putin's favourite journalist' (or as his critics call him, 'Putin's Goebbels') following a long career of journalism and long working relation ship with Vladimir Putin, for which Putin himself awarded Solovyov with the Russian 'Order of Honour' medal in 2013."
+ russia_propaganda.17.a:0 "A great insight into Vladimir Vladimirovich himself"
+ russia_propaganda.17.b:0 "Our enemies underestimate the Russian spirit!"

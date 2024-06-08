@@ -1,0 +1,69 @@
+﻿capital = 337
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Tomislav Nikolić"
+	desc = "Tomislav Nikolić is a member of the Serbian Radical Party and has a long history of nationalist and populist politics. Nikolić is focused on promoting Serbian interests and expanding Serbia's power in the region. He is be a strong supporter of a united Serbia, which may lead him to take an aggressive stance towards neighboring countries like Bosnia, Croatia, and Kosovo. Nikolić has a tendency towards authoritarianism and seeks to consolidate power within Serbia. He prioritizes military development and expansion, and is more willing to take risks in order to achieve his goals. Nikolić is a complex and controversial leader, with a focus on Serbian nationalism and expansionism. His leadership style and goals require careful management and strategic planning in order to be successful."
+	ideology = serbian_populist_subideology
+	picture = gfx/leaders/SER/Portrait_Tomislav_Nikolić.dds
+}
+
+2018.1.1 = {
+    create_country_leader = {
+	    name = "Aleksandar Vučić"
+	    desc = "Test Serbia"
+	    ideology = serbian_populist_subideology
+	    picture = gfx/leaders/SER/Portrait_Aleksandar_Vučić.dds
+    }
+}
+
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.23
+
+set_politics = {
+	ruling_party = populist
+	last_election = "2012.5.25"
+	election_frequency = 24
+	elections_allowed = yes
+}
+
+add_ideas = {
+	oligarchy
+	authoritarian_democracy
+	volunteer_only
+	free_press
+	free_trade_unions
+	bipolarist
+
+	religion_law_religious
+	womens_rights_equality
+	lgbtq_rights_civil_unions
+	minority_rights_legal_protections
+	nationalism_laws_armed_neutrality
+	firearm_laws_loose
+	alchohol_narcotics_laws_largely_regulated
+}
+
+set_popularities = {
+	fascist = 5
+	ultranationalist = 1
+
+	eastern_conservative = 5
+	populist = 26
+
+	neoconservative = 8
+	eastern_liberal = 5
+	neoliberal = 1
+	libertarian = 6
+	social_democracy = 23
+
+	socialist = 15
+	moderate_communist = 1
+	hardline_communist = 1
+
+	anarchism_ideology = 1
+	absolute_monarchy_ideology = 1
+	theocracy_ideology = 1
+}

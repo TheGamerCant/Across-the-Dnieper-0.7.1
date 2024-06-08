@@ -1,0 +1,189 @@
+focus_tree = {
+	id = wagner
+	continuous_focus_position = { x = -40 y = 1300 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WAG
+		}
+	}
+
+	focus = {
+		id = WAG_there_will_be_no_compromises
+		icon = GFX_focus_There_will_be_no_compromise
+		x = 10
+		y = 0
+		cost = 10
+		search_filters = {
+			
+		}
+		allow_branch = {
+			tag = WAG
+		}
+		available = {
+			has_war_with = SOV
+		}
+		completion_reward={
+			add_ideas = WAG_hammering_power
+		}
+	}
+
+	focus = {
+		id = WAG_begin_the_purge
+		icon = GFX_focus_begin_purge
+		x = 10
+		y = 0
+		cost = 5
+		search_filters = {
+			
+		}
+		allow_branch = {
+			tag = SOV
+		}
+
+		select_effect = {
+			country_event = { id = wagner.2 days = 2 }
+		}
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward={
+			add_timed_idea = {
+				idea = SOV_undergoing_reforms
+				days = 50
+			}
+
+			custom_effect_tooltip = "full_high_command_reforms_tt_2"
+			custom_effect_tooltip = "full_high_command_reforms_tt"
+	
+			hidden_effect = {
+				country_event = { id = russia.1077 days = 50 }
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_silence_the_critics
+		icon = GFX_focus_begin_purge
+		x = 10
+		y = 2
+		cost = 14
+		search_filters = {
+			
+		}
+		allow_branch = {
+			tag = SOV
+		}
+
+		cancel_if_invalid = yes
+		prerequisite = { focus = WAG_begin_the_purge }
+		completion_reward={
+			add_political_power = 50
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = -0.1
+			}
+			retire_character = SOV_dmitry_medvedev_rework
+			retire_character = SOV_alexander_bortnikov_rework
+			retire_character = SOV_sergey_lavrov_rework
+			retire_character = SOV_mikhail_mishustin_rework
+			retire_character = SOV_ramzan_kadyrov_rework
+		}
+	}
+
+	focus = {
+		id = WAG_reward_loyal
+		icon = GFX_focus_begin_purge
+		x = 10
+		y = 3
+		cost = 20
+		search_filters = {
+			
+		}
+		allow_branch = {
+			tag = SOV
+		}
+
+		cancel_if_invalid = yes
+		prerequisite = { focus = WAG_silence_the_critics }
+		completion_reward={
+			add_political_power = 25
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = -0.1
+			}
+			if = {
+				limit = { has_idea = SOV_rampant_oligarchy }
+
+				swap_ideas = {
+					remove_idea = SOV_rampant_oligarchy
+					add_idea = SOV_specialized_oligarchy
+				}
+			}
+			else_if = {
+				limit = { has_idea = SOV_rampant_oligarchy_2 }
+
+				swap_ideas = {
+					remove_idea = SOV_rampant_oligarchy_2
+					add_idea = SOV_specialized_oligarchy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WAG_continue_operations_in_ukraine
+		icon = GFX_focus_continue_operations_ukraine
+		x = 8
+		y = 1
+		cost = 25
+		search_filters = {
+			
+		}
+		allow_branch = {
+			tag = SOV
+		}
+
+		prerequisite = { focus = WAG_begin_the_purge }
+		available = {
+		}
+
+		bypass = {
+			NOT = { has_war_with = UKR }
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward={
+			every_state = {
+				limit = {
+					AND = {
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = SOV
+								is_controlled_by = DON
+								is_controlled_by = LHK
+								is_controlled_by = ODS
+								is_controlled_by = KHK
+								is_controlled_by = NOV
+							}
+						}
+
+						is_controlled_by = UKR
+					}
+				}
+
+
+				add_dynamic_modifier = {
+					modifier = UKR_minor_wagner_offensive
+					scope = SOV
+					days = 80
+				}
+			}
+		}
+	}
+}

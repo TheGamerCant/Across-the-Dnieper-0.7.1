@@ -1,0 +1,427 @@
+﻿l_english:
+ SOV_the_siloviki_state_modifier:0 "The Siloviki State"
+ SOV_the_siloviki_state_modifier_desc:0 "With the oligarchs gone, the security apparatus is the only thing holding Russia together."
+ SOV_purges_in_the_army:0 "Purges In The Army"
+ SOV_purges_in_the_army_desc:0 ""
+ wagner_in_bakhmut:0 "Wagner In Bakhmut"
+ SOV_undergoing_reforms:0 "Undergoing Reforms"
+ SOV_undergoing_reforms_desc:0 ""
+ SOV_wagner_forces_integrated:0 "Wagner Forces Integrated"
+ SOV_wagner_forces_integrated_desc:0 "The once semi-autonomous paramilitary Wagner Group has been seamlessly incorporated into the national defense structure of the Russian state. This integration has led to enhanced coordination, strategic alignment, and a unified sense of purpose in serving Russia's interests."
+ SOV_memories_of_1991:0 "Memories Of 1991"
+ SOV_memories_of_1991_desc:0 "\n\n\n\n£idea_SOV_collapse_of_soviet_union_desc_picture\n\n\n\n\n\nThe collapse of the Soviet Union was a disaster for Russia. Once a world superpower, they were now regarded as a backwater, a junior partner, and irrelevant, a fate to which the Russian people have not taken kindly.\n\nEver since then, irredentist sentiment has grown within the Russian Federation, and increasing calls have been made for larger military spending, more local and global interventions, and perhaps even the restoration of Soviet borders by force."
+ SOV_memories_of_1991_2:0 "Memories Of 1991"
+ SOV_memories_of_1991_2_desc:0 "\n\n\n\n£idea_SOV_collapse_of_soviet_union_desc_picture\n\n\n\n\n\nThe collapse of the Soviet Union was a disaster for Russia. Once a world superpower, they were now regarded as a backwater, a junior partner, and irrelevant, a fate to which the Russian people have not taken kindly.\n\nEver since then, irredentist sentiment has grown within the Russian Federation, and increasing calls have been made for larger military spending, more local and global interventions, and perhaps even the restoration of Soviet borders by force."
+ SOV_memories_of_1991_3:0 "Memories Of 1991"
+ SOV_memories_of_1991_3_desc:0 "\n\n\n\n£idea_SOV_collapse_of_soviet_union_desc_picture\n\n\n\n\n\nThe collapse of the Soviet Union was a disaster for Russia. Once a world superpower, they were now regarded as a backwater, a junior partner, and irrelevant, a fate to which the Russian people have not taken kindly.\n\nEver since then, irredentist sentiment has grown within the Russian Federation, and increasing calls have been made for larger military spending, more local and global interventions, and perhaps even the restoration of Soviet borders by force."
+ SOV_memories_of_1991_siloviki:0 "Memories Of 1991"
+ SOV_memories_of_1991_siloviki_desc:0 "\n\n\n\n£idea_SOV_collapse_of_soviet_union_desc_picture\n\n\n\n\n\nThe collapse of the Soviet Union was a disaster for Russia. Once a world superpower, they were now regarded as a backwater, a junior partner, and irrelevant, a fate to which the Russian people have not taken kindly.\n\nEver since then, irredentist sentiment has grown within the Russian Federation, and increasing calls have been made for larger military spending, more local and global interventions, and perhaps even the restoration of Soviet borders by force."
+ SOV_memories_of_1991_2:0 "Memories Of 1991"
+ SOV_memories_of_1993:0 "Memories Of 1993"
+ SOV_memories_of_1993_desc:0 "\n\n\n\n£idea_SOV_black_october_desc_picture\n\n\n\n\n\nAfter the collapse of the Soviet Union, one of the may questions that emerged was as to the division of power between the President and the Parliament, a question which was solved violently by Boris Yeltsin in what became known as Black October. Tanks fired upon the Moscow white house, as Yeltsin accused the parliamentary deputies of disloyalty to the Russian Federation, as well as being 'too Soviet'. By the end of 1993, Yeltsin had managed to established all but dictatorial control over Russia, all centralised within the office of the Presidency.\n\nNowadays, the most prominent legacy of Black October is the total lack of power in the Duma, as the prime minister and the deputies' jobs are dependant on the President's good graces. The leaders of all the major political parties are but figurehead opposition, as nobody dares challenge the hand that feeds them."
+ SOV_western_sanctions_rework:0 "Sanctioned Economy"
+ SOV_western_sanctions_rework_desc:0 ""
+ SOV_stagnant_economy_rework:0 "Stagnant Economy"
+ SOV_stagnant_economy_rework_desc:0 "Although nowhere near as bad as the nineties, real wages and overall quality of life for the average citizen have barely increased since the times of the Soviet Union."
+ SOV_bloated_welfare_system:0 "Bloated Welfare System"
+ SOV_bloated_welfare_system_desc:0 "During the times of the Soviet Union, welfare payments were not given in cash, but in goods and services. People who had retired could expect their government to give them such commodities as cell service, consumer goods, free public transit and more. Since the collapse of the Soviet Union, the Russian government has not been able to reform it's welfare system, leaving it stuck with this highly bureaucratic, bloated and complicated system.\n\nDespite this, the system is hugely popular amongst Russian pensioners and workers, and Vladimir Putin has made numerous promises to not change it and to not raise the retirement age."
+ SOV_bloated_welfare_system_2:0 "Bloated Welfare System"
+ SOV_bloated_welfare_system_2_desc:0 "During the times of the Soviet Union, welfare payments were not given in cash, but in goods and services. People who had retired could expect their government to give them such commodities as cell service, consumer goods, free public transit and more. Since the collapse of the Soviet Union, the Russian government has not been able to reform it's welfare system, leaving it stuck with this highly bureaucratic, bloated and complicated system.\n\nDespite this, the system is hugely popular amongst Russian pensioners and workers, and Vladimir Putin has made numerous promises to not change it and to not raise the retirement age."
+ SOV_krym_nash_putin:0 "Krym Nash!"
+ SOV_krym_nash_putin_desc:0 "Crimea is ours!\n\nAfter decades of being part of Ukraine, the government of Vladimir Putin has constructed an aura around Crimea, evoking it's imperial legacy in the Russian psyche. As long as Russia has Crimea, all is well for the government. However, losing Crimea may delegitimise the government in the eyes of the public."
+ SOV_krym_nash_ultranat:0 "Krym Nash!"
+ SOV_krym_nash_ultranat_desc:0 "Crimea is ours!\n\nAfter decades of being part of Ukraine, the government of Vladimir Putin has constructed an aura around Crimea, evoking it's imperial legacy in the Russian psyche. As long as Russia has Crimea, all is well for the government. However, losing Crimea may delegitimise the government in the eyes of the public."
+ SOV_krym_nash_ultranat_2:0 "Krym Nash!"
+ SOV_krym_nash_ultranat_2_desc:0 "Crimea is ours!\n\nAfter decades of being part of Ukraine, the government of Vladimir Putin has constructed an aura around Crimea, evoking it's imperial legacy in the Russian psyche. As long as Russia has Crimea, all is well for the government. However, losing Crimea may delegitimise the government in the eyes of the public."
+ SOV_raspizdyaystvo:0 "Raspizdyaystvo"
+ SOV_raspizdyaystvo_desc:0 "Raspizdyaystvo is a Russian word that translates roughly to 'laziness' or 'incompetence', and Russia is full of it.\n\nThe majority of Russians get exploited by higher-ups, whether it be their commander, boss, mayor, or any other figure of authority. These corrupt officials are known to sell off parts, withhold pay and treat their underlings as expendable in the conquest of personal wealth. As such, a culture of laziness and corruption has developed in Russia, which limits our polititians' abilities to reform the country and make political changes.\n\nOne area infamous for being a hotspot of corruption and negligence is the army. Since the stagnation of the Brezhnev era, and especially since the anarchy of the nineties, the army has been viewed as an occupation of the lower classes, for those who have no technical skills or knowledge and no route for social mobility. Since Putin's ascendancy, the army has also been gutted of any competent and skilled generals and commanders, for fear that they could gain enough power and prestige to challenge his government. As such, the cannon fodder in the army recieve a trinket wage, which they supplement by selling tyres, copper wire, and anything else they can get their hands on. After all, when the common soldier, the regional commander, the depot manager, and the munitions inspector are all secretly selling our stockpiles, as far as the government is concerned, the stockpiles are full."
+ SOV_army_modernisation_plan:0 "Army Modernisation Plan"
+ SOV_army_modernisation_plan_desc:0 "After repeated failures in Chechnya and Georgia, the Russian government has undergone a large reform plan to make their army the second army of the world, perhaps even the first. How far will they succeed? Only time will tell."
+ SOV_oil_revenues:0 "Oil Revenue"
+ SOV_oil_revenues_desc:0 "Oil and gas revenue makes up a large part of our economy, which not only gives people jobs, but also helps to reduce their taxes. However, should we lose our European oil money or if oil prices go down, major economic and political problems may arise."
+ SOV_oil_revenues_2:0 "Oil Revenue"
+ SOV_oil_revenues_2_desc:0 "Oil and gas revenue makes up a large part of our economy, which not only gives people jobs, but also helps to reduce their taxes. However, should we lose our European oil money or if oil prices go down, major economic and political problems may arise."
+ SOV_oil_revenues_siloviki:0 "Oil Revenue"
+ SOV_oil_revenues_siloviki_desc:0 "Oil and gas revenue makes up a large part of our economy, which not only gives people jobs, but also helps to reduce their taxes. However, should we lose our European oil money or if oil prices go down, major economic and political problems may arise."
+ SOV_oil_revenues_3:0 "Oil Revenue"
+ SOV_oil_revenues_3_desc:0 "Oil and gas revenue makes up a large part of our economy, which not only gives people jobs, but also helps to reduce their taxes. However, should we lose our European oil money or if oil prices go down, major economic and political problems may arise."
+ SOV_rampant_oligarchy:0 "Rampant Oligarchy"
+ SOV_rampant_oligarchy_desc:0 "After destroying all of the oligarchs who were disloyal to him, Putin was able to redistribute their assets to those who were. Needless to say, this has left the ruling elite almost untouchable in society, as they loot and plunder Russia for all that it's worth."
+ SOV_rampant_oligarchy_2:0 "Rampant Oligarchy"
+ SOV_rampant_oligarchy_2_desc:0 "After destroying all of the oligarchs who were disloyal to him, Putin was able to redistribute their assets to those who were. Needless to say, this has left the ruling elite almost untouchable in society, as they loot and plunder Russia for all that it's worth."
+ SOV_specialized_oligarchy:0 "Specialized Oligarchy"
+ SOV_specialized_oligarchy_desc:0 ""
+ SOV_wunderwaffe_rework:0 "Wunderwaffe"
+ SOV_wunderwaffe_rework_desc:0 "To compensate for our lackluster military, the Russian MOD signs off on many expensive projects of questionable credibility and quality. To quote the old Soviet adage, 'our best export is the illusion of a great power'."
+ SOV_wunderwaffe_rework_2:0 "Wunderwaffe"
+ SOV_wunderwaffe_rework_2_desc:0 "To compensate for our lackluster military, the Russian MOD signs off on many expensive projects of questionable credibility and quality. To quote the old Soviet adage, 'our best export is the illusion of a great power'."
+ SOV_wunderwaffe_rework_research_boost:0 "Wunderwaffe"
+ SOV_wunderwaffe_rework_research_boost_desc:0 "To compensate for our lackluster military, the Russian MOD signs off on many expensive projects of questionable credibility and quality. To quote the old Soviet adage, 'our best export is the illusion of a great power'."
+ SOV_wunderwaffe_rework_2_research_boost:0 "Wunderwaffe"
+ SOV_wunderwaffe_rework_2_research_boost_desc:0 "To compensate for our lackluster military, the Russian MOD signs off on many expensive projects of questionable credibility and quality. To quote the old Soviet adage, 'our best export is the illusion of a great power'."
+ SOV_expand_the_armouries_idea:0 "Expand The Armouries"
+ SOV_expand_the_armouries_idea_desc:0 ""
+ SOV_banking_sector_reforms:0 "Banking Sector Reforms"
+ SOV_banking_sector_reforms_desc:0 ""
+ SOV_banking_sector_reforms_2:0 "Banking Sector Reforms"
+ SOV_banking_sector_reforms_2_desc:0 ""
+ SOV_russia_of_a_new_age:0 "Russia Of A New Age"
+ SOV_russia_of_a_new_age_desc:0 ""
+ SOV_subsidies_for_childbirth_idea:0 "Subsidies For Childbirth"
+ SOV_subsidies_for_childbirth_idea_desc:0 ""
+ SOV_victors_now_and_forever_idea:0 "Victors, Now And Forever!"
+ SOV_victors_now_and_forever_idea_desc:0 "We Russians have had a tumultuous history, but we have always emerged stronger and victorious from it! Let our enemies know, should they dare challenge us, we will show our strength!"
+ SOV_patriots_from_a_young_age_idea:0 "Patriots From A Young Age"
+ SOV_patriots_from_a_young_age_idea_desc:0 ""
+ SOV_patriots_from_a_young_age_idea_2:0 "Patriots From A Young Age"
+ SOV_patriots_from_a_young_age_idea_2_desc:0 ""
+ SOV_patriots_from_a_young_age_idea_3:0 "Putinskaya Molodezh"
+ SOV_patriots_from_a_young_age_idea_3_desc:0 ""
+ SOV_social_media_bots_idea:0 "Social Media Bots"
+ SOV_social_media_bots_idea_desc:0 ""
+ SOV_ukrainian_insurgency:0 "Ukrainian Insurgency"
+ SOV_ukrainian_insurgency_desc:0 "Despite our victory, Ukrainians still resist our rule. Not for long though..."
+ SOV_local_offensive_modifier:0 "Local Offensive"
+ SOV_local_offensive_modifier_desc:0 ""
+ SOV_unpopular_mobilisation:0 "Unpopular Mobilisation"
+ SOV_unpopular_mobilisation_desc:0 ""
+ SOV_unpopular_mobilisation_tt:0 "§RThis spirit will be removed should we lower our conscription laws§!"
+ SOV_nothern_setback:0 "Setbacks In The North"
+ SOV_nothern_setback_desc:0 ""
+ SOV_nothern_setback_player:0 "Setbacks In The North"
+ SOV_nothern_setback_player_desc:0 ""
+ SOV_a_harsh_war:0 "A Harsh War"
+ SOV_a_harsh_war_desc:0 ""
+ SOV_a_harsh_war_offensive:0 "A Harsh War"
+ SOV_a_harsh_war_offensive_desc:0 ""
+ SOV_forced_conscription:0 "Forced Conscription"
+ SOV_forced_conscription_desc:0 ""
+ SOV_no_option_but_victory_idea:0 "No Option But Victory!"
+ SOV_no_option_but_victory_idea_desc:0 "We are not engaged in a meager war against some small nation, but in a total war against the west. Every Russian must know, that victory in the SMO is the only option to avoid the total collapse of our nation!"
+ SOV_emergency_banking_actions:0 "Emergency Banking Actions"
+ SOV_emergency_banking_actions_desc:0 ""
+ SOV_failure_in_crimea_2:0 "Failure In Crimea"
+ SOV_failure_in_crimea_2_desc:0 "Our military has suffered an embarassing defeat in Crimea."
+ SOV_failure_in_crimea_2_tt:0 "§RThis spirit will be removed when we are no longer at war with Ukraine§!"
+ SOV_those_we_protect:0 "Those We Protect"
+ SOV_those_we_protect_desc:0 "We launched the SMO do destroy the Nazi government in Kiev, but we have been unbale to advance. Instead, we must focus on protecting what we currently have from Ukrainian agression."
+ SOV_those_we_protect_2:0 "Those We Protect"
+ SOV_those_we_protect_2_desc:0 "We launched the SMO do destroy the Nazi government in Kiev, but we have been unbale to advance. Instead, we must focus on protecting what we currently have from Ukrainian agression."
+ SOV_those_we_protect_3:0 "Those We Protect"
+ SOV_those_we_protect_3_desc:0 "We launched the SMO do destroy the Nazi government in Kiev, but we have been unbale to advance. Instead, we must focus on protecting what we currently have from Ukrainian agression."
+ SOV_those_we_protect_4:0 "Those We Protect"
+ SOV_those_we_protect_4_desc:0 "We launched the SMO do destroy the Nazi government in Kiev, and we still have much to do. Heroes, forwards!"
+ SOV_defend_novorossia:0 "Defending New Russia"
+ SOV_defend_novorossia_desc:0 ""
+ SOV_controlled_oligarchy:0 "Controlled Oligarchy"
+ SOV_controlled_oligarchy_desc:0 "We have brought the oligarchs under control, although that is not to say they have ceased to exist. Far from it in fact."
+ SOV_patriotic_youth_idea:0 "Patriotic Youth"
+ SOV_patriotic_youth_idea_desc:0 "We must encourage a sense of nationalism and patriotism in the youth, so they will oppose the west instead of us."
+ SOV_patriotic_youth_idea_2:0 "Patriotic Youth"
+ SOV_patriotic_youth_idea_2_desc:0 "We must encourage a sense of nationalism and patriotism in the youth, so they will oppose the west instead of us."
+ SOV_the_new_nobility_siloviki_idea:0 "The New Nobility"
+ SOV_the_new_nobility_siloviki_idea_desc:0 "Nikolai Patrushev has stated that many within the security agencies do not work for money, but instead work for the betterment of mother Russia, dubbing them the 'new nobility'. By staffing these positions with Patrushev loyalists, we can secure our control over Russia, while getting a little richer."
+ SOV_heavy_industry_focus:0 "Heavy Industry Focus"
+ SOV_heavy_industry_focus_desc:0 "What good is an army without guns? We need to focus on our heavy industry to boost the strength of Russia so we can take our rightful place in the world."
+ SOV_hatred_for_the_west_modifier:0 "Hatred For The West"
+ SOV_hatred_for_the_west_modifier_desc:0 "We must instill hatred for the enemies of the motherland into the souls of all of our soldiers - let our enemies know that as they stand divided, Russia is united behind the great [SOV.GetLeader]!"
+ SOV_second_great_patriotic_war_modifier:0 "The Second Great Patriotic War"
+ SOV_second_great_patriotic_war_modifier_desc:0 "75 years ago we Russians marched on the Fascist lair in Berlin and hoisted our victory flags. Today we shall do the same - in Washington!"
+ SOV_second_great_patriotic_war_modifier_tt:0 "§RThis spirit will be removed upon leaving a state of war\n§!"
+ SOV_UKR_winter_wartime:0 "General Winter"
+ SOV_UKR_winter_wartime_desc:0 "As temperatures plummet and snow blankets the landscapes, the harsh winter conditions severely impact military operations and societal functions across the nation."
+ SOV_legacy_of_ancient_rus:0 "Legacy Of Ancient Rus'"
+ SOV_legacy_of_ancient_rus_desc:0 "We Russians have spread civilisation to 20% of the world, and it is our mission to bring it to the other 80%. Those within our territory who do not understand this must be treated as the foreign agents they are."
+ SOV_cuture_of_strength:0 "Culture Of Strength"
+ SOV_cuture_of_strength_desc:0 "We Russians have spread civilisation to 20% of the world, and it is our mission to bring it to the other 80%. Those within our territory who do not understand this must be treated as the foreign agents they are."
+ SOV_funds_to_foreign_groups:0 "Funds To Foreign Allies"
+ SOV_funds_to_foreign_groups_desc:0 ""
+ SOV_political_commissars_idea:0 "Political Commissars"
+ SOV_political_commissars_idea_desc:0 ""There are decades where nothing happens; and there are weeks where decades happen." - Vladimir Lenin.\n\nToday, we are coming up on the latter part, and every soldier must know it. There can be no room for disloyalty within the great Russian Army!"
+ SOV_political_commissars_idea_2:0 "Political Commissars"
+ SOV_political_commissars_idea_2_desc:0 ""There are decades where nothing happens; and there are weeks where decades happen." - Vladimir Lenin.\n\nToday, we are coming up on the latter part, and every soldier must know it. There can be no room for disloyalty within the great Russian Army!"
+ SOV_pro_russian_sentiment:0 "Pro-Russian Sentiment"
+ SOV_pro_russian_sentiment_desc:0 "Russian-funded groups are spreading dissent within our country, ans there is little we can do but wait."
+ SOV_improving_troop_conditions:0 "Improving Troop Conditions"
+ SOV_improving_troop_conditions_desc:0 ""
+ SOV_the_great_patriotic_war_idea_girkin:0 "The Second Great Patriotic War"
+ SOV_the_great_patriotic_war_idea_girkin_desc:0 "75 years ago we Russians marched on the Fascist lair in Berlin and hoisted our victory flags. Today we shall do the same - in Kiev!"
+ SOV_drone_warfare:0 "Drone Warfare"
+ SOV_drone_warfare_desc:0 "The world of warfare is changing rapidly with the rise of FPV drones. These unmanned aerial vehicles offer numerous advantages over traditional manned aircraft, including lower costs, greater endurance, and the ability to operate in dangerous or inaccessible areas."
+ SOV_drone_warfare_better:0 "Drone Warfare"
+ SOV_drone_warfare_better_desc:0 "The world of warfare is changing rapidly with the rise of FPV drones. These unmanned aerial vehicles offer numerous advantages over traditional manned aircraft, including lower costs, greater endurance, and the ability to operate in dangerous or inaccessible areas."
+ SOV_entrenchment_efforts:0 "Entrenchment Efforts"
+
+ SOV_stagnant_economy:0 "Stagnant Economy"
+ SOV_stagnant_economy_desc:0 "Although nowhere near as bad as the nineties, real wages and overall quality of life for the average citizen have barely increased since the times of the Soviet Union."
+
+ SOV_stagnant_economy_better:0 "Stagnant Economy"
+ SOV_stagnant_economy_better_desc:0 "Although nowhere near as bad as the nineties, real wages and overall quality of life for the average citizen have barely increased since the times of the Soviet Union."
+
+ SOV_wide_is_my_motherland:0 "Wide Is My Motherland"
+ SOV_wide_is_my_motherland_desc:0 "Russia is the largest country in the world, spanning two continents and encompassing a vast array of landscapes, cultures, and peoples. The government has embraced this diversity and adopted a policy of promoting unity through inclusiveness and respect for regional identities. The country's size and diversity have also allowed it to draw upon a wide range of natural resources and human capital, making it a major player in the global economy and politics. However, her size has also faced challenges, as ethnic tensions, separatist movements, and economic disparities continue to pose a threat to our nation."
+ SOV_wide_is_my_motherland_2:0 "Wide Is My Motherland"
+ SOV_wide_is_my_motherland_2_desc:0 "Russia is the largest country in the world, spanning two continents and encompassing a vast array of landscapes, cultures, and peoples. The government has embraced this diversity and adopted a policy of promoting unity through inclusiveness and respect for regional identities. The country's size and diversity have also allowed it to draw upon a wide range of natural resources and human capital, making it a major player in the global economy and politics. However, her size has also faced challenges, as ethnic tensions, separatist movements, and economic disparities continue to pose a threat to our nation."
+
+ SOV_cut_oil_exports:0 "Russian Oil Exports Cut"
+ SOV_cut_oil_exports_desc:0 ""
+
+ SOV_russia_today:0 "Russia Today"
+ SOV_russia_today_better:0 "Russia Today"
+ SOV_russia_today_desc:0 "During the global financial crisis of 2008, the state-owned television network 'Russia Today' was declared of strategic importance to Russia. To quote Putin, it was to 'challenge the anglo-saxon dominated news world,' and since then has only become more and more entangled with the Russian government.\n\nHowever RT is not the only news network to fall into the hands of the Russian government. Other television and radio stations, such as Rossiya one have been purged of any commentators that oppose the government line, and to many, free press is dead in Russia."
+
+ SOV_the_eastern_yoke:0 "The Rot"
+ SOV_the_eastern_yoke_desc:0 "One area infamous for being a hotspot of corruption and negligence is the army. Since the stagnation of the Brezhnev era, and especially since the anarchy of the nineties, the army has been viewed as an occupation of the lower classes, for those who have no technical skills or knowledge and no route for social mobility. Since Putin's ascendancy, the army has also been gutted of any competent and skilled generals and commanders, for fear that they could gain enough power and prestige to challenge his government. As such, the cannon fodder in the army recieve a trinket wage, which they supplement by selling tyres, copper wire, and anything else they can get their hands on. After all, when the common soldier, the regional commander, the depot manager, and the munitions inspector are all secretly selling our stockpiles, as far as the government is concerned, the stockpiles are full.\n\nThese problems hit Putin in the face during the 2008 Russo-Georgian war, when the lackluster performance of the Russian army and lack of reserve equipment was put on display for the whole world to see. Fortunately for him, no one seemed to notice. Putin has since tried fixing this, and while to many Russia seems a true world power, if you take a closer look...\n\n§RThe Rot still remains.§!"
+ SOV_the_eastern_yoke_tt:0 "§RUpon inspection, it may be found that we have less equipment than previously thought.§!"
+
+ SOV_the_eastern_yoke_improved:0 "The Rot"
+ SOV_the_eastern_yoke_improved_desc:0 "One area infamous for being a hotspot of corruption and negligence is the army. Since the stagnation of the Brezhnev era, and especially since the anarchy of the nineties, the army has been viewed as an occupation of the lower classes, for those who have no technical skills or knowledge and no route for social mobility. Since Putin's ascendancy, the army has also been gutted of any competent and skilled generals and commanders, for fear that they could gain enough power and prestige to challenge his government. As such, the cannon fodder in the army recieve a trinket wage, which they supplement by selling tyres, copper wire, and anything else they can get their hands on. After all, when the common soldier, the regional commander, the depot manager, and the munitions inspector are all secretly selling our stockpiles, as far as the government is concerned, the stockpiles are full.\n\nThese problems hit Putin in the face during the 2008 Russo-Georgian war, when the lackluster performance of the Russian army and lack of reserve equipment was put on display for the whole world to see. Fortunately for him, no one seemed to notice. Putin has since tried fixing this, and while to many Russia seems a true world power, if you take a closer look...\n\n§RThe Rot still remains.§!"
+ SOV_the_eastern_yoke_tt:0 "§RUpon inspection, it may be found that we have less equipment than previously thought.§!"
+
+ SOV_the_eastern_yoke_monarch:0 "The Eastern Yoke"
+ SOV_the_eastern_yoke_monarch_desc:0 "Since the times of the Mongol invasion and subjugation, the lands of Russia have been ruled by corrupt, autocratic and brutal governments, with little regard for their people. As such, the ordinary citizens of the empire outside of Moscow have been left to fend for themselves, and have shown very little apathy to the health of the Russian state and it's institutions.\n\nGeorge Mikhailovich's reforms have only worsened this problem, as Russia regresses back towards a feudal state."
+ SOV_the_eastern_yoke_tt:0 "§RUpon inspection, it may be found that we have less equipment than previously thought.§!"
+
+ SOV_wunderwaffe:0 "Wunderwaffe"
+ SOV_wunderwaffe_desc:0 "To compensate for our lackluster military, the Russian MOD signs off on many expensive projects of questionable credibility and quality. To quote the old Soviet adage, 'our best export is the illusion of a great power'."
+
+ SOV_the_great_patriotic_war_idea:0 "Memories Of The Great Patriotic War"
+ SOV_the_great_patriotic_war_idea_desc:0 "Much of the Russian psyche was forged in the Great Patriotic War. A truly apocalyptic event, the people of the Soviet Union survived the Nazi attempts to destroy their culture and peoples, and May Ninth, victory day, has become most important day in all of Russia, especially under Putin's reign. If a leader of Russia wanted to, hypothetically, start a war, all they would have to do would be to draw parralels to their war, and the Great Patriotic War to get the majority of Russians behind it."
+
+ SOV_the_second_great_patriotic_war:0 "The Second Great Patriotic War"
+
+ SOV_local_effensive_in_crimea_modifier:0 "Russian Offensive"
+ SOV_local_effensive_in_crimea_modifier_desc:0 ""
+
+ SOV_legacy_of_chechnya:0 "Memories Of Chechnya"
+ SOV_legacy_of_chechnya_desc:0 "\n\n\n\n£idea_SOV_chechen_wardesc_picture\n\n\n\n\n\nThe Chechen wars of 1994-96 and 1999-00 were events that shook the newborn Russian Federation to it's core. The first humiliated the Russian army on the international stage, showing to the world the sheer state of disarray it was in. The second saw the crushing of Chechen independence, and the establishment of a pro-Kremlin puppet regime in Chechnya.\n\nHowever, it is the brutality and scale of the war that has left it fresh in the Russian mind. About 150 to 250 thousand Chechens fled their homeland or were killed, in a country of only a million people. In response to this brutality, Chechen Islamists responded with a series of sporadic terrorist attacks on Russian territory, most infamously the Dubrovka Theatre hostage crisis, which lead to 171 deaths, and the Beslan school seige, which lead to 333 deaths, including 186 school children. Although the large death tolls were due to the sheer recklessness of the Russian special forces involved, Putin's government has since spun the incidents to fearmonger over Islamist seperatism and strip the Russian people of more of their rights in the name of counter-terrorism."
+
+ SOV_remembering_the_past:0 "Remembering The Past"
+ SOV_remembering_the_past_desc:0 "Following the tumultuous events of 1991, our country emerged battered but resilient, having weathered significant political and economic upheaval. Today we reflect the hard-won lessons learned from that difficult period, and the determination to avoid similar mistakes and pitfalls in the future."
+
+ SOV_secret_involvement:0 "Secret Involvement"
+ SOV_secret_involvement_desc:0 "To avoid further pushback from western powers, the scale of our operations in Donbass have to be somewhat limited."
+ SOV_secret_involvement_medium:0 "Secret Involvement"
+ SOV_secret_involvement_medium_desc:0 "To avoid further pushback from western powers, the scale of our operations in Donbass have to be somewhat limited."
+ SOV_secret_involvement_large:0 "Secret Involvement"
+ SOV_secret_involvement_large_desc:0 "To avoid further pushback from western powers, the scale of our operations in Donbass have to be somewhat limited."
+ SOV_secret_involvement_huge:0 "Secret Involvement"
+ SOV_secret_involvement_huge_desc:0 "To avoid further pushback from western powers, the scale of our operations in Donbass have to be somewhat limited."
+
+ SOV_aftermath_coup_idea:0 "The Aftermath"
+ SOV_aftermath_coup_idea_desc:0 "The nation has emerged from a period of instability and uncertainty following a successful coup. The new regime has prioritized rebuilding and restoring the country to its former glory. As a result, the population is motivated and focused on reconstruction efforts, with construction projects being completed at an accelerated pace. "
+
+ SOV_the_peoples_vote_idea:0 "Suppressing Opposition"
+
+ SOV_heritage_of_the_tsars:0 "Heritage Of The Tsars"
+ SOV_heritage_of_the_tsars_desc:0 "Russia has a rich and complex history, with a legacy of art, literature, and cultural achievements that have shaped the country's identity and national pride. The government has sought to promote this heritage and use it as a source of inspiration for modern-day Russia, highlighting the country's historical achievements and contributions to world culture. From the grand palaces of the tsars to the iconic works of artists such as Tolstoy and Tchaikovsky, Russia's cultural legacy remains a source of national pride and identity. However, this focus on the past has also faced criticism for ignoring more recent events and issues, such as the country's turbulent political history and ongoing challenges facing its people."
+
+ SOV_government_subsidies_for_childbirth:0 "Government Subsidies For Childbirth"
+ SOV_government_subsidies_for_childbirth_desc:0 "In an effort to boost the country's birthrate and address demographic challenges, the Russian government has announced a new policy of providing subsidies for childbirth. Under the new policy, families will receive financial support for each child born, with additional benefits for larger families. The government has emphasized the importance of encouraging families to have children and of supporting parents in raising them, citing demographic trends that suggest an aging population and declining birthrates. The policy has faced criticism from some quarters, however, with concerns raised over the cost of the subsidies and the potential for abuse or fraud."
+
+ SOV_weekened_leader:0 "Weakened Leader"
+
+ SOV_russian_military_doctrine:0 "Russian Military Doctrine"
+
+ SOV_failure_in_crimea:0 "Failure In Crimea"
+
+ SOV_candidate_above_all_idea:0 "The Document Effect"
+
+ SOV_peace_in_our_nation:0 "Peace In The Nation"
+
+ SOV_more_power_to_oligarchs:0 "More Power To Oligarchs"
+
+ SOV_anti_lgbt_laws:0 "Anti-Gay Laws"
+ SOV_anti_lgbt_laws_better:0 "Anti-Gay Laws"
+ SOV_anti_lgbt_laws_even_better:0 "Anti-Gay Laws"
+
+ SOV_the_crimean_burden_better:0 "The Crimean Burden"
+
+ SOV_western_sanctions:0 "Western Sanctions"
+ SOV_fighting_western_sanctions:0 "Western Sanctions"
+
+ SOV_promoting_industry:0 "Promoting The Industry"
+
+ SOV_patriots_from_young_age:0 "Young Patriots"
+
+ SOV_children_of_future_russia:0 "Patriotic Education"
+ SOV_children_of_future_russia_2:0 "Russia United"
+
+ SOV_soldiers_from_west_russia:0 "Soldiers From West Russia"
+
+ SOV_hatred_for_the_west:0 "Hatred For The West"
+ SOV_hatred_for_the_west_2:0 "Hatred For The West"
+ SOV_hatred_for_the_west_3:0 "Hatred For The West"
+
+ SOV_three_days_to_kiev:0 "Three Days To Kiev"
+ SOV_three_days_to_kiev_desc:0 "We have prepared ourselves for a short, nay, lightning-quick war. Our forces are told to advance at rapid speeds, and initial morale is high."
+ SOV_three_days_to_kiev_player:0 "Three Days To Kiev"
+ SOV_three_days_to_kiev_player_desc:0 "We have prepared ourselves for a short, nay, lightning-quick war. Our forces are told to advance at rapid speeds, and initial morale is high."
+
+ SOV_SOV_fab_5000:0 "FAB-5000"
+
+ SOV_second_iron_curtain:0 "The Second Iron Curtain"
+
+ SOV_quarantined:0 "Russia Quarantined"
+
+ SOV_legacy_of_vladimir_vladimirovic:0 "Legacy Of Vladimir Vladimirovich"
+
+ SOV_f1_calendar:0 "On the F1 Calendar"
+ SOV_f1_calendar_desc:0 "Russia has made a significant investment in motorsports in recent years, with the government and private sector working together to promote the country as a premier destination for racing events. As part of this effort, Russia has secured a place on the Formula One calendar, with the Sochi Autodrom hosting a round of the championship each year. The event attracts top drivers and teams from around the world, and is seen as a showcase of Russia's technological prowess and sporting culture. The government has also used the event as a way to promote tourism and generate economic activity in the region. However, the event has faced criticism from some quarters over concerns about human rights abuses and the cost of hosting such a high-profile international event."
+
+ SOV_2018_worldcup_host:0 "2018 World Cup Host"
+ SOV_2018_worldcup_host_desc:0 "Our nation has hosted the FIFA World Cup, the world's biggest soccer tournament. The event was seen as a major coup for the country, showcasing its ability to host large-scale international events and promoting its image as a modern, welcoming nation. The tournament attracted millions of visitors from around the world, generating significant economic activity and boosting the country's tourism industry. The government invested heavily in infrastructure and security to ensure the smooth running of the tournament, with new stadiums and transportation links built in cities across the country."
+
+ SOV_defensive_focus:0 "Defensive Focus"
+ SOV_defensive_focus_desc:0 ""
+
+ SOV_lowered_pensions:0 "Lowered Pensions"
+
+ SOV_okb_novator:0 "OKB "Novator""
+
+ SOV_crimean_bridge_under_construction:0 "Building the Crimean bridge"
+ SOV_crimean_bridge_under_construction_desc:0 ""
+
+ SOV_reorganizing_the_military:0 "Unorganized Military"
+
+ SOV_corrupt_military:0 "Corrupt High Command"
+
+ SOV_closed_borders:0 "Closed Borders"
+
+ SOV_promoting_national_companies:0 "Promoting National Companies"
+
+ SOV_topol_rockets:0 "Mass Produced Rockets"
+
+ SOV_russian_industry:0 "Russian Industry"
+ SOV_russian_industry_2:0 "Russian Industry"
+
+ SOV_army_ready:0 "Army Ready"
+ SOV_army_ready_2:0 "Army Ready"
+ SOV_army_ready_3:0 "Army Ready"
+
+ SOV_either_die_or_conquer_idea:0 "Either Die Or Conquer"
+
+ SOV_heating_up_the_guns:0 "Heating Up The Guns"
+ SOV_heating_up_the_guns_2:0 "Heating Up The Guns"
+
+ SOV_great_fast_idea:0 "The Great Fast"
+
+ SOV_military_turned_into_business:0 "Military Turned Into Business"
+
+ SOV_military_turned_into_business_2:0 "Military Turned Into Business"
+
+ SOV_communism_banned:0 "Communist Parties Banned"
+
+ SOV_grain_deal_idea:0 "Grain Deal With The West"
+
+ SOV_skyrocketing_oil_prices_idea:0 "Skyrocketing Oil Prices"
+ SOV_no_gas_from_russia:0 "No Gas From Russia"
+
+ SOV_electoral_draft_idea:0 "Electoral Draft"
+
+ SOV_partial_selfdom_idea:0 "Partial Selfdom"
+ SOV_partial_selfdom_idea_2:0 "Partial Selfdom"
+
+ SOV_absolute_monarch:0 "An Absolute Monarch"
+
+ SOV_modernization_of_the_nation:0 "Modernization Of The Nation"
+
+ SOV_heroes_of_the_past_idea:0 "Heroes Of The Past"
+
+ SOV_reconnaissance_satellite:0 "Reconnaissance Satellites"
+
+ SOV_heroes_of_russian_aeroengineering_idea:0 "Heroes Of Russia Aeroengineering"
+
+ SOV_shattered_bear:0 "Shattered Bear"
+ SOV_shattered_bear_desc:0 "The weight of war and political upheaval hangs heavy. The once mighty bear of Russia lies wounded, its internal wounds mirroring the shattered landscape of Ukraine. The people are weary, disillusioned, and divided."
+ SOV_legacy_of_the_war:0 "Legacy Of The War"
+
+ pik:0 "PIK"
+ donstroy:0 "Don-Stroy"
+ gazprom:0 "Gazprom"
+ rosatom:0 "RosAtom"
+ rosneft:0 "RosNeft"
+ kalashnikov:0 "Kalashnikov"
+ sukhoi:0 "Sukhoi"
+ murmansk_shipyards:0 "Murmansk Shipyards"
+ uralvagonzavod:0 "Uralvagonzavod"
+ ilyushin:0 "Ilyushin"
+ can_unlock_this_company_tt:0 "This company is available for use"
+
+#Russian occupied ukraine
+
+ROU_unstable_government:0 "Unstable Government"
+ROU_unstable_government_2:0 "Unstable Government"
+ROU_unstable_government_3:0 "Unstable Government"
+ROU_unstable_government_4:0 "Unstable Government"
+ROU_russian_special_forces:0 "Russian Special Forces"
+ROU_russian_special_forces_2:0 "Russian Special Forces"
+ROU_grain_export_to_russia_idea:0 "Grain Export To Russia"
+ROU_moscow_kiev_brotherhood:0 "Moscow-Kiev Brotherhood"
+
+#Cherkessia
+
+KCA_diverse_military:0 "Diverse Military"
+KCA_diverse_military_2:0 "Diverse Military"
+KCA_diverse_military_3:0 "Diverse Military"
+KCA_new_economy:0 "A New Economy"
+KCA_improved_economy:0 "An Improved Economy"
+KCA_safety_measures:0 "Safety Measures"
+
+#Ossetia
+
+NOA_descendants_of_the_alans_idea:0 "Descendants Of The Alans"
+NOA_descendants_of_the_alans_idea_2:0 "Descendants Of The Alans"
+NOA_descendants_of_the_alans_idea_3:0 "Descendants Of The Alans"
+NOA_extreme_measures:0 "Extreme Measures"
+NOA_anti_georgian_military:0 "Anti-Georgian Military"
+
+#Ichkeria
+
+ING_ichkerian_legacy:0 "Ichkerian Legacy"
+ING_ichkerian_legacy_2:0 "Ichkerian Legacy"
+ING_always_prepared:0 "Always Prepared"
+ING_turkish_oil_idea:0 "Turkish Oil"
+ING_fight_for_freedom:0 "Fight For Freedom"
+ING_jihad_declared:0 "Jihad Declared"
+
+#Kabardino
+
+KBA_soviet_factories_idea:0 "Soviet Factories"
+KBA_investments_from_china:0 "Investments From China"
+KBA_last_stand:0 "Last Stand!"
+
+ANY_paramilitary:0 "Paramilitary Unit"
+
+#Civil War
+
+#Gennady
+RFR_red_army:0 "People's Army"
+RFR_defiance:0 "Defiance"
+RFR_defiance_2:0 "Defiance"
+vanguard_leader:0 "Vanguard Leader"
+RFR_council_power:0 "Council Power"
+RFR_council_power_2:0 "Council Power"
+RFR_socialist_industrial_base:0 "Socialist Industrial Base"
+RFR_educated_proletaria:0 "Educated Proletariat"
+RFR_collective_harvest:0 "Collective Harvest"
+RFR_anti_capitalist_council:0 "Anti-Capitalist Council"
+SOV_worker_cooperation:0 "Worker Cooperation"
+SOV_socialist_centralization:0 "Socialist Centralization"
+
+#Putins Russia
+SOV_increased_taxation:0 "Increased Taxation"
+
+#Kirill
+SOV_theocratic_rule:0 "Theocratic Rule"
+SOV_theocratic_rule_2:0 "Theocratic Rule"
+SOV_theocratic_rule_3:0 "Theocratic Rule"
+SOV_theocratic_rule_4:0 "Theocratic Rule"
+SOV_synod_supremacy:0 "Synod Supremacy"
+SOV_council_of_bishops:0 "Council Of Bishops"
+SOV_supreme_theocratic_rule:0 "Supreme Theocratic Rule"
+supreme_bishop:0 "Supreme Bishop"
+SOV_economic_advancement:0 "Economic Advancement"
+SOV_holy_order:0 "Holy Order"
+SOV_divine_shield:0 "Divine Shield"
+SOV_holy_war_doctrine:0 "Orthodox Holy War Doctrine"

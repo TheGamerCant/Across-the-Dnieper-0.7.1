@@ -1,0 +1,26 @@
+﻿capital = 344
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Volodymyr Yatsuba"
+	desc = ""
+	picture = gfx/leaders/CRI/Portrait_Volodymyr_Yatsuba.png
+	ideology = volodymyr_yatsuba_subideology
+}
+
+create_country_leader = {
+	name = "Sergey Aksyonov"
+	desc = ""
+	picture = gfx/leaders/CRI/Portrait_Sergey_Aksyonov.png
+	ideology = sergey_aksyonov_subideology
+}
+
+set_politics = {
+	ruling_party = eastern_liberal
+}
+
+set_popularities = {
+	eastern_conservative = 54
+	eastern_liberal = 46
+}

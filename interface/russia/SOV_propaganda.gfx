@@ -1,0 +1,51 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_report_event_SOV_novosti"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_novosti.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_maidan"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_maidan.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_novosti_2"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_novosti_2.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_greystone"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_greystone.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_rossiya_24"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_rossiya_24.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_yarosh_gonna_win"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_yarosh_gonna_win.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_donetsk_burned"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_donetsk_burned.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_far_right_recruitment"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_far_right_recruitment.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_mh17"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_mh17.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_ukraine_nazi_flag"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_ukraine_nazi_flag.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_results_of_the_year"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_results_of_the_year.png"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_SOV_world_order_2018"
+		texturefile = "gfx/event_pictures/SOV_propaganda/SOV_world_order_2018.png"
+	}
+ }
+ 

@@ -1,0 +1,178 @@
+﻿capital =269
+
+load_ukraine_doctrine = yes
+
+set_politics = {
+	ruling_party = fascist
+	elections_allowed = no
+}
+
+2019.5.29 = {
+	
+	set_politics = {
+		ruling_party = fascist
+		elections_allowed = no
+	}
+	set_stability = 0.45
+	set_war_support = 0.74
+	set_party_name = { ideology = fascist long_name = UKR_military_junta_party_long name = UKR_military_junta_party }
+
+}
+
+set_research_slots = 4
+set_stability = 0.4
+set_war_support = 0.24
+
+set_convoys = 57
+
+set_popularities = {
+	fascist = 100
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "T-64"
+		type = t64_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "T-64av"
+		type = t64_chasis
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+			special_type_slot_5 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+	create_equipment_variant = {
+		name = "T-72"
+		type = t72_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "T-72b"
+		type = t72_chasis
+		obsolete = no
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+			special_type_slot_5 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+	create_equipment_variant = {
+		name = "T-80"
+		type = t80_chasis
+		obsolete = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+			special_type_slot_5 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+	create_equipment_variant = {
+		name = "T-80bv"
+		type = t80_chasis
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_modern_cannon2
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = basic_optics_module
+			special_type_slot_2 = basic_comms_module
+			special_type_slot_5 = armor_era
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+	create_equipment_variant = {
+		name = "T-84"
+		type = t90_chasis
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_modern_cannon2
+			turret_type_slot = tank_modern_tank_turret2
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = armor_era
+			special_type_slot_3 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 5
+		}
+	}
+}

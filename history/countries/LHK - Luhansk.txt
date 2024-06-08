@@ -1,0 +1,107 @@
+﻿capital = 152
+
+load_soviet_doctrine = yes
+
+recruit_character = LHK_yan_leshchenko
+recruit_character = LHK_oleg_bugrov
+
+create_country_leader = {
+	name = "Igor Plotnitsky"
+	desc = ""
+	picture = gfx/leaders/LHK/Portrait_Igor_Plotnitsky.png		
+	ideology = generic_eastern_conservative				#Also he gets purged and replaced in 2018 I think, na he killed himself in 2017 ~ Webblit
+}														#https://en.wikipedia.org/wiki/Igor_Plotnitsky On 25 November the 38-member People's Council of the self-proclaimed state unanimously approved Plotnitsky's resignation. ~TGC
+
+
+2018.1.1={
+	create_country_leader = {
+		name = "Leonid Pasechnik"
+		desc = ""
+		picture = gfx/leaders/LHK/Portrait_Leonid_Pasechnik.png		
+		ideology = generic_eastern_conservative
+	}
+	
+	complete_national_focus = DONBASS_glory_to_the_republic
+	complete_national_focus = DONBASS_ukrainian_collaborators
+	complete_national_focus = DONBASS_peace_and_bread
+	complete_national_focus = DONBASS_independence_day_parades
+	complete_national_focus = DONBASS_rely_on_russia
+	complete_national_focus = DONBASS_little_green_men
+	complete_national_focus = DONBASS_destroy_all_opposition
+	complete_national_focus = DONBASS_all_power_to_the_party
+	complete_national_focus = DONBASS_work_for_the_republic
+	complete_national_focus = DONBASS_old_soviet_factories
+	complete_national_focus = DONBASS_dig_deeper
+	complete_national_focus = DONBASS_russian_resource_companies
+	
+	
+	unlock_national_focus = DONBASS_the_fight_against_nazism
+	complete_national_focus = DONBASS_urban_warfare
+	complete_national_focus = DONBASS_seize_ukrainian_equipment
+	complete_national_focus = DONBASS_mandatory_conscription
+	complete_national_focus = DONBASS_grab_whatever_we_can
+	complete_national_focus = DONBASS_central_command
+}
+
+set_variable = { maximum_number_of_offensives = 1 }
+set_variable = { number_of_undertaken_offensives = 0 }
+
+set_research_slots = 2
+set_stability = 0.40
+set_war_support = 0.5
+
+set_variable = { DONBASS_BCOAS_stability_factor = -0.1 }
+set_variable = { DONBASS_BCOAS_political_power_cost = 1.2 }
+set_variable = { DONBASS_BCOAS_inflation_monthly = 0.04}
+set_variable = { DONBASS_BCOAS_research_speed_factor = -0.2 }
+set_variable = { DONBASS_BCOAS_industrial_capacity_dockyard = -0.5 }
+set_variable = { DONBASS_BCOAS_industrial_capacity_factory = -0.5 }
+set_variable = { DONBASS_BCOAS_ruling_party_drift = 0 }
+
+
+add_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state  }
+add_ideas = oligarchy
+add_ideas = martial_law
+add_ideas = extensive_conscription
+add_ideas = state_controlled_press
+add_ideas = bipolarist
+add_ideas = womens_rights_patriarchy
+add_ideas = lgbtq_rights_banned
+add_ideas = nationalism_laws_jingoistic
+ 
+set_variable = { impromptu_militias_war_support_factor = -0.5 }
+set_variable = { impromptu_militias_stability_factor = -0.1 }
+set_variable = { impromptu_militias_conscription = 0.04 }
+set_variable = { impromptu_militias_army_morale_factor = -0.08 }
+set_variable = { impromptu_militias_army_attack_factor = -0.19 }
+set_variable = { impromptu_militias_army_core_defence_factor = 0.02 }
+set_variable = { impromptu_militias_army_speed_factor = -0.35 }
+set_variable = { impromptu_militias_army_org_factor = -0.1 }
+set_variable = { impromptu_militias_surrender_limit = 0.35 }
+set_variable = { impromptu_militias_ai_focus_defense_factor = 0.6 }
+set_variable = { impromptu_militias_org_loss_when_moving = -0.15 }
+set_variable = { impromptu_militias_command_power_gain_mult = -0.40 }
+set_variable = { impromptu_militias_experience_gain_army_factor = -0.40 }
+set_variable = { impromptu_militias_max_command_power = -80 }
+
+add_dynamic_modifier = { modifier = DONBASS_impromptu_militias }
+add_dynamic_modifier = { modifier = DONBASS_hidden_ai_defence_modifier }
+
+2022.1.1 = {
+	add_ideas = assisting_russia
+}
+
+set_politics = {
+	ruling_party = eastern_conservative
+	last_election = "2010.10.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	eastern_conservative = 92
+	populist = 3
+	eastern_liberal = 2
+	socialist = 2
+	moderate_communist = 1
+}

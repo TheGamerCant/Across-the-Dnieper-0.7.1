@@ -1,0 +1,65 @@
+POL_is_election_state={
+	OR={
+		state = 427
+		state = 34
+		state = 31
+		state = 51
+		state = 19
+		state = 38
+		state = 47
+		state = 22
+		state = 36
+		state = 40
+		state = 64
+		state = 49
+		state = 62
+		state = 67
+		state = 81
+		state = 76
+	}
+}
+
+POL_are_president_and_pm_different_ideologies={
+	if={
+		limit = { 
+			OR={
+				bronislaw_komorowski_is_leader = yes 
+			}
+		}
+		NOT = { has_government = neoliberal }
+	}
+	else_if={
+		limit = { 
+			OR = {
+				andrzej_duda_is_leader = yes 
+				jaroslaw_kaczynski_is_leader = yes
+			} 
+		}
+		NOT = { has_government = neoconservative }
+	}
+	else_if={
+		limit = { 
+			OR = {
+				pawel_kukiz_is_leader = yes
+			} 
+		}
+		NOT = { OR = { has_government = populist has_far_right_government = yes } }
+	}
+	else_if={
+		limit = { 
+			OR = {
+				magdalena_ogorek_is_leader = yes
+				leszek_miller_is_leader = yes
+			} 
+		}
+		NOT = { OR = { has_government = social_democracy has_far_left_government = yes } }
+	}
+	else_if={
+		limit = { 
+			OR = {
+				adam_jarubas_is_leader = yes
+			} 
+		}
+		NOT = { has_government = eastern_liberal }
+	}
+}

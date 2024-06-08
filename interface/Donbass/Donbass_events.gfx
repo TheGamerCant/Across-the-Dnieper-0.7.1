@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_DON_me_at_the_function"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_me_at_the_function.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_celebration"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_celebration.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_airport"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_airport.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_foreign_volunteers"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_foreign_volunteers.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_dead"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_dead.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_dead_2"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_dead_2.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_dead_3"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_dead_3.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_givi"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_givi.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_purgin"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_purgin.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_normandy"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_normandy.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_shelling"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_shelling.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_leader_dead"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_leader_dead.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_elections"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_elections.png"
+	}
+	spriteType = {
+		name = "GFX_event_DON_police"
+		textureFile = "/gfx/event_pictures/DONBASS/DON_police.png"
+	}
+}

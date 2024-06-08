@@ -1,0 +1,512 @@
+#Stop AI making a morbillion divisions
+division_limiter = {
+	enable = {
+		dont_build_divisions_trigger = yes
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_army
+		id = paratroopers
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = anti_tank
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marine
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mobile
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mountaineer
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = bicycle
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = garrison
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = militia
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = cavalry
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -1000
+	}
+}
+
+
+
+default_unit_production = { #If adding country-unique ones, bear in mind that they STACK
+	enable = {
+		NOT = { original_tag = SOV }
+		NOT = { original_tag = UKR }
+	}
+
+	ai_strategy = {
+	    type = garrison
+	    value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 5
+	}
+}
+
+
+default_build_civs_early = {
+	enable = {
+		AND = {
+			date < 2018.1.1
+			NOT = { original_tag = SOV }
+
+			NOT = { original_tag = LHK }
+			NOT = { original_tag = DON }
+			NOT = { original_tag = ODS }
+			NOT = { original_tag = KHK }
+			
+			has_war = no
+		}
+	}
+	abort = {
+		OR = {
+			date > 2018.1.1
+			has_war = yes
+		}
+	}
+
+	ai_strategy = {
+	    type = building_target
+	    id = industrial_complex
+	    value = 50
+	}
+
+	ai_strategy = {
+	    type = building_target
+	    id = infrastructure
+	    value = 50
+	}
+
+	ai_strategy = {
+	    type = added_military_to_civilian_factory_ratio
+	    value = -100
+	}
+}
+
+default_build_refs_early = {
+	enable = {
+		AND = {
+			date < 2015.1.1
+			NOT = { original_tag = SOV }
+			has_tech = synth_oil_experiments
+			has_war = no
+		}
+	}
+	abort = {
+		OR = {
+			date > 2015.1.1
+			has_war = yes
+		}
+	}
+
+	ai_strategy = {
+	    type = building_target
+	    id = synthetic_refinery
+	    value = 50
+	}
+}
+
+default_build_mils_late = {
+	enable = {
+		OR = {
+			AND = {
+				date > 2018.1.1
+				NOT = { original_tag = SOV }
+			}
+			has_war = yes
+		}
+	}
+	
+	ai_strategy = {
+	    type = building_target
+	    id = synthetic_refinery
+	    value = 4
+	}
+	ai_strategy = {
+	    type = building_target
+	    id = infrastructure
+	    value = 8
+	}
+
+	ai_strategy = {
+	    type = added_military_to_civilian_factory_ratio
+	    value = 50
+	}
+}
+
+default_garrison_production = {
+	enable = {
+		num_of_military_factories > 4
+	}
+	abort = {
+		num_of_military_factories < 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 10
+	}
+}
+
+default_armored_production = {
+	enable = {
+		num_of_military_factories > 24
+	}
+	abort = {
+		num_of_military_factories < 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+highered_armored_production = {
+	enable = {
+		num_of_military_factories > 49
+	}
+	abort = {
+		num_of_military_factories < 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+default_railway_gun_management = {
+	enable = {
+		num_divisions > 120
+		is_major = yes
+		has_dlc = "No Step Back"
+		num_of_military_factories > 40
+	}
+	abort = {
+		num_divisions < 90
+		num_of_military_factories < 30
+	}
+	ai_strategy = { # This will add the specified value to the RAILWAY_GUN_PRODUCTION_BASE_DIVISIONS_RATIO_PERCENT define and use that as the desired railway guns / divisions ratio (in %)
+		type = railway_gun_divisions_ratio
+		value = 4
+	}
+}
+
+default_stockpile_management = {
+	enable = {
+		num_divisions > 240
+		num_of_military_factories > 80
+	}
+	abort = {
+		num_divisions < 160
+		num_of_military_factories < 50
+	}
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 35 # double base stockpile #from 25 to 35
+	}
+}
+
+default_small_army_production = {
+	enable = {
+		AND = {
+			num_of_military_factories > 5
+			num_divisions < 11
+			NOT = { original_tag = SOV }
+			has_war = yes
+		}
+		NOT = { dont_build_divisions_trigger = yes }
+	}
+	abort = {
+		num_divisions > 10
+	}
+	
+	ai_strategy = {
+	    type = build_army
+	    id = infantry
+	    value = 80
+	}
+}
+
+DEFAULT_early_template_design = {
+	enable = {
+		AND = {
+			date < 2016.1.1
+			#Not Major
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = UKR }
+			NOT = { original_tag = POL }
+
+			#Not Donbas
+			NOT = { original_tag = DON }
+			NOT = { original_tag = LHK }
+			NOT = { original_tag = KHK }
+			NOT = { original_tag = ODS }
+
+			#Not Other Stuff
+			NOT = { original_tag = BLR }
+			has_war = no
+		}
+		
+		NOT = { dont_build_divisions_trigger = yes }
+	}
+	abort = {
+		OR = {
+			date > 2016.1.1
+			has_war = yes
+		}
+	}
+	
+	ai_strategy = {
+	    type = build_army
+	    id = infantry
+	    value = -50
+	}
+	ai_strategy = {
+	    type = build_army
+	    id = armor
+	    value = -100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 3
+	}
+}
+
+DEFAULT_midlate_template_design = {
+	enable = {
+		AND = {
+			date > 2016.1.1
+			NOT = { original_tag = SOV }
+		}
+		NOT = { dont_build_divisions_trigger = yes }
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = modern_armor
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 90
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 8
+	}
+}
+
+put_garrisons_on_high_prio = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 50 # positive is high prio, negative is low prio
+	}
+}
+
+run_generic_operation = {
+	enable = {
+		NOT = { check_variable = { generic_operation_target = 0 } }
+		NOT = { check_variable = { generic_operation_type_to_run = 0 } }
+		
+		var:generic_operation_target = {
+			exists = yes
+			has_capitulated = no
+			NOT = { is_ally_with = PREV }
+		}
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = operative_operation
+		operation = var:generic_operation_type_to_run
+		value = 900
+		operation_target = var:generic_operation_target
+	}
+	
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 800
+		mission_target = var:generic_operation_target
+	}
+}
+
+run_generic_operation_add_more_operatives = {
+	enable = {
+		NOT = { check_variable = { generic_operation_target = 0 } }
+		NOT = { check_variable = { generic_operation_type_to_run = 0 } }
+		
+		var:generic_operation_target = {
+			exists = yes
+			has_capitulated = no
+			NOT = { is_ally_with = PREV }
+		}
+		num_of_operatives > 4
+	}
+	
+	abort_when_not_enabled = yes
+
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 800
+		mission_target = var:generic_operation_target
+		num_operatives = 2
+	}
+}
+
+
+run_generic_rescue_operation = {
+	enable = {
+		NOT = { check_variable = { rescue_operative_from = 0 } }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_rescue_operative
+		value = 1000
+		operation_target = var:rescue_operative_from
+	}
+	
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 900
+		mission_target = var:rescue_operative_from
+	}
+}
+
+enable_operative_missions = {
+
+	enable = {
+		any_operative_leader = { always = yes }
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 100
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 100
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = quiet_network
+		value = 100
+	}
+
+
+
+	ai_strategy = {
+		type = operative_mission
+		mission = root_out_resistance
+		value = 100
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = control_trade
+		value = 100
+	}
+
+}

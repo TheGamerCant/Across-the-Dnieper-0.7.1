@@ -1,0 +1,31 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_POL_Donald_Tusk_large"
+		texturefile = "gfx/leaders/POL/Portrait_Donald_Tusk.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_POL_Ewa_Kopacz_large"
+		texturefile = "gfx/leaders/POL/Portrait_Ewa_Kopacz.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_POL_Beata_Szydlo_large"
+		texturefile = "gfx/leaders/POL/Portrait_Beata_Szydło.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_POL_Mateusz_Morawiecki_large"
+		texturefile = "gfx/leaders/POL/Portrait_Mateusz_Morawiecki.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_POL_Jaroslaw_Kaczynski_large"
+		texturefile = "gfx/leaders/POL/Portrait_Jarosław_Kaczyński.png"
+		legacy_lazy_load = no
+	}
+ }

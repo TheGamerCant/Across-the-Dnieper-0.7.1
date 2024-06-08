@@ -1,0 +1,82 @@
+﻿l_english:
+ atd_achievements:0 "Across the Dnieper"
+ normal_or_higher_difficulty:0 "Game difficulty is set to normal or higher"
+
+ the_chocolate_king_NAME:0 "The Chocolate King"
+ the_chocolate_king_DESC:0 "As Ukraine, elect Petro Poroshenko as President."
+
+ the_oil_baroness_NAME:0 "The Oil Baroness"
+ the_oil_baroness_DESC:0 "As Ukraine, elect Yulia Tymoshenko as President."
+
+ the_comedian_NAME:0 "The Comedian"
+ the_comedian_DESC:0 "As Ukraine, elect Volodymyr Zelenskyy as President."
+
+ anarchy_in_the_ukraine_NAME:0 "Anarchy In The Ukraine"
+ anarchy_in_the_ukraine_DESC:0 "Play as the anarchists in the Ukrainian civil war."
+
+ vladimir_velikiy_NAME:0 "Vladimir Velikiy"
+ vladimir_velikiy_DESC:0 "Declare Putin as the Vozhd after victory in the SMO."
+ vladimir_velikiy_global_flag:0 "Has fired event "Out With A Whimper, Not A Bang"."
+
+ dmytro_yaroshs_wild_ride_NAME:0 "Dmytro Yarosh's Wild Ride"
+ dmytro_yaroshs_wild_ride_DESC:0 "As Ukraine, elect Dmytro Yarosh as President and disband the Rada."
+ dmytro_yaroshs_wild_ride_global_flag:0 "Has disbanded the Verkhovna Rada after completing the focus "'Temporarily' Disband The Rada"."
+
+ vosem_let_bombi_donbass_suka_NAME:0 "Vosem Let Bombili Donbass Suka"
+ vosem_let_bombi_donbass_suka_DESC:0 "As Ukraine, start 3 border conflicts in Donbass."
+ vosem_let_bombi_donbass_suka_tt:0 "Has initiated 3 border conflicts in the Donbass. Current number initiated: [?ROOT.eight_let_bombi_donbass_counter|.0]."
+
+ ukraina_ponad_use_NAME:0 "Ukraïna. Ponad Use."
+ ukraina_ponad_use_DESC:0 "Starting in 2022 as Ukraine, liberate all of your land from the Russians."
+ ukraina_ponad_use_global_flag:0 "Ukraine is back at the 1991 borders."
+
+ everything_for_the_front_NAME:0 "Everything For The Front"
+ everything_for_the_front_DESC:0 "Overthrow United Russia and put the Club of Angry Patriots into power as Russia." 
+
+ the_tuvan_NAME:0 "The Tuvan"
+ the_tuvan_DESC:0 "As Russia, have Sergey Shoigu as your country leader."
+
+ the_conspiricist_NAME:0 "The Conspiricist"
+ the_conspiricist_DESC:0 "As Russia, have Nikolai Patrushev as your country leader."
+
+ the_spymaster_NAME:0 "The Spymaster"
+ the_spymaster_DESC:0 "As Russia, have Alexander Bortnikov as your country leader."
+
+ daisy_NAME:0 "Daisy"
+ daisy_DESC:0 "§RREDACTED§!"
+ daisy_tt:0 "§RREDACTED§!"
+
+ special_statistics_operation_NAME:0 "Special Statistics Operation"
+ special_statistics_operation_DESC:0 "As Russia, suffer more than a million casualties to Ukraine."
+
+ great_tuvan_khanate_NAME:0 "Great Tuvan Khanate"
+ great_tuvan_khanate_DESC:0 "With Sergey Shoigu as your leader, control all initial states of Russia, Ukraine and Belarus."
+ great_tuvan_khanate_ukraine_tt:0 "All initial Ukrinaian states are controlled by us or a puppet."
+ great_tuvan_khanate_belarus_tt:0 "All initial Belarussian states are controlled by us or a puppet."
+ great_tuvan_khanate_russia_tt:0 "All initial Russian states are controlled by us or a puppet."
+
+ three_days_to_kiev_NAME:0 "Three Days To Kiev"
+ three_days_to_kiev_DESC:0 "As Russia, have Kyiv city be controlled by yourself, a puppet or a faction member on day three the SMO. Ukraine can not have completed the focus "Dishonour Before Death"."
+ three_days_to_kiev_global_flag:0 "Kyiv is either controlled by us, a puppet, or a faction member on day three of the SMO."
+
+ greater_kaliningrad_NAME:0 "Greater Kaliningrad"
+ greater_kaliningrad_DESC:0 "As Russia, connect Kaliningrad Oblast to the mainland."
+
+ free_belarus_NAME:0 "Free Belarus"
+ free_belarus_DESC:0 "As Belarus, overthrow Lukashenko."
+
+ arise_donbass_NAME:0 "Arise Donbass!"
+ arise_donbass_DESC:0 "As any Donbass country (Novorossiya included), own and control all of your cored or claimed states. Russia cannot have been directly at war with Ukraine at any point."
+ russia_has_invaded_ukraine_flag:0 "Russia has declared war on Ukraine."
+
+ za_pobedu_NAME:0 "Za Pobedu"
+ za_pobedu_DESC:0 "As Russia complete the focus "Great Victors" without triggering the focus "The Quagmire". Ukraine can not have completed the focus "Dishonour Before Death"."
+ za_pobedu_tt:0 "Ukraine has not manually completed the focus "Dishonour Before Death"."
+
+ batko_nash_bandera_NAME:0 "Batko Nash Bandera"
+ batko_nash_bandera_DESC:0 "As Ukraine, raise the flag of the OUN."
+ batko_nash_bandera_tt:0 "Has changed the flag of Ukraine to one of the red-black variants."
+
+ a_red_star_named_sun_NAME:0 "A Red Star Named Sun"
+ a_red_star_named_sun_DESC:0 "While having a far left government, control the Oleshky Sands."
+ a_red_star_named_sun_tt:0 "Both of the provinces that make up the Oleshky Sands are controlled by us or a puppet."

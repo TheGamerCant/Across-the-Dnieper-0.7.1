@@ -1,0 +1,208 @@
+technologies = {
+	sixties_tank_tech = { #Actual tank shit
+		
+		research_cost = 5.0
+		start_year = 1960
+	
+		enable_subunits = {
+			modern_armor
+		}
+		
+		enable_equipments = {
+			sixties_tank
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = seventies_tank_tech
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	seventies_tank_tech = {
+		
+		research_cost = 5.0
+		start_year = 1970
+		
+		enable_equipments = {
+			seventies_tank
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 3 }
+		}
+		
+		path = {
+			leads_to_tech = eighties_tank_tech
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	eighties_tank_tech = {
+		
+		research_cost = 5.0
+		start_year = 1980
+		
+		enable_equipments = {
+			eighties_tank
+		}
+		
+		path = {
+			leads_to_tech = nineties_tank_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+		
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	nineties_tank_tech = {
+		
+		research_cost = 4.0
+		start_year = 1990
+		
+		enable_equipments = {
+			nineties_tank
+		}
+		
+		path = {
+			leads_to_tech = noughties_tank_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 9 }
+		}
+		
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	noughties_tank_tech = {
+		
+		research_cost = 4.0
+		start_year = 2000
+		
+		enable_equipments = {
+			noughties_tank
+		}
+		
+		path = {
+			leads_to_tech = tens_tank_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 12 }
+		}
+		
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	tens_tank_tech = {
+		
+		research_cost = 5.0
+		start_year = 2010
+		
+		enable_equipments = {
+			tens_tank
+		}
+		
+		path = {
+			leads_to_tech = twenties_tank_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 15 }
+		}
+		
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	twenties_tank_tech = {
+		
+		research_cost = 5.0
+		start_year = 2020
+		
+		enable_equipments = {
+			twenties_tank
+		}
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 18 }
+		}
+		
+
+		ai_will_do = {
+			base = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+}

@@ -1,0 +1,2771 @@
+debug_decisions = {
+	SOV_load_full_focus_tree = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = post_crimea_tree
+			set_country_flag = russia_united_flag
+			set_country_flag = view_all_russia_trees
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	SOV_load_girkin_russia = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = post_crimea_tree
+			set_country_flag = russia_united_flag
+			set_country_flag = view_all_russia_trees
+			
+			complete_national_focus = SOV_russia_united
+			complete_national_focus = SOV_putin_at_the_helm
+			
+			set_party_name = { ideology = fascist long_name = club_of_angry_patriots_subideology_party_long name = club_of_angry_patriots_subideology_party }
+			create_country_leader = {
+				name = "Igor Girkin"
+				picture = gfx/leaders/DON/Portrait_Igor_Girkin.png
+				ideology = club_of_angry_patriots_subideology
+				traits = { SOV_war_hero }
+			}
+
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = no
+			}
+			
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = SOV_russia_united_QM
+		}
+	}
+	
+	SOV_load_siloviki_tree = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = military_junta
+				elections_allowed = no
+			}
+			country_event = { id = russia.1035 }
+			news_event = { id = atd_news.52 hours = 3 } 
+			load_focus_tree = siloviki_tree 
+			complete_national_focus = SOV_the_coup 
+		}
+	}
+
+	SOV_load_nadezhdin_tree = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = neoliberal
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Boris Nadezhdin"
+				desc = ""
+				picture = gfx/leaders/SOV/Portrait_Boris_Nadezhdin.png
+				ideology = generic_neoliberal
+				traits = {  }
+			}
+			load_focus_tree = nadezhdin_tree 
+			complete_national_focus = SOV_negotiate_a_ceasefire 
+			country_event = { id = russia.1145 hours = 1 }
+			country_event = { id = russia.1147 days = 1 }	
+		}
+	}
+	
+	SOV_show_army_reform_decisions = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = SOV_army_reform_decisions_flag
+		}
+	}
+	
+	SOV_purge_general = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			if={
+				limit = { has_character = SOV_ramzan_kadyrov_rework }
+				retire_character = SOV_ramzan_kadyrov_rework
+			}
+			custom_effect_tooltip = SOV_purge_disloyal_generals_tt
+			
+			hidden_effect={
+				random_list = {
+					25 = { set_variable = { SOV_general_purge_events_to_fire = 2 } }
+					25 = { set_variable = { SOV_general_purge_events_to_fire = 3 } }
+					25 = { set_variable = { SOV_general_purge_events_to_fire = 4 } }
+					25 = { set_variable = { SOV_general_purge_events_to_fire = 5 } }
+				}
+				set_variable = { SOV_general_purge_events_fired = 0 }
+			
+				SOV_sergey_shoygu_rework = { set_character_flag = SOV_safe_from_purge_flag }
+				SOV_alexander_bortnikov_rework = { set_character_flag = SOV_safe_from_purge_flag }
+				SOV_viktor_zolotov = { set_character_flag = SOV_safe_from_purge_flag }
+				
+				random_army_leader = { 
+					limit = { NOT = { has_character_flag = SOV_safe_from_purge_flag } }
+					ROOT = { set_variable = { SOV_general_to_be_purged = PREV } } 
+					set_character_flag = SOV_literally_nikolai_yezhovs_1938
+				}
+				var:SOV_general_to_be_purged = { unit_leader_event = { id = russia.1081 days = 3 random_days = 4 } }
+			}
+		}
+	}
+	
+	SOV_load_bortnikov_decisions = { 
+		priority = 200
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			SOV = { set_country_flag = SOV_can_do_foreign_subversive_activities_flag }
+			unlock_decision_category_tooltip = SOV_foreign_subversive_activities
+			set_variable = { SOV.SOV_cost_of_foreign_subversive_activities_decisions = 50 }
+		}
+	}
+}
+
+SOV_parliament_gui_decision_category = {
+	SOV_snap_elections = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		icon = mission_icon
+		is_good = yes
+		days_mission_timeout = 120
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			
+		}
+	}
+}
+
+
+SOV_russian_ambitions = {
+	take_crimea_mission_rework = {
+		activation = {
+			always = no
+		}
+		available = {
+			NOT = { country_exists = CRI } 
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 30
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			add_stability = -0.05
+			add_political_power = -100
+			country_event = { id = russia.1019 }
+		}
+	}
+}
+
+SOV_the_media = {
+	SOV_increase_our_focus_on_putinist_programming = { 
+		priority = 200
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+			NOT = { has_country_flag = is_doing_a_media_decision }
+		}
+		
+		days_remove = 45
+		days_re_enable = 45
+		
+		modifier={
+			eastern_conservative_drift = 0.1
+		}
+
+		visible = {
+
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		complete_effect = {
+			increase_eastern_conservative_programming_by_5 = yes
+		}
+	}
+	
+	SOV_increase_our_focus_on_nationalist_programming = { 
+		priority = 200
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+			NOT = { has_country_flag = is_doing_a_media_decision }
+		}
+		
+		days_remove = 45
+		days_re_enable = 45
+		
+		modifier={
+			ultranationalist_drift = 0.1
+		}
+
+		visible = {
+
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		complete_effect = {
+			increase_ultranationalist_programming_by_5 = yes
+		}
+	}
+	
+	SOV_increase_our_focus_on_western_programming = { 
+		priority = 200
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+			NOT = { has_country_flag = is_doing_a_media_decision }
+		}
+		
+		days_remove = 45
+		days_re_enable = 45
+		
+		modifier={
+			eastern_liberal_drift = 0.1
+		}
+
+		visible = {
+
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		complete_effect = {
+			increase_eastern_liberal_programming_by_5 = yes
+		}
+	}
+}
+
+SOV_balance_of_power_category = {
+	SOV_siloviki_coup_decision = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 500
+		}
+
+		available = {
+			eastern_conservative < 0.47
+			custom_trigger_tooltip={
+				tooltip = siloviki_faction_bigger_than_40_tt
+				check_variable = { var = siloviki_faction_strength value = 40 compare = greater_than_or_equals }
+			}
+			
+			OR={
+				is_power_balance_in_range = {
+					id = SOV_power_balance
+					range = SOV_siloviki_medium
+				}
+				is_power_balance_in_range = {
+					id = SOV_power_balance
+					range = SOV_siloviki_large
+				}
+				is_power_balance_in_range = {
+					id = SOV_power_balance
+					range = SOV_siloviki_max
+				}
+			}
+		}
+			
+		modifier={
+			
+		}
+
+		visible = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+
+		remove_effect = {
+			hidden_effect={
+				set_politics = {
+					ruling_party = military_junta
+					elections_allowed = no
+				}
+			}
+			country_event = { id = russia.1036 }
+		}
+	}
+	
+	SOV_get_rid_of_disloyal_generals = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		days_remove = 45
+		days_re_enable = 90
+		
+		modifier={
+			
+		}
+
+		visible = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		fire_only_once = no
+		
+		cost = 75
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = SOV_power_balance
+				value = -0.15
+			}
+		}
+	}
+	
+	SOV_siloviki_acquire_funding = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		days_remove = 45
+		days_re_enable = 90
+		
+		modifier={
+			
+		}
+
+		visible = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		fire_only_once = no
+		
+		cost = 75
+
+		remove_effect = {
+			SOV_increase_siloviki_faction_medium = yes
+			add_political_power = 50
+			add_popularity = { ideology = military_junta popularity = 0.035 }
+		}
+	}
+	
+	SOV_strengthen_our_presence_in_the_fsb = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		days_remove = 45
+		days_re_enable = 90
+		
+		modifier={
+			
+		}
+
+		visible = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		fire_only_once = no
+		
+		cost = 75
+
+		remove_effect = {
+			SOV_increase_siloviki_faction_small = yes
+			add_power_balance_value = {
+				id = SOV_power_balance
+				value = -0.05
+			}
+		}
+	}
+	
+	SOV_undermine_putins_control = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		days_remove = 45
+		days_re_enable = 90
+		
+		modifier={
+			
+		}
+
+		visible = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		
+		fire_only_once = no
+		
+		cost = 75
+
+		remove_effect = {
+			SOV_decrease_putinist_faction_medium = yes
+			add_power_balance_value = {
+				id = SOV_power_balance
+				value = -0.1
+			}
+		}
+	}
+	
+	SOV_putin_strengthens_his_control = {
+		activation = {
+			has_country_flag = putin_siloviki_power_balance
+		}
+		available = {
+			vladimir_putin_is_not_leader = yes
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 140
+		fire_only_once = no
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			SOV_decrease_siloviki_faction_medium = yes
+			SOV_increase_putinist_faction_small = yes
+			
+			random_list = {
+				10 = {
+					add_power_balance_value = {
+						id = SOV_power_balance
+						value = 0.05
+					}
+				}
+				10 = {
+					add_power_balance_value = {
+						id = SOV_power_balance
+						value = 0.1
+					}
+				}
+				10 = {
+					add_power_balance_value = {
+						id = SOV_power_balance
+						value = 0.15
+					}
+				}
+				10 = {
+					add_power_balance_value = {
+						id = SOV_power_balance
+						value = 0.2
+					}
+				}
+				10 = {
+					add_power_balance_value = {
+						id = SOV_power_balance
+						value = 0.25
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+	SOV_judgement_day = {
+		activation = {
+			has_country_flag = SOV_wagner_bop
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		icon = GFX_decision_generic_speech
+		is_good = no
+		days_mission_timeout = 100
+		fire_only_once = yes
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SOV_judgement_day_tt
+
+			if = {
+				limit = {
+					power_balance_value = {
+						id = SOV_wagner_power_balance
+						value > 0.65
+					}
+				}
+
+				add_political_power = 1
+			}
+			else_if = {
+				limit = {
+					power_balance_value = {
+						id = SOV_wagner_power_balance
+						value < -0.65
+					}
+				}
+				add_political_power = 2
+			}
+			else_if = {
+				limit = {
+					AND = {
+						power_balance_value = {
+							id = SOV_wagner_power_balance
+							value > -0.64
+						}
+						power_balance_value = {
+							id = SOV_wagner_power_balance
+							value < 0.64
+						}
+					}
+
+				}
+				add_political_power = 3
+			}
+
+			hidden_effect = {
+				
+			}
+		}
+	}
+	SOV_move_capital_to_rostov = { 
+		priority = 200
+
+		icon = GFX_BoP_left_texticon
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 10
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = SOV_wagner_bop
+		}
+		
+		
+		cost = 25
+
+		remove_effect = {
+			set_capital = {
+				state = 25
+				remember_old_capital = no
+			}
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = -0.15
+			}
+		}
+	}
+	SOV_purge_officer_corps = { 
+		priority = 200
+
+		icon = GFX_BoP_left_texticon
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = has_done_SOV_useful_experience
+				}
+			}
+		}
+
+		modifier = {
+			army_org_factor = -0.1
+			army_morale_factor = -0.08
+			command_power_gain = -0.1
+		}
+		
+		days_remove = 35
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = SOV_wagner_bop
+		}
+		
+		
+		cost = 30
+
+		select_effect = {
+			set_country_flag = has_done_SOV_purge_officer_corps
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = -0.2
+			}
+		}
+	}
+	SOV_useful_experience = { 
+		priority = 200
+
+		icon = GFX_BoP_right_texticon
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = has_done_SOV_purge_officer_corps
+				}
+			}
+		}
+
+		modifier = {
+			command_power_gain_mult = -0.5
+		}
+		
+		days_remove = 35
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = SOV_wagner_bop
+		}
+
+		select_effect = {
+			set_country_flag = has_done_SOV_useful_experience
+		}
+		
+		
+		cost = 30
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = 0.2
+			}
+		}
+	}
+	SOV_court_technocrats = { 
+		priority = 200
+
+		icon = GFX_BoP_left_texticon
+
+		ai_will_do = {
+			base = 200
+		}
+
+		available = {
+		}
+
+		
+		days_remove = 10
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = SOV_wagner_bop
+		}
+		
+		cost = 15
+
+		remove_effect = {
+			add_political_power = 50
+			add_power_balance_value = {
+				id = SOV_wagner_power_balance
+				value = -0.15
+			}
+		}
+	}
+}
+
+SOV_referendum_decisions_2={
+	SOV_referendum_in_novorossiya = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+			NOV = {
+				is_ai = yes
+			}
+		}
+
+		ai_will_do = {			#AI will only save up pp for decisions if they can do them
+			base = 10
+			modifier = {
+				add = 1000
+				NOV = { exists = yes is_puppet_of = ROOT }
+				any_state={
+					OR={
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+						has_state_flag = zaporizhia_oblast_flag
+						has_state_flag = dnipro_oblast_flag
+						has_state_flag = kherson_oblast_flag
+						has_state_flag = mykolaiv_oblast_flag
+						has_state_flag = odessa_oblast_flag
+						has_state_flag = kharkiv_oblast_flag
+						has_state_flag = kirovohrad_oblast_flag
+					}
+					CONTROLLER={
+						OR={
+							tag = NOV
+							tag = SOV
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = SOV_referendum_in_novorossiya_tt
+			
+				NOV = { exists = yes is_puppet_of = ROOT }
+				any_state={
+					OR={
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+						has_state_flag = zaporizhia_oblast_flag
+						has_state_flag = dnipro_oblast_flag
+						has_state_flag = kherson_oblast_flag
+						has_state_flag = mykolaiv_oblast_flag
+						has_state_flag = odessa_oblast_flag
+						has_state_flag = kharkiv_oblast_flag
+						has_state_flag = kirovohrad_oblast_flag
+					}
+					CONTROLLER={
+						OR={
+							tag = NOV
+							tag = SOV
+						}
+					}
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOV = { exists = yes is_puppet_of = ROOT }
+			any_state={
+				OR={
+					has_state_flag = donetsk_oblast_flag
+					has_state_flag = luhansk_oblast_flag
+					has_state_flag = zaporizhia_oblast_flag
+					has_state_flag = dnipro_oblast_flag
+					has_state_flag = kherson_oblast_flag
+					has_state_flag = mykolaiv_oblast_flag
+					has_state_flag = odessa_oblast_flag
+					has_state_flag = kharkiv_oblast_flag
+					has_state_flag = kirovohrad_oblast_flag
+				}
+				CONTROLLER={
+					tag = NOV
+				}
+			}
+		}
+		
+		cost = 100
+
+		remove_effect = {
+			every_state={
+				limit = {
+					is_owned_by = NOV
+				}
+				add_core_of = ROOT
+			}
+			every_state={
+				limit = {
+					OR={
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+						has_state_flag = zaporizhia_oblast_flag
+						has_state_flag = dnipro_oblast_flag
+						has_state_flag = kherson_oblast_flag
+						has_state_flag = mykolaiv_oblast_flag
+						has_state_flag = odessa_oblast_flag
+						has_state_flag = kharkiv_oblast_flag
+					}
+				}
+				add_claim_by = ROOT
+			}
+			hidden_effect={
+				NOV={
+					every_state={
+						limit = { has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = PREV } }
+						remove_dynamic_modifier = {
+							modifier = SOV_a_harsh_war
+							scope = PREV
+						}
+					}
+				}
+			}
+			annex_country = { target = NOV transfer_troops = no }
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+
+	SOV_referendum_in_donetsk = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+			DON = {
+				is_ai = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 5
+					135 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					146 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					166 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					173 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					186 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					195 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+                                        451 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					208 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					230 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_donetsk_tt
+				count_triggers = {		
+					amount > 5
+					135 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					146 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					166 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					173 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					186 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					195 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+                                        451 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					208 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					230 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = donetsk_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					is_owned_by = DON
+					has_state_flag = donetsk_oblast_flag
+				}
+				add_core_of = ROOT
+			}
+			every_state={
+				limit = {
+					has_state_flag = donetsk_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			hidden_effect={
+				DON={
+					every_state={
+						limit = { has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = PREV } }
+						remove_dynamic_modifier = {
+							modifier = SOV_a_harsh_war
+							scope = PREV
+						}
+					}
+				}
+			}
+			if={
+				limit = { country_exists = DON }
+				annex_country = { target = DON transfer_troops = yes }
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_luhansk = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+			LHK = {
+				is_ai = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 6
+					103 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					109 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					131 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					136 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					152 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					154 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					155 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					159 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					174 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_referendum_in_luhansk_tt
+				count_triggers = {		
+					amount > 6
+					103 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					109 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					131 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					136 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					152 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					154 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					155 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					159 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					174 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = luhansk_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					is_owned_by = LHK
+					has_state_flag = luhansk_oblast_flag
+				}
+				add_core_of = ROOT
+			}
+			every_state={
+				limit = {
+					has_state_flag = luhansk_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			hidden_effect={
+				LHK={
+					every_state={
+						limit = { has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = PREV } }
+						remove_dynamic_modifier = {
+							modifier = SOV_a_harsh_war
+							scope = PREV
+						}
+					}
+				}
+			}
+			if={
+				limit = { country_exists = LHK }
+				annex_country = { target = LHK transfer_troops = yes }
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_zaporizhzhia = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 5
+					196 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					214 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					223 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					243 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					250 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					300 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					284 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_zaporizhzhia_tt
+				count_triggers = {		
+					amount > 5
+					196 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					214 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					223 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					243 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					250 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					300 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					284 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = zaporizhia_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					has_state_flag = zaporizhia_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_kherson = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 6
+					231 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					242 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					255 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					264 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					282 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					296 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					304 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					310 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					438 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					449 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_kherson_tt
+				count_triggers = {		
+					amount > 6
+					231 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					242 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					255 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					264 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					282 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					296 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					304 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					310 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					438 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					449 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = kherson_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					has_state_flag = kherson_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_kharkiv = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 5
+					89 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					93 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					94 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					95 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					122 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					123 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					126 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					128 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_kharkiv_tt
+				count_triggers = {		
+					amount > 5
+					89 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					93 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					94 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					95 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					122 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					123 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					126 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					128 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = kharkiv_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					is_owned_by = KHK
+					has_state_flag = kharkiv_oblast_flag
+				}
+				add_core_of = ROOT
+			}
+			every_state={
+				limit = {
+					has_state_flag = kharkiv_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			hidden_effect={
+				KHK={
+					every_state={
+						limit = { has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = PREV } }
+						remove_dynamic_modifier = {
+							modifier = SOV_a_harsh_war
+							scope = PREV
+						}
+					}
+				}
+			}
+			if={
+				limit = { country_exists = KHK }
+				annex_country = { target = KHK transfer_troops = yes }
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_dnipro = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 8
+					143 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					145 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					151 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					163 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					165 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					194 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					209 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					311 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					312 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					332 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					309 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip ={
+				tooltip = SOV_referendum_in_dnipro_tt
+				count_triggers = {		
+					amount > 8
+					143 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					145 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					151 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					163 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					165 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					194 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					209 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					311 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					312 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					332 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					309 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = dnipro_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					has_state_flag = dnipro_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_kirovohrad = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 2
+					148 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					153 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					161 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					168 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_kirovohrad_tt
+				count_triggers = {		
+					amount > 2
+					148 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					153 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					161 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					168 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = kirovohrad_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					has_state_flag = kirovohrad_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_mykolaiv = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 2
+					198 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					207 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					211 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					236 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_mykolaiv_tt
+				count_triggers = {		
+					amount > 2
+					198 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					207 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					211 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					236 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = mykolaiv_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					has_state_flag = mykolaiv_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+	
+	SOV_referendum_in_odesa = { 
+		priority = 200
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				count_triggers = {		
+					amount > 7
+					199 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					229 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					238 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					269 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					287 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					291 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					320 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					322 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					332 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					444 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_referendum_in_odesa_tt
+				count_triggers = {		
+					amount > 7
+					199 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					229 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					238 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					269 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					287 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					291 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					320 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					322 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					332 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+					444 = { CONTROLLER = { NOT = { original_tag = UKR } OR = { tag = ROOT is_puppet_of = ROOT } } }
+				}
+			}
+		}
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		modifier={
+			
+		}
+
+		visible = {
+			NOT = { country_exists = NOV }
+			any_state={
+				has_state_flag = odessa_oblast_flag
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		cost = 25
+
+		remove_effect = {
+			every_state={
+				limit = {
+					is_owned_by = ODS
+					has_state_flag = odessa_oblast_flag
+				}
+				add_core_of = ROOT
+			}
+			every_state={
+				limit = {
+					has_state_flag = odessa_oblast_flag
+				}
+				add_claim_by = ROOT
+			}
+			hidden_effect={
+				ODS={
+					every_state={
+						limit = { has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = PREV } }
+						remove_dynamic_modifier = {
+							modifier = SOV_a_harsh_war
+							scope = PREV
+						}
+					}
+				}
+			}
+			if={
+				limit = { country_exists = ODS }
+				annex_country = { target = ODS transfer_troops = yes }
+			}
+			set_global_flag = NOVOROSSIA_REFERENDUM_FLAG
+		}
+	}
+}
+
+
+
+SOV_army_reform_decisions={
+	SOV_increase_cooperation_between_branches = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			political_power_cost = 0.1
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			
+			add_to_variable = { SOV_army_max_command_power = 25 }
+			custom_effect_tooltip = SOV_increase_cooperation_between_branches_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_construct_new_dockyards = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.03
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			random_state={
+				limit = { is_controlled_by = ROOT is_coastal = yes }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			add_to_variable = { SOV_sanctions_industrial_capacity_dockyard = 0.06 }
+			custom_effect_tooltip = SOV_construct_new_dockyards_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_hire_contract_soldiers = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.03
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			add_manpower = 50000
+			
+			add_to_variable = { SOV_army_army_attack_factor = 0.03 }
+			add_to_variable = { SOV_army_army_defence_factor = 0.03 }
+			custom_effect_tooltip = SOV_hire_contract_soldiers_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_conduct_military_exercises = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			has_army_experience > 30
+			has_air_experience > 30
+			has_navy_experience > 30
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.05
+			experience_gain_army_factor = 0.2
+			experience_gain_navy_factor = 0.2
+			experience_gain_air_factor = 0.2
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			army_experience = -30
+			air_experience = -30
+			navy_experience = -30
+			
+			subtract_from_variable = { SOV_army_land_doctrine_cost_factor = 0.15 }
+			add_to_variable = { SOV_army_army_morale_factor = 0.04 }
+			add_to_variable = { SOV_army_breakthrough_factor = 0.08 }
+			custom_effect_tooltip = SOV_conduct_military_exercises_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_invest_in_stealth_technology = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			has_air_experience > 50
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.03
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			air_experience = -50
+			
+			add_to_variable = { SOV_army_army_bonus_air_superiority_factor = 0.1 }
+			custom_effect_tooltip = SOV_invest_in_stealth_technology_tt
+			
+			add_tech_bonus = {
+				name = SOV_invest_in_stealth_technology
+				bonus = 1
+				uses = 2
+				category = air_equipment
+			}
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_military_parades = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			has_army_experience > 40
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.03
+			political_power_gain = 0.05
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 75
+
+		remove_effect = {
+			army_experience = -40
+			
+			add_to_variable = { SOV_army_army_org_factor = 0.03 }
+			custom_effect_tooltip = SOV_military_parades_tt
+			
+			add_war_support = 0.05
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_procure_new_equipment = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			has_tech = improved_infantry_weapons
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			industrial_capacity_factory = 0.1
+			consumer_goods_factor = 0.03
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 100
+
+		remove_effect = {
+			random_state={
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				increase_state_gdp_growth_by_5 = yes
+			}
+			if={
+				limit = { has_tech = improved_infantry_weapons }
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_2
+					amount = 4000
+					producer = SOV
+				}
+			}
+			else={
+				custom_effect_tooltip = SOV_procure_new_equipment_tt_2
+			}
+			add_to_variable = { SOV_sanctions_industrial_capacity_factory = 0.12 }
+			custom_effect_tooltip = SOV_procure_new_equipment_tt
+		}
+	}
+	
+	SOV_new_factory_equipment = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+			has_completed_focus = SOV_economic_corridors
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.05
+			political_power_cost = 0.14
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 100
+
+		remove_effect = {	
+			add_to_variable = { SOV_sanctions_production_factory_max_efficiency_factor = 0.1 }
+			add_to_variable = { SOV_sanctions_production_factory_efficiency_gain_factor = 0.1 }
+			custom_effect_tooltip = SOV_new_factory_equipment_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+	
+	SOV_clamp_down_on_corruption = { 
+		priority = 200
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 25
+		}
+
+		available = {
+		}
+		
+		fire_only_once = yes
+		
+		modifier={
+			consumer_goods_factor = 0.08
+			political_power_cost = 0.2
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		cost = 100
+
+		remove_effect = {	
+			subtract_from_variable = { SOV_army_attrition = 0.06 }
+			add_to_variable = { SOV_army_army_attack_factor = 0.02 }
+			add_to_variable = { SOV_army_army_defence_factor = 0.02 }
+			add_to_variable = { SOV_army_army_morale_factor = 0.03 }
+			custom_effect_tooltip = SOV_clamp_down_on_corruption_tt
+			
+			hidden_effect = { if={ limit = { is_ai = yes } add_political_power = 75 } }
+		}
+	}
+}
+
+SOV_securing_the_federation={
+	SOV_track_down_shoigu = { 
+		priority = 200
+
+		icon = generic_arrest
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			hidden_trigger = {  has_character = SOV_sergey_shoygu_rework }
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+		}
+		
+		days_remove = 30
+		cost = 25
+
+		remove_effect = {	
+			hidden_effect={
+				if={
+					limit = { is_ai = yes has_start_date = 2022.2.1.1 }
+					add_political_power = 40
+				}
+				add_to_variable = { SOV_KRP_people_dealt_with = 1 }
+				
+				SOV_sergey_shoygu_rework={
+					random_list={
+						25={ unit_leader_event = { id = russia.1103 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1104 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1105 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1106 hours = 4 } }
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_track_down_gerasimov = { 
+		priority = 200
+
+		icon = generic_arrest
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			hidden_trigger = { has_character = SOV_valery_gerasimov_rework }
+		}
+		
+		fire_only_once = yes
+		
+
+		visible = {
+		}
+		
+		days_remove = 30
+		cost = 25
+
+		remove_effect = {	
+			hidden_effect={
+				if={
+					limit = { is_ai = yes has_start_date = 2022.2.1.1 }
+					add_political_power = 40
+				}
+				add_to_variable = { SOV_KRP_people_dealt_with = 1 }
+				
+				SOV_valery_gerasimov_rework={
+					random_list={
+						25={ unit_leader_event = { id = russia.1103 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1104 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1105 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1106 hours = 4 } }
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_track_down_medvedev = { 
+		priority = 200
+
+		icon = generic_arrest
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			hidden_trigger = { has_character = SOV_dmitry_medvedev_rework }
+		}
+		
+		fire_only_once = yes
+		
+
+		visible = {
+		}
+		
+		days_remove = 30
+		cost = 25
+
+		remove_effect = {	
+			hidden_effect={
+				if={
+					limit = { is_ai = yes has_start_date = 2022.2.1.1 }
+					add_political_power = 40
+				}
+				add_to_variable = { SOV_KRP_people_dealt_with = 1 }
+				
+				SOV_dmitry_medvedev_rework={
+					random_list={
+						25={ unit_leader_event = { id = russia.1103 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1104 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1105 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1106 hours = 4 } }
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_track_down_mishustin = { 
+		priority = 200
+
+		icon = generic_arrest
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			hidden_trigger = { has_character = SOV_mikhail_mishustin_rework }
+		}
+		
+		fire_only_once = yes
+		
+
+		visible = {
+			has_country_flag = SOV_mishustin_has_been_pm_flag
+		}
+		
+		days_remove = 30
+		cost = 25
+
+		remove_effect = {	
+			hidden_effect={
+				if={
+					limit = { is_ai = yes has_start_date = 2022.2.1.1 }
+					add_political_power = 40
+				}
+				add_to_variable = { SOV_KRP_people_dealt_with = 1 }
+				
+				SOV_mikhail_mishustin_rework={
+					random_list={
+						25={ unit_leader_event = { id = russia.1103 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1104 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1105 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1106 hours = 4 } }
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_track_down_chemezov = { 
+		priority = 200
+
+		icon = generic_arrest
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			hidden_trigger = { has_character = SOV_sergey_chemezov }
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+		}
+		
+		days_remove = 30
+		cost = 25
+
+		remove_effect = {	
+			hidden_effect={
+				if={
+					limit = { is_ai = yes has_start_date = 2022.2.1.1 }
+					add_political_power = 40
+				}
+				add_to_variable = { SOV_KRP_people_dealt_with = 1 }
+				
+				SOV_sergey_chemezov={
+					random_list={
+						25={ unit_leader_event = { id = russia.1103 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1104 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1105 hours = 4 } }
+						25={ unit_leader_event = { id = russia.1106 hours = 4 } }
+					}
+				}
+			}
+		}
+	}
+	
+	SOV_counter_coup_mission = {
+		activation = {
+			always = no
+		}
+		available = {
+			custom_trigger_tooltip={		
+				if={
+					limit = { has_country_flag = SOV_mishustin_has_been_pm_flag }
+					check_variable = { var = SOV_KRP_people_dealt_with value = 5 compare = greater_than_or_equals }
+				}
+				else={
+					check_variable = { var = SOV_KRP_people_dealt_with value = 4 compare = greater_than_or_equals }
+				}
+				
+				tooltip = SOV_counter_coup_mission_complete_tt
+			}
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 120
+		selectable_mission = no
+		complete_effect = {
+			country_lock_all_division_template = no
+			clear_variable = SOV_KRP_people_dealt_with
+		}
+		timeout_effect = {
+			custom_effect_tooltip = GAME_OVER_TT
+			hidden_effect={
+				kill_country_leader = yes
+				KRP = { transfer_state = 25 }
+				KRP = { change_tag_from  = SOV }
+				SOV = { annex_country = { target = KRP transfer_troops = yes } }
+				SOV={
+					create_country_leader = {
+						name = "The Security Council"
+						desc = ""
+						picture = gfx/leaders/SOV/Portrait_Security_Council.png
+						ideology = united_russia_subideology
+						traits = { }
+					}
+					set_politics = {
+						ruling_party = eastern_conservative
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+}
+
+SOV_foreign_subversive_activities={
+	SOV_pro_russian_rallies = {
+		priority = 50
+
+		icon = generic_political_discourse
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 100
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { is_in_faction_with = USA }		#Focus on NATO countries
+			}
+			modifier = {
+				factor = 2.2
+				FROM = { tag = UKR }
+			}
+			modifier = { #Try not to spam, do other countries first
+				factor = 0.2
+				FROM = { has_country_flag = SOV_government_pressured_flag }
+			}
+		}
+
+		targets = { UKR LIT POL CZE SLO HUN CRO ROM BUL MOL MNT KOS SER BOS GEO }
+
+		target_trigger = {
+			country_exists = FROM
+			NOT = { FROM = { is_subject_of = ROOT } }
+			NOT = { is_in_faction_with = FROM }
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			#FROM is country we are targeting, ROOT is Russia
+			NOT = { ROOT = { has_war_with = FROM } }
+			ROOT = { num_of_civilian_factories_available_for_projects > 1 }
+			custom_trigger_tooltip={
+				tooltip = not_illiberal_gov_tt
+				NOT = { FROM = { has_illiberal_government = yes } }
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 45			#These two can be made into variables
+
+		days_re_enable = 75
+
+		cost = var:SOV_cost_of_foreign_subversive_activities_decisions
+
+		modifier = {
+			political_power_cost = 0.1
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+#			set_country_flag = SOV_pressure_government_active_flag
+		}
+
+		remove_effect = {
+			FROM = {
+				country_event = { id = russia.1110 random_hours = 12 }
+				set_country_flag = SOV_government_pressured_flag #For AI weights - don't spam
+				
+				effect_tooltip={
+					add_timed_idea = { idea = SOV_pro_russian_sentiment days = 45 }
+				}
+			}
+		}
+	}
+	
+	SOV_bribe_politicians = {
+		priority = 50
+
+		icon = generic_political_discourse
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 100
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { is_in_faction_with = USA }		#Focus on NATO countries
+			}
+			modifier = {
+				factor = 2.2
+				FROM = { tag = UKR }
+			}
+			modifier = { #Try not to spam, do other countries first
+				factor = 0.2
+				FROM = { has_country_flag = SOV_government_pressured_flag_2 }
+			}
+		}
+
+		targets = { UKR LIT POL CZE SLO HUN CRO ROM BUL MOL MNT KOS SER BOS GEO }
+
+		target_trigger = {
+			country_exists = FROM
+			NOT = { FROM = { is_subject_of = ROOT } }
+			NOT = { is_in_faction_with = FROM }
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			#FROM is country we are targeting, ROOT is Russia
+			NOT = { ROOT = { has_war_with = FROM } }
+			ROOT = { num_of_civilian_factories_available_for_projects > 1 }
+			custom_trigger_tooltip={
+				tooltip = not_illiberal_gov_tt
+				NOT = { FROM = { has_illiberal_government = yes } }
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 45			#These two can be made into variables
+
+		days_re_enable = 75
+
+		cost = var:SOV_cost_of_foreign_subversive_activities_decisions
+
+		modifier = {
+			political_power_cost = 0.1
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+#			set_country_flag = SOV_pressure_government_active_flag
+		}
+
+		remove_effect = {
+			effect_tooltip={
+				FROM={
+					country_event = { id = russia.1113 random_hours = 12 }
+					add_political_power = -120
+				}
+			}
+			hidden_effect={
+				FROM = {
+					random_owned_controlled_state={
+						limit={ NOT={ state = 14 } }
+						set_variable = { PREV.random_state_selected = THIS }	#For loc
+					}
+					country_event = { id = russia.1113 random_hours = 12 }
+					set_country_flag = SOV_government_pressured_flag_2 #For AI weights - don't spam
+				}
+			}
+		}
+	}
+}
+
+SOV_stopping_boris_nadezhdin = {
+	SOV_signature_recounting = {
+		activation = {
+			has_country_flag = SOV_stopping_boris_nadezhdin_enabled
+		}
+		available = {
+			hidden_trigger={
+				always=no
+			}
+			
+		}
+		cancel_trigger = {
+			hidden_trigger = { NOT = { has_country_flag = SOV_stopping_boris_nadezhdin_enabled }  }
+			
+		}
+		icon = eng_trade_unions_support
+		is_good = no
+		days_mission_timeout = 7
+		selectable_mission = no
+		complete_effect = {
+
+		}
+		timeout_effect = {
+			hidden_effect={
+				activate_mission = SOV_signature_recounting
+			}
+			
+			SOV_increase_nadezhdin_signatures = yes
+
+		}
+	}
+
+	SOV_promote_anti_liberalism = { 
+		priority = 200
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = SOV_stopping_boris_nadezhdin_enabled
+		}
+		
+		days_remove = 20
+		days_re_enable = 30
+		cost = 55
+
+		remove_effect = {	
+			SOV_decrease_300_nadezhdin_signatures_weekly = yes
+		}
+	}
+
+	SOV_buy_off_tiktokers = { 
+		priority = 200
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = SOV_stopping_boris_nadezhdin_enabled
+		}
+		
+		days_remove = 20
+		days_re_enable = 30
+		cost = 55
+
+		remove_effect = {	
+			SOV_decrease_300_nadezhdin_signatures_weekly = yes
+		}
+	}
+}

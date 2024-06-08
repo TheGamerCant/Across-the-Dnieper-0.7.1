@@ -1,0 +1,115 @@
+default = {
+	t64_chasis = {
+		pool = {
+			icons = { 
+				GFX_T_64
+ 				GFX_T_64A
+ 				GFX_T_64B
+ 				GFX_T_64B1
+ 				GFX_T_64BV
+ 				GFX_T_64BV1
+ 				GFX_T_64BM2
+ 				GFX_T_64BVK
+ 				GFX_T_64U
+			}
+		}
+	}
+	t72_chasis = {
+		pool = {
+			icons = { 
+				GFX_T_72
+ 				GFX_T_72A
+ 				GFX_T_72B
+ 				GFX_T_72S
+				GFX_T_72M
+				GFX_T_72M1
+				GFX_T_72M4
+			}
+		}
+	}
+	t80_chasis = {
+		pool = {
+			icons = { 
+				GFX_T_80
+				GFX_T_80B
+				GFX_T_80BV
+				GFX_T_80BVD
+				GFX_T_80BU
+				GFX_T_80U
+				GFX_T_80UD
+				GFX_T_80UM
+				GFX_T_80UK
+			}
+		}
+	}
+	t90_chasis = {
+		pool = {
+			icons = { 
+				GFX_T_90
+				GFX_T_90A
+				GFX_T_90AS
+				GFX_T_90K
+				GFX_T_90S
+				GFX_T_90MS
+			}
+		}
+	}
+	t14_chasis = {
+		pool = {
+			icons = { 
+				GFX_T_14_armata
+			}
+		}
+	}
+	abrams_chasis = {
+		pool = {
+			icons = { 
+				GFX_ABR_M1
+				GFX_ABR_M1E1
+				GFX_ABR_M1A1
+				GFX_ABR_M1A1HA
+				GFX_ABR_M1A2
+			}
+		}
+	}
+	leopard2_chasis = {
+		pool = {
+			icons = { 
+				GFX_LEO_2A1
+				GFX_LEO_2A2
+				GFX_LEO_2A3
+				GFX_LEO_2A4
+				GFX_LEO_2A5
+				GFX_LEO_2A5PSO
+				GFX_LEO_2A6
+				GFX_LEO_2A6M
+				GFX_LEO_2E
+				GFX_LEO_2A7
+			}
+		}
+	}
+	challenger2_chasis = {
+		pool = {
+			icons = { 
+				GFX_CHALLY_2
+			}
+		}
+	}
+}
+
+UKR = {
+	t64_chasis = {
+		pool = {
+			icons = {
+				GFX_T_64BM_bulat
+			}
+		}
+	}
+	t80_chasis = { 
+		pool = {
+			icons = {
+				GFX_T_84_oplot
+			}
+		}
+	}
+}

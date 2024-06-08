@@ -1,0 +1,3 @@
+﻿capital = 1
+
+load_nato_doctrine = yes

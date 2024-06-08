@@ -1,0 +1,2637 @@
+﻿add_namespace = atd_news
+
+news_event = {	#Maidan
+	id = atd_news.1
+	title = atd_news.1.t
+	desc = atd_news.1.desc
+	picture = GFX_news_event_maidan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.1.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.1.b
+		trigger = { TAG = UKR }
+	}
+	option = {
+		name = atd_news.1.c
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = {
+	id = atd_news.2	#Invasion of Crimea
+	title = atd_news.2.t
+	desc = atd_news.2.desc
+	picture = GFX_news_event_little_green_men
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.2.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.2.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = {
+	id = atd_news.3	#War in Donbass
+	title = atd_news.3.t
+	desc = atd_news.3.desc
+	picture = GFX_news_event_donbass
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.3.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = UKR
+					TAG = DON
+					TAG = LHK
+					TAG = KHK
+					TAG = ODS
+					TAG = NOV
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.3.b
+		trigger = { TAG = UKR }
+	}
+	option = {
+		name = atd_news.3.c
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.3.d
+		trigger = {
+			OR={
+				TAG = DON
+				TAG = LHK
+				TAG = KHK
+				TAG = ODS
+				TAG = NOV
+			}
+		}
+	}
+}
+
+news_event = { #GENERIC ELECTION EVENT
+	id = atd_news.4
+	title = atd_news.4.t
+	desc = atd_news.4.desc
+	picture = elections_generic_gfx
+	
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.4.a
+	}
+}
+
+news_event = {	#Western Sanctions
+	id = atd_news.5
+	title = atd_news.5.t
+	desc = atd_news.5.desc
+	picture = GFX_news_event_g7
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.5.a
+	}
+}
+
+news_event = {	#Minsk I
+	id = atd_news.6
+	title = atd_news.6.t
+	desc = atd_news.6.desc
+	picture = GFX_news_event_minsk
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.6.a
+	}
+}
+
+news_event = {	#Minsk I fails!
+	id = atd_news.7
+	title = atd_news.7.t
+	desc = atd_news.7.desc
+	picture = GFX_news_event_donbass
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				OR={
+					TAG = UKR
+					TAG = DON
+					TAG = LHK
+					TAG = KHK
+					TAG = ODS
+					TAG = NOV
+				}
+			}
+		}
+		name = atd_news.7.a
+	}
+	option = {
+		trigger = {
+			OR={
+				TAG = UKR
+				TAG = DON
+				TAG = LHK
+				TAG = KHK
+				TAG = ODS
+				TAG = NOV
+			}
+		}
+		name = atd_news.7.b
+	}
+}
+
+news_event = {	#Minsk II electric boogaloo
+	id = atd_news.8
+	title = atd_news.8.t
+	desc = atd_news.8.desc
+	picture = GFX_news_event_minsk
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.8.a
+	}
+}
+
+news_event = {	#Generic capitulation
+	id = atd_news.9
+	title = atd_news.9.t
+	desc = atd_news.9.desc
+	picture = GFX_news_event_capitulation
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger={
+			NOT={
+				OR={
+					tag = ROOT
+					tag = FROM.FROM
+				}
+			}
+		}
+		name = atd_news.9.a
+	}
+	option = {
+		trigger={
+			tag = ROOT
+		}
+		name = atd_news.9.b
+	}
+	option = {
+		trigger={
+			tag = FROM.FROM
+		}
+		name = atd_news.9.c
+	}
+}
+
+news_event = {	#Sussy Russia has too many troops on ukraines border
+	id = atd_news.10
+	title = atd_news.10.t
+	desc = atd_news.10.desc
+	picture = GFX_news_event_capitulation
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.10.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.10.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.10.c
+		trigger = {
+			tag = UKR
+		}
+	}
+}
+
+news_event = {	#Putin dead
+	id = atd_news.11
+	title = atd_news.11.t
+	desc = atd_news.11.desc
+	picture = GFX_news_event_putin_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				tag = SOV
+			}
+		}
+		name = atd_news.11.a
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.11.b
+	}
+}
+
+news_event = {	#MH17
+	id = atd_news.12
+	title = atd_news.12.t
+	desc = atd_news.12.desc
+	picture = GFX_news_event_mh17
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.12.a
+		trigger = {
+			OR={
+				tag = SOV 
+				tag = DON
+				tag = LHK
+				tag = KHK
+				tag = ODS
+				tag = NOV
+				is_in_faction_with = SOV
+			}
+		}
+		add_political_power = -1
+	}
+	option = {
+		name = atd_news.12.b
+		trigger = {
+			NOT={
+				OR={
+					tag = SOV 
+					tag = DON
+					tag = LHK
+					tag = KHK
+					tag = ODS
+					tag = NOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				UKR_is_yarosh_fascist_ai = yes				
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.12.c
+		trigger = {
+			tag = UKR
+			has_country_flag = UKR_rs_svoboda_coalition
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				NOT = { UKR_is_yarosh_fascist_ai = yes }			
+			}
+		}
+		add_popularity = {
+			ideology = fascist 
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = ultranationalist 
+			popularity = 0.04
+		}
+		hidden_effect = { country_event = { id = ukraine.71 days = 12 } }
+	}
+}
+
+news_event = {	#Hoi4
+	id = atd_news.13
+	title = atd_news.13.t
+	desc = atd_news.13.desc
+	picture = GFX_news_event_hoi4
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.13.a
+	
+	}
+
+}
+
+news_event = {	#Covid
+	id = atd_news.14
+	title = atd_news.14.t
+	desc = atd_news.14.desc
+	picture = GFX_news_event_covid
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.14.a
+		add_timed_idea={
+			idea = covid_lockdowns
+			days = 365
+		}
+		every_controlled_state={
+			decrease_state_gdp_growth_by_5 = yes
+		}
+	}
+}
+
+news_event = {	#Brexit
+	id = atd_news.15
+	title = atd_news.15.t
+	desc = atd_news.15.desc
+	picture = GFX_news_event_brexit
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.15.a
+	
+	}
+}
+
+news_event = {	#Trump elected president
+	id = atd_news.16
+	title = atd_news.16.t
+	desc = atd_news.16.desc
+	picture = GFX_news_event_donald_trump
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.16.a
+	
+	}
+}
+
+news_event = {	#Biden elected president
+	id = atd_news.17
+	title = atd_news.17.t
+	desc = atd_news.17.desc
+	picture = GFX_news_event_joe_biden
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.17.a
+	
+	}
+}
+
+news_event = {	#Jan 6
+	id = atd_news.18
+	title = atd_news.18.t
+	desc = atd_news.18.desc
+	picture = GFX_news_event_jan_6
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.18.a
+	
+	}
+}
+
+news_event = {	#Bojo
+	id = atd_news.19
+	title = atd_news.19.t
+	desc = atd_news.19.desc
+	picture = GFX_news_event_bojo
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.19.a
+	
+	}
+}
+
+news_event = {	#Liz Truss
+	id = atd_news.20
+	title = atd_news.20.t
+	desc = atd_news.20.desc
+	picture = GFX_news_event_liz_truss
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.20.a
+	
+	}
+}
+
+news_event = {	#Liz Truss lettuce
+	id = atd_news.21
+	title = atd_news.21.t
+	desc = atd_news.21.desc
+	picture = GFX_news_event_liz_truss_lettuce
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.21.a
+	
+	}
+	
+	option = {
+		name = atd_news.21.b
+	
+	}
+}
+
+news_event = {	#Queen dead
+	id = atd_news.22
+	title = atd_news.22.t
+	desc = atd_news.22.desc
+	picture = GFX_news_event_queen_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.22.a
+	
+	}
+}
+
+news_event = {	#Epstein arrested
+	id = atd_news.23
+	title = atd_news.23.t
+	desc = atd_news.23.desc
+	picture = GFX_news_event_epstein_arrest
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.23.a
+	
+	}
+}
+
+news_event = {	#Epstein dead
+	id = atd_news.24
+	title = atd_news.24.t
+	desc = atd_news.24.desc
+	picture = GFX_news_event_epstein_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.24.a
+	
+	}
+}
+
+news_event = {	#Greek debt crisis
+	id = atd_news.25
+	title = atd_news.25.t
+	desc = atd_news.25.desc
+	picture = GFX_news_event_greece_debt
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.25.a
+	
+	}
+}
+
+news_event = {	#Rada disbanded
+	id = atd_news.26
+	title = atd_news.26.t
+	desc = atd_news.26.desc
+	picture = GFX_news_event_rada_disbanded
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.26.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.26.b
+		trigger = { TAG = UKR }
+	}
+	option = {
+		name = atd_news.26.c
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = {
+	id = atd_news.27
+	title = atd_news.27.t
+	desc = atd_news.27.desc
+	picture = GFX_news_event_right_sector
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.27.a
+		trigger = {
+			NOT = {
+				TAG = UKR
+			}
+		}
+	}
+	option = {
+		name = atd_news.27.b
+		trigger = { TAG = UKR }
+	}
+}
+
+news_event = {	#Ukraine surrenders
+	id = atd_news.28
+	title = atd_news.28.t
+	desc = atd_news.28.desc
+	picture = GFX_news_event_capitulation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.28.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.28.b
+		trigger = { TAG = UKR }
+	}
+	option = {
+		name = atd_news.28.c
+		trigger = {
+			NOT = { TAG = UKR }
+			OR={
+				TAG = SOV 
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = {	#Ukraine Civil War
+	id = atd_news.29
+	title = atd_news.29.t
+	desc = atd_news.29.desc
+	picture = city_event_lib_kharkov
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = atd_news.29.a
+		trigger = {
+			NOT = {
+				OR={
+					original_tag = UKR
+					original_tag = UGE
+					original_tag = AZV
+					original_tag = FTU
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.29.b
+		trigger = {
+			OR={
+				original_tag = UKR
+				original_tag = UGE
+				original_tag = AZV
+				original_tag = FTU
+			}
+		}
+	}
+}
+
+news_event = {	#Zelenskyy in Congress
+	id = atd_news.30
+	title = atd_news.30.t
+	desc = atd_news.30.desc
+	picture = GFX_news_event_zelenskyy_congress
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.30.a
+		trigger={
+			has_war_with = UKR
+		}
+	}
+	
+	option = {
+		name = atd_news.30.b
+		trigger={
+			NOT = { has_war_with = UKR }
+		}
+	}
+}
+
+news_event = {	#Alexander Dugin assassinated
+	id = atd_news.31
+	title = atd_news.31.t
+	desc = atd_news.31.desc
+	picture = GFX_news_event_dugin_assassination
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.31.a
+		trigger={
+			original_tag = UKR
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_aleksandr_dugin_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_aleksandr_dugin }
+		}
+	}
+	
+	option = {
+		name = atd_news.31.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_aleksandr_dugin_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_aleksandr_dugin }
+		}
+	}
+	
+	option = {
+		name = atd_news.31.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_aleksandr_dugin_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_aleksandr_dugin }
+		}
+	}
+}
+
+news_event = {	#Dariya Dugina assassinated
+	id = atd_news.32
+	title = atd_news.32.t
+	desc = atd_news.32.desc
+	picture = GFX_news_event_dugin_assassination
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.32.a
+		trigger={
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = atd_news.32.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.32.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Dugin assassination fails
+	id = atd_news.33
+	title = atd_news.33.t
+	desc = atd_news.33.desc
+	picture = GFX_news_event_dugin_assassination
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.33.a
+		trigger={
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = atd_news.33.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.33.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Crimea bridge
+	id = atd_news.34
+	title = atd_news.34.t
+	desc = atd_news.34.desc
+	picture = GFX_news_event_crimean_bridge_attacked
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.34.a
+		trigger={
+			original_tag = UKR
+		}
+		effect_tooltip={
+			SOV={
+				add_timed_idea={
+					idea = UKR_crimean_bridge_attacked
+					days = 90
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.34.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+		effect_tooltip={
+			SOV={
+				add_timed_idea={
+					idea = UKR_crimean_bridge_attacked
+					days = 90
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.34.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+		effect_tooltip={
+			SOV={
+				add_timed_idea={
+					idea = UKR_crimean_bridge_attacked
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Vladen Tatarsky killed
+	id = atd_news.35
+	title = atd_news.35.t
+	desc = atd_news.35.desc
+	picture = GFX_news_event_tatarsky_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.35.a
+		trigger={
+			original_tag = UKR
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_vladlen_tatarsky_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_vladlen_tatarsky }
+		}
+	}
+	
+	option = {
+		name = atd_news.35.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_vladlen_tatarsky_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_vladlen_tatarsky }
+		}
+	}
+	
+	option = {
+		name = atd_news.35.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+		if={
+			limit = {  russia_rework_trigger = yes }
+			SOV = { retire_character = SOV_vladlen_tatarsky_rework }
+		}
+		else={
+			SOV = { retire_character = SOV_vladlen_tatarsky }
+		}
+	}
+}
+
+news_event = {	#Vladen Tatarsky survives
+	id = atd_news.36
+	title = atd_news.36.t
+	desc = atd_news.36.desc
+	picture = GFX_news_event_tatarsky_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.36.a
+		trigger={
+			original_tag = UKR
+		}
+	}
+	
+	option = {
+		name = atd_news.36.b
+		trigger={
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+	}
+	
+	option = {
+		name = atd_news.36.c
+		trigger={
+			NOT = { original_tag = UKR }
+			NOT={
+				OR={
+					original_tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Poroshenko wins 2014 election
+	id = atd_news.37
+	title = atd_news.37.t
+	desc = atd_news.37.desc
+	picture = GFX_news_event_petro_poroshenko
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.37.a
+	}
+}
+
+news_event = { #Tymoshenko wins 2014 election
+	id = atd_news.38
+	title = atd_news.38.t
+	desc = atd_news.38.desc
+	picture = GFX_news_event_yulia_tymoshenko
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.38.a
+	}
+}
+
+news_event = { #Yarosh wins 2014 election
+	id = atd_news.39
+	title = atd_news.39.t
+	desc = atd_news.39.desc
+	picture = GFX_news_event_dmytro_yarosh
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.39.a
+	}
+}
+
+news_event = { #Poroshenko wins 2019 election
+	id = atd_news.40
+	title = atd_news.40.t
+	desc = atd_news.40.desc
+	picture = GFX_news_event_petro_poroshenko
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.40.a
+	}
+}
+
+news_event = { #Tymoshenko wins 2019 election
+	id = atd_news.41
+	title = atd_news.41.t
+	desc = atd_news.41.desc
+	picture = GFX_news_event_yulia_tymoshenko
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.41.a
+	}
+}
+
+news_event = { #Yarosh wins 2019 election
+	id = atd_news.42
+	title = atd_news.42.t
+	desc = atd_news.42.desc
+	picture = GFX_news_event_dmytro_yarosh
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.42.a
+	}
+}
+
+news_event = { #Zelenskyy wins 2019 election
+	id = atd_news.43
+	title = atd_news.43.t
+	desc = atd_news.43.desc
+	picture = GFX_news_event_volodymyr_zelenskyy
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.43.a
+	}
+}
+
+news_event = { #Vladimir Putin wins 2018 election
+	id = atd_news.44
+	title = atd_news.44.t
+	desc = atd_news.44.desc
+	picture = GFX_news_event_putin
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.44.a
+	}
+}
+
+news_event = { #Ksenia Sobchak wins 2018 election
+	id = atd_news.45
+	title = atd_news.45.t
+	desc = atd_news.45.desc
+	picture = GFX_news_event_sobchak
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.45.a
+	}
+}
+
+news_event = { #Grigory Yavlinski wins 2018 election
+	id = atd_news.46
+	title = atd_news.46.t
+	desc = atd_news.46.desc
+	picture = GFX_news_event_yavlinski
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.46.a
+	}
+}
+
+news_event = { #Dalia Grybauskaite wins 2014 election
+	id = atd_news.47
+	title = atd_news.47.t
+	desc = atd_news.47.desc
+	picture = GFX_news_event_dalia
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.47.a
+	}
+}
+
+news_event = { #Zigmantas Balcytis wins 2014 election
+	id = atd_news.48
+	title = atd_news.48.t
+	desc = atd_news.48.desc
+	picture = GFX_news_event_zigmantas
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.48.a
+	}
+}
+
+
+news_event = { #Mindaugas Gervaldas Coups The 2014 election
+	id = atd_news.49
+	title = atd_news.49.t
+	desc = atd_news.49.desc
+	picture = GFX_news_event_mindaugas_coup
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.49.a
+	}
+}
+
+news_event = {	#Putin dead 2
+	id = atd_news.50
+	title = atd_news.50.t
+	desc = atd_news.50.desc
+	picture = GFX_news_event_putin_dead
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				tag = SOV
+			}
+		}
+		name = atd_news.50.a
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.50.b
+	}
+}
+
+news_event = {	#Ukraine enters Crimea
+	id = atd_news.51
+	title = atd_news.51.t
+	desc = atd_news.51.desc
+	picture = city_event_crimea_liberated
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = { tag = SOV }
+			NOT = { tag = UKR }
+		}
+		name = atd_news.51.a
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.51.b
+	}
+	
+	option = {
+		trigger = {
+			tag = UKR
+		}
+		name = atd_news.51.c
+	}
+}
+
+news_event = {	#Siloviki Coup
+	id = atd_news.52
+	title = atd_news.52.t
+	desc = atd_news.52.desc
+	picture = GFX_news_event_russia_coup
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				tag = SOV
+			}
+		}
+		name = atd_news.52.a
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.52.b
+	}
+}
+
+news_event = {	#Ukraine president killed
+	id = atd_news.53
+	title = atd_news.53.t
+	desc = atd_news.53.desc
+	picture = GFX_news_event_zelenskyy_assassination
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = { tag = SOV }
+			NOT = { tag = UKR }
+		}
+		name = atd_news.53.a
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.53.b
+	}
+	
+	option = {
+		trigger = {
+			tag = UKR
+		}
+		name = atd_news.53.c
+		effect_tooltip = { load_fallen_rada = yes }
+	}
+}
+
+news_event = {	#Ukrainian victory
+	id = atd_news.54
+	title = atd_news.54.t
+	desc = atd_news.54.desc
+	picture = city_event_crimea_liberated
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				tag = SOV
+			}
+		}
+		name = atd_news.54.a
+		
+		hidden_effect={
+			every_state={
+				limit={
+					is_demilitarized_zone = yes
+					OR={
+						is_core_of = SOV
+						is_core_of = UKR
+					}
+				}
+				set_demilitarized_zone = no
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			tag = SOV
+		}
+		name = atd_news.54.b
+		
+		hidden_effect={
+			every_state={
+				limit={
+					is_demilitarized_zone = yes
+					OR={
+						is_core_of = SOV
+						is_core_of = UKR
+					}
+				}
+				set_demilitarized_zone = no
+			}
+		}
+	}
+}
+
+news_event = {	#Putin declares SMO
+	id = atd_news.55
+	title = atd_news.55.t
+	desc = atd_news.55.desc
+	picture = GFX_news_event_pootin
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = { 
+				OR={
+					tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+			NOT = { tag = UKR }
+		}
+		name = atd_news.55.a
+	}
+
+	option = {
+		trigger = {
+			OR={
+				tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+		}
+		name = atd_news.55.b
+	}
+	
+	option = {
+		trigger = {
+			tag = UKR
+		}
+		name = atd_news.55.c
+	}
+}
+
+
+news_event = {	#Sussy Baka (Russia) has too many troops on ukraines border
+	id = atd_news.56
+	title = atd_news.56.t
+	desc = atd_news.56.desc
+	picture = GFX_news_event_capitulation
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.56.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.56.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.56.c
+		trigger = {
+			tag = UKR
+		}
+	}
+}
+
+
+news_event = {	#Russia recognises PRs
+	id = atd_news.57
+	title = atd_news.57.t
+	desc = atd_news.57.desc
+	picture = GFX_news_event_pootin
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.57.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+			
+			if={
+				limit = { has_western_government = yes }
+				effect_tooltip={		#Actual effect happens for Russia in russia.1056
+					add_opinion_modifier = {
+						target = SOV
+						modifier = SOV_recognised_donbass
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.56.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+
+}
+
+news_event = {	#Wagner Rebellion
+	id = atd_news.58
+	title = atd_news.58.t
+	desc = atd_news.58.desc
+	picture = GFX_news_event_wagner
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.58.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.58.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+
+}
+news_event = {	#Wagner Halts March
+	id = atd_news.59
+	title = atd_news.59.t
+	desc = atd_news.59.desc
+	picture = GFX_news_event_prigozhin
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.59.a
+		trigger = {
+			NOT = {
+				OR={
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.59.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = {	#Second Russo-Georgian war
+	id = atd_news.60
+	title = atd_news.60.t
+	desc = atd_news.60.desc
+	picture = GFX_news_event_second_russo_georgian_war
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.60.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = GEO
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+			NOT = { has_western_government = yes }
+		}
+	}
+	option = {
+		name = atd_news.60.b
+		trigger = {
+			NOT = {
+				OR={
+					tag = GEO
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+			has_western_government = yes
+		}
+	}
+	option = {
+		name = atd_news.60.c
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.60.d
+		trigger = {
+			tag = GEO
+		}
+	}
+}
+
+news_event = {	#Siloviki russia annexes donbass
+	id = atd_news.61
+	title = atd_news.61.t
+	desc = atd_news.61.desc
+	picture = GFX_news_event_russia_invasion
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.61.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.61.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.61.c
+		trigger = {
+			tag = UKR
+		}
+	}
+}
+
+news_event = {	#Siloviki russia invades ukraine
+	id = atd_news.62
+	title = atd_news.62.t
+	desc = atd_news.62.desc
+	picture = GFX_news_event_russia_invasion
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.62.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.62.b
+		trigger = {
+			OR={
+				TAG = SOV 
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = atd_news.62.c
+		trigger = {
+			tag = UKR
+		}
+	}
+}
+
+news_event = {	#Patriot's march
+	id = atd_news.63
+	title = atd_news.63.t
+	desc = atd_news.63.desc
+	picture = GFX_news_event_angry_patriots
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.63.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					tag = SOV
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.63.b
+		trigger = {
+			tag = SOV
+		}
+	}
+	option = {
+		name = atd_news.63.c
+		trigger = {
+			tag = UKR
+		}
+	}
+}
+
+news_event = {	#Belarus joins SMO
+	id = atd_news.64
+	title = atd_news.64.t
+	desc = atd_news.64.desc
+	picture = GFX_news_event_belarus_smo
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = atd_news.64.a
+		trigger = {
+			NOT = {
+				OR={
+					tag = UKR
+					tag = BLR
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.64.b
+		trigger = {
+			tag = UKR
+		}
+	}
+	option = {
+		name = atd_news.64.c
+		trigger = {
+			tag = BLR
+		}
+	}
+}
+
+
+news_event = {	#Russia cuts exports
+	id = atd_news.65
+	title = atd_news.65.t
+	desc = atd_news.65.desc
+	picture = GFX_news_event_russian_oil
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.65.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		effect_tooltip = {
+			every_country = {
+				limit = { 
+					NOT = {
+						is_puppet_of = SOV
+						is_in_faction_with = SOV
+					}
+					has_idea = eu_member
+				}
+
+				add_ideas = SOV_cut_oil_exports
+			}
+		}
+	}
+	option = {
+		name = atd_news.65.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+		effect_tooltip = {
+			every_country = {
+				limit = { 
+					NOT = {
+						is_puppet_of = SOV
+						is_in_faction_with = SOV
+					}
+					has_idea = eu_member
+				}
+
+				add_ideas = SOV_cut_oil_exports
+			}
+		}
+	}
+	option = {
+		name = atd_news.65.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+		effect_tooltip = {
+			every_country = {
+				limit = { 
+					NOT = {
+						is_puppet_of = SOV
+						is_in_faction_with = SOV
+					}
+					has_idea = eu_member
+				}
+
+				add_ideas = SOV_cut_oil_exports
+			}
+		}
+	}
+}
+
+
+news_event = {	#Ghost of kyiv
+	id = atd_news.66
+	title = atd_news.66.t
+	desc = atd_news.66.desc
+	picture = GFX_news_event_ghost_of_kyiv
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.66.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.66.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+	}
+	option = {
+		name = atd_news.66.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+
+	}
+}
+
+
+news_event = {	#Poland sends peacekeepers to Donbass
+	id = atd_news.67
+	title = atd_news.67.t
+	desc = atd_news.67.desc
+	picture = GFX_news_event_poland_in_donbass
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.67.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+	}
+	option = {
+		name = atd_news.67.b
+		trigger = {
+			has_idea = eu_member
+		}
+	}
+	option = {
+		name = atd_news.67.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Drone explodes near the kremlin
+	id = atd_news.68
+	title = atd_news.68.t
+	desc = atd_news.68.desc
+	picture = GFX_news_event_kremlin_hit
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SOV = {
+				add_war_support = 0.05
+				add_political_power = -1
+			}
+
+			UKR = {
+				add_war_support = 0.005
+				add_command_power = 5
+			}
+		}
+	}
+
+	option = {
+		name = atd_news.68.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		effect_tooltip = {
+			SOV = {
+				add_war_support = 0.05
+				add_political_power = -1
+			}
+
+			UKR = {
+				add_war_support = 0.005
+				add_command_power = 5
+			}
+		}
+	}
+	option = {
+		name = atd_news.68.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+		effect_tooltip = {
+			SOV = {
+				add_war_support = 0.05
+				add_political_power = -1
+			}
+
+			UKR = {
+				add_war_support = 0.005
+				add_command_power = 5
+			}
+		}
+	}
+	option = {
+		name = atd_news.68.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+		effect_tooltip = {
+			SOV = {
+				add_war_support = 0.05
+				add_political_power = -1
+			}
+
+			UKR = {
+				add_war_support = 0.005
+				add_command_power = 5
+			}
+		}
+	}
+}
+
+
+news_event = {	#black sea fleet hq blown up
+	id = atd_news.69
+	title = atd_news.69.t
+	desc = atd_news.69.desc
+	picture = GFX_news_event_black_sea_fleet_hq
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			433 = {
+				damage_building = {
+					type = naval_base
+					damage = 8
+				}
+			}
+		}
+	}
+
+	option = {
+		name = atd_news.69.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		effect_tooltip = {
+			433 = {
+				damage_building = {
+					type = naval_base
+					damage = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.69.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+		effect_tooltip = {
+			433 = {
+				damage_building = {
+					type = naval_base
+					damage = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = atd_news.69.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+		effect_tooltip = {
+			433 = {
+				damage_building = {
+					type = naval_base
+					damage = 1
+				}
+			}
+		}
+	}
+}
+
+news_event = {	#Jarosław Kaczyński becomes president of poland
+	id = atd_news.70
+	title = atd_news.70.t
+	desc = atd_news.70.desc
+	picture = GFX_news_event_jaroslaw_kaczynski
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.70.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.70.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#Andrzej Duda becomes president of poland
+	id = atd_news.71
+	title = atd_news.71.t
+	desc = atd_news.71.desc
+	picture = GFX_news_event_andrzej_duda
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.71.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.71.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#Bronisław Komorowski becomes president of poland
+	id = atd_news.72
+	title = atd_news.72.t
+	desc = atd_news.72.desc
+	picture = GFX_news_event_bonislaw_komorowski
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.72.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.72.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#finland and sweden nato membership
+	id = atd_news.73
+	title = atd_news.73.t
+	desc = atd_news.73.desc
+	picture = GFX_news_event_finland_sweden_nato
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.73.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.73.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.73.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+
+news_event = {	#rocket explodes in poland 
+	id = atd_news.74
+	title = atd_news.74.t
+	desc = atd_news.74.desc
+	picture = GFX_news_event_poland_missile
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.74.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.74.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.74.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+news_event = {	#Zelenskyy Stays in kiev during war
+	id = atd_news.75
+	title = atd_news.75.t
+	desc = atd_news.75.desc
+	picture = GFX_news_event_zelenskyy_kiev
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.75.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.75.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.75.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+news_event = {	#NATO deploys NRF
+	id = atd_news.76
+	title = atd_news.76.t
+	desc = atd_news.76.desc
+	picture = GFX_news_event_nrf
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.76.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.76.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.76.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+news_event = {	#Putin announces mobilization
+	id = atd_news.77
+	title = atd_news.77.t
+	desc = atd_news.77.desc
+	picture = GFX_news_event_putin_mobilization
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.77.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.77.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.77.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+news_event = {	#Zelenskyy UN speech
+	id = atd_news.78
+	title = atd_news.78.t
+	desc = atd_news.78.desc
+	picture = GFX_news_event_zelenskyy_un
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.78.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+
+	}
+	option = {
+		name = atd_news.78.b
+		trigger = {
+			has_idea = eu_member
+		}
+
+
+	}
+	option = {
+		name = atd_news.78.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+
+	}
+}
+
+news_event = {	#Paveł Kukiz becomes president of poland
+	id = atd_news.79
+	title = atd_news.79.t
+	desc = atd_news.79.desc
+	picture = GFX_news_event_pawel_kukiz
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.79.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.79.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#Magdalena Ogórek becomes president of poland
+	id = atd_news.80
+	title = atd_news.80.t
+	desc = atd_news.80.desc
+	picture = GFX_news_event_magdalena_ogorek
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.80.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.80.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#Leszek Miller becomes president of poland
+	id = atd_news.81
+	title = atd_news.81.t
+	desc = atd_news.81.desc
+	picture = GFX_news_event_leszek_miller
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.81.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.81.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#Adam Jarubas becomes president of poland
+	id = atd_news.82
+	title = atd_news.82.t
+	desc = atd_news.82.desc
+	picture = GFX_news_event_adam_jarubas
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.82.a
+		trigger = {
+			tag = POL
+		}
+	}
+	option = {
+		name = atd_news.82.b
+		trigger = {
+			NOT = { tag = POL }
+		}
+	}
+}
+
+news_event = {	#putin warns about west sending equipment
+	id = atd_news.83
+	title = atd_news.83.t
+	desc = atd_news.83.desc
+	picture = GFX_news_event_putin_mobilization
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger={
+		UKR = { has_war_with = SOV }
+	}
+
+	option = {
+		name = atd_news.83.a
+		trigger = {
+			OR={
+				TAG = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+			
+		}
+
+		effect_tooltip = { UKR = { UKR_ma_decrese_willingness_3_all = yes } }
+	}
+	option = {
+		name = atd_news.83.b
+		trigger = {
+			has_idea = eu_member
+		}
+		effect_tooltip = { UKR = { UKR_ma_decrese_willingness_3_all = yes } }
+	}
+	option = {
+		name = atd_news.83.c
+		trigger = {
+			NOT = {
+				OR={
+					has_idea = eu_member
+					TAG = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+		}
+		effect_tooltip = { UKR = { UKR_ma_decrese_willingness_3_all = yes } }
+	}
+}
+
+news_event = {	#wagner coup success
+	id = atd_news.84
+	title = atd_news.84.t
+	desc = atd_news.84.desc
+	picture = GFX_news_event_prigo_power
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = atd_news.84.a
+	}
+}

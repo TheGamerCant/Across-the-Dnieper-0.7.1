@@ -1,0 +1,1180 @@
+defined_text = {
+    name = UKR_get_event_34_event_picture
+	
+    text = {
+        trigger = {
+           dmytro_yarosh_is_leader = yes
+        }
+        localization_key = GFX_report_event_UKR_dmytro_yarosh_speech
+    }
+	text = {
+        trigger = {
+            yulia_tymoshenko_is_leader = yes
+        }
+        localization_key = GFX_report_event_UKR_yulia_tymoshenko_speech
+    }
+	text = {
+        trigger = {
+            volodymyr_zelenskyy_is_leader = yes
+        }
+        localization_key = GFX_report_event_UKR_no_collaborators
+    }
+	text = {
+        localization_key = GFX_report_event_UKR_petro_poroshenko_podium
+    }
+
+}
+
+defined_text = {
+    name = UKR_current_president_surname
+	
+	text = {
+        trigger = {
+            has_country_leader = { name = "Oleksandr Turchynov" ruling_only = yes }
+        }
+        localization_key = "Turchynov"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Dmytro Yarosh" ruling_only = yes }
+        }
+        localization_key = "Yarosh"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Yulia Tymoshenko" ruling_only = yes }
+        }
+        localization_key = "Tymoshenko"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Petro Poroshenko" ruling_only = yes }
+        }
+        localization_key = "Poroshenko"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Volodymyr Zelenskyy" ruling_only = yes }
+        }
+        localization_key = "Zelenskyy"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Viktor Yanukovych" ruling_only = yes }
+        }
+        localization_key = "Yanukovych"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Viktor Medvedchuk" ruling_only = yes }
+        }
+        localization_key = "Medvedchuk"
+    }
+	
+	#RUSSIAN LOC
+	text = {
+        trigger = {
+            has_country_leader = { name = "Александр Турчинов" ruling_only = yes }
+        }
+        localization_key = "Турчинов"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Дмитрий Ярош" ruling_only = yes }
+        }
+        localization_key = "Ярош"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Юлия Тимошенко" ruling_only = yes }
+        }
+        localization_key = "Тимошенко"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Петр Порошенко" ruling_only = yes }
+        }
+        localization_key = "Порошенко"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Владимир Зеленский" ruling_only = yes }
+        }
+        localization_key = "Зеленский"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Виктор Янукович" ruling_only = yes }
+        }
+        localization_key = "Янукович"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Виктор Медведчук" ruling_only = yes }
+        }
+        localization_key = "Медведчук"
+    }
+	
+	#UKRAINIAN LOC
+	text = {
+        trigger = {
+            has_country_leader = { name = "Олександр Турчинов" ruling_only = yes }
+        }
+        localization_key = "Турчинов"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Дмитро Ярош" ruling_only = yes }
+        }
+        localization_key = "Ярош"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Юлія Тимошенко" ruling_only = yes }
+        }
+        localization_key = "Тимошенко"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Петро Порошенко" ruling_only = yes }
+        }
+        localization_key = "Порошенко"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Володимир Зеленський" ruling_only = yes }
+        }
+        localization_key = "Зеленський"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Віктор Янукович" ruling_only = yes }
+        }
+        localization_key = "Янукович"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Віктор Медведчук" ruling_only = yes }
+        }
+        localization_key = "Медведчук"
+    }
+	
+	text = {
+
+        localization_key = "[ROOT.GetLeader]"
+    }
+}
+
+defined_text = {
+    name = get_donbass_war_status
+	
+    text = {
+        trigger = {
+            has_global_flag = donbass_war_is_ongoing
+        }
+        localization_key = "donbass_war_is_hot_loc"
+    }
+
+	text = {
+        localization_key = "donbass_war_is_cold_loc"
+    }
+}
+
+defined_text = {
+    name = getportownership
+	
+	text = {
+        trigger = {
+            354 = { is_owned_and_controlled_by = UKR }
+        }
+        localization_key = "[354.GetName]"
+    }
+	
+    text = {
+        trigger = {
+            269 = { is_owned_and_controlled_by = UKR }
+        }
+        localization_key = "[269.GetName]"
+    }
+
+	text = {
+        trigger = {
+            236 = { is_owned_and_controlled_by = UKR }
+        }
+        localization_key = "[236.GetName]"
+    }
+	
+	text = {
+        trigger = {
+            264 = { is_owned_and_controlled_by = UKR }
+        }
+        localization_key = "[264.GetName]"
+    }
+
+	text = {
+        localization_key = "[269.GetName]"
+    }
+}
+
+defined_text = {
+    name = get_independence_day_desc
+	
+    text = {
+        trigger = {
+			NOT = { is_puppet_of = SOV }
+            any_country={
+				original_tag = SOV
+				has_war_with = ROOT
+			}
+			92 = { is_controlled_by = ROOT }
+        }
+        localization_key = "independence_day_war_with_russia"
+    }
+
+	text = {
+        trigger = {
+			NOT = { is_puppet_of = SOV }
+            NOT={
+				any_country={
+					original_tag = SOV
+					has_war_with = ROOT
+				}
+			}
+			92 = { is_controlled_by = ROOT }
+        }
+        localization_key = "independence_day_war_peacetime"
+    }
+	
+	text = {
+        trigger = {
+			NOT = { is_puppet_of = SOV }
+            NOT={
+				92 = { is_controlled_by = ROOT }
+			}
+        }
+        localization_key = "independence_day_war_no_kyiv"
+    }
+	
+	text = {
+        trigger = {
+			is_puppet_of = SOV
+        }
+        localization_key = "independence_day_war_puppet"
+    }
+}
+
+defined_text = {
+    name = get_western_troops_name
+	
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 1 }
+        }
+        localization_key = "41st Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 2 }
+        }
+        localization_key = "47th Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 3 }
+        }
+        localization_key = "3rd Assault"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 4 }
+        }
+        localization_key = "21st Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 5 }
+        }
+        localization_key = "32nd Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 6 }
+        }
+        localization_key = "37th Marine"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 7 }
+        }
+        localization_key = "82nd Air Assault"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 8 }
+        }
+        localization_key = "118th Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 9 }
+        }
+        localization_key = "117th Mechanized"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { western_troops_id = 10 }
+        }
+        localization_key = "115th Mechanized"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_get_assassination_name
+	
+	text = {
+        trigger = {
+            check_variable = { i = 0  }
+        }
+        localization_key = "UKR_HUR_kyva"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 1  }
+        }
+        localization_key = "UKR_HUR_filiponenko"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 2  }
+        }
+        localization_key = "UKR_HUR_gorenko"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_get_assassination_portrait
+	
+	text = {
+        trigger = {
+            check_variable = { i = 0  }
+        }
+        localization_key = "GFX_decision_Portrait_Illia_Kyva"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 1  }
+        }
+        localization_key = "GFX_decision_Portrait_Mikhail_Filiponenko"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 2  }
+        }
+        localization_key = "GFX_decision_Portrait_Sergei_Gorenko"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_get_assassination_reason
+	
+	text = {
+        trigger = {
+            check_variable = { i = 0  }
+        }
+        localization_key = "UKR_HUR_kyva_reason"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 1  }
+        }
+        localization_key = "UKR_HUR_filiponenko_reason"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 2  }
+        }
+        localization_key = "UKR_HUR_gorenko_reason"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_get_assassination_health_status
+	
+	text = {
+        trigger = {
+            check_variable = { i = 0  }
+            NOT = {
+                has_country_flag = UKR_HUR_kyva_hospitalized
+                has_country_flag = UKR_HUR_kyva_dead
+            }
+        }
+        localization_key = "UKR_HUR_health_status_healthy"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 0 }
+            has_country_flag = UKR_HUR_kyva_hospitalized
+        }
+        localization_key = "UKR_HUR_health_status_hospitalized"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 0 }
+            has_country_flag = UKR_HUR_kyva_dead
+        }
+        localization_key = "UKR_HUR_health_status_dead"
+    }
+
+
+    text = {
+        trigger = {
+            check_variable = { i = 1  }
+            NOT = {
+                has_country_flag = UKR_HUR_filiponenko_hospitalized
+                has_country_flag = UKR_HUR_filiponenko_dead
+            }
+        }
+        localization_key = "UKR_HUR_health_status_healthy"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 1 }
+            has_country_flag = UKR_HUR_filiponenko_hospitalized
+        }
+        localization_key = "UKR_HUR_health_status_hospitalized"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 1 }
+            has_country_flag = UKR_HUR_filiponenko_dead
+        }
+        localization_key = "UKR_HUR_health_status_dead"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { i = 2  }
+            NOT = {
+                has_country_flag = UKR_HUR_gorenko_hospitalized
+                has_country_flag = UKR_HUR_gorenko_dead
+            }
+        }
+        localization_key = "UKR_HUR_health_status_healthy"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 2 }
+            has_country_flag = UKR_HUR_gorenko_hospitalized
+        }
+        localization_key = "UKR_HUR_health_status_hospitalized"
+    }
+    text = {
+        trigger = {
+            check_variable = { i = 2 }
+            has_country_flag = UKR_HUR_gorenko_dead
+        }
+        localization_key = "UKR_HUR_health_status_dead"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_doing_mission
+	
+    text = {
+        trigger = {
+			check_variable = { ROOT.can_do_hur_mission = 1 }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+        trigger = {
+			check_variable = { ROOT.can_do_hur_mission = 2 }
+        }
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_has_enough_cp_incursion
+	
+    text = {
+        trigger = {
+			command_power > ROOT.required_cp_incursion
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+        trigger = {
+			command_power < ROOT.required_cp_incursion
+        }
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_has_gave_equipment_incursion
+	
+    text = {
+        trigger = {
+            check_variable = { ROOT.given_rifles_incursion = ROOT.required_rifles_incursion }
+            check_variable = { ROOT.given_manpower_incursion = ROOT.required_manpower_incursion }
+            check_variable = { ROOT.given_apc_incursion = ROOT.required_apc_incursion }
+            check_variable = { ROOT.given_mechanized_incursion = ROOT.required_mechanized_incursion }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = { ROOT.given_rifles_incursion = ROOT.required_rifles_incursion }
+                check_variable = { ROOT.given_manpower_incursion = ROOT.required_manpower_incursion }
+                check_variable = { ROOT.given_apc_incursion = ROOT.required_apc_incursion }
+                check_variable = { ROOT.given_mechanized_incursion = ROOT.required_mechanized_incursion }
+            }
+        }
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = UKR_HUR_get_incursion_city_name
+	
+    text = {
+        trigger = {
+            check_variable = { ROOT.city_done_operation_in = 1 }
+        }
+       localization_key = "UKR_hur_belgorod_borisovka_city"
+    }
+    text = {
+        trigger = {
+            check_variable = { ROOT.city_done_operation_in = 2 }
+        }
+       localization_key = "UKR_hur_belgorod_3_cities_in_one"
+    }
+    text = {
+        trigger = {
+            check_variable = { ROOT.city_done_operation_in = 3 }
+        }
+       localization_key = "UKR_hur_belgorod_belgorod_city"
+    }
+    text = {
+        trigger = {
+            check_variable = { ROOT.city_done_operation_in = 4 }
+        }
+       localization_key = "UKR_hur_belgorod_shebeniko_city"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_are_there_allies
+	
+    text = {
+        trigger = {
+            OR = {
+                has_completed_focus = UKR_russian_volunteer_corps
+                has_completed_focus = UKR_freedom_of_russian_legion
+            }
+        }
+        localization_key = ""
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_russian_volunteer_corps
+                has_completed_focus = UKR_freedom_of_russian_legion
+            }
+        }
+        localization_key = "UKR_hur_alies_doesnt_have_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_rvc_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_russian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_russian_volunteer_corps
+            }
+        }
+        localization_key = "UKR_hur_rvc_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_frl_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_freedom_of_russian_legion
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_freedom_of_russian_legion
+            }
+        }
+        localization_key = "UKR_hur_frl_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_bvc_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_belarusian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_belarusian_volunteer_corps
+            }
+        }
+        localization_key = "UKR_hur_bvc_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_pvc_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_polish_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_polish_volunteer_corps
+            }
+        }
+        localization_key = "UKR_hur_pvc_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_gvc_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_german_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_german_volunteer_corps
+            }
+        }
+        localization_key = "UKR_hur_gvc_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_gnl_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_georgian_national_legion
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_georgian_national_legion
+            }
+        }
+        localization_key = "UKR_hur_gnl_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_kkr_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_kastus_kalinouski_regiment
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_kastus_kalinouski_regiment
+            }
+        }
+        localization_key = "UKR_hur_kkr_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_is_sob_enabled
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_siberia_battalion
+        }
+        localization_key = "UKR_hur_unit_enabled_tt"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_siberia_battalion
+            }
+        }
+        localization_key = "UKR_hur_sob_pre_tt"
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_rvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_russian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_rvc_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_russian_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_gnl
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_georgian_national_legion
+        }
+        localization_key = "UKR_hur_unit_gnl_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_georgian_national_legion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_kkr
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_kastus_kalinouski_regiment
+        }
+        localization_key = "UKR_hur_unit_kkr_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_kastus_kalinouski_regiment
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_frl
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_freedom_of_russian_legion
+        }
+        localization_key = "UKR_hur_unit_frl_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_freedom_of_russian_legion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_bvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_belarusian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_bvc_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_belarusian_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_pvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_polish_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_pvc_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_polish_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_gvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_german_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_gvc_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_german_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_sob
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_siberia_battalion
+        }
+        localization_key = "UKR_hur_unit_sob_name"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_siberia_battalion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_rvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_russian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_rvc_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_russian_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_frl
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_freedom_of_russian_legion
+        }
+        localization_key = "UKR_hur_unit_frl_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_freedom_of_russian_legion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_bvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_belarusian_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_bvc_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_belarusian_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_pvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_polish_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_pvc_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_polish_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_gvc
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_german_volunteer_corps
+        }
+        localization_key = "UKR_hur_unit_gvc_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_german_volunteer_corps
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_kkr
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_kastus_kalinouski_regiment
+        }
+        localization_key = "UKR_hur_unit_kkr_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_kastus_kalinouski_regiment
+            }
+        }
+        localization_key = ""
+    }
+}
+
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_gnl
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_georgian_national_legion
+        }
+        localization_key = "UKR_hur_unit_gnl_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_georgian_national_legion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_hur_get_incursion_units_effects_sob
+	
+    text = {
+        trigger = {
+             has_completed_focus = UKR_siberia_battalion
+        }
+        localization_key = "UKR_hur_unit_sob_effects"
+    }
+
+    text = {
+        trigger = {
+            NOT = {
+                has_completed_focus = UKR_siberia_battalion
+            }
+        }
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = UKR_ma_get_equipment_name
+	
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_himars
+        }
+        localization_key = "UKR_himars_name"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_abrams
+        }
+        localization_key = "UKR_abrams_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_bradleys
+        }
+        localization_key = "UKR_bradleys_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_humvees
+        }
+        localization_key = "UKR_humvees_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_m113
+        }
+        localization_key = "UKR_m113_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_spartans
+        }
+        localization_key = "UKR_spartans_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_challengers
+        }
+        localization_key = "UKR_challengers_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_leopards
+        }
+        localization_key = "UKR_leopards_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_marders
+        }
+        localization_key = "UKR_marders_name"
+    }
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_selected_f16
+        }
+        localization_key = "UKR_f16_name"
+    }
+}
+defined_text = {
+    name = UKR_ma_get_equipment_sender
+	
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_receiving_from_usa
+        }
+        localization_key = "UKR_usa_name"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_receiving_from_uk
+        }
+        localization_key = "UKR_uk_name"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_receiving_from_ger
+        }
+        localization_key = "[GER.GetName]"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = UKR_ma_receiving_from_tur
+        }
+        localization_key = "[UKR_turkey_name]"
+    }
+}

@@ -1,0 +1,55 @@
+﻿capital = 75
+load_nato_doctrine = yes
+
+recruit_character = CZE_jiri_rusnok
+recruit_character = CZE_petr_fiala
+recruit_character = CZE_andrej_babis
+recruit_character = CZE_bohuslav_sobotka
+recruit_character = CZE_tomio_okamura
+
+add_ideas = { eu_member }
+
+complete_national_focus = CZE_Nagyova
+complete_national_focus = CZE_vote_of_distrust
+complete_national_focus = CZE_arrest
+complete_national_focus = CZE_fall_cabinet
+complete_national_focus = CZE_jiri
+
+add_ideas = {
+	SLO_visegrad_member
+
+	religion_law_secular
+    womens_rights_equality
+    lgbtq_rights_full_equality
+    minority_rights_societal_discrimination
+    nationalism_laws_armed_neutrality
+    alcohol_narotics_laws_highly_regulated
+    firearms_laws_restricted
+}
+
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = 200
+}
+#add_ideas = President_1
+#add_ideas = no_producer
+#add_ideas = no_producer_1
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "2013.10.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	social_democracy = 25
+	eastern_liberal = 13
+	neoliberal = 8
+	theocracy_ideology = 7
+	eastern_conservative = 7
+	neoconservative = 23.5
+	moderate_communist = 16.5
+}

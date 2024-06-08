@@ -1,0 +1,37 @@
+﻿capital = 371
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Ramzan Kadyrov"
+	desc = ""
+	picture = gfx/leaders/SOV/Portrait_Ramzan_Kadyrov.png
+	ideology = united_russia_subideology
+}
+
+add_manpower = 70000
+
+add_ideas = {
+	religion_law_fundamentalist
+    womens_rights_patriarchy
+    lgbtq_rights_banned
+    minority_rights_minor_inequality
+    nationalism_laws_jingoistic
+    alchohol_narcotics_laws_largely_regulated
+    firearm_laws_restricted
+	authoritarian_democracy
+	limited_conscription
+	state_controlled_press
+	free_trade_unions
+	bipolarist
+
+}
+
+set_politics = {
+	ruling_party = eastern_conservative
+}
+
+set_popularities = {
+	eastern_conservative = 54
+	eastern_liberal = 46
+}

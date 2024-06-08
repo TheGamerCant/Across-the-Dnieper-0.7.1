@@ -1,0 +1,420 @@
+UKR_sotn_oligarchs = { 
+	enable = { always = yes }
+
+	consumer_goods_expected_value = UKR_sotn_oligarchs_consumer_goods_expected_value
+	political_power_factor = UKR_sotn_oligarchs_political_power_factor
+	stability_factor = UKR_sotn_oligarchs_stability_factor
+}
+
+UKR_sotn_nationalists = { 
+	enable = { always = yes }
+
+	conscription_factor = UKR_sotn_nationalists_conscription_factor
+	war_support_factor = UKR_sotn_nationalists_war_support_factor
+	stability_weekly = UKR_sotn_nationalists_stability_weekly
+	ultranationalistm_drift = UKR_sotn_nationalists_ultranationalism_drift
+}
+
+UKR_sotn_pro_russians = { 
+	enable = { always = yes }
+
+	political_power_factor = UKR_sotn_pro_russians_political_power_factor
+	stability_factor = UKR_sotn_pro_russians_stability_factor
+	conscription = UKR_sotn_pro_russians_conscription
+	party_popularity_stability_factor = UKR_sotn_pro_russians_party_popularity_stability_factor
+	eastern_conservative_drift = UKR_sotn_pro_russians_eastern_conservative_drift
+}
+
+UKR_sotn_liberals = { 
+	enable = { always = yes }
+
+	political_power_gain = UKR_sotn_liberals_political_power_gain
+	stability_factor = UKR_sotn_liberals_stability_factor
+	eastern_liberal_drift = UKR_sotn_liberals_eastern_liberal_drift
+}
+
+UKR_western_experience = { 
+	enable = { always = yes }
+
+	icon = GFX_idea_UKR_Western_Experience
+
+	army_armor_attack_factor  = UKR_WE_army_armor_attack_factor
+	army_armor_defence_factor  = UKR_WE_army_armor_defence_factor
+	army_armor_speed_factor = UKR_WE_army_armor_speed_factor
+
+	army_infantry_attack_factor  = UKR_WE_army_infantry_attack_factor
+	army_infantry_defence_factor  = UKR_WE_army_infantry_defence_factor
+
+	motorized_attack_factor  = UKR_WE_motorized_attack_factor
+	motorized_defence_factor  = UKR_WE_motorized_defence_factor
+
+	mechanized_attack_factor  = UKR_WE_mechanized_attack_factor
+	mechanized_defence_factor  = UKR_WE_mechanized_defence_factor
+
+	air_accidents_factor = UKR_WE_air_accidents_factor 
+	air_attack_factor = UKR_WE_air_attack_factor
+	air_defence_factor = UKR_WE_air_defence_factor
+
+	experience_gain_army_factor = UKR_WE_experience_gain_army_factor
+	experience_gain_air_factor = UKR_WE_experience_gain_air_factor
+}
+
+water_shortage = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_water_shortage
+	
+	local_building_slots_factor = -0.1
+	state_production_speed_buildings_factor = -0.2
+	monthly_population = -0.2
+	state_resources_factor = -0.25
+	resistance_growth = 0.1
+	resistance_target = 0.1
+}
+
+drastic_water_shortage = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_water_shortage
+	
+	local_building_slots_factor = -0.5
+	state_resources_factor = -0.6
+	state_production_speed_buildings_factor = -0.5
+	monthly_population = -0.5
+	resistance_growth = 0.25
+	resistance_target = 0.4
+	compliance_growth = -0.05
+}
+
+not_allowed_to_attack_here = {
+	icon = GFX_unplanned_offensive
+	enable={ NOT = { OR={ ROOT = { is_claimed_by = ROOT.CONTROLLER } ROOT = { is_core_of = ROOT.CONTROLLER } } } }
+	
+	army_attack_factor = -10
+	army_defence_factor = -2
+	army_speed_factor = -2
+	breakthrough_factor = -5
+}
+
+UKR_offensive = {
+	icon = GFX_modifiers_generic_military_plans
+	enable = { original_tag = UKR }
+
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
+	breakthrough_factor = 0.4
+	army_speed_factor = 0.1
+	ground_attack_factor = 0.05
+	local_org_regain = 0.15
+	supply_factor = 0.25
+}
+
+UKR_collaborators = {
+	icon = GFX_modifiers_generic_military_plans
+	enable= { OR = { original_tag = SOV is_puppet_of = SOV is_in_faction_with = SOV }  }
+
+	army_attack_factor = 0.4
+	army_defence_factor = 0.75
+	breakthrough_factor = 0.6
+	army_speed_factor = 0.45
+	supply_factor = 0.5
+	local_org_regain = 0.4
+	max_dig_in = 7.5
+	army_org_factor = 0.35
+	supply_node_range = 0.2
+}
+
+UKR_collaborators_small = {
+	icon = GFX_modifiers_generic_military_plans
+	enable= { original_tag = UKR }
+
+	army_attack_factor = -0.4
+	army_defence_factor = -0.25
+	breakthrough_factor = -0.3
+	dig_in_speed_factor = -0.2
+	army_speed_factor = -0.25
+}
+
+UKR_heavily_entrenched = {
+	icon = GFX_idea_generic_fortify_the_borders
+	enable= { OR = { original_tag = SOV is_puppet_of = SOV is_in_faction_with = SOV }  }
+	remove_trigger = { NOT = { SOV = { has_war_with = UKR } } }
+
+	army_attack_factor = -0.8
+	army_defence_factor = -0.2
+	dig_in_speed_factor = -0.3
+	breakthrough_factor = -0.3
+	army_speed_factor = -0.15
+}
+
+UKR_heavily_entrenched_russians = {
+	icon = GFX_idea_generic_fortify_the_borders
+	remove_trigger = { NOT = { SOV = { has_war_with = UKR } } }
+	enable= { original_tag = UKR }
+
+	army_attack_factor = -0.9
+	army_defence_factor = -0.25
+	dig_in_speed_factor = -0.3
+	breakthrough_factor = -0.4
+	army_speed_factor = -0.15
+}
+
+UKR_heavily_defended_area = {
+	icon = GFX_idea_donbass_war
+	remove_trigger = { NOT = { SOV = { has_war_with = UKR } } }
+
+	army_attack_factor = -0.3
+	army_defence_factor = -0.35
+	breakthrough_factor = -0.4
+}
+
+DONBASS_heavily_defended_area = {
+	icon = GFX_idea_donbass_war
+	remove_trigger = { has_war = no }
+
+	army_attack_factor = -0.3
+	army_defence_factor = -0.40
+	breakthrough_factor = -0.4
+}
+
+UKR_city_shelling = {
+	icon = GFX_modifiers_generic_defense
+
+	remove_trigger = { OR = { has_war = no NOT = { is_controlled_by = UKR } } }
+
+	local_org_regain = -0.02
+	army_defence_factor = -0.02
+	army_speed_factor_for_controller = -0.04
+	local_factories = -0.4
+
+	state_repair_speed_industrial_complex_factor = -0.25
+	state_repair_speed_arms_factory_factor = -0.25
+	state_repair_speed_infrastructure_factor = -0.3
+}
+
+
+
+UKR_armed_forces_of_ukraine_soviet_doctrine = { #Initial national spirit
+	enable = { always = yes }
+	icon = GFX_idea_UKR_ground_forces
+
+	mobilization_speed = UKR_afu_mobilization_speed
+	army_armor_defence_factor = UKR_afu_army_armor_defence_factor
+	army_armor_attack_factor = UKR_afu_army_armor_attack_factor
+	coordination_bonus = UKR_afu_coordination_bonus
+	supply_consumption_factor = UKR_afu_supply_consumption_factor
+	land_doctrine_cost_factor = UKR_afu_land_doctrine_cost_factor
+	army_org_factor = UKR_afu_army_org_factor
+	supply_combat_penalties_on_core_factor = UKR_afu_supply_combat_penalties_on_core_factor
+	org_loss_when_moving = UKR_afu_org_loss_when_moving
+	supply_node_range = UKR_afu_supply_node_range
+	industrial_capacity_factory = UKR_afu_industrial_capacity_factory
+	conscription_factor = UKR_afu_conscription_factor
+	attrition = UKR_afu_attrition
+	army_core_defence_factor = UKR_afu_army_core_defence_factor
+	training_time_factor = UKR_afu_training_time_factor
+	army_artillery_attack_factor = UKR_afu_army_artillery_attack_factor
+	army_artillery_defence_factor = UKR_afu_army_artillery_defence_factor
+	production_speed_bunker_factor = UKR_afu_production_speed_bunker_factor
+	max_dig_in = UKR_afu_max_dig_in
+	enemy_army_bonus_air_superiority_factor = UKR_afu_enemy_army_bonus_air_superiority_factor
+	army_attack_factor = UKR_afu_army_attack_factor
+	army_defence_factor = UKR_afu_army_defence_factor
+	experience_loss_factor = UKR_afu_experience_loss_factor
+	army_speed_factor = UKR_afu_army_speed_factor
+	
+	custom_modifier_tooltip = SPR_military_disloyalty_tt
+}
+
+UKR_armed_forces_of_ukraine_reforming = {
+	enable = { always = yes }
+	icon = GFX_idea_UKR_ground_forces
+
+	mobilization_speed = UKR_afu_mobilization_speed
+	army_armor_defence_factor = UKR_afu_army_armor_defence_factor
+	army_armor_attack_factor = UKR_afu_army_armor_attack_factor
+	coordination_bonus = UKR_afu_coordination_bonus
+	supply_consumption_factor = UKR_afu_supply_consumption_factor
+	land_doctrine_cost_factor = UKR_afu_land_doctrine_cost_factor
+	army_org_factor = UKR_afu_army_org_factor
+	supply_combat_penalties_on_core_factor = UKR_afu_supply_combat_penalties_on_core_factor
+	org_loss_when_moving = UKR_afu_org_loss_when_moving
+	supply_node_range = UKR_afu_supply_node_range
+	industrial_capacity_factory = UKR_afu_industrial_capacity_factory
+	conscription_factor = UKR_afu_conscription_factor
+	attrition = UKR_afu_attrition
+	army_core_defence_factor = UKR_afu_army_core_defence_factor
+	training_time_factor = UKR_afu_training_time_factor
+	army_artillery_attack_factor = UKR_afu_army_artillery_attack_factor
+	army_artillery_defence_factor = UKR_afu_army_artillery_defence_factor
+	production_speed_bunker_factor = UKR_afu_production_speed_bunker_factor
+	max_dig_in = UKR_afu_max_dig_in
+	enemy_army_bonus_air_superiority_factor = UKR_afu_enemy_army_bonus_air_superiority_factor
+	army_attack_factor = UKR_afu_army_attack_factor
+	army_defence_factor = UKR_afu_army_defence_factor
+	experience_loss_factor = UKR_afu_experience_loss_factor
+	army_speed_factor = UKR_afu_army_speed_factor
+}
+
+UKR_armed_forces_of_ukraine_western_doctrine = {
+	enable = { always = yes }
+	icon = GFX_idea_UKR_ground_forces
+
+	mobilization_speed = UKR_afu_mobilization_speed
+	army_armor_defence_factor = UKR_afu_army_armor_defence_factor
+	army_armor_attack_factor = UKR_afu_army_armor_attack_factor
+	coordination_bonus = UKR_afu_coordination_bonus
+	supply_consumption_factor = UKR_afu_supply_consumption_factor
+	land_doctrine_cost_factor = UKR_afu_land_doctrine_cost_factor
+	army_org_factor = UKR_afu_army_org_factor
+	supply_combat_penalties_on_core_factor = UKR_afu_supply_combat_penalties_on_core_factor
+	org_loss_when_moving = UKR_afu_org_loss_when_moving
+	supply_node_range = UKR_afu_supply_node_range
+	industrial_capacity_factory = UKR_afu_industrial_capacity_factory
+	conscription_factor = UKR_afu_conscription_factor
+	attrition = UKR_afu_attrition
+	army_core_defence_factor = UKR_afu_army_core_defence_factor
+	training_time_factor = UKR_afu_training_time_factor
+	army_artillery_attack_factor = UKR_afu_army_artillery_attack_factor
+	army_artillery_defence_factor = UKR_afu_army_artillery_defence_factor
+	production_speed_bunker_factor = UKR_afu_production_speed_bunker_factor
+	max_dig_in = UKR_afu_max_dig_in
+	enemy_army_bonus_air_superiority_factor = UKR_afu_enemy_army_bonus_air_superiority_factor
+	army_attack_factor = UKR_afu_army_attack_factor
+	army_defence_factor = UKR_afu_army_defence_factor
+	experience_loss_factor = UKR_afu_experience_loss_factor
+	army_speed_factor = UKR_afu_army_speed_factor
+}
+
+
+UKR_air_force_of_ukraine = { #Initial national spirit
+	enable = { always = yes }
+	icon = GFX_idea_UKR_air_force
+
+	air_training_xp_gain_factor = UKR_afu_air_training_xp_gain_factor
+	air_range_factor = UKR_afu_air_range_factor
+	air_superiority_efficiency = UKR_afu_air_superiority_efficiency
+	air_intercept_efficiency = UKR_afu_air_intercept_efficiency
+	air_night_penalty = UKR_afu_air_night_penalty
+	air_doctrine_cost_factor = UKR_afu_air_doctrine_cost_factor
+	air_accidents_factor = UKR_afu_air_accidents_factor
+}
+
+UKR_air_force_of_ukraine_reforming = { 
+	enable = { always = yes }
+	icon = GFX_idea_UKR_air_force
+
+	air_training_xp_gain_factor = UKR_afu_air_training_xp_gain_factor
+	air_range_factor = UKR_afu_air_range_factor
+	air_superiority_efficiency = UKR_afu_air_superiority_efficiency
+	air_intercept_efficiency = UKR_afu_air_intercept_efficiency
+	air_night_penalty = UKR_afu_air_night_penalty
+	air_doctrine_cost_factor = UKR_afu_air_doctrine_cost_factor
+	air_accidents_factor = UKR_afu_air_accidents_factor
+	industry_air_damage_factor = UKR_afu_industry_air_damage_factor
+}
+
+UKR_navy_of_ukraine = { #Initial national spirit
+	enable = { always = yes }
+	icon = GFX_idea_UKR_navy
+
+	naval_doctrine_cost_factor = UKR_afu_naval_doctrine_cost_factor
+	naval_coordination = UKR_afu_naval_coordination
+	naval_detection = UKR_afu_naval_detection
+	spotting_chance = UKR_afu_spotting_chance 
+	navy_intel_factor = UKR_afu_navy_intel_factor
+	industrial_capacity_dockyard = UKR_afu_industrial_capacity_dockyard
+	mines_planting_by_fleets_factor = UKR_afu_mines_planting_by_fleets_factor
+	mines_sweeping_by_fleets_factor = UKR_afu_mines_sweeping_by_fleets_factor
+
+}
+
+NOVOROSSIYA_secret_start_boost={
+	enable = { NOV = { is_ai = yes } }
+
+	coordination_bonus = 0.06
+	army_morale_factor = 0.5
+	org_loss_when_moving = -0.2
+	supply_node_range = 0.25
+	army_speed_factor = 1.2
+}
+
+UKR_russian_defectors={
+	remove_trigger = { NOT = { has_war_with = SOV } }
+
+	weekly_manpower = UKR_rd_weekly_manpower
+	command_power_gain_mult = UKR_rd_cp_gain
+}
+
+UKR_dependance_on_western_aid = {
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_war_with = SOV } }
+
+	icon = GFX_idea_UKR_western_equipment
+
+	production_factory_efficiency_gain_factor = UKR_dwa_efficiency_gain
+	production_factory_max_efficiency_factor = UKR_dwa_max_efficiency_gain
+	production_factory_start_efficiency_factor = UKR_dwa_start_efficiency_gain
+	line_change_production_efficiency_factor = UKR_dwa_efficiency_retention
+	unit_upkeep_attrition_factor = UKR_dwa_upkeep
+	industrial_capacity_factory = UKR_dwa_industrial_capacity
+	political_power_cost = UKR_dwa_pp_cost
+	experience_loss_factor = UKR_dwa_experience_loss
+	army_morale_factor = UKR_dwa_morale
+	breakthrough_factor = UKR_dwa_breakthrough
+	max_planning_factor = UKR_dwa_max_planning
+	weekly_manpower = UKR_dwa_weekly_mp
+}
+
+UKR_state_morale_boost = {
+	icon = GFX_modifiers_generic_military_plans
+
+	planning_speed = 0.03
+	local_org_regain = 0.05
+	army_speed_factor_for_controller = 0.06
+	local_manpower = 0.04
+}
+
+UKR_manpower_shortage_modifier = {
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_war_with = SOV } }
+
+	icon = GFX_idea_UKR_Manpower_Shortage
+
+	weekly_manpower = UKR_ms_weekly_manpower
+	conscription_factor = UKR_ms_conscription
+	mobilization_speed = UKR_ms_mobilization
+	training_time_factor = UKR_ms_training_time
+	consumer_goods_factor = UKR_ms_consumer
+	army_morale_factor = UKR_ms_morale
+	max_planning_factor = UKR_ms_planning
+	experience_loss_factor = UKR_ms_experience_loss
+}
+
+UKR_flooding = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_demilitarize_zone
+	army_attack_factor = -0.35
+	army_defence_factor = -0.4
+	breakthrough_factor = -0.35
+	supply_node_range = -0.3
+}
+
+UKR_disorganized_army = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = -0.2
+	army_defence_factor = -0.65
+	breakthrough_factor = -0.15
+}
+
+UKR_swamps = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_demilitarize_zone
+	army_attack_factor = -0.2
+	army_defence_factor = -0.3
+	breakthrough_factor = -0.1
+}

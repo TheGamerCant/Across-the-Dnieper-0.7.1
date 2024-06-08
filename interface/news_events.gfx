@@ -1,0 +1,324 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_maidan"
+		texturefile = "gfx/event_pictures/news/news_event_maidan.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_russian_oil"
+		texturefile = "gfx/event_pictures/news/news_event_russian_oil.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_little_green_men"
+		texturefile = "gfx/event_pictures/news/news_event_little_green_men.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_donbass"
+		texturefile = "gfx/event_pictures/news/news_event_donbass.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_g7"
+		texturefile = "gfx/event_pictures/news/news_event_g7.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_minsk"
+		texturefile = "gfx/event_pictures/news/news_event_minsk.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_capitulation"
+		texturefile = "gfx/event_pictures/news/news_event_capitulation.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_putin_dead"
+		texturefile = "gfx/event_pictures/news/news_event_putin_dead.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_mh17"
+		texturefile = "gfx/event_pictures/news/news_event_mh17.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hoi4"
+		texturefile = "gfx/event_pictures/news/news_event_hoi4.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_covid"
+		texturefile = "gfx/event_pictures/news/news_event_covid.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_donald_trump"
+		texturefile = "gfx/event_pictures/news/news_event_donald_trump.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_joe_biden"
+		texturefile = "gfx/event_pictures/news/news_event_joe_biden.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_brexit"
+		texturefile = "gfx/event_pictures/news/news_event_brexit.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_jan_6"
+		texturefile = "gfx/event_pictures/news/news_event_jan_6.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_bojo"
+		texturefile = "gfx/event_pictures/news/news_event_bojo.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_liz_truss"
+		texturefile = "gfx/event_pictures/news/news_event_liz_truss.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_liz_truss_lettuce"
+		texturefile = "gfx/event_pictures/news/news_event_liz_truss_lettuce.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_queen_dead"
+		texturefile = "gfx/event_pictures/news/news_event_queen_dead.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_epstein_arrest"
+		texturefile = "gfx/event_pictures/news/news_event_epstein_arrest.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_epstein_dead"
+		texturefile = "gfx/event_pictures/news/news_event_epstein_dead.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_greece_debt"
+		texturefile = "gfx/event_pictures/news/news_event_greece_debt.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_rada_disbanded"
+		texturefile = "gfx/event_pictures/news/news_event_rada_disbanded.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_right_sector"
+		texturefile = "gfx/event_pictures/news/news_event_right_sector.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_zelenskyy_congress"
+		texturefile = "gfx/event_pictures/news/news_event_zelenskyy_congress.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_dugin_assassination"  
+		texturefile = "gfx/event_pictures/news/news_event_dugin_assassination.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_crimean_bridge_attacked"  
+		texturefile = "gfx/event_pictures/news/news_event_crimean_bridge_attacked.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_tatarsky_dead"  
+		texturefile = "gfx/event_pictures/news/news_event_tatarsky_dead.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_petro_poroshenko"  
+		texturefile = "gfx/event_pictures/news/news_event_petro_poroshenko.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_yulia_tymoshenko"  
+		texturefile = "gfx/event_pictures/news/news_event_yulia_tymoshenko.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_dmytro_yarosh"  
+		texturefile = "gfx/event_pictures/news/news_event_dmytro_yarosh.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_volodymyr_zelenskyy"  
+		texturefile = "gfx/event_pictures/news/news_event_volodymyr_zelenskyy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_sobchak"  
+		texturefile = "gfx/event_pictures/news/news_event_sobchak.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_yavlinski"  
+		texturefile = "gfx/event_pictures/news/news_event_yavlinski.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_putin"  
+		texturefile = "gfx/event_pictures/news/news_event_putin.png"
+	}
+		
+	spriteType = {
+		name = "GFX_news_event_mindaugas_coup"  
+		texturefile = "gfx/event_pictures/news/news_event_mindaugas_coup.png"
+	}
+			
+	spriteType = {
+		name = "GFX_news_event_zigmantas"  
+		texturefile = "gfx/event_pictures/news/news_event_zigmantas.png"
+	}
+				
+	spriteType = {
+		name = "GFX_news_event_dalia"  
+		texturefile = "gfx/event_pictures/news/news_event_dalia.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_duma"  
+		texturefile = "gfx/event_pictures/news/news_event_duma.png"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_dead_putin"  
+		texturefile = "gfx/event_pictures/news/news_event_dead_putin.png"
+	}
+		
+	spriteType = {
+		name = "GFX_news_event_fled_putin"  
+		texturefile = "gfx/event_pictures/news/news_event_fled_putin.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_russia_coup"  
+		texturefile = "gfx/event_pictures/news/news_event_russia_coup.png"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_pootin"  
+		texturefile = "gfx/event_pictures/news/news_event_pootin.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_wagner"  
+		texturefile = "gfx/event_pictures/news/news_event_wagner.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_prigozhin"  
+		texturefile = "gfx/event_pictures/news/news_event_prigozhin.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_second_russo_georgian_war"  
+		texturefile = "gfx/event_pictures/news/news_event_second_russo_georgian_war.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_russia_invasion"  
+		texturefile = "gfx/event_pictures/news/news_event_russia_invasion.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_ghost_of_kyiv"  
+		texturefile = "gfx/event_pictures/news/news_event_ghost_of_kyiv.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_poland_in_donbass"  
+		texturefile = "gfx/event_pictures/news/news_event_poland_in_donbass.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_kremlin_hit"  
+		texturefile = "gfx/event_pictures/news/news_event_kremlin_hit.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_black_sea_fleet_hq"  
+		texturefile = "gfx/event_pictures/news/news_event_black_sea_fleet_hq.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_jaroslaw_kaczynski"  
+		texturefile = "gfx/event_pictures/news/news_event_jaroslaw_kaczynski.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_andrzej_duda"  
+		texturefile = "gfx/event_pictures/news/news_event_andrzej_duda.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_bonislaw_komorowski"  
+		texturefile = "gfx/event_pictures/news/news_event_bonislaw_komorowski.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_poland_PO"  
+		texturefile = "gfx/event_pictures/news/news_event_poland_PO.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_poland_PiS"  
+		texturefile = "gfx/event_pictures/news/news_event_poland_PiS.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_finland_sweden_nato"  
+		texturefile = "gfx/event_pictures/news/news_event_finland_sweden_nato.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_poland_missile"  
+		texturefile = "gfx/event_pictures/news/news_event_poland_missile.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_zelenskyy_kiev"  
+		texturefile = "gfx/event_pictures/news/news_event_zelenskyy_kiev.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_nrf"  
+		texturefile = "gfx/event_pictures/news/news_event_nrf.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_putin_mobilization"  
+		texturefile = "gfx/event_pictures/news/news_event_putin_mobilization.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_zelenskyy_un"  
+		texturefile = "gfx/event_pictures/news/news_event_zelenskyy_un.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_pawel_kukiz"  
+		texturefile = "gfx/event_pictures/news/news_event_pawel_kukiz.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_magdalena_ogorek"  
+		texturefile = "gfx/event_pictures/news/news_event_magdalena_ogorek.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_leszek_miller"  
+		texturefile = "gfx/event_pictures/news/news_event_leszek_miller.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_adam_jarubas"  
+		texturefile = "gfx/event_pictures/news/news_event_adam_jarubas.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_belarus_smo"  
+		texturefile = "gfx/event_pictures/news/news_event_belarus_smo.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_angry_patriots"  
+		texturefile = "gfx/event_pictures/news/news_event_angry_patriots.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_zelenskyy_assassination"  
+		texturefile = "gfx/event_pictures/news/news_event_zelenskyy_assassination.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_prigo_power"  
+		texturefile = "gfx/event_pictures/news/news_event_prigo_power.png"
+	}
+}

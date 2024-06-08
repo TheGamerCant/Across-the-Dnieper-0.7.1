@@ -1,0 +1,20 @@
+spriteTypes = { 
+	spriteType = {
+		name = "GFX_SOV_party_seat"
+		texturefile = "gfx/interface/decisions/SOV/SOV_parties_strip.dds"
+		noOfFrames = 20
+	}
+	spriteType = {
+		name = "GFX_SOV_duma_icon"
+		texturefile = "gfx/interface/decisions/SOV/SOV_duma.png"
+	}
+	spriteType = {
+		name = "GFX_SOV_federation_council_icon"
+		texturefile = "gfx/interface/decisions/SOV/SOV_federation_council.png"
+	}
+	SpriteType = { 
+		name = "GFX_signatures"
+		texturefile = "gfx/interface/decisions/SOV/signatures.png"
+		legacy_lazy_load = no
+	}
+ }

@@ -1,0 +1,104 @@
+﻿add_namespace = wagner
+
+ #got putin
+country_event = {
+    id = wagner.1
+    title = wagner.1.t
+    desc = wagner.1.d
+    picture = SOV_high_command_event
+    is_triggered_only = yes
+
+
+    option = {
+        name = wagner.1.a
+		ai_chance = {
+			base = 10
+		}
+        custom_effect_tooltip = "wagner.1.a_tt"
+        SOV = { country_event = { id = russia.1076 days = 1 }}
+    }
+
+    option = {
+        name = wagner.1.b
+		ai_chance = {
+			base = 0
+		}
+
+        add_stability = 0.1
+        add_political_power = 5
+
+        hidden_effect = {
+            SOV = { change_tag_from  = WAG }
+
+            news_event = { id = atd_news.84 days = 3 }
+
+            SOV = {
+                annex_country = { target = WAG transfer_troops = yes }
+
+                create_country_leader = {
+                    name = "Yevgeny Prigozhin"
+                    desc = ""
+                    picture = gfx/leaders/WAG/Portrait_Yevgeny_Prigozhin.png
+                    ideology = united_russia_subideology
+                    traits = {  }
+                }
+
+                set_party_name = { ideology = eastern_conservative long_name = SOV_wagnerites_long name = SOV_wagnerites }
+
+                load_focus_tree = wagner
+            }
+        }
+    }
+}
+
+ #shoigu angry
+ country_event = {
+    id = wagner.2
+    title = wagner.2.t
+    desc = wagner.2.d
+    picture = SOV_shoigu_angry
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = shoigu_angred
+    }
+
+    option = {
+        name = wagner.2.a
+		ai_chance = {
+			base = 10
+		}
+
+        set_power_balance = {
+            id = SOV_wagner_power_balance
+            set_value = 0.1
+        }
+
+        set_country_flag = SOV_wagner_bop
+    }
+}
+
+
+ #shoigu ded
+ country_event = {
+    id = wagner.3
+    title = wagner.3.t
+    desc = wagner.3.d
+    picture = SOV_shoigu_angry
+    is_triggered_only = yes
+
+    immediate = {
+        clr_country_flag = shoigu_angred
+    }
+
+    option = {
+        name = wagner.3.a
+		ai_chance = {
+			base = 10
+		}
+        
+        add_war_support = -0.02
+        add_political_power = 5
+        retire_character = SOV_sergey_shoygu_rework
+    }
+}

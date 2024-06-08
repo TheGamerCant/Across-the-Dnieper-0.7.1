@@ -1,0 +1,12 @@
+opinion_modifiers = {
+	POL_strengthened_european_relations = {
+		value = 25
+		months = 12
+		decay = 1
+	}
+	POL_suspicious_of_eu_policy = {
+		value = -10
+		months = 10
+		decay = 1
+	}
+}

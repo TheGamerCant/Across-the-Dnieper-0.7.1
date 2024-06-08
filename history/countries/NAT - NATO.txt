@@ -1,0 +1,42 @@
+﻿capital = 24
+add_offsite_building = { type = industrial_complex level = 80 }
+add_offsite_building = { type = arms_factory level = 67 }
+add_offsite_building = { type = dockyard level = 40 }
+set_research_slots = 4
+load_nato_doctrine = yes
+
+set_stability = 0.8
+set_war_support = 0.8
+
+add_ideas = {
+	NATO_global_logistics_network
+
+	religion_law_secular
+    womens_rights_equality
+    lgbtq_rights_full_equality
+    minority_rights_societal_discrimination
+    nationalism_laws_interventionist
+    alcohol_narotics_laws_highly_regulated
+    firearms_laws_restricted
+}
+
+set_politics = {
+	ruling_party = neoliberal
+	last_election = "2013.10.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neoliberal = 100
+}
+
+create_country_leader = {
+	name = "Jens Stoltenberg"		#He wasn't gensec until october 2014 but you can't spawn NATO before that
+	desc = ""						#Even then i don't care :3
+	ideology = generic_neoliberal
+	picture = gfx/leaders/NAT/Portrait_Jens_Stoltenberg.png
+	traits = { NATO_sec_gen }
+}
+
+add_manpower = 1200000

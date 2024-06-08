@@ -1,0 +1,73 @@
+load_nato_doctrine={
+	custom_effect_tooltip = load_nato_doctrine_tt
+	hidden_effect={
+		set_technology = {
+			popup = no
+			can_do_nato_doctrine = 1
+			can_do_ukraine_doctrine = 0
+			can_do_pmc_doctrine = 0
+			can_do_russian_doctrine = 0
+			can_do_soviet_doctrine = 0
+		}
+	}
+}
+
+load_ukraine_doctrine={
+	custom_effect_tooltip = load_ukraine_doctrine_tt
+	hidden_effect={
+		set_technology = {
+			popup = no
+			can_do_nato_doctrine = 0
+			can_do_ukraine_doctrine = 1
+			can_do_pmc_doctrine = 0
+			can_do_russian_doctrine = 0
+			can_do_soviet_doctrine = 0
+		}
+	}
+}
+
+load_pmc_doctrine={
+	custom_effect_tooltip = load_pmc_doctrine_tt
+
+	hidden_effect={
+		set_technology = {
+			popup = no
+			can_do_nato_doctrine = 0
+			can_do_ukraine_doctrine = 0
+			can_do_pmc_doctrine = 1
+			can_do_russian_doctrine = 0
+			can_do_soviet_doctrine = 0
+		}
+	}
+}
+
+load_russian_doctrine={
+	custom_effect_tooltip = load_russian_doctrine_tt
+	hidden_effect={
+		set_technology = {
+			popup = no
+			can_do_nato_doctrine = 0
+			can_do_ukraine_doctrine = 0
+			can_do_pmc_doctrine = 0
+			can_do_russian_doctrine = 1
+			can_do_soviet_doctrine = 0
+		}
+	}
+}
+
+load_soviet_doctrine={
+	custom_effect_tooltip = load_soviet_doctrine_tt
+
+	hidden_effect={
+		set_technology = {
+			popup = no
+			can_do_nato_doctrine = 0
+			can_do_ukraine_doctrine = 0
+			can_do_pmc_doctrine = 0
+			can_do_russian_doctrine = 0
+			can_do_soviet_doctrine = 1
+		}
+	}
+}
+
+

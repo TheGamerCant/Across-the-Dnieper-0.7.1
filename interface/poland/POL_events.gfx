@@ -1,0 +1,156 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_report_event_generic_migrant_crisis"
+		texturefile = "gfx/event_pictures/generic/generic_migrant_crisis.png"
+		transparencecheck = yes
+	}
+
+	SpriteType = { 
+		name = "GFX_report_event_POL_konfederacja"
+		texturefile = "gfx/event_pictures/POL/POL_konfederacja.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_sejm"
+		texturefile = "gfx/event_pictures/POL/POL_sejm.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_tusk_rally"
+		texturefile = "gfx/event_pictures/POL/POL_tusk_rally.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_PiS_rally"
+		texturefile = "gfx/event_pictures/POL/POL_PiS_rally.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_lewica_rally"
+		texturefile = "gfx/event_pictures/POL/POL_lewica_rally.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_PSL_rally"
+		texturefile = "gfx/event_pictures/POL/POL_PSL_rally.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_kukiz_15_rally"
+		texturefile = "gfx/event_pictures/POL/POL_kukiz_15_rally.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_pokemon_go_to_the_polls"
+		texturefile = "gfx/event_pictures/POL/POL_pokemon_go_to_the_polls.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_united_left"
+		texturefile = "gfx/event_pictures/POL/POL_united_left.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_PiS_candidate_2015"
+		texturefile = "gfx/event_pictures/POL/POL_PiS_candidate_2015.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_donald_tusk_eu"
+		texturefile = "gfx/event_pictures/POL/POL_donald_tusk_eu.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_kopacz_press"
+		texturefile = "gfx/event_pictures/POL/POL_kopacz_press.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_generic_PO"
+		texturefile = "gfx/event_pictures/POL/POL_generic_PO.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_coal_industry"
+		texturefile = "gfx/event_pictures/POL/POL_coal_industry.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_womens_self_defence"
+		texturefile = "gfx/event_pictures/POL/POL_womens_self_defence.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_PiS_leader_event"
+		texturefile = "gfx/event_pictures/POL/POL_PiS_leader_event.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_constitutional_court"
+		texturefile = "gfx/event_pictures/POL/POL_constitutional_court.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_rocket_goes_boom"
+		texturefile = "gfx/event_pictures/POL/POL_rocket_goes_boom.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_PiS_voting"
+		texturefile = "gfx/event_pictures/POL/POL_PiS_voting.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_szydlo_and_orban"
+		texturefile = "gfx/event_pictures/POL/POL_szydlo_and_orban.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_ministry_of_finance_building"
+		texturefile = "gfx/event_pictures/POL/POL_ministry_of_finance_building.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_gas_prices"
+		texturefile = "gfx/event_pictures/POL/POL_gas_prices.png"
+		transparencecheck = yes
+	}
+
+
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_duda"
+		texturefile = "gfx/event_pictures/POL/POL_00_duda.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_kaczynski"
+		texturefile = "gfx/event_pictures/POL/POL_00_kaczynski.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_komorowski"
+		texturefile = "gfx/event_pictures/POL/POL_00_komorowski.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_kukiz"
+		texturefile = "gfx/event_pictures/POL/POL_00_kukiz.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_ogorek"
+		texturefile = "gfx/event_pictures/POL/POL_00_ogorek.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_miller"
+		texturefile = "gfx/event_pictures/POL/POL_00_miller.png"
+		transparencecheck = yes
+	}
+	SpriteType = { 
+		name = "GFX_report_event_POL_00_jarubas"
+		texturefile = "gfx/event_pictures/POL/POL_00_jarubas.png"
+		transparencecheck = yes
+	}
+ }
+ 

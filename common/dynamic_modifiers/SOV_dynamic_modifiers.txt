@@ -1,0 +1,575 @@
+SOV_local_effensive_in_crimea_modifier  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.1
+	breakthrough_factor = 0.5
+	army_speed_factor = 0.25
+}
+
+SOV_defenses_in_strategic_regions_modifier  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_defence_factor = 0.05
+	dig_in_speed_factor = 0.04
+}
+
+SOV_offensive_on_southern_front  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.05
+	breakthrough_factor = 0.05
+}
+
+
+SOV_offensive_into_kiev  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	breakthrough_factor = 0.15
+}
+
+SOV_withdrawing  = {
+	enable = {
+		original_tag = SOV
+	}
+	remove_trigger  = {
+		THIS = {
+			is_fully_controlled_by = UKR
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = -0.9
+	army_defence_factor = -0.9
+	breakthrough_factor = -0.9
+}
+
+
+SOV_defenses_in_donbass  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_defence_factor = 0.1
+
+}
+
+SOV_offensives_in_donbass  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.05
+}
+
+SOV_wagner_offenses  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.15
+	breakthrough_factor = 0.15
+	army_org_factor = 0.1
+	land_reinforce_rate = 0.02
+}
+
+SOV_cleaning_up  = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	monthly_population = -0.30
+	resistance_growth = -0.15
+	resistance_target = -0.1
+	compliance_growth = -0.03
+}
+
+
+SOV_local_effensive_in_ukraine_modifier  = {
+	enable = { original_tag = SOV }
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.01
+	breakthrough_factor = 0.01
+	army_speed_factor = 0.01
+}
+
+SOV_russian_cabinet  = {
+	enable = { always = yes }
+
+	war_support_factor = -0.02
+	stability_factor = -0.03
+}
+
+SOV_new_cabinet  = {
+	enable = { always = yes }
+
+	war_support_factor = 0.05
+	stability_weekly = -0.003
+	production_factory_efficiency_gain_factor = 0.02
+
+}
+
+SOV_old_cabinet  = {
+	enable = { always = yes }
+
+	war_support_weekly = -0.003
+	stability_factor = 0.02
+	production_factory_efficiency_gain_factor = -0.02
+	
+}
+
+SOV_technocratic_cabinet  = {
+	enable = { always = yes }
+
+	political_power_gain  = -0.01
+	research_speed_factor = 0.06
+	war_support_factor = -0.035
+}
+
+SOV_soc_dem_opposition  = {
+	enable = { always = yes }
+	political_power_gain = SOV_soc_dem_opposition_political_power_gain
+	social_democracy_drift = SOV_soc_dem_opposition_social_democracy_drift
+}
+
+SOV_ultranationalist_opposition  = {
+	enable = { always = yes }
+	political_power_gain = SOV_ultranationalist_opposition_political_power_gain
+	populist_drift = SOV_ultranationalist_opposition_ultranationalist_drift
+}
+
+SOV_communist_opposition  = {
+	enable = { always = yes }
+	political_power_gain = SOV_communist_opposition_political_power_gain
+	moderate_communist_drift = SOV_communist_opposition_hardline_communist_drift
+}
+
+SOV_eastern_liberal_opposition  = {
+	enable = { always = yes }
+	political_power_gain = SOV_eastern_liberal_opposition_political_power_gain
+	eastern_liberal_drift = SOV_eastern_liberal_opposition_eastern_liberal_drift
+}
+
+SOV_neoliberal_opposition  = {
+	enable = { always = yes }
+	political_power_gain = SOV_neoliberal_opposition_political_power_gain
+	neoliberal_drift = SOV_neoliberal_opposition_neoliberal_drift
+}
+
+SOV_effects_from_media = {
+	enable = { always = yes }
+	remove_trigger = {
+		vladimir_putin_is_not_leader = yes
+	}
+	eastern_conservative_drift = eastern_conservative_drift_from_media
+	eastern_liberal_drift = eastern_liberal_drift_from_media
+	ultranationalist_drift = ultranationalist_drift_from_media
+
+	political_power_gain = SOV_media_pp_gain
+	stability_weekly_factor = SOV_media_stability_factor
+
+	army_morale_factor = SOV_media_morale_factor
+	weekly_casualties_war_support = SOV_media_war_support_casualties
+
+	trade_opinion_factor = SOV_media_trade_factor
+	political_advisor_cost_factor = SOV_media_advisor_cost_factor
+}
+
+SOV_stagnant_economy_rework = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_SOV_stagnant_economy
+
+	industrial_capacity_factory = SOV_sanctions_industrial_capacity_factory
+	production_speed_buildings_factor = SOV_sanctions_production_speed_buildings_factor
+	research_speed_factor = SOV_sanctions_research_speed_factor
+	consumer_goods_expected_value = SOV_sanctions_consumer_goods_expected_value
+	stability_weekly = SOV_sanctions_stability_weekly
+	inflation_monthly = SOV_sanctions_inflation_monthly
+	production_factory_max_efficiency_factor = SOV_sanctions_production_factory_max_efficiency_factor
+	line_change_production_efficiency_factor = SOV_sanctions_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor = SOV_sanctions_production_factory_efficiency_gain_factor
+	political_power_cost = SOV_sanctions_political_power_cost
+	industrial_capacity_dockyard = SOV_sanctions_industrial_capacity_dockyard
+	production_speed_industrial_complex_factor = SOV_sanctions_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = SOV_sanctions_production_speed_arms_factory_factor
+	local_resources_factor = SOV_sanctions_local_resources_factor
+}
+
+SOV_western_sanctions_rework = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_sanctions
+
+	industrial_capacity_factory = SOV_sanctions_industrial_capacity_factory
+	production_speed_buildings_factor = SOV_sanctions_production_speed_buildings_factor
+	research_speed_factor = SOV_sanctions_research_speed_factor
+	consumer_goods_expected_value = SOV_sanctions_consumer_goods_expected_value
+	stability_weekly = SOV_sanctions_stability_weekly
+	inflation_monthly = SOV_sanctions_inflation_monthly
+	production_factory_max_efficiency_factor = SOV_sanctions_production_factory_max_efficiency_factor
+	line_change_production_efficiency_factor = SOV_sanctions_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor = SOV_sanctions_production_factory_efficiency_gain_factor
+	political_power_cost = SOV_sanctions_political_power_cost
+	industrial_capacity_dockyard = SOV_sanctions_industrial_capacity_dockyard
+	production_speed_industrial_complex_factor = SOV_sanctions_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = SOV_sanctions_production_speed_arms_factory_factor
+	local_resources_factor = SOV_sanctions_local_resources_factor
+}
+
+SOV_army_modernisation_plan = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_heating_up_guns
+
+	mobilization_speed = SOV_army_mobilization_speed
+	army_armor_defence_factor = SOV_army_army_armor_defence_factor
+	army_armor_attack_factor = SOV_army_army_armor_attack_factor
+	coordination_bonus = SOV_army_coordination_bonus
+	supply_consumption_factor = SOV_army_supply_consumption_factor
+	land_doctrine_cost_factor = SOV_army_land_doctrine_cost_factor
+	army_org_factor = SOV_army_army_org_factor
+	supply_combat_penalties_on_core_factor = SOV_army_supply_combat_penalties_on_core_factor
+	org_loss_when_moving = SOV_army_org_loss_when_moving
+	supply_node_range = SOV_army_supply_node_range
+	industrial_capacity_factory = SOV_army_industrial_capacity_factory
+	conscription_factor = SOV_army_conscription_factor
+	conscription = SOV_army_conscription
+	attrition = SOV_army_attrition
+	army_core_defence_factor = SOV_army_army_core_defence_factor
+	training_time_factor = SOV_army_training_time_factor
+	army_artillery_attack_factor = SOV_army_army_artillery_attack_factor
+	army_artillery_defence_factor = SOV_army_army_artillery_defence_factor
+	army_infantry_attack_factor = SOV_army_army_infantry_attack_factor
+	army_infantry_defence_factor = SOV_army_army_infantry_defence_factor
+	modifier_army_sub_unit_infantry_speed_factor = SOV_army_modifier_army_sub_unit_infantry_speed_factor
+	production_speed_bunker_factor = SOV_army_production_speed_bunker_factor
+	max_dig_in = SOV_army_max_dig_in
+	enemy_army_bonus_air_superiority_factor = SOV_army_enemy_army_bonus_air_superiority_factor
+	army_attack_factor = SOV_army_army_attack_factor
+	army_defence_factor = SOV_army_army_defence_factor
+	experience_loss_factor = SOV_army_experience_loss_factor
+	army_speed_factor = SOV_army_army_speed_factor
+	air_accidents_factor = SOV_army_air_accidents_factor
+	consumer_goods_expected_value = SOV_army_consumer_goods_expected_value
+	air_cas_present_factor = SOV_army_air_cas_present_factor
+	army_bonus_air_superiority_factor = SOV_army_army_bonus_air_superiority_factor
+	land_night_attack = SOV_army_land_night_attack
+	experience_gain_army = SOV_army_experience_gain_army
+	breakthrough_factor = SOV_army_breakthrough_factor
+	modifier_army_sub_unit_mechanized_attack_factor = SOV_army_modifier_army_sub_unit_mechanized_attack_factor
+	modifier_army_sub_unit_mechanized_defence_factor = SOV_army_modifier_army_sub_unit_mechanized_defence_factor
+	modifier_army_sub_unit_apc_attack_factor = SOV_army_modifier_army_sub_unit_apc_attack_factor
+	modifier_army_sub_unit_apc_defence_factor = SOV_army_modifier_army_sub_unit_apc_defence_factor
+	special_forces_cap = SOV_army_special_forces_cap
+	army_morale_factor = SOV_army_army_morale_factor
+	max_command_power = SOV_army_max_command_power
+	army_leader_cost_factor = SOV_army_army_leader_cost_factor
+}
+
+SOV_raspizdyaystvo = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_SOV_Corruption_in_the_army
+	
+	political_advisor_cost_factor = SOV_raspizdyaystvo_political_advisor_cost_factor
+	consumer_goods_expected_value = SOV_raspizdyaystvo_consumer_goods_expected_value
+	research_speed_factor = SOV_raspizdyaystvo_research_speed_factor
+	political_power_cost = SOV_raspizdyaystvo_political_power_cost
+	supply_node_range = SOV_raspizdyaystvo_supply_node_range
+	industrial_capacity_factory = SOV_raspizdyaystvo_industrial_capacity_factory
+	industrial_capacity_dockyard = SOV_raspizdyaystvo_industrial_capacity_dockyard
+	land_doctrine_cost_factor = SOV_raspizdyaystvo_land_doctrine_cost_factor
+	naval_doctrine_cost_factor = SOV_raspizdyaystvo_naval_doctrine_cost_factor
+	air_doctrine_cost_factor = SOV_raspizdyaystvo_air_doctrine_cost_factor
+	army_morale_factor = SOV_raspizdyaystvo_army_morale_factor
+	stability_factor = -SOV_raspizdyaystvo_stability_factor
+	air_accidents_factor = SOV_raspizdyaystvo_air_accidents_factor
+	attrition = SOV_raspizdyaystvo_attrition
+	army_attack_factor = SOV_raspizdyaystvo_army_attack_factor
+	army_defence_factor = SOV_raspizdyaystvo_army_defence_factor
+	conscription_factor = SOV_raspizdyaystvo_conscription_factor
+	agency_upgrade_time = SOV_raspizdyaystvo_agency_upgrade_time
+	
+	custom_modifier_tooltip = SOV_the_eastern_yoke_tt	
+}
+
+SOV_local_offensive_modifier  = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	attacker_modifier = yes
+	
+	army_attack_factor = 0.1
+	army_defence_factor = 0.1
+	breakthrough_factor = 0.4
+	army_speed_factor = 0.15
+	ground_attack_factor = 0.25
+	local_org_regain = 0.1
+	supply_factor = 0.1
+}
+
+UKR_minor_wagner_offensive = {
+	enable = {
+		OR={
+			original_tag = SOV
+			original_tag = WAG
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+
+	attacker_modifier = yes
+	
+	army_attack_factor = 0.7
+	army_defence_factor = 0.5
+	breakthrough_factor = 0.55
+	army_speed_factor = 0.3
+	ground_attack_factor = 0.45
+	local_org_regain = 0.15
+	supply_factor = 0.2
+}
+
+SOV_secret_ai_modifier_1  = {		#AI buff, 2014 start
+	enable = { always = yes }
+	
+	army_attack_factor = 0.3
+	army_defence_factor = 0.3
+	breakthrough_factor = 0.7
+	army_speed_factor = 0.2
+	army_org_factor = 0.15
+	dig_in_speed_factor = 0.3
+	max_dig_in = 6
+	supply_consumption_factor = -0.12
+	army_morale_factor = 0.08
+}
+
+SOV_secret_ai_modifier_2  = {		#AI buff, 2022 start
+	enable = { always = yes }
+	
+	army_attack_factor = 0.04
+	army_defence_factor = 0.04
+	breakthrough_factor = 0.1
+	army_speed_factor = 0.2
+	army_org_factor = 0.05
+	dig_in_speed_factor = 0.3
+	max_dig_in = 8
+	supply_consumption_factor = -0.16
+}
+
+SOV_secret_ai_modifier_3  = {		#AI buff for a year with AI UKR
+	enable = { always = yes }
+	
+	army_attack_factor = 0.05
+	army_defence_factor = 0.05
+	breakthrough_factor = 0.05
+	army_org_factor = 0.1
+}
+
+SOV_secret_ai_modifier_4  = {		#AI buff for a year with player UKR
+	enable = { always = yes }
+	
+	army_attack_factor = 0.05
+	army_defence_factor = 0.2
+	breakthrough_factor = 0.1
+	army_org_factor = 0.2
+	army_morale_factor = 0.1
+	attrition = -0.12
+	pocket_penalty = -0.25
+	army_strength_factor = 0.2
+}
+
+SOV_nothern_setback  = {
+	enable= { OR = { original_tag = SOV is_puppet_of = SOV is_in_faction_with = SOV }  }		#If there are multiple of the same modifer in a state, they will apply to whichever country has them scoped.
+	icon = GFX_modifiers_generic_military_plans		#However, if there is one modifer in a state, it will apply to all units in the state, regardless of scope.
+	
+	supply_node_range = -0.15
+	army_attack_factor = -0.4
+	army_defence_factor = -0.3
+	army_speed_factor = -0.4
+	breakthrough_factor = -0.35
+	supply_factor = -0.1
+}
+
+
+SOV_nothern_setback_player  = {
+	enable= { OR = { original_tag = SOV is_puppet_of = SOV is_in_faction_with = SOV }  }
+	icon = GFX_modifiers_generic_military_plans	
+	
+	supply_node_range = -0.15
+	army_attack_factor = -0.5
+	army_defence_factor = -0.4
+	army_speed_factor = -0.55
+	breakthrough_factor = -0.4
+	supply_factor = -0.3
+}
+
+
+SOV_a_harsh_war  = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_global_flag = russia_ukraine_war }
+	}
+	icon = GFX_modifiers_SOV_a_harsh_war
+	
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.75
+	breakthrough_factor = -0.8
+	army_speed_factor = -0.95
+	ground_attack_factor = -0.8
+}
+
+SOV_a_harsh_war_offensive  = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_global_flag = russia_ukraine_war }
+	}
+	icon = GFX_modifiers_SOV_a_harsh_war
+	
+	air_cas_present_factor = -0.5
+	army_attack_factor = -0.1
+	breakthrough_factor = -0.2
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.7
+}
+
+SOV_forced_conscription = {
+	icon = GFX_modifiers_SOV_forced_conscription
+	enable = { tag = SOV }
+	remove_trigger = {
+		NOT = { SOV = { has_war_with = UKR } }
+	}
+	
+	recruitable_population_factor = 0.35
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+SOV_defend_novorossia = {
+	icon = GFX_modifiers_SOV_a_harsh_war
+	enable= { OR = { original_tag = SOV is_puppet_of = SOV is_in_faction_with = SOV }  }
+	remove_trigger = {
+		NOT = { has_global_flag = russia_ukraine_war }
+	}
+	
+	army_defence_factor = 0.15
+	army_org_factor = 0.1
+	army_morale_factor = 0.15
+	dig_in_speed_factor = 0.2
+}
+
+SOV_the_siloviki_state_modifier = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_SOV_siloviki_state
+	
+	political_power_factor = SOV_siloviki_political_power_factor
+	agency_upgrade_time = SOV_siloviki_agency_upgrade_time
+	stability_weekly = SOV_siloviki_stability_weekly
+	military_junta_drift = SOV_siloviki_military_junta_drift
+	production_speed_buildings_factor = SOV_siloviki_production_speed_buildings_factor
+	party_popularity_stability_factor = SOV_siloviki_party_popularity_stability_factor
+	operative_slot = SOV_siloviki_operative_slot
+	subversive_activites_upkeep = SOV_siloviki_subversive_activites_upkeep
+	operation_risk = SOV_siloviki_operation_risk
+	root_out_resistance_effectiveness_factor = SOV_siloviki_root_out_resistance_effectiveness_factor
+	compliance_growth = SOV_siloviki_compliance_growth
+	resistance_damage_to_garrison = SOV_siloviki_resistance_damage_to_garrison
+	resistance_growth = SOV_siloviki_resistance_growth
+	consumer_goods_factor = SOV_siloviki_consumer_goods_factor
+	experience_gain_army_factor = SOV_siloviki_experience_gain_army_factor
+	required_garrison_factor = SOV_siloviki_required_garrison_factor
+	starting_compliance = SOV_siloviki_starting_compliance
+	operation_cost = SOV_siloviki_operation_cost
+	operation_outcome = SOV_siloviki_operation_outcome
+	war_stability_factor = SOV_siloviki_war_stability_factor
+}
+
+
+SOV_hatred_for_the_west_modifier = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_SOV_hatred_for_the_west
+	
+	army_org_regain = SOV_SGPW_army_org_regain
+	army_speed_factor = SOV_SGPW_army_speed_factor
+	breakthrough_factor = SOV_SGPW_breakthrough_factor
+	weekly_casualties_war_support = SOV_SGPW_weekly_casualties_war_support
+	army_attack_factor = SOV_SGPW_army_attack_factor
+	army_armor_attack_factor = SOV_SGPW_army_armor_attack_factor
+	org_loss_when_moving = SOV_SGPW_org_loss_when_moving
+	production_speed_arms_factory_factor = SOV_SGPW_production_speed_arms_factory_factor
+	production_speed_industrial_complex_factor = SOV_SGPW_production_speed_industrial_complex_factor
+	consumer_goods_factor = SOV_SGPW_consumer_goods_factor
+	stability_weekly = SOV_SGPW_stability_weekly
+	war_support_weekly = SOV_SGPW_war_support_weekly
+	army_artillery_defence_factor = SOV_SGPW_army_artillery_defence_factor
+	army_artillery_attack_factor = SOV_SGPW_army_artillery_attack_factor
+	conscription = SOV_SGPW_conscription
+}
+
+SOV_second_great_patriotic_war_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { SOV = { has_war = yes } }
+	}
+	
+	icon = GFX_idea_SOV_hatred_for_the_west
+	
+	custom_modifier_tooltip = SOV_second_great_patriotic_war_modifier_tt		#just tells the player this will be removed when not at war
+	
+	army_org_regain = SOV_SGPW_army_org_regain
+	army_speed_factor = SOV_SGPW_army_speed_factor
+	breakthrough_factor = SOV_SGPW_breakthrough_factor
+	weekly_casualties_war_support = SOV_SGPW_weekly_casualties_war_support
+	army_attack_factor = SOV_SGPW_army_attack_factor
+	army_armor_attack_factor = SOV_SGPW_army_armor_attack_factor
+	org_loss_when_moving = SOV_SGPW_org_loss_when_moving
+	production_speed_arms_factory_factor = SOV_SGPW_production_speed_arms_factory_factor
+	production_speed_industrial_complex_factor = SOV_SGPW_production_speed_industrial_complex_factor
+	consumer_goods_factor = SOV_SGPW_consumer_goods_factor
+	stability_weekly = SOV_SGPW_stability_weekly
+	war_support_weekly = SOV_SGPW_war_support_weekly
+	army_artillery_defence_factor = SOV_SGPW_army_artillery_defence_factor
+	army_artillery_attack_factor = SOV_SGPW_army_artillery_attack_factor
+	conscription = SOV_SGPW_conscription
+}
+
+SOV_reconstruction_fund_modifier = {
+	icon = GFX_modifiers_generic_military_plans
+	enable = { always = yes }
+	remove_trigger = { NOT = { is_controlled_by = SOV } }
+	
+	state_production_speed_buildings_factor = 0.1
+	recruitable_population_factor = 0.03
+	local_supplies_for_controller = 0.06
+}

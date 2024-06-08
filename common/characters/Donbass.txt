@@ -1,0 +1,355 @@
+characters={
+	LHK_yan_leshchenko = {
+		name = LHK_yan_leshchenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/LHK/Generals/Portrait_Yan_Leshchenko.png"
+			}
+			civilian = {
+				small = "gfx/leaders/LHK/advisors/LHK_yan_leshchenko_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}	
+	}	
+	
+	LHK_oleg_bugrov = {
+		name = LHK_oleg_bugrov
+		portraits = {
+			army = {
+				large = "gfx/leaders/LHK/Generals/Portrait_Oleg_Bugrov.png"
+			}
+			civilian = {
+				small = "gfx/leaders/LHK/advisors/LHK_oleg_bugrov_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}	
+	}
+
+	
+	
+	DON_denis_sinenkov = {
+		name = DON_denis_sinenkov
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Generals/Portrait_Denis_Sinenkov.png"
+			}
+			civilian = {
+				small = "gfx/leaders/DON/advisors/DON_denis_sinenkov_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}	
+	}
+	
+	DON_denis_pushilin = {
+		name = DON_denis_pushilin
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Portrait_Denis_Pushilin.png"
+			}
+			civilian = {
+				large = "gfx/leaders/DON/Portrait_Denis_Pushilin.png"
+				small = "gfx/leaders/DON/advisors/DON_denis_pushilin_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}	
+
+		advisor={
+			slot = political_advisor
+			idea_token = DON_denis_pushilin
+			allowed = {
+				tag = DON
+			}
+			can_be_fired = no
+			traits = {
+				DON_chairman_of_the_council_2
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				NOT = { 
+					has_country_leader = {
+						name = "Denis Pushilin"
+						ruling_only = yes
+					}
+				}
+			}
+			visible = {
+				has_country_flag = DON_denis_pushilin_chairman
+				NOT = { 
+					has_country_leader = {
+						name = "Denis Pushilin"
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	}
+
+	DON_andrei_purgin = {
+		name = DON_andrei_purgin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/DON/advisors/DON_andrei_purgin_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = DON_andrei_purgin
+			allowed = {
+				tag = DON
+			}
+			can_be_fired = no
+			traits = {
+				DON_chairman_of_the_council
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				NOT = { has_country_flag = DON_denis_pushilin_chairman }
+			}
+		}
+	}
+	
+	DON_igor_girkin = {
+		name = DON_igor_girkin
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Portrait_Igor_Girkin.png"
+			}
+			civilian = {
+				large = "gfx/leaders/DON/Portrait_Igor_Girkin.png"
+				small = "gfx/leaders/DON/advisors/DON_igor_girkin_advisor.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DON_igor_girkin
+			traits = {
+				retired_fsb_agent
+			}
+		}
+	
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		field_marshal = {
+			traits = { politically_connected harsh_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}	
+	}
+
+	DON_igor_khakimzyanov = {
+		name = DON_igor_khakimzyanov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/DON/Advisors/DON_igor_khakimzyanov_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+
+		available={
+			
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = DON_igor_khakimzyanov
+			allowed = {
+				tag = DON
+			}
+			can_be_fired = yes
+			traits = {
+				DON_commander_in_chief
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	DON_alexander_borodai = {
+		name = DON_alexander_borodai
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/DON/Advisors/DON_alexander_borodai_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+
+		available={
+			
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = DON_alexander_borodai
+			allowed = {	
+				tag = DON
+			}
+			can_be_fired = no							
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				DON_prime_minister
+			}
+		}
+	}
+
+	DON_pavel_gubarev = {
+		name = DON_pavel_gubarev
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/DON/Advisors/DON_pavel_gubarev_advisor.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+
+		available={
+			
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = DON_pavel_gubarev
+			allowed = {	
+				tag = DON
+			}
+			can_be_fired = yes							
+			visible = {
+				NOT = { has_completed_focus = DON_let_competition_rot }
+			}
+			available = {
+				has_completed_focus = DON_free_pavel_gubarev
+			}
+			traits = {
+				DON_the_peoples_governor
+			}
+		}
+	}
+
+	DON_arsen_pavlov = {
+		name = DON_arsen_pavlov
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Generals/Portrait_Arsen_Pavlov.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}	
+	}
+
+	DON_vladimir_zhoga = {
+		name = DON_vladimir_zhoga
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Generals/Portrait_Vladimir_Zhoga.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}	
+	}
+	
+	DON_mikhail_tolstykh = {
+		name = DON_mikhail_tolstykh
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Generals/Portrait_Mikhail_Tolstykh.png"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}	
+	}
+}

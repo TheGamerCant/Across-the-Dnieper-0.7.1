@@ -1,0 +1,1145 @@
+increase_military_spending={
+	if={
+		limit = { has_idea = ATD_military_spending_idea_5 }
+		custom_effect_tooltip = cannot_increase_military_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_4
+			add_idea = ATD_military_spending_idea_5
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_3
+			add_idea = ATD_military_spending_idea_4
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_2
+			add_idea = ATD_military_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_1 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_1
+			add_idea = ATD_military_spending_idea_2
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_military_spending_idea_5
+			ATD_military_spending_idea_4
+			ATD_military_spending_idea_3
+			ATD_military_spending_idea_3
+			ATD_military_spending_idea_1
+		}
+		add_ideas = ATD_military_spending_idea_3
+	}
+}
+
+decrease_military_spending={
+	if={
+		limit = { has_idea = ATD_military_spending_idea_1 }
+		custom_effect_tooltip = cannot_decrease_military_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_2
+			add_idea = ATD_military_spending_idea_1
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_3
+			add_idea = ATD_military_spending_idea_2
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_4
+			add_idea = ATD_military_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_military_spending_idea_5 }
+		swap_ideas={
+			remove_idea = ATD_military_spending_idea_5
+			add_idea = ATD_military_spending_idea_4
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_military_spending_idea_5
+			ATD_military_spending_idea_4
+			ATD_military_spending_idea_3
+			ATD_military_spending_idea_3
+			ATD_military_spending_idea_1
+		}
+		add_ideas = ATD_military_spending_idea_3
+	}
+}
+
+increase_intelligence_spending={
+	if={
+		limit = { has_idea = ATD_intelligence_spending_idea_5 }
+		custom_effect_tooltip = cannot_increase_intelligence_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_4
+			add_idea = ATD_intelligence_spending_idea_5
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_3
+			add_idea = ATD_intelligence_spending_idea_4
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_2
+			add_idea = ATD_intelligence_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_1 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_1
+			add_idea = ATD_intelligence_spending_idea_2
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_intelligence_spending_idea_5
+			ATD_intelligence_spending_idea_4
+			ATD_intelligence_spending_idea_3
+			ATD_intelligence_spending_idea_3
+			ATD_intelligence_spending_idea_1
+		}
+		add_ideas = ATD_intelligence_spending_idea_3
+	}
+}
+
+decrease_intelligence_spending={
+	if={
+		limit = { has_idea = ATD_intelligence_spending_idea_1 }
+		custom_effect_tooltip = cannot_decrease_intelligence_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_2
+			add_idea = ATD_intelligence_spending_idea_1
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_3
+			add_idea = ATD_intelligence_spending_idea_2
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_4
+			add_idea = ATD_intelligence_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_intelligence_spending_idea_5 }
+		swap_ideas={
+			remove_idea = ATD_intelligence_spending_idea_5
+			add_idea = ATD_intelligence_spending_idea_4
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_intelligence_spending_idea_5
+			ATD_intelligence_spending_idea_4
+			ATD_intelligence_spending_idea_3
+			ATD_intelligence_spending_idea_3
+			ATD_intelligence_spending_idea_1
+		}
+		add_ideas = ATD_intelligence_spending_idea_3
+	}
+}
+
+increase_education_spending={
+	if={
+		limit = { has_idea = ATD_education_spending_idea_5 }
+		custom_effect_tooltip = cannot_increase_education_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_4
+			add_idea = ATD_education_spending_idea_5
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_3
+			add_idea = ATD_education_spending_idea_4
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_2
+			add_idea = ATD_education_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_1 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_1
+			add_idea = ATD_education_spending_idea_2
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_education_spending_idea_5
+			ATD_education_spending_idea_4
+			ATD_education_spending_idea_3
+			ATD_education_spending_idea_3
+			ATD_education_spending_idea_1
+		}
+		add_ideas = ATD_education_spending_idea_3
+	}
+}
+
+decrease_education_spending={
+	if={
+		limit = { has_idea = ATD_education_spending_idea_1 }
+		custom_effect_tooltip = cannot_decrease_education_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_2
+			add_idea = ATD_education_spending_idea_1
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_3
+			add_idea = ATD_education_spending_idea_2
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_4
+			add_idea = ATD_education_spending_idea_3
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_education_spending_idea_5 }
+		swap_ideas={
+			remove_idea = ATD_education_spending_idea_5
+			add_idea = ATD_education_spending_idea_4
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_education_spending_idea_5
+			ATD_education_spending_idea_4
+			ATD_education_spending_idea_3
+			ATD_education_spending_idea_3
+			ATD_education_spending_idea_1
+		}
+		add_ideas = ATD_education_spending_idea_3
+	}
+}
+
+increase_public_services_spending={
+	if={
+		limit = { has_idea = ATD_public_services_spending_idea_5 }
+		custom_effect_tooltip = cannot_increase_public_services_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_4
+			add_idea = ATD_public_services_spending_idea_5
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_3
+			add_idea = ATD_public_services_spending_idea_4
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_2
+			add_idea = ATD_public_services_spending_idea_3
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_1 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_1
+			add_idea = ATD_public_services_spending_idea_2
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_public_services_spending_idea_5
+			ATD_public_services_spending_idea_4
+			ATD_public_services_spending_idea_3
+			ATD_public_services_spending_idea_3
+			ATD_public_services_spending_idea_1
+		}
+		add_ideas = ATD_public_services_spending_idea_3
+	}
+}
+
+decrease_public_services_spending={
+	if={
+		limit = { has_idea = ATD_public_services_spending_idea_1 }
+		custom_effect_tooltip = cannot_decrease_public_services_spending_tt
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_2 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_2
+			add_idea = ATD_public_services_spending_idea_1
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			decrease_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_3 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_3
+			add_idea = ATD_public_services_spending_idea_2
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			decrease_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_4 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_4
+			add_idea = ATD_public_services_spending_idea_3
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			decrease_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else_if={
+		limit = { has_idea = ATD_public_services_spending_idea_5 }
+		swap_ideas={
+			remove_idea = ATD_public_services_spending_idea_5
+			add_idea = ATD_public_services_spending_idea_4
+		}
+		
+		every_state={
+			limit={ is_controlled_by = ROOT }
+			decrease_state_gdp_growth_by_2_5 = yes
+		}
+	}
+	else={
+		remove_ideas = { 
+			ATD_public_services_spending_idea_5
+			ATD_public_services_spending_idea_4
+			ATD_public_services_spending_idea_3
+			ATD_public_services_spending_idea_3
+			ATD_public_services_spending_idea_1
+		}
+		add_ideas = ATD_public_services_spending_idea_3
+	}
+}
+
+
+get_yearly_gdp_pc_growth={
+	set_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	multiply_variable = { THIS.state_gdp_per_capita_growth_yearly = THIS.state_gdp_per_capita_growth }
+	divide_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	subtract_from_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+}
+
+
+get_total_country_gdp={
+	set_variable = { ROOT.average_gdp_growth = ROOT.total_population_times_gdp_growth }
+	multiply_variable = { ROOT.average_gdp_growth = 100 }
+	divide_variable = { ROOT.average_gdp_growth = 12 }
+	add_to_variable = { ROOT.average_gdp_growth = 100 }
+	
+	multiply_variable = { ROOT.bonus_gdp = ROOT.average_gdp_growth }
+	divide_variable = { ROOT.bonus_gdp = 100 }
+	add_to_variable = { ROOT.gdp = ROOT.bonus_gdp }
+
+	clear_variable = ROOT.average_gdp_growth
+}
+
+get_controlled_states_and_positions={ 
+	clear_array = ROOT.owned_states_array
+	clear_array = ROOT.owned_states_gdp
+	clear_array = ROOT.owned_states_gdp_modifier
+	clear_array = ROOT.owned_states_gdp_pc_growth
+	clear_array = current_line_array
+	
+	every_state={		
+		limit = { 
+			is_controlled_by = ROOT 
+			NOT = { state = 14 }
+		}
+		add_to_array = {
+			array = ROOT.owned_states_array
+			value = THIS
+		}
+		add_to_array = {
+			array = ROOT.owned_states_gdp
+			value = THIS.state_gdp
+		}
+		add_to_array = {
+			array = ROOT.owned_states_gdp_modifier
+			value = THIS.state_gdp_modifier
+		}
+		add_to_array = {
+			array = ROOT.owned_states_gdp_pc_growth
+			value = THIS.state_gdp_per_capita_growth_yearly
+		}
+	}
+	set_variable = { ROOT.number_of_owned_states = 0 }
+	for_each_scope_loop = {						#Counts total amount of states controlled by ROOT, puts the number in a variable
+		array = ROOT.owned_states_array
+		add_to_variable = { ROOT.number_of_owned_states = 1 }
+	}
+	
+	add_to_variable = { ROOT.number_of_owned_states = 1 }
+	for_loop_effect = {
+		start = 1
+		end = ROOT.number_of_owned_states
+		compare_type = less_than_or_equals
+		add_to_array = { current_line_array = v }
+	}
+}
+
+
+
+get_country_gdp_from_states = {
+	set_variable = { ROOT.gdp = 0 }
+	
+	every_state={
+		set_variable = { THIS.state_gdp_effective = THIS.state_gdp }					
+		if = { 
+			limit = { 
+				THIS = { 
+					is_owned_by = ROOT 
+					is_core_of = ROOT
+				}
+				ROOT = { has_full_control_of_state = PREV }
+			}
+			set_variable = { THIS.state_gdp_modifier = 1 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_owned_and_controlled_by = ROOT 
+					is_core_of = ROOT
+				}
+				NOT = { ROOT = { has_full_control_of_state = PREV } }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.9 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_controlled_by = ROOT 
+					is_core_of = ROOT
+					NOT = { is_owned_by = ROOT }
+				}
+				ROOT = { has_full_control_of_state = PREV }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.8 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_controlled_by = ROOT 
+					is_core_of = ROOT
+					NOT = { is_owned_by = ROOT }
+				}
+				NOT = { ROOT = { has_full_control_of_state = PREV } }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.75 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_owned_by = ROOT 
+					NOT = { is_core_of = ROOT }
+				}
+				ROOT = { has_full_control_of_state = PREV }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.7 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_owned_and_controlled_by = ROOT 
+					NOT = { is_core_of = ROOT }
+				}
+				NOT = { ROOT = { has_full_control_of_state = PREV } }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.6 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_controlled_by = ROOT 
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+				}
+				ROOT = { has_full_control_of_state = PREV }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.5 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+		else_if = { 
+			limit = { 
+				THIS = { 
+					is_controlled_by = ROOT 
+					NOT = { is_core_of = ROOT }
+					NOT = { is_owned_by = ROOT }
+				}
+				NOT = { ROOT = { has_full_control_of_state = PREV } }
+			}
+			set_variable = { THIS.state_gdp_modifier = 0.4 }
+			multiply_variable = { THIS.state_gdp_effective = THIS.state_gdp_modifier }
+			divide_variable = {THIS.state_gdp_effective  = 1000 }
+			add_to_variable = { ROOT.gdp = THIS.state_gdp_effective }
+			multiply_variable = {THIS.state_gdp_effective  = 1000 }
+		}
+	}
+
+	set_variable = { ROOT.gdp_from_states = ROOT.gdp }
+}
+
+get_country_gdp_growth={
+	set_variable={ ROOT.total_population = 0 }
+	every_state={
+		if = {
+			limit = { THIS ={ is_controlled_by = ROOT } }
+			ROOT = { add_to_variable = { ROOT.total_population = PREV.state_population_k }}
+		}
+	}
+	
+	set_variable = { ROOT.gdp_per_capita = ROOT.gdp_from_states }
+	multiply_variable = { ROOT.gdp_per_capita = 100 }
+	divide_variable = { ROOT.gdp_per_capita = ROOT.total_population }
+	multiply_variable = { ROOT.gdp_per_capita = 10000 }
+	
+	set_variable={ ROOT.total_population_times_gdp_growth = 0 }
+	every_state={
+		add_to_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+		if = {
+			limit = { THIS ={ is_controlled_by = ROOT } }
+			set_variable = { THIS.gdp_in_one_year = THIS.state_population_k }
+			multiply_variable = { THIS.gdp_in_one_year = THIS.state_gdp_per_capita_growth_yearly }
+			divide_variable = { THIS.gdp_in_one_year = 100 }
+			ROOT = { add_to_variable = { ROOT.total_population_times_gdp_growth = PREV.gdp_in_one_year }}
+			clear_variable = THIS.gdp_in_one_year
+		}
+		subtract_from_variable = { THIS.state_gdp_per_capita_growth_yearly = 100 }
+	}
+	
+	divide_variable = { ROOT.total_population_times_gdp_growth = ROOT.total_population }
+	subtract_from_variable = { ROOT.total_population_times_gdp_growth = 1 }
+	
+	clear_variable = ROOT.total_population
+}
+
+get_country_real_gdp_growth={
+	set_variable = { ROOT.real_gdp_growth = ROOT.total_population_times_gdp_growth }
+	multiply_variable = { ROOT.real_gdp_growth = 100 }
+	set_variable = { ROOT.country_gdp_growth_yearly = ROOT.real_gdp_growth }
+	subtract_from_variable = { ROOT.real_gdp_growth = ROOT.inflation_rate }
+}
+
+remove_all_inflation_ideas={
+	remove_ideas = ATD_inflation_1
+	remove_ideas = ATD_inflation_2
+	remove_ideas = ATD_inflation_3
+	remove_ideas = ATD_inflation_4
+	remove_ideas = ATD_inflation_5
+	remove_ideas = ATD_inflation_6
+	remove_ideas = ATD_inflation_7
+}
+remove_all_real_gdp_pc_ideas={
+	remove_ideas = ATD_real_gdp_pc_1
+	remove_ideas = ATD_real_gdp_pc_2
+	remove_ideas = ATD_real_gdp_pc_3
+	remove_ideas = ATD_real_gdp_pc_4
+	remove_ideas = ATD_real_gdp_pc_5
+	remove_ideas = ATD_real_gdp_pc_6
+	remove_ideas = ATD_real_gdp_pc_7
+}
+remove_all_gdp_pc_ideas={
+	remove_ideas = ATD_gdp_pc_1
+	remove_ideas = ATD_gdp_pc_2
+	remove_ideas = ATD_gdp_pc_3
+	remove_ideas = ATD_gdp_pc_4
+	remove_ideas = ATD_gdp_pc_5
+	remove_ideas = ATD_gdp_pc_6
+}
+
+get_effects_from_inflation={
+	if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = -5 compare = less_than }					#Major deflation
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_1
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = 0 compare = less_than }					#Small deflation
+			check_variable = { var = ROOT.inflation_rate value = -5 compare = greater_than_or_equals }
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_2
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = 1 compare = less_than }					#Stagnation
+			check_variable = { var = ROOT.inflation_rate value = 0 compare = greater_than_or_equals }
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_3
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = 5.5 compare = less_than }					#Normal inflation
+			check_variable = { var = ROOT.inflation_rate value = 1 compare = greater_than_or_equals }
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_4
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = 20 compare = less_than }					#High inflation
+			check_variable = { var = ROOT.inflation_rate value = 5.5 compare = greater_than_or_equals }
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_5
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.inflation_rate value = 75 compare = less_than }					#Extreme inflation
+			check_variable = { var = ROOT.inflation_rate value = 20 compare = greater_than_or_equals }
+		}
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_6
+	}
+	else={																									#Venezuela
+		remove_all_inflation_ideas = yes
+		add_ideas = ATD_inflation_7
+	}
+}
+
+get_effects_from_real_gdp_pc={
+	if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = -15 compare = less_than }					#Massive decline
+		}
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_1
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = -5 compare = less_than }					#Major decline
+			check_variable = { var = ROOT.real_gdp_growth value = -15 compare = greater_than_or_equals }
+		}
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_2
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = -0.5 compare = less_than }				#Small decline
+			check_variable = { var = ROOT.real_gdp_growth value = -5 compare = greater_than_or_equals }
+		}
+		set_variable = { ROOT.real_gdp_pc_political_power_gain = -0.1 }
+		set_variable = { ROOT.real_gdp_pc_research_speed_factor = -0.01 }
+		set_variable = { ROOT.real_gdp_pc_stability_factor = -0.1 }
+		set_variable = { ROOT.real_gdp_pc_ruling_party_drift = -0.04 }
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_3
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = 0.5 compare = less_than }					#Stagnation
+			check_variable = { var = ROOT.real_gdp_growth value = -0.5 compare = greater_than_or_equals }
+		}
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_4
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = 5 compare = less_than }					#Small growth
+			check_variable = { var = ROOT.real_gdp_growth value = 0.5 compare = greater_than_or_equals }
+		}
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_5
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.real_gdp_growth value = 15 compare = less_than }					#Major growth
+			check_variable = { var = ROOT.real_gdp_growth value = 5 compare = greater_than_or_equals }
+		}
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_6
+	}
+	else={																									#Economic boom
+		remove_all_real_gdp_pc_ideas = yes
+		add_ideas = ATD_real_gdp_pc_7
+	}
+}
+
+get_effects_from_gdp_pc={
+	if={
+		limit = {
+			check_variable = { var = ROOT.gdp_per_capita value = 40000 compare = greater_than_or_equals }
+		}
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_1
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.gdp_per_capita value = 40000 compare = less_than }
+			check_variable = { var = ROOT.gdp_per_capita value = 30000 compare = greater_than_or_equals }
+		}
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_2
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.gdp_per_capita value = 30000 compare = less_than }
+			check_variable = { var = ROOT.gdp_per_capita value = 20000 compare = greater_than_or_equals }
+		}
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_3
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.gdp_per_capita value = 20000 compare = less_than }
+			check_variable = { var = ROOT.gdp_per_capita value = 10000 compare = greater_than_or_equals }
+		}
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_4
+	}
+	else_if={
+		limit = {
+			check_variable = { var = ROOT.gdp_per_capita value = 10000 compare = less_than }
+			check_variable = { var = ROOT.gdp_per_capita value = 5000 compare = greater_than_or_equals }
+		}
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_5
+	}
+	else={
+		remove_all_gdp_pc_ideas = yes
+		add_ideas = ATD_gdp_pc_6
+	}
+}
+
+increase_state_gdp_growth_by_0_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_0_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.04 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_1={
+	custom_effect_tooltip = increase_state_gdp_growth_by_1_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.083 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_1_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_1_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.124 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_2={
+	custom_effect_tooltip = increase_state_gdp_growth_by_2_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.165 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_2_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_2_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.206 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_3={
+	custom_effect_tooltip = increase_state_gdp_growth_by_3_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.247 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_3_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_3_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.287 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_4={
+	custom_effect_tooltip = increase_state_gdp_growth_by_4_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.327 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_4_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_4_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.367 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+increase_state_gdp_growth_by_5={
+	custom_effect_tooltip = increase_state_gdp_growth_by_5_tt
+	hidden_effect={
+		add_to_variable ={ THIS.state_gdp_per_capita_growth = 0.407 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+
+decrease_state_gdp_growth_by_0_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_0_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.04 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_1={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_1_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.083 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_1_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_1_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.124 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_2={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_2_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.165 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_2_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_2_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.206 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_3={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_3_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.247 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_3_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_3_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.287 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_4={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_4_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.327 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_4_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_4_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.367 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+decrease_state_gdp_growth_by_5={
+	custom_effect_tooltip = decrease_state_gdp_growth_by_5_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.407 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+
+decrease_state_gdp_growth_by_10={					#Only used for Russian sactions event
+	custom_effect_tooltip = decrease_state_gdp_growth_by_10_tt
+	hidden_effect={
+		subtract_from_variable ={ THIS.state_gdp_per_capita_growth = 0.821 }
+		get_yearly_gdp_pc_growth = yes
+	}
+}
+
+
+
+
+
+increase_inflation_rate_by_0_5={
+	custom_effect_tooltip = increase_inflation_rate_by_0_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 0.5 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_1={
+	custom_effect_tooltip = increase_inflation_rate_by_1_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 1 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_1_5={
+	custom_effect_tooltip = increase_inflation_rate_by_1_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 1.5 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_2={
+	custom_effect_tooltip = increase_inflation_rate_by_2_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 2 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_2_5={
+	custom_effect_tooltip = increase_inflation_rate_by_2_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 2.5 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_3={
+	custom_effect_tooltip = increase_inflation_rate_by_3_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 3 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_3_5={
+	custom_effect_tooltip = increase_inflation_rate_by_3_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 3.5 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_4={
+	custom_effect_tooltip = increase_inflation_rate_by_4_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 4 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_4_5={
+	custom_effect_tooltip = increase_inflation_rate_by_4_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 4.5 }
+		get_effects_from_inflation = yes
+	}
+}
+increase_inflation_rate_by_5={
+	custom_effect_tooltip = increase_inflation_rate_by_5_tt
+	hidden_effect={
+		add_to_variable ={ ROOT.inflation_rate = 5 }
+		get_effects_from_inflation = yes
+	}
+}
+
+decrease_inflation_rate_by_0_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_0_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 0.5 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_1={
+	custom_effect_tooltip = decrease_inflation_rate_by_1_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 1 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_1_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_1_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 1.5 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_2={
+	custom_effect_tooltip = decrease_inflation_rate_by_2_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 2 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_2_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_2_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 2.5 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_3={
+	custom_effect_tooltip = decrease_inflation_rate_by_3_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 3 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_3_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_3_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 3.5 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_4={
+	custom_effect_tooltip = decrease_inflation_rate_by_4_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 4 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_4_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_4_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 4.5 }
+		get_effects_from_inflation = yes
+	}
+}
+decrease_inflation_rate_by_5={
+	custom_effect_tooltip = decrease_inflation_rate_by_5_tt
+	hidden_effect={
+		subtract_from_variable ={ ROOT.inflation_rate = 5 }
+		get_effects_from_inflation = yes
+	}
+}
+
+
+spawn_new_country_economy={
+	set_variable = { THIS.inflation_rate = 1 }
+	
+	add_ideas = ATD_military_spending_idea_3
+	add_ideas = ATD_intelligence_spending_idea_3
+	add_ideas = ATD_education_spending_idea_3
+	add_ideas = ATD_public_services_spending_idea_3
+}

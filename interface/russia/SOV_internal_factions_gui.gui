@@ -1,0 +1,487 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "SOV_open_faction_management_political_tab"
+		position = { x = 0 y = 0 }
+		size = { width=100%% height=100%% }
+		Orientation = center
+		origo = center
+		
+		
+		buttonType = {
+			name = "SOV_open_faction_management_political_tab_button"
+			position = { x = 468 y = 245 }
+			quadTextureSprite = "GFX_SOV_faction_management_button"
+			alwaystransparent = no
+			scale = 0.51
+			pdx_tooltip = "open_faction_management_tt"
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_open_faction_management_bottom_right"
+		position = { x = -24 y = -251 }
+		size = { width=100 height=100 }
+		Orientation = lower_right
+		origo = center
+		
+		
+		buttonType = {
+			name = "SOV_open_faction_management_bottom_right_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_faction_management_button"
+			alwaystransparent = no
+			scale = 0.62
+			pdx_tooltip = "open_faction_management_tt"
+		}
+	}
+
+	containerWindowType = {
+		name = "SOV_faction_management_window"
+		size = { width = 1200 height = 816 }
+		position = { x=-300 y=80 }
+		show_position = { x=455 y=80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = yes
+	
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_SOV_faction_management_bg"
+		}
+		
+		instantTextboxType = {
+			name = "title_text_box"
+			position = { x = 0 y = 8 }
+			font = "hoi_36header"
+			text = "faction_management_title"
+			maxWidth = 1200
+			maxHeight = 40
+			alwaystransparent = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "faction_management_desc_box"
+			position = { x = 22 y = 68 }
+			font = "hoi_16mbs"
+			text = "faction_management_desc"
+			maxWidth = 1154
+			maxHeight = 200
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "start_interface_button"
+			position = { x = -62 y = 0 }
+			quadTextureSprite = "GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "start_interface_button_text"
+			Orientation = center
+			format = center
+		}
+		
+		iconType = {
+			name = "underlay_1"
+			position = { x = 19 y = 68 }
+			quadTextureSprite = "GFX_SOV_eastern_liberal_underlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "underlay_2"
+			position = { x = 213 y = 68 }
+			quadTextureSprite = "GFX_SOV_eastern_conservative_underlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "underlay_3"
+			position = { x = 407 y = 68 }
+			quadTextureSprite = "GFX_SOV_eastern_conservative_underlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "underlay_4"
+			position = { x = 601 y = 68 }
+			quadTextureSprite = "GFX_SOV_eastern_conservative_underlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "underlay_5"
+			position = { x = 795 y = 68 }
+			quadTextureSprite = "GFX_SOV_eastern_conservative_underlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "underlay_6"
+			position = { x = 989 y = 68 }
+			quadTextureSprite = "GFX_SOV_fascist_underlay"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "liberals_tt_overlay"
+			position = { x = 24 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "liberals_tt"
+		}
+		
+		iconType = {
+			name = "technocrats_tt_overlay"
+			position = { x = 224 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "technocrats_tt"
+		}
+		
+		iconType = {
+			name = "oil_and_gas_tt_overlay"
+			position = { x = 424 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "oil_and_gas_tt"
+		}
+		
+		iconType = {
+			name = "siloviki_tt_overlay"
+			position = { x = 624 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "siloviki_tt"
+		}
+		
+		iconType = {
+			name = "putinists_tt_overlay"
+			position = { x = 824 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "putinists_tt"
+		}
+		
+		iconType = {
+			name = "nationalists_tt_overlay"
+			position = { x = 1024 y = 70 }
+			quadTextureSprite = "GFX_SOV_faction_overlay"
+			pdx_tooltip = "nationalists_tt"
+		}
+		
+		containerWindowType = {
+			name = "SOV_factions_title_window"
+			size = { width = 1452 height = 816 }
+			scale = 0.8
+			position = { x = 18 y = 70 }
+		
+			instantTextboxType = {
+				name = "liberals_title_box"
+				position = { x = 0 y = 0 }
+				font = "hoi_36header"
+				text = "liberals_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "liberals_status_box"
+				position = { x = 5 y = 74 }
+				font = "hoi_16mbs"
+				text = "liberals_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "technocrats_title_box"
+				position = { x = 242 y = 0 }
+				font = "hoi_36header"
+				text = "technocrats_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "technocrats_status_box"
+				position = { x = 247 y = 74 }
+				font = "hoi_16mbs"
+				text = "technocrats_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "oil_and_gas_title_box"
+				position = { x = 485 y = 0 }
+				font = "hoi_36header"
+				text = "oil_and_gas_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "oil_and_gas_status_box"
+				position = { x = 490 y = 74 }
+				font = "hoi_16mbs"
+				text = "oil_and_gas_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "siloviki_title_box"
+				position = { x = 727 y = 0 }
+				font = "hoi_36header"
+				text = "siloviki_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "siloviki_status_box"
+				position = { x = 732 y = 74 }
+				font = "hoi_16mbs"
+				text = "siloviki_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "putinists_title_box"
+				position = { x = 970 y = 0 }
+				font = "hoi_36header"
+				text = "putinists_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "putinists_status_box"
+				position = { x = 975 y = 74 }
+				font = "hoi_16mbs"
+				text = "putinists_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "nationalists_title_box"
+				position = { x = 1212 y = 0 }
+				font = "hoi_36header"
+				text = "nationalists_title"
+				maxWidth = 242
+				maxHeight = 200
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "nationalists_status_box"
+				position = { x = 1217 y = 74 }
+				font = "hoi_16mbs"
+				text = "nationalists_status"
+				maxWidth = 240
+				maxHeight = 200
+				alwaystransparent = yes
+			}
+		}
+		
+		iconType = {
+			name = "navalny_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_navalny_icon_small"
+			pdx_tooltip = "SOV_alexei_navalny_icon_desc"
+		}
+		iconType = {
+			name = "yavlinsky_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_yavlinsky_icon_small"
+			pdx_tooltip = "SOV_grigory_yavlinsky_icon_desc"
+		}	
+		iconType = {
+			name = "medvedev_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_medvedev_icon_small"
+			pdx_tooltip = "SOV_dmirtry_medvedev_icon_desc"
+		}	
+		iconType = {
+			name = "kadyrov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_kadyrov_icon_small"
+			pdx_tooltip = "SOV_ramzan_kadyrov_icon_desc"
+		}
+		iconType = {
+			name = "girkin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_girkin_icon_small"
+			pdx_tooltip = "SOV_igor_girkin_icon_desc"
+		}
+		iconType = {
+			name = "prigozhin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_prigozhin_icon_small"
+			pdx_tooltip = "SOV_yevgeny_prigozhin_icon_desc"
+		}
+		iconType = {
+			name = "chemezov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_chemezov_icon_small"
+			pdx_tooltip = "SOV_sergey_chemezov_icon_desc"
+		}
+		iconType = {
+			name = "nemtsov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_nemtsov_icon_small"
+			pdx_tooltip = "SOV_boris_nemtsov_icon_desc"
+		}
+		iconType = {
+			name = "yuri_kovalchuk_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_yuri_kovalchuk_icon_small"
+			pdx_tooltip = "SOV_yuri_kovalchuk_icon_desc"
+		}
+		iconType = {
+			name = "mikhail_kovalchuk_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_mikhail_kovalchuk_icon_small"
+			pdx_tooltip = "SOV_mikhail_kovalchuk_icon_desc"
+		}
+		iconType = {
+			name = "zolotov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_zolotov_icon_small"
+			pdx_tooltip = "SOV_viktor_zolotov_icon_desc"
+		}
+		iconType = {
+			name = "shoigu_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_shoigu_icon_small"
+			pdx_tooltip = "SOV_sergei_shoigu_icon_desc"
+		}
+		iconType = {
+			name = "miller_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_miller_icon_small"
+			pdx_tooltip = "SOV_alexei_miller_icon_desc"
+		}
+		iconType = {
+			name = "utkin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_utkin_icon_small"
+			pdx_tooltip = "SOV_dmitry_utkin_icon_desc"
+		}
+		iconType = {
+			name = "rotenberg_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_rotenberg_icon_small"
+			pdx_tooltip = "SOV_arkady_rotenberg_icon_desc"
+		}
+		iconType = {
+			name = "boris_rotenberg_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_boris_rotenberg_icon_small"
+			pdx_tooltip = "SOV_boris_rotenberg_icon_desc"
+		}
+		iconType = {
+			name = "kiriyenko_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_kiriyenko_icon_small"
+			pdx_tooltip = "SOV_sergey_kiriyenko_icon_desc"
+		}
+		iconType = {
+			name = "gref_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_gref_icon_small"
+			pdx_tooltip = "SOV_herman_gref_icon_desc"
+		}
+		iconType = {
+			name = "bortnikov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_bortnikov_icon_small"
+			pdx_tooltip = "SOV_alexander_bortnikov_icon_desc"
+		}
+		iconType = {
+			name = "patrushev_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_patrushev_icon_small"
+			pdx_tooltip = "SOV_nikolai_patrushev_icon_desc"
+		}
+		iconType = {
+			name = "vaino_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_vaino_icon_small"
+			pdx_tooltip = "SOV_anton_vaino_icon_desc"
+		}
+		iconType = {
+			name = "kozak_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_kozak_icon_small"
+			pdx_tooltip = "SOV_dmitry_kozak_icon_desc"
+		}
+		iconType = {
+			name = "mishustin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_mishustin_icon_small"
+			pdx_tooltip = "SOV_mikhail_mishustin_icon_desc"
+		}
+		iconType = {
+			name = "sechin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_sechin_icon_small"
+			pdx_tooltip = "SOV_igor_sechin_icon_desc"
+		}
+		iconType = {
+			name = "katz_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_katz_icon_small"
+			pdx_tooltip = "SOV_maxim_katz_icon_desc"
+		}
+		iconType = {
+			name = "timchenko_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_timchenko_icon_small"
+			pdx_tooltip = "SOV_gennady_timchenko_icon_desc"
+		}
+		iconType = {
+			name = "siluanov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_siluanov_icon_small"
+			pdx_tooltip = "SOV_anton_siluanov_icon_desc"
+		}
+		iconType = {
+			name = "dugin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_dugin_icon_small"
+			pdx_tooltip = "SOV_alexander_dugin_icon_desc"
+		}
+		iconType = {
+			name = "naryshkin_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_naryshkin_icon_small"
+			pdx_tooltip = "SOV_sergey_naryshkin_icon_desc"
+		}
+		iconType = {
+			name = "vekselberg_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_vekselberg_icon_small"
+			pdx_tooltip = "SOV_viktor_vekselberg_icon_desc"
+		}
+		iconType = {
+			name = "manturov_icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SOV_manturov_icon_small"
+			pdx_tooltip = "SOV_denis_manturov_icon_desc"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 1150 y = 10 }
+			quadTextureSprite = "GFX_closebutton"
+			buttonFont = ""
+			shortcut = "ESCAPE"
+			scale = 1.2
+		}
+	}
+}

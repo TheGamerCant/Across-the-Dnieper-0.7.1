@@ -1,0 +1,27 @@
+﻿capital = 92
+
+load_ukraine_doctrine = yes
+
+set_politics = {
+	ruling_party = military_junta
+	elections_allowed = no	
+}
+
+2019.5.29 = {
+	
+	set_stability = 0.45
+	set_war_support = 0.74
+	
+}
+
+set_research_slots = 4
+set_stability = 0.4
+set_war_support = 0.24
+
+
+set_convoys = 57
+
+
+set_popularities = {
+	military_junta = 100
+}

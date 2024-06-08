@@ -1,0 +1,402 @@
+on_actions={
+	on_weekly_SOV={
+		effect={
+			if={
+				limit = {
+					has_dynamic_modifier = { modifier = SOV_raspizdyaystvo }
+					has_war = yes
+					OR={
+						is_ai = no
+						NOT = { any_enemy_country = { is_ai = no is_major = yes } }		#won't trigger for RU ai if an enemy country is a player and a major (e.g ukraine player vs RU ai)
+					}
+				}
+				random_owned_controlled_state={
+					limit={ NOT={ state = 14 } NOT={ state = 432 } }
+					set_variable = { ROOT.random_state_selected = THIS }	#For loc
+				}
+				if={
+					limit = { is_on_impossible_mode = yes }
+					random_list = {			#Some of these are cancelled out, caused your troops to be neutral
+						2 = { if={ limit = { OR={ has_equipment = { modern_tank_chassis > 500 } has_equipment = { modern_tank_archetype > 500 } } } country_event = { id = russia_equipment_goes_missing.1 days = 5 } } }	#Tanks	
+						1 = { if={ limit = { has_equipment = { infantry_equipment > 6000 } } country_event = { id = russia_equipment_goes_missing.2 hours = 17 } } }		#Guns
+						2 = { if={ limit = { has_equipment = { motorized_equipment > 1400 } } country_event = { id = russia_equipment_goes_missing.3 hours = 11 } } }		#Trucks
+						2 = { country_event = { id = russia_equipment_goes_missing.5 hours = 69 } }		#Generic ammo dump
+						1 = { if={ limit = { has_equipment = { apc_equipment > 500 } has_equipment = { mechanized_equipment > 300 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }		#APCs and IFVs
+						1 = { if={ limit = { has_equipment = { rocket_artillery_equipment > 600 } has_equipment = { artillery_equipment > 600 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }	#Artillery
+						1 = { if={ limit = { has_equipment = { support_equipment > 850 } } country_event = { id = russia_equipment_goes_missing.9 hours = 11 } } }		#Support equipment
+						1 = { country_event = { id = russia.1135 hours = 11 } } 		#Traitors
+						36 = {}
+					}
+				}
+				else_if={
+					limit = { is_on_hard_mode = yes }
+					random_list = {			#Some of these are cancelled out, caused your troops to be neutral
+						2 = { if={ limit = { OR={ has_equipment = { modern_tank_chassis > 500 } has_equipment = { modern_tank_archetype > 500 } } } country_event = { id = russia_equipment_goes_missing.1 days = 5 } } }	#Tanks	
+						1 = { if={ limit = { has_equipment = { infantry_equipment > 6000 } } country_event = { id = russia_equipment_goes_missing.2 hours = 17 } } }		#Guns
+						2 = { if={ limit = { has_equipment = { motorized_equipment > 1400 } } country_event = { id = russia_equipment_goes_missing.3 hours = 11 } } }		#Trucks
+						2 = { country_event = { id = russia_equipment_goes_missing.5 hours = 69 } }		#Generic ammo dump
+						1 = { if={ limit = { has_equipment = { apc_equipment > 500 } has_equipment = { mechanized_equipment > 300 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }		#APCs and IFVs
+						1 = { if={ limit = { has_equipment = { rocket_artillery_equipment > 600 } has_equipment = { artillery_equipment > 600 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }	#Artillery
+						1 = { if={ limit = { has_equipment = { support_equipment > 850 } } country_event = { id = russia_equipment_goes_missing.9 hours = 11 } } }		#Support equipment
+						1 = { country_event = { id = russia.1135 hours = 11 } } 		#Traitors
+						61 = {}
+					}
+				}
+				else_if={
+					limit = { is_on_easy_mode = yes }
+					random_list = {			#Some of these are cancelled out, caused your troops to be neutral
+						2 = { if={ limit = { OR={ has_equipment = { modern_tank_chassis > 500 } has_equipment = { modern_tank_archetype > 500 } } } country_event = { id = russia_equipment_goes_missing.1 days = 5 } } }	#Tanks	
+						1 = { if={ limit = { has_equipment = { infantry_equipment > 6000 } } country_event = { id = russia_equipment_goes_missing.2 hours = 17 } } }		#Guns
+						2 = { if={ limit = { has_equipment = { motorized_equipment > 1400 } } country_event = { id = russia_equipment_goes_missing.3 hours = 11 } } }		#Trucks
+						2 = { country_event = { id = russia_equipment_goes_missing.5 hours = 69 } }		#Generic ammo dump
+						1 = { if={ limit = { has_equipment = { apc_equipment > 500 } has_equipment = { mechanized_equipment > 300 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }		#APCs and IFVs
+						1 = { if={ limit = { has_equipment = { rocket_artillery_equipment > 600 } has_equipment = { artillery_equipment > 600 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }	#Artillery
+						1 = { if={ limit = { has_equipment = { support_equipment > 850 } } country_event = { id = russia_equipment_goes_missing.9 hours = 11 } } }		#Support equipment
+						1 = { country_event = { id = russia.1135 hours = 11 } } 		#Traitors
+						151 = {}
+					}
+				}
+				else={
+					#Normal mode
+					random_list = {			#Some of these are cancelled out, caused your troops to be neutral
+						2 = { if={ limit = { OR={ has_equipment = { modern_tank_chassis > 500 } has_equipment = { modern_tank_archetype > 500 } } } country_event = { id = russia_equipment_goes_missing.1 days = 5 } } }	#Tanks	
+						1 = { if={ limit = { has_equipment = { infantry_equipment > 6000 } } country_event = { id = russia_equipment_goes_missing.2 hours = 17 } } }		#Guns
+						2 = { if={ limit = { has_equipment = { motorized_equipment > 1400 } } country_event = { id = russia_equipment_goes_missing.3 hours = 11 } } }		#Trucks
+						2 = { country_event = { id = russia_equipment_goes_missing.5 hours = 69 } }		#Generic ammo dump
+						1 = { if={ limit = { has_equipment = { apc_equipment > 500 } has_equipment = { mechanized_equipment > 300 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }		#APCs and IFVs
+						1 = { if={ limit = { has_equipment = { rocket_artillery_equipment > 600 } has_equipment = { artillery_equipment > 600 } } country_event = { id = russia_equipment_goes_missing.6 hours = 11 } } }	#Artillery
+						1 = { if={ limit = { has_equipment = { support_equipment > 850 } } country_event = { id = russia_equipment_goes_missing.9 hours = 11 } } }		#Support equipment
+						1 = { country_event = { id = russia.1135 hours = 11 } } 		#Traitors
+						91 = {}
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect={
+			SOV = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = SOV_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = SOV_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					if={
+						limit = { has_dlc = "La Resistance" }
+						random_list = {		
+							16 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PUTIN_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_SHOIGU_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PATRUSHEV_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_BORTNIKOV_AI_FLAG
+								}
+							}
+							
+							10 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_KRP_AI_FLAG
+								}
+							}
+						}
+					}
+					else={
+						random_list = {		
+							18 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PUTIN_AI_FLAG
+								}
+							}
+
+							10 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_SHOIGU_AI_FLAG
+								}
+							}
+
+							10 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PATRUSHEV_AI_FLAG
+								}
+							}
+							
+							10 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_KRP_AI_FLAG
+								}
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = SOV_ai_behavior
+							option = REWORK_RANDOM_SILOVIK
+						}
+					}
+					
+					if={
+						limit = { has_dlc = "La Resistance" }
+						random_list = {
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_SHOIGU_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PATRUSHEV_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_BORTNIKOV_AI_FLAG
+								}
+							}
+						}
+					}
+					else={
+						random_list = {
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_SHOIGU_AI_FLAG
+								}
+							}
+
+							7 = {
+								SOV = {
+									set_country_flag = SOV_REWORK_PATRUSHEV_AI_FLAG
+								}
+							}
+						}
+					}
+				}
+
+				
+				set_party_name = { ideology = neoconservative long_name = SOV_dem_party_long name = SOV_dem_party }
+				add_popularity = { ideology = neoconservative popularity = -0.06 }
+				add_popularity = { ideology = eastern_liberal popularity = 0.1 }
+				add_popularity = { ideology = ultranationalist popularity = 0.051 }
+				add_popularity = { ideology = populist popularity = -0.04 }
+				add_war_support = -0.3
+				add_stability = 0.15
+				add_ideas = unions_restricted
+				puppet = CHN
+
+				if={
+					limit = { has_start_date < 2022.01.01 }
+					country_event = { id = russia.59 days = 778 random_days = 28 }			#Park Zaryadie
+					country_event = { id = russia.1005 days = 42 }							#Meeting with Gerasimov
+					country_event = { id = russia.1011 days = 337 }							#SOTN speech
+					country_event = { id = russia.1012 days = 416 }							#Death of Boris Nemtsov
+					country_event = { id = russia.1023 days = 846 random_days = 24 }		#Rise of Kiriyenko
+					country_event = { id = russia.1024  days = 702 random_days = 7 }		#Shoigu is a corrupt goofy goober
+					country_event = { id = russia.1029 days = 1626 }						#World Cup
+					country_event = { id = russia.1032 days = 1041 random_days = 30 }		#Patriot PMC created
+					country_event = { id = russia.1033 days = 1138 random_days = 50 }		#Continued economic stagnation
+					country_event = { id = russia.1034 days = 1583 random_days = 7 }		#Oligarchy gets worse
+					country_event = { id = russia.1050 days = 270 }							#Grand Prix	
+					country_event = { id = russia.1058 days = 90 random_days = 250 }		#Poverty event	
+					country_event = { id = russia.1059 days = 1200 random_days = 20 }		#Don't call him Dimon				
+					country_event = { id = russia.1094 days = 392 }							#Dedovschina
+					country_event = { id = russia.1107 days = 1798 random_days = 25 }		#Send more men to Transnistria?
+					country_event = { id = russia.1134 days = 1538 }						#2018 Elections
+					country_event = { id = russia.1138 days = 3629 }						#Putins 2024 Candidacy
+					country_event = { id = russia.1139 days = 3601 }						#Duntsova Candidacy
+					country_event = { id = russia.1141 days = 3373 }						#Boris Nadezhdin Lore
+					country_event = { id = russia.1144 days = 3728 }						#2024 Elections
+					country_event = { id = russia_propaganda.17 days = 1526 }				#World order 2018
+					
+					country_event = { id = russia.61 days = 77 }							#Great fast
+					country_event = { id = russia.62 days = 129 }							#Victory Day
+					if={
+						limit = { is_ai = yes }
+						add_ideas = SOV_sergey_surovikin_air_force_rework
+						add_ideas = SOV_roman_vladimirovich_kutuzov_rework		#AI is too stupid to do it themselves lol
+					}
+					remove_ideas = SOV_alexander_bortnikov_rework
+					SOV_increase_siloviki_faction_medium = yes
+				}
+				else={
+					country_event = { id = russia.61 days = 46 }							#Great fast
+					country_event = { id = russia.62 days = 98 }							#Victory Day
+				
+					set_party_name = { ideology = neoliberal long_name = SOV_civic_initiative_long name = SOV_civic_initiative }
+					create_country_leader = {
+						name = "Andrey Nechayev"
+						desc = ""
+						picture = gfx/leaders/SOV/Portrait_Boris_Nemtsov_dead.png
+						ideology = generic_neoliberal
+						traits = {  }
+					}
+					
+					puppet = BLR
+					add_ideas = SOV_sergey_surovikin_air_force_rework
+					remove_ideas = SOV_dmitry_medvedev_rework
+					add_ideas = SOV_mikhail_mishustin_rework
+					add_ideas = SOV_roman_vladimirovich_kutuzov_rework
+					add_war_support = -0.1
+					add_stability = -0.25
+					add_political_power = 948
+					add_command_power = 100
+					SOV_increase_technocrat_faction_large = yes
+					SOV_decrease_putinist_faction_small = yes
+					SOV_decrease_oil_and_gas_faction_small = yes
+					SOV_increase_liberal_faction_small = yes
+					
+					add_popularity = { ideology = ultranationalist popularity = 0.1 }
+					add_popularity = { ideology = social_democracy popularity = -0.012 }
+					
+					set_variable = { SOV.SOV_media_leans_eastern_conservative = 79 }
+					set_variable = { SOV.SOV_media_leans_ultranationalist = 18 }
+					set_variable = { SOV.SOV_media_leans_eastern_liberal = 3 }
+
+					SOV_media_leaning_calculate_XY = yes
+					
+					modify_timed_idea = { idea = SOV_subsidies_for_childbirth_idea days = -1030 }
+					
+					country_event = { id = russia.88 days = 12 }
+					country_event = { id = russia.1138 days = 676 }			#Putins 2024 Candidacy
+					country_event = { id = russia.1139 days = 648 }			#Duntsova Candidacy
+					country_event = { id = russia.1141 days = 420 }			#Boris Nadezhdin Lore
+					country_event = { id = russia.1144 days = 775 }			#2024 Elections
+					
+					DON = { give_resource_rights = { receiver = SOV state = 186 } }
+					LHK = { give_resource_rights = { receiver = SOV state = 152 } }
+					LHK = { give_resource_rights = { receiver = SOV state = 174 } }
+					
+					if={
+						limit = { is_ai = yes }
+						add_to_variable = { SOV_raspizdyaystvo_army_morale_factor = 0.02 }
+						add_to_variable = { SOV_raspizdyaystvo_army_attack_factor = 0.02 }
+						add_to_variable = { SOV_raspizdyaystvo_army_defence_factor = 0.02 }
+						add_to_variable = { SOV_raspizdyaystvo_conscription_factor = 0.02 }
+					}
+				}
+				
+				every_state = {
+					limit = {
+						is_owned_and_controlled_by = SOV
+						infrastructure < 2
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+		
+	on_capitulation={
+		effect={
+			if={
+				limit={
+					FROM = { original_tag = SOV }
+					ROOT = { original_tag = CRI }
+					NOT = { has_global_flag = crimea_cap_event_flag }
+				}
+				SOV = { country_event = { id = russia.1007 days = 5 }
+			}
+		}
+	}
+	
+	on_peace={
+		effect={
+			if={
+				limit = { 
+					THIS = { 
+						tag = SOV 
+						vladimir_putin_is_leader = yes
+					}  
+					has_global_flag = VLADIMIR_PUTIN_WAR_PORTRAIT_FLAG
+				}
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/SOV/Portrait_Vladimir_Putin_Post_War.png"
+				}
+				clr_global_flag = VLADIMIR_PUTIN_WAR_PORTRAIT_FLAG
+			}
+		}
+	}
+	on_capitulation = {
+		effect={
+			if={
+				limit = { 
+					FROM = { 
+						tag = SOV 
+						vladimir_putin_is_leader = yes
+					}  
+					has_global_flag = VLADIMIR_PUTIN_WAR_PORTRAIT_FLAG
+				}
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/SOV/Portrait_Vladimir_Putin_Post_War.png"
+				}
+				clr_global_flag = VLADIMIR_PUTIN_WAR_PORTRAIT_FLAG
+			}
+		}
+	}
+	
+	on_monthly_ZZZ={
+		effect={
+			if={
+				limit = { SOV = { has_completed_focus = SOV_economic_integration } }
+				every_state={
+					limit={
+						is_controlled_by = UKR
+						state_has_any_resource = yes
+					}
+					UKR = { remove_resource_rights = PREV }
+				}
+				
+				every_state={
+					limit={
+						state_has_any_resource = yes
+						OR={
+							is_controlled_by = DON
+							is_controlled_by = LHK
+							is_controlled_by = KHK
+							is_controlled_by = ODS
+							is_controlled_by = NOV
+						}
+					}
+					set_temp_variable = { state_owner = THIS.OWNER }
+					set_temp_variable = { state_with_resources = THIS }
+					var:state_owner={
+						give_resource_rights = { receiver = SOV state = var:state_with_resources }
+					}
+				}
+			}
+		}
+	}
+} 

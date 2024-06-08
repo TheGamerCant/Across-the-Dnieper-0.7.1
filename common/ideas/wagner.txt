@@ -1,0 +1,87 @@
+ideas = {
+	country = {
+		private_military_company = {
+			removal_cost = -1
+			picture = GFX_idea_private_military_company
+			modifier = {
+				attrition = -0.5
+				no_supply_grace = 72
+				army_org_regain = 0.1
+
+				army_strength_factor = 0.15
+
+				special_forces_attack_factor = 0.08
+				special_forces_defence_factor = 0.08
+				special_forces_cap = 1.5
+
+				stability_weekly = 0.1
+				war_support_weekly = 0.5
+
+				planning_speed = 0.30
+				military_junta_drift = 10
+
+				send_volunteer_divisions_required = -30
+				send_volunteer_size = 7
+
+				recruitable_population_factor = 0.28
+			}
+		}
+
+		WAG_saboteurs_in_military = {
+			removal_cost = -1
+			picture = corrupt_high_command
+			available = { has_war_with = WAG }
+
+			modifier = {
+				stability_factor = -0.05
+				experience_gain_army_factor = -0.15
+				experience_gain_navy_factor = -0.15
+				experience_gain_air_factor = -0.15
+				command_power_gain_mult  = -0.1
+				max_training = 0.2
+			}
+			targeted_modifier = {
+				tag = WAG
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.05
+			}
+		}
+
+		WAG_saboteurs_in_military_2 = {
+			removal_cost = -1
+			picture = corrupt_high_command
+			available = { has_war_with = WAG }
+
+			modifier = {
+				stability_factor = -0.05
+				experience_gain_army_factor = -0.35
+				experience_gain_navy_factor = -0.35
+				experience_gain_air_factor = -0.35
+				command_power_gain_mult  = -0.3
+				max_training = 0.25
+			}
+			targeted_modifier = {
+				tag = WAG
+				attack_bonus_against = -0.6
+				defense_bonus_against = -0.15
+			}
+		}
+
+		WAG_hammering_power = {
+			removal_cost = -1
+			picture = The_Hammering_Power
+
+			modifier = {
+				stability_factor = 0.1
+				war_stability_factor = 0.15
+				special_forces_out_of_supply_factor = -0.05
+				experience_gain_army_factor  = 0.1
+				experience_loss_factor = -0.2
+			}
+			targeted_modifier = {
+				tag = SOV
+				breakthrough_bonus_against = 0.05
+			}
+		}
+	}
+}

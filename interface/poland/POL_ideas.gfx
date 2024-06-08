@@ -1,0 +1,75 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_idea_POL_PO_PSL_coalition"
+		texturefile = "gfx/interface/ideas/POL/POL_PO_PSL_coalition.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_PO_PSL_LEFT_coalition"
+		texturefile = "gfx/interface/ideas/POL/POL_PO_PSL_LEFT_coalition.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_PiS_kukiz_coalition"
+		texturefile = "gfx/interface/ideas/POL/POL_PiS_kukiz_coalition.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_PiS_konfederacja_coalition"
+		texturefile = "gfx/interface/ideas/POL/POL_PiS_konfederacja_coalition.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_divided_executive"
+		texturefile = "gfx/interface/ideas/POL/POL_divided_executive.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_Ineffective_Public_Insitutions"
+		texturefile = "gfx/interface/ideas/POL/POL_Ineffective_Public_Insitutions.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_Recovered_Teritories"
+		texturefile = "gfx/interface/ideas/POL/POL_Recovered_Teritories.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_Outdated_Airforce"
+		texturefile = "gfx/interface/ideas/POL/POL_Outdated_Airforce.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_Outdated_Land_Forces"
+		texturefile = "gfx/interface/ideas/POL/POL_Outdated_Land_Forces.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_Outdated_Navy"
+		texturefile = "gfx/interface/ideas/POL/POL_Outdated_Navy.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_continued_growth"
+		texturefile = "gfx/interface/ideas/POL/POL_continued_growth.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_cut_coal_subsidies"
+		texturefile = "gfx/interface/ideas/POL/POL_cut_coal_subsidies.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_religious_population"
+		texturefile = "gfx/interface/ideas/POL/POL_religious_population.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_progressive_youth"
+		texturefile = "gfx/interface/ideas/POL/POL_progressive_youth.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_control_of_the_media"
+		texturefile = "gfx/interface/ideas/POL/POL_control_of_the_media.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_constitutional_crisis"
+		texturefile = "gfx/interface/ideas/POL/POL_constitutional_crisis.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_control_of_the_courts"
+		texturefile = "gfx/interface/ideas/POL/POL_control_of_the_courts.png"
+	}
+	SpriteType = { 
+		name = "GFX_idea_POL_economy_idea"
+		texturefile = "gfx/interface/ideas/POL/POL_economy_idea.png"
+	}
+ }
+ 

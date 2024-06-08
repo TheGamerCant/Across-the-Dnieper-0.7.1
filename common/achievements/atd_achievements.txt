@@ -1,0 +1,341 @@
+unique_id = atd_achievements
+
+the_chocolate_king = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+        has_start_date < 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		petro_poroshenko_is_leader = yes
+    }    
+}
+
+the_oil_baroness = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+        has_start_date < 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		yulia_tymoshenko_is_leader = yes
+    }    
+}
+
+the_comedian = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+        has_start_date < 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		volodymyr_zelenskyy_is_leader = yes
+    }    
+}
+
+
+anarchy_in_the_ukraine = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+    }
+    
+    happened = {
+		tag = FTU
+    }    
+}
+
+vladimir_velikiy = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = SOV
+    }
+    
+    happened = {
+		has_global_flag = vladimir_velikiy_global_flag
+    }    
+}
+
+dmytro_yaroshs_wild_ride = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+        has_start_date < 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		has_global_flag = dmytro_yaroshs_wild_ride_global_flag
+    }    
+}
+
+vosem_let_bombi_donbass_suka = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		custom_trigger_tooltip={
+			tooltip = vosem_let_bombi_donbass_suka_tt
+			check_variable = { var = ROOT.eight_let_bombi_donbass_counter value = 3 compare = greater_than_or_equals }
+		}
+    }    
+}
+
+ukraina_ponad_use = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date > 2014.01.02
+		tag = UKR
+    }
+    
+    happened = {
+		has_global_flag = ukraina_ponad_use_global_flag
+    }    
+}
+
+
+everything_for_the_front = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = SOV
+    }
+    
+    happened = {
+		has_completed_focus = SOV_russia_united_QM
+		igor_girkin_is_leader = yes
+    }    
+}
+
+the_tuvan = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = SOV
+    }
+    
+    happened = {
+		sergey_shoigu_is_leader = yes
+    }    
+}
+
+the_conspiricist = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = SOV
+    }
+    
+    happened = {
+		nikolai_patrushev_is_leader = yes
+    }    
+}
+
+the_spymaster = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = SOV
+    }
+    
+    happened = {
+		alexander_bortnikov_is_leader = yes
+    }    
+}
+
+
+daisy = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+    }
+    
+    happened = {
+		custom_trigger_tooltip = {
+			tooltip = daisy_tt
+			has_global_flag = nuclear_war_flag
+		}
+    }    
+}
+
+special_statistics_operation = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = SOV
+    }
+    
+    happened = {
+		has_war_with = UKR
+		SOV = { casualties_inflicted_by = { opponent = UKR thousands > 1000 } }
+    }    
+}
+
+great_tuvan_khanate = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = SOV
+    }
+    
+    happened = {
+		sergey_shoigu_is_leader = yes
+		custom_trigger_tooltip={
+			tooltip = great_tuvan_khanate_ukraine_tt
+			all_state={ OR={ NOT = { OCCUPATION_is_central_ukraine_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_akarpatskia_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_crimea_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_chernivtsi_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_western_ukraine_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_north_west_ukraine_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_budzhak_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_eastern_ukraine_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+		}
+		
+		custom_trigger_tooltip={
+			tooltip = great_tuvan_khanate_belarus_tt
+			all_state={ OR={ NOT = { OCCUPATION_is_belarus_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+		}
+		
+		custom_trigger_tooltip={
+			tooltip = great_tuvan_khanate_russia_tt
+			all_state={ OR={ NOT = { OCCUPATION_is_central_russia_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_belgorod_trigger = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_north_caucuses = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_volga_don = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_kamlykia = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_southern_russia = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+			all_state={ OR={ NOT = { OCCUPATION_is_kaliningrad = yes } CONTROLLER={ OR={ tag = SOV is_puppet_of = SOV } } } }
+		}
+    }    
+}
+
+three_days_to_kiev = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = SOV
+    }
+    
+    happened = {
+		has_global_flag = three_days_to_kiev_global_flag
+    }    
+}
+
+###Connected via adjacencies, can't find some combination of code to work lmao
+#greater_kaliningrad = {
+#    possible = {
+#        difficulty > 1
+#		normal_or_higher_achievement_trigger = yes
+#		tag = SOV
+#    }
+#    
+#    happened = {
+#		1={
+#			is_owned_by = SOV
+#			is_in_home_area = yes
+#		}
+#		
+#		always = no
+#    }    
+#}
+
+free_belarus = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+		tag = BLR
+    }
+    
+    happened = {
+		has_completed_focus = BLR_free_at_last_2
+    }    
+}
+
+arise_donbass = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		has_start_date < 2014.01.02
+    }
+    
+    happened = {
+		is_donbass_country = yes
+		NOT = { has_global_flag = russia_has_invaded_ukraine_flag }
+		all_state={
+			OR={
+				is_owned_and_controlled_by = ROOT
+				NOT = { OR={ is_claimed_by = ROOT is_core_of = ROOT } }
+			}
+		}
+    }    
+}
+
+za_pobedu = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = SOV
+    }
+    
+    happened = {
+		custom_trigger_tooltip={
+			tooltip = za_pobedu_tt
+			NOT = { has_global_flag = ukriane_completed_dishonour_before_death_flag }
+		}
+		NOT = { has_completed_focus = SOV_the_quagmire }
+		has_completed_focus = SOV_great_victors_2
+    }    
+}
+
+batko_nash_bandera = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+		tag = UKR
+		has_start_date < 2014.01.02
+    }
+    
+    happened = {
+		custom_trigger_tooltip={
+			tooltip = batko_nash_bandera_tt
+			OR={
+				has_cosmetic_tag = UKR_red_black
+				has_cosmetic_tag = UKR_red_black_tryzub
+			}
+		}
+    }    
+}
+
+a_red_star_named_sun = {
+    possible = {
+        difficulty > 1
+		normal_or_higher_achievement_trigger = yes
+    }
+    
+    happened = {
+		has_far_left_government = yes
+		custom_trigger_tooltip={
+			tooltip = a_red_star_named_sun_tt
+			any_country = { controls_province = 8165 OR = { is_puppet_of = ROOT tag = ROOT } }
+			any_country = { controls_province = 14052 OR = { is_puppet_of = ROOT tag = ROOT } }
+		}
+    }    
+}

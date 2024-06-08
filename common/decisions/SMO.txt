@@ -1,0 +1,1116 @@
+
+SOV_smo={
+	UKR_summer_offensive = {
+
+		icon = generic_form_nation
+
+		available = {
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							250 = { is_controlled_by = UKR }
+							243 = { is_controlled_by = UKR }
+							282 = { is_controlled_by = UKR }
+						}
+					}
+				}
+
+				OR = {
+					250 = { 
+						is_controlled_by = UKR
+					}
+					243 = { 
+						is_controlled_by = UKR
+					}
+					282 = { 
+						is_controlled_by = UKR
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					AND = {
+						250 = { is_controlled_by = UKR }
+						243 = { is_controlled_by = UKR }
+						282 = { is_controlled_by = UKR }
+
+						NOT = {
+							255 = { is_controlled_by = UKR }
+							242 = { is_controlled_by = UKR }
+							282 = { is_controlled_by = UKR }
+						}
+					}
+				}
+
+				OR = {
+					255 = { 
+						is_controlled_by = UKR
+					}
+					242 = { 
+						is_controlled_by = UKR
+					}
+					282 = { 
+						is_controlled_by = UKR
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							250 = { is_controlled_by = UKR }
+							243 = { is_controlled_by = UKR }
+							282 = { is_controlled_by = UKR }
+							255 = { is_controlled_by = UKR }
+							242 = { is_controlled_by = UKR }
+						}
+
+						AND = {
+							250 = { is_controlled_by = UKR }
+							243 = { is_controlled_by = UKR }
+							282 = { is_controlled_by = UKR }
+							255 = { is_controlled_by = UKR }
+						}
+
+						AND = {
+							282 = { is_controlled_by = UKR }
+							242 = { is_controlled_by = UKR }
+							255 = { is_controlled_by = UKR }
+						}
+
+						AND = {
+							282 = { is_controlled_by = UKR }
+							242 = { is_controlled_by = UKR }
+						}
+
+						242 = { is_controlled_by = UKR }
+					}
+				}
+
+				OR = {
+					299 = { 
+						is_controlled_by = UKR
+					}
+					308 = { 
+						is_controlled_by = UKR
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 104 
+		activation = {
+			has_war_with = SOV
+			has_country_flag = UKR_summer_offensive_active
+		}
+
+		allowed = {
+			original_tag = UKR
+		}		
+
+		fire_only_once = yes
+
+		is_good = no
+
+		timeout_effect = {
+			clr_country_flag = UKR_summer_offensive_active
+			country_event = { id = ukraine.108 days = 1 }
+		}
+		
+		complete_effect={
+			clr_country_flag = UKR_summer_offensive_active
+			country_event = { id = ukraine.110 days = 1 }
+		}
+	}
+
+	SOV_take_kyiv = {
+
+		icon = generic_form_nation
+
+		available = {
+			92 = { 
+				CONTROLLER={
+					OR={
+						tag = ROOT
+						is_in_faction_with = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 30
+		activation = {
+			has_war_with = UKR
+			has_global_flag = smo_northern_front_open
+			NOT={
+				92 = { 
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = yes
+
+		is_good = no
+
+		timeout_effect = {
+
+			add_political_power = -100
+			add_war_support = -0.1
+			if={
+				limit = { has_idea = SOV_army_ready }
+				remove_ideas = SOV_army_ready
+			}
+			
+			add_timed_idea={
+				idea = UKR_overextended
+				days = 120
+			}
+		}
+		
+		complete_effect={
+			add_political_power = 100
+		}
+	}
+
+
+	SOV_western_front_closes = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_western_front_closes_tt
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = volyn_oblast_flag
+						has_state_flag = rivne_oblast_flag
+						has_state_flag = zhytomyr_oblast_flag
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 5
+		activation = {
+			has_war_with = UKR
+			NOT = { has_global_flag = russia_ukraine_war_started_recently }
+			has_global_flag = smo_western_front_open
+			NOT={
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = volyn_oblast_flag
+						has_state_flag = rivne_oblast_flag
+						has_state_flag = zhytomyr_oblast_flag
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = { SOV_close_western_front_effect = yes }
+			if={
+				limit = { 
+					NOT = { has_global_flag = smo_northern_front_open }
+					NOT = { has_global_flag = smo_eastern_front_open }
+					NOT = { has_global_flag = smo_donbass_front_open }
+					NOT = { has_global_flag = smo_southern_front_open }
+				}
+				russia_ukraine_peace = yes
+			}
+			hidden_effect = {
+				UKR={ country_event = { id = ukraine.92 hours = 2 } }
+				SOV={ country_event = { id = russia.1129 hours = 2 } }
+				every_state={
+					limit={
+						OR={
+							has_state_flag = volyn_oblast_flag
+							has_state_flag = rivne_oblast_flag
+						}
+					}
+					teleport_armies = {
+						limit = {
+							tag = PREV.PREV
+						}
+						to_state = 11
+					}
+				}
+			}
+		}
+		
+		complete_effect={
+			
+		}
+	}
+
+	SOV_northern_front_closes = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_northern_front_closes_tt
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = chernihiv_oblast_flag
+						has_state_flag = kyiv_oblast_flag
+						has_state_flag = sumy_oblast_flag
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 5
+		activation = {
+			has_war_with = UKR
+			NOT = { has_global_flag = russia_ukraine_war_started_recently }
+			has_global_flag = smo_northern_front_open
+			NOT={
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = chernihiv_oblast_flag
+						has_state_flag = kyiv_oblast_flag
+						has_state_flag = sumy_oblast_flag
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = { SOV_close_northern_front_effect = yes }
+			if={
+				limit = { 
+					NOT = { has_global_flag = smo_western_front_open }
+					NOT = { has_global_flag = smo_eastern_front_open }
+					NOT = { has_global_flag = smo_donbass_front_open }
+					NOT = { has_global_flag = smo_southern_front_open }
+				}
+				russia_ukraine_peace = yes
+			}
+			hidden_effect = {
+				UKR={ country_event = { id = ukraine.93 hours = 2 } }
+				SOV={ country_event = { id = russia.1130 hours = 2 } }
+				every_state={
+					limit={
+						OR={
+							has_state_flag = chernihiv_oblast_flag
+							has_state_flag = kyiv_oblast_flag
+							has_state_flag = sumy_oblast_flag
+						}
+					}
+					teleport_armies = {
+						limit = {
+							tag = PREV.PREV
+						}
+						to_state = 11
+					}
+				}
+			}
+		}
+		
+		complete_effect={
+			
+		}
+	}
+	
+	SOV_eastern_front_closes = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_eastern_front_closes_tt
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					has_state_flag = kharkiv_oblast_flag
+				}
+			}
+		}
+		
+		days_mission_timeout = 5
+		activation = {
+			has_war_with = UKR
+			NOT = { has_global_flag = russia_ukraine_war_started_recently }
+			has_global_flag = smo_eastern_front_open
+			NOT={
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					has_state_flag = kharkiv_oblast_flag
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = { SOV_close_eastern_front_effect = yes }
+			if={
+				limit = { 
+					NOT = { has_global_flag = smo_northern_front_open }
+					NOT = { has_global_flag = smo_western_front_open }
+					NOT = { has_global_flag = smo_donbass_front_open }
+					NOT = { has_global_flag = smo_southern_front_open }
+				}
+				russia_ukraine_peace = yes
+			}
+			hidden_effect = {
+				UKR={ country_event = { id = ukraine.94 hours = 2 } }
+				SOV={ country_event = { id = russia.1131 hours = 2 } }
+				every_state={
+					limit={
+						has_state_flag = kharkiv_oblast_flag
+					}
+					teleport_armies = {
+						limit = {
+							tag = PREV.PREV
+						}
+						to_state = 11
+					}
+				}
+			}
+		}
+		
+		complete_effect={
+			
+		}
+	}
+	
+	SOV_donbass_front_closes = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_donbass_front_closes_tt
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 5
+		activation = {
+			has_war_with = UKR
+			NOT = { has_global_flag = russia_ukraine_war_started_recently }
+			has_global_flag = smo_donbass_front_open
+			NOT={
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = { SOV_close_donbass_front_effect = yes }
+			if={
+				limit = { 
+					NOT = { has_global_flag = smo_northern_front_open }
+					NOT = { has_global_flag = smo_eastern_front_open }
+					NOT = { has_global_flag = smo_western_front_open }
+					NOT = { has_global_flag = smo_southern_front_open }
+				}
+				russia_ukraine_peace = yes
+			}
+			hidden_effect = {
+				UKR={ country_event = { id = ukraine.95 hours = 2 } }
+				SOV={ country_event = { id = russia.1132 hours = 2 } }
+				every_state={
+					limit={
+						OR={
+							has_state_flag = donetsk_oblast_flag
+							has_state_flag = luhansk_oblast_flag
+						}
+					}
+					teleport_armies = {
+						limit = {
+							tag = PREV.PREV
+						}
+						to_state = 11
+					}
+				}
+			}
+		}
+		
+		complete_effect={
+			
+		}
+	}
+	
+	SOV_southern_front_closes = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip={
+				tooltip = SOV_southern_front_closes_tt
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						state = 331		#Every crimean state except Tuzla Island
+						state = 330
+						state = 323
+						state = 353
+						state = 367
+						state = 354
+						state = 433
+						state = 344
+						state = 326
+						state = 317
+						state = 299
+						state = 308
+						state = 309
+						has_state_flag = odessa_oblast_flag
+					}
+				}
+			}
+		}
+		
+		days_mission_timeout = 5
+		activation = {
+			has_war_with = UKR
+			NOT = { has_global_flag = russia_ukraine_war_started_recently }
+			has_global_flag = smo_southern_front_open
+			NOT={
+				any_state={
+					CONTROLLER={
+						OR={
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_puppet_of = ROOT
+						}
+					}
+					OR={
+						state = 331
+						state = 330
+						state = 323
+						state = 353
+						state = 367
+						state = 354
+						state = 433
+						state = 344
+						state = 326
+						state = 317
+						state = 299
+						state = 308
+						state = 309
+						has_state_flag = odessa_oblast_flag
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = { SOV_close_southern_front_effect = yes }
+			if={
+				limit = { 
+					NOT = { has_global_flag = smo_northern_front_open }
+					NOT = { has_global_flag = smo_eastern_front_open }
+					NOT = { has_global_flag = smo_donbass_front_open }
+					NOT = { has_global_flag = smo_western_front_open }
+				}
+				russia_ukraine_peace = yes
+			}
+			else={
+				SOV = { country_event = { id = russia.1057 } }
+			}
+			hidden_effect = {
+				UKR={ country_event = { id = ukraine.96 hours = 2 } }
+				SOV={ country_event = { id = russia.1133 hours = 2 } }
+				every_state={
+					limit={
+						OR={
+							state = 331
+							state = 330
+							state = 323
+							state = 353
+							state = 367
+							state = 354
+							state = 433
+							state = 344
+							state = 326
+							state = 317
+							state = 299
+							state = 308
+							state = 309
+							has_state_flag = odessa_oblast_flag
+						}
+					}
+					teleport_armies = {
+						limit = {
+							tag = PREV.PREV
+						}
+						to_state = 11
+					}
+				}
+			}
+		}
+		
+		complete_effect={
+			
+		}
+	}
+	
+	SOV_open_western_front = {
+		
+		priority = 80	
+
+		icon = GFX_decision_generic_military 
+		
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = smo_western_front_open }
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -100 
+				UKR={ country_event = { id = ukraine.84 } }
+			}
+		}
+
+		days_remove = 45
+
+		remove_effect = {
+			SOV_open_western_front_effect = yes
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	SOV_open_northern_front = {
+		
+		priority = 80	
+
+		icon = GFX_decision_generic_military 
+		
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = smo_northern_front_open }
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -100
+				UKR={ country_event = { id = ukraine.85 } }
+			}
+		}
+
+		days_remove = 45
+
+		remove_effect = {
+			SOV_open_northern_front_effect = yes
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	SOV_open_eastern_front = {
+		
+		priority = 80	
+
+		icon = GFX_decision_generic_military 
+		
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = smo_eastern_front_open }
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -100
+				UKR={ country_event = { id = ukraine.86 } }
+			}
+		}
+
+		days_remove = 45
+
+		remove_effect = {
+			SOV_open_eastern_front_effect = yes
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000
+				date > 2024.3.22
+			}
+		}
+	}
+	
+	SOV_open_donbass_front = {
+		
+		priority = 80	
+
+		icon = GFX_decision_generic_military 
+		
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = smo_donbass_front_open }
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -100
+				UKR={ country_event = { id = ukraine.87 } }
+			}
+		}
+
+		days_remove = 45
+
+		remove_effect = {
+			SOV_open_donbass_front_effect = yes
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	SOV_open_southern_front = {
+		
+		priority = 80	
+
+		icon = GFX_decision_generic_military 
+		
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = smo_southern_front_open }
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+
+		custom_cost_text = decision_cost_CP_50_PP_100
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -100
+				UKR={ country_event = { id = ukraine.88 } }
+			}
+		}
+
+		days_remove = 45
+
+		remove_effect = {
+			SOV_open_southern_front_effect = yes
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	SOV_withdraw_from_ukraine = { 
+		priority = 10
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+			has_war_with = UKR
+			has_completed_focus = SOV_the_quagmire
+			NOT = { has_war_with = NAT }
+		}
+		
+		days_remove = 5
+		
+		modifier={
+
+		}
+
+		visible = {
+
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+
+		remove_effect = {
+			russia_ukraine_peace = yes
+			add_stability = 0.05
+			if={
+				limit = { has_idea = extensive_conscription }
+				swap_ideas={
+					remove_idea = extensive_conscription
+					add_idea = limited_conscription
+				}
+			}
+		}
+	}
+	SOV_atack_south_west = { 
+		priority = 10
+
+		icon = generic_decision
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+			has_war_with = UKR
+			any_state={
+				has_state_flag = odessa_oblast_flag
+				CONTROLLER={
+					OR={
+						is_puppet_of = ROOT
+						tag = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+				any_neighbor_state={
+					is_owned_by = TRZ
+				}
+			}
+			TRZ = {exists = yes}
+		}
+		
+		days_remove = 5
+		
+		modifier={
+
+		}
+
+		visible = {
+			always = no
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+
+		remove_effect = {
+			TRZ = {
+				add_to_war = {
+					targeted_alliance = SOV
+					enemy = UKR
+					hostility_reason = asked_to_join
+				}
+				news_event = transnistria.3
+			}
+			set_global_flag = smo_southem_west_front_open
+		}
+	}
+	
+	
+	SMO_offensive_in_state = { 
+
+		icon = decision_hol_draw_up_staff_plans
+		
+		target_trigger = {
+			FROM = { 
+				OR={
+					has_dynamic_modifier = { modifier = SOV_a_harsh_war_offensive scope = ROOT }	#Stops it from cancelling out if the state comes under your control
+					AND={
+						NOT = { ROOT = { has_full_control_of_state = PREV } }
+						has_dynamic_modifier = { modifier = SOV_a_harsh_war scope = ROOT }			
+						any_neighbor_state={
+							is_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+		target_root_trigger = { 
+			OR={
+				has_war_with = SOV
+				has_war_with = UKR
+			}
+		} 
+		state_target = yes
+		on_map_mode = map_only
+
+		allowed = {
+
+		}
+		
+		ai_will_do = {
+			base = 0	#Try to launch offensives when possible, but only in states with fighting
+			modifier = {
+				add = 100
+				any_enemy_country={
+					army_manpower_in_state = { state = FROM amount > 5000 }
+				}
+			}
+			modifier = {
+				add = 100
+				any_enemy_country={
+					army_manpower_in_state = { state = FROM amount > 10000 }
+				}
+			}
+			modifier = {
+				add = 200
+				OR={
+					FROM = { has_dynamic_modifier = { modifier = UKR_offensive scope = ROOT } }
+					FROM = { has_dynamic_modifier = { modifier = SOV_local_offensive_modifier scope = ROOT } }
+				}
+			}
+			modifier = {
+				add = 500
+				army_manpower_in_state = { state = FROM amount > 10000 }
+				any_enemy_country={
+					army_manpower_in_state = { state = FROM amount > 10000 }
+				}
+			}
+		}
+
+		available = {
+			has_global_flag = a_harsh_war_active_flag
+			custom_trigger_tooltip = {
+			    tooltip = offensive_in_state_tt
+				check_variable = { ROOT.maximum_number_of_offensives > ROOT.number_of_undertaken_offensives }
+			}
+		}
+
+		visible = {
+			has_global_flag = a_harsh_war_active_flag
+		}
+		
+		days_remove = 45
+		days_re_enable = 45
+		
+		
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+
+		complete_effect = {	
+			custom_effect_tooltip = a_harsh_war_offensive_tt
+			add_to_variable = { ROOT.number_of_undertaken_offensives = 1 }
+			set_variable = { global.state_selected_for_offensive = FROM }	#Used for loc
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -25
+				every_enemy_country={
+					country_event = { id = ukraine.38 }
+				}
+				if={
+					limit = { is_ai = yes }
+					log = "[GetDateText]: [Root.GetName] AI launched an offensive in [?global.state_selected_for_offensive.GetName]"
+				}
+				FROM={
+					remove_dynamic_modifier = {
+						modifier = SOV_a_harsh_war
+						scope = ROOT
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_a_harsh_war_offensive
+						scope = ROOT
+					}
+				}
+			}
+			clear_variable = global.state_selected_for_offensive
+		}
+		
+		remove_effect={
+			custom_effect_tooltip = a_harsh_war_offensive_tt_2
+			subtract_from_variable = { ROOT.number_of_undertaken_offensives = 1 }
+			hidden_effect={
+				FROM={
+					remove_dynamic_modifier = {
+						modifier = SOV_a_harsh_war_offensive
+						scope = ROOT
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_a_harsh_war
+						scope = ROOT
+					}
+				}
+			}
+		}
+	}
+}

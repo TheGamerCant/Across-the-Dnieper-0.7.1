@@ -1,0 +1,18 @@
+﻿capital = 1
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Anton Alikhanov"
+	ideology = free_kaliningrad
+	picture = gfx/leaders/SOV/Portrait_Anton_Alikhanov.png
+}
+
+set_popularities = {
+	eastern_conservative = 99
+	populist = 1
+}
+
+set_politics = {
+	ruling_party = eastern_conservative
+}

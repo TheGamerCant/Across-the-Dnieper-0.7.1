@@ -1,0 +1,24 @@
+﻿capital = 96
+
+load_ukraine_doctrine = yes
+
+set_politics = {
+	ruling_party = fascist
+	elections_allowed = no
+}
+
+2019.5.29 = {
+	set_stability = 0.45
+	set_war_support = 0.74
+	set_party_name = { ideology = fascist long_name = UKR_fascist_party_long name = UKR_fascist_party }
+}
+
+set_research_slots = 4
+set_stability = 0.4
+set_war_support = 0.24
+
+set_convoys = 57
+
+set_popularities = {
+	fascist = 100
+}

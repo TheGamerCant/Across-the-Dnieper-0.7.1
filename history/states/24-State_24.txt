@@ -1,0 +1,22 @@
+state={
+	id=24
+	name="STATE_24"
+	history={
+		owner = POL
+		add_core_of = POL
+		buildings = {
+			infrastructure = 2
+			
+			20305 = {
+				naval_base = 3
+				coastal_bunker = 3
+			}
+		}
+	}
+	provinces={
+		20305 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category = town
+}

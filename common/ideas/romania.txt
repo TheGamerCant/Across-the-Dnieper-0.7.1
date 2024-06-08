@@ -1,0 +1,840 @@
+ideas = {
+	country = {
+		ROM_political_divide = {
+			removal_cost = -1
+			picture = political_divide
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		ROM_Pontas_allience = {
+			removal_cost = -1
+			picture = Pontas_allience
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			libertarian_drift = 0.02
+			social_democracy_drift = 0.02
+			stability_factor = -0.05
+			}
+		}
+		ROM_szekelyfold = {
+			removal_cost = -1
+            picture = szekelyfold
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			stability_factor = -0.1
+			political_power_cost = 0.1
+			}
+		}
+		ROM_Jandarmeria = {
+			removal_cost = -1
+            picture = Jandermeri
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			stability_factor = -0.1
+			political_power_gain = 0.02
+			}
+		}
+		ROM_Legacy_of_the_Romanian_Revolution = {
+			removal_cost = -1
+            picture = romanian_revolutionary_spirit
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			far_left_drift = -0.02
+			western_drift = 0.01
+			war_support_factor = 0.05
+			political_power_gain = 0.03
+			recruitable_population_factor = 0.03
+			}
+		}
+		ROM_Recovering_from_2008_economic_crisis = {
+			removal_cost = -1
+            picture = revovering_from_2008_economic_crisis
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			stability_factor = -0.05
+			}
+		}
+		ROM_Military_Corruption = {
+			removal_cost = -1
+			picture = military_Corruption_idea
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			training_time_factor = 0.2
+			experience_gain_army_factor = -0.1
+			experience_gain_airforce_factor = -0.1
+			experience_gain_naval_factor = -0.1
+			army_attack_factor = -0.05
+			army_org_factor = -0.05
+			recruitable_population_factor = -0.05
+			org_loss_when_moving = 0.1
+			army_defence_factor = -0.05
+			industrial_capacity_factory = -0.1
+			attrition = 0.5
+			supply_node_range = -0.05
+			industrial_capacity_dockyard = -0.05
+			land_doctrine_cost_factor = 0.25
+			air_doctrine_cost_factor = 0.25
+			naval_doctrine_cost_factor = 0.25
+			}
+		}
+	
+	ROM_Outdated_infrastructure = {
+			removal_cost = -1
+			picture = outdated_infrasctucture
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = 0.03
+			army_speed_factor = -0.05
+			}
+	}
+	ROM_2014_elections = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {	
+            political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			}
+	}
+ 	ROM_2014_elections_1 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.01
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.01
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			}
+	}
+ 	ROM_2014_elections_2 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+	        neoconservative_drift = 0.01
+			libertarian_drift = 0.02
+			social_democracy_drift = 0.02
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			}
+			}
+ 	ROM_2014_elections_3 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.01
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.01
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			social_democracy_drift = 0.01
+			}
+	}
+	ROM_2014_elections_4 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.03
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.01
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			libertarian_drift = 0.03
+			populist_drift = 0.01
+			}
+	}
+	ROM_2014_elections_10 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.04
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.01
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			libertarian_drift = 0.03
+			populist_drift = 0.01
+			}
+	}
+	ROM_2014_elections_11 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.06
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.01
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			libertarian_drift = 0.04
+			populist_drift = 0.02
+			}
+	}
+	ROM_2014_elections_12 = {
+			removal_cost = -1
+			picture = ROM_2014_elections_idea
+			available = { }
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            neoconservative_drift = 0.07
+			neoliberal_drift = 0.01
+			eastern_liberal_drift = 0.01
+			eastern_conservative_drift = 0.03
+			political_power_cost = 0.2
+			stability_factor = -0.05
+		    illiberal_drift = 0.02
+			western_drift = 0.01
+			libertarian_drift = 0.05
+			populist_drift = 0.07
+			Ultranationalist_Drift = 0.02
+			}
+	}
+	ROM_2014_elections_5 = {
+            removal_cost = -1
+            picture = ROM_2014_elections_idea
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            neoconservative_drift = 0.01
+            neoliberal_drift = 0.02
+            eastern_liberal_drift = 0.02
+            eastern_conservative_drift = 0.01
+            political_power_cost = 0.2
+            stability_factor = -0.05
+            illiberal_drift = 0.02
+            western_drift = 0.01
+            social_democracy_drift = 0.04
+            }
+    }
+	ROM_2014_elections_6 = {
+            removal_cost = -1
+            picture = ROM_2014_elections_idea
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            neoconservative_drift = 0.01
+            neoliberal_drift = 0.03
+            eastern_liberal_drift = 0.03
+            eastern_conservative_drift = 0.01
+            political_power_cost = 0.2
+            add_stability = -0.05
+            eastern_drift = 0.02
+            western_drift = 0.01
+            social_democracy_drift = 0.06
+            }
+    }
+	ROM_2014_elections_7 = {
+            removal_cost = -1
+            picture = ROM_2014_elections_idea
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            neoconservative_drift = 0.01
+            neoliberal_drift = 0.04
+            eastern_liberal_drift = 0.05
+            eastern_conservative_drift = 0.01
+            political_power_cost = 0.2
+            add_stability = -0.05
+            eastern_drift = 0.02
+            western_drift = 0.01
+            social_democracy_drift = 0.08
+			socialist_drift = 0.02
+			moderate_communist_drift = 0.02
+            }
+    }
+		3_Stage_Military_Restructuring = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.05
+			experience_gain_airforce_factor = 0.05
+			experience_gain_naval_factor = 0.05
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+			air_doctrine_cost_factor = -0.05
+			naval_doctrine_cost_factor = -0.05
+            land_doctrine_cost_factor = -0.05
+			production_factory_effinciency_gain_factor = 0.02
+            }
+    }
+			3_Stage_Military_Restructuring_1 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.07
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+			efficiency_gain_factor = 0.02
+				air_doctrine_cost_factor = -0.05
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				production_factory_effinciency_gain_factor = 0.02
+			}
+			}
+			3_Stage_Military_Restructuring_2 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.07
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.05
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+			}
+			}
+			Romanian_Military_Industry = {
+            removal_cost = -1
+            picture = romanian_military_industry
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+				production_factory_effinciency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_dockyard_effinciency_gain_factor = 0.05
+				production_dockyard_max_efficiency_factor = 0.05
+			}
+			}
+				Romanian_Military_Industry_2 = {
+            removal_cost = -1
+            picture = romanian_military_industry
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+				production_factory_effinciency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_dockyard_effinciency_gain_factor = 0.05
+				production_dockyard_max_efficiency_factor = 0.05	
+			}
+				research_bonus = {
+				infantry_weapons = 0.10
+                ship_modules_tech = 0.10
+                support_tech = 0.10
+                armor = 0.10
+                artillery = 0.10
+                air_equipment = 0.10
+                infantry_anti_air_cat = 0.10
+                ifv_cat = 0.10
+                apc_cat = 0.10
+				naval_equipment = 0.10
+            }
+			}
+			Romanian_Military_Industry_3 = {
+            removal_cost = -1
+            picture = romanian_military_industry
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+				production_factory_effinciency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.30
+				production_dockyard_effinciency_gain_factor = 0.05
+				production_dockyard_max_efficiency_factor = 0.05
+			}
+			    research_bonus = {
+				infantry_weapons = 0.25
+                ship_modules_tech = 0.25
+                support_tech = 0.25
+                armor = 0.25
+                artillery = 0.25
+                air_equipment = 0.25
+                infantry_anti_air_cat = 0.25
+				naval_equipment = 0.25
+				ifv_cat = 0.25
+                apc_cat = 0.25
+            }	
+			}
+			3_Stage_Military_Restructuring_3 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+
+			}
+			}
+			3_Stage_Military_Restructuring_4 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+                air_attack_factor = 0.05
+				air_agility_factor = 0.1
+			}
+			}
+			3_Stage_Military_Restructuring_5 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+                air_attack_factor = 0.05
+				air_agility_factor = 0.15
+			}
+			}
+			3_Stage_Military_Restructuring_6 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+                air_attack_factor = 0.05
+				air_agility_factor = 0.15
+			}
+				research_bonus = {
+				air_equipment = 0.1
+			}
+			}
+			Romanian_Military_Industry_4 = {
+            removal_cost = -1
+            picture = romanian_military_industry
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+				production_factory_effinciency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.30
+				production_dockyard_effinciency_gain_factor = 0.05
+				production_dockyard_max_efficiency_factor = 0.05
+			}
+			    research_bonus = {
+				infantry_weapons = 0.25
+                ship_modules_tech = 0.25
+                support_tech = 0.25
+                armor = 0.25
+                artillery = 0.25
+                air_equipment = 0.35
+                infantry_anti_air_cat = 0.25
+                ifv_cat = 0.25
+                apc_cat = 0.25
+				naval_equipment = 0.25
+            }	
+		}
+		3_Stage_Military_Restructuring_7 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.07
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.25
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+                air_attack_factor = 0.05
+				air_agility_factor = 0.15
+			}
+				research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		3_Stage_Military_Restructuring_8 = {
+            removal_cost = -1
+            picture = 3_Stage_Military_Restructuring
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+            experience_gain_army_factor = 0.07
+			experience_gain_airforce_factor = 0.085
+			experience_gain_naval_factor = 0.17
+			political_power_cost = 0.05
+			training_time_factor = -0.1
+				air_doctrine_cost_factor = -0.25
+				naval_doctrine_cost_factor = -0.05
+                land_doctrine_cost_factor = -0.10
+				training_time_factor = 0.25
+				army_org_factor = 0.05
+				org_loss_when_moving = -0.10
+				army_attack_factor = 0.02
+				army_defence_factor = 0.03
+				attrition = -0.5
+				production_factory_effinciency_gain_factor = 0.02
+                air_attack_factor = 0.05
+				air_agility_factor = 0.15
+			}
+				research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		Romanian_Military_Industry_5 = {
+            removal_cost = -1
+            picture = romanian_military_industry
+            available = { }
+            allowed = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+            modifier = {
+				production_factory_effinciency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.30
+				production_dockyard_effinciency_gain_factor = 0.05
+				production_dockyard_max_efficiency_factor = 0.1
+			}
+			    research_bonus = {
+				infantry_weapons = 0.25
+                ship_modules_tech = 0.25
+                support_tech = 0.25
+                armor = 0.25
+                artillery = 0.25
+                air_equipment = 0.35
+                infantry_anti_air_cat = 0.25
+                ifv_cat = 0.25
+                apc_cat = 0.25
+				naval_equipment = 0.25
+            }	
+		}
+		ROM_Pontas_allience_2 = {
+			removal_cost = -1
+			picture = Pontas_allience
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			libertarian_drift = 0.02
+			social_democracy_drift = 0.03
+			}
+		}
+		ROM_Pontas_allience_3 = {
+			removal_cost = -1
+			picture = Pontas_allience
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			libertarian_drift = 0.03
+			social_democracy_drift = 0.03
+			}
+		}
+		ROM_Pontas_allience_4 = {
+			removal_cost = -1
+			picture = Pontas_allience
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			libertarian_drift = 0.03
+			social_democracy_drift = 0.05
+			political_power_gain = 0.5
+			western_drift = 0.01
+			}
+		}
+		Safe_streets = {
+			removal_cost = -1
+			picture = Safe_streets
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			production_factory_effinciency_gain_factor = 0.05
+			}
+		}
+			Corruption_Eradicated = {
+			removal_cost = -1
+			picture = Corruption_Eradicated
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.03
+			political_power_gain = 0.2
+			}
+		}
+    }
+}
+

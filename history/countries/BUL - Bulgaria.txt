@@ -1,0 +1,156 @@
+﻿capital = 417
+
+load_nato_doctrine = yes
+
+create_country_leader = {
+	name = "Rosen Plevneliev"
+	desc = "test1"
+	ideology = generic_neoconservative
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Boyan Rasate"
+	desc = ""
+	ideology = generic_fascist
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+
+create_country_leader = {
+	name = "Krasimir Karakachanov"
+	desc = ""
+	ideology = generic_ultranationalist
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Krasimir Karakachanov"
+	desc = ""
+	ideology = generic_military_junta
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Volen Siderov"
+	desc = ""
+	ideology = generic_eastern_conservative
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Veselin Naydenov Mareshki"
+	desc = ""
+	ideology = generic_populist
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Lyutvi Mestan"
+	desc = ""
+	ideology = generic_eastern_liberal
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Stanimir Ilchev"
+	desc = ""
+	ideology = generic_libertarian
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Mihail Mikov"
+	desc = ""
+	ideology = generic_social_democracy
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Stanimir Ilchev"
+	desc = ""
+	ideology = generic_libertarian
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Alexsandar Paunov"
+	desc = ""
+	ideology = generic_moderate_communist
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Left-Wing Coalition"
+	desc = ""
+	ideology = generic_socialist
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Simeon II"
+	desc = ""
+	ideology = generic_absolute_monarchy
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "Patriarch Neophyte"
+	desc = ""
+	ideology = theocracy_ideology
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+create_country_leader = {
+	name = "No Leader"
+	desc = ""
+	ideology = generic_anarchism
+	picture = gfx/leaders/BUL/portrait_Rosen_Plevneliev.png
+}
+2018.1.1 = {
+    create_country_leader = {
+	    name = "Rumen Radev"
+	    desc = "wow niceds"
+	    ideology = generic_social_democracy
+	    picture = gfx/leaders/BUL/portrait_Rumen_Radev.png
+    }
+	set_politics = {
+		ruling_party = social_democracy
+		last_election = "2017.1.22"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+}
+
+add_ai_strategy = {
+    type = alliance
+    id = "USA"
+    value = 200
+}
+
+add_ideas = { eu_member }
+
+add_ideas = {
+	reliogion_law_religious
+    womens_rights_equality
+    lgbtq_rights_tolerated
+    minority_rights_minor_inequality 
+    nationalism_laws_armed_neutrality
+    alcohol_narotics_laws_highly_regulated
+    firearms_laws_restricted
+}
+
+set_politics = {
+	ruling_party = neoconservative
+	last_election = "2013.3.12"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	fascist = 0
+	ultranationalist = 0
+
+	eastern_conservative = 3
+	populist = 4
+
+	neoconservative = 44
+	eastern_liberal = 6
+	neoliberal = 9
+	libertarian = 3
+	social_democracy = 15
+
+	socialist = 11
+	moderate_communist = 4
+	hardline_communist = 1
+
+	anarchism_ideology = 0
+	absolute_monarchy_ideology = 0
+	theocracy_ideology = 0
+}

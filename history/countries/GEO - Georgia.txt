@@ -1,0 +1,31 @@
+﻿capital = 1
+load_soviet_doctrine = yes
+
+add_ideas = {
+#	GEO_proeuropean_people
+#	GEO_fight_corruption
+#	GEO_ineffective_army
+}
+
+create_country_leader = {
+	name = "Giorgi Margvelashvili"
+	desc = ""
+	picture = gfx/leaders/GEO/Portrait_Giorgi_Margvelashvili.dds
+	ideology = georgian_social_democracy_subideology
+}
+
+set_politics = {
+	ruling_party = social_democracy 
+	last_election = "2012.10.27"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	social_democracy = 55
+	eastern_liberal = 40
+	neoconservative = 2
+	populist = 1
+	absolute_monarchy_ideology = 1
+	moderate_communist = 1
+}

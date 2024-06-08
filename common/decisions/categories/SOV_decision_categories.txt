@@ -1,0 +1,130 @@
+SOV_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	priority = 90
+	
+	visible = {
+		
+	}
+}
+
+SOV_smo = {
+	icon = GFX_donbass_war_category
+	priority = 999
+	allowed = {
+		OR={
+			tag = SOV
+			tag = UKR
+			tag = DON
+			tag = LHK
+			tag = KHK
+			tag = ODS
+			tag = NOV
+		}
+	}
+	scripted_gui = SOV_smo_bg_gui
+	visible_when_empty = yes
+	visible = {
+		has_global_flag = russia_ukraine_war
+	}
+}
+
+SOV_the_media = {
+	allowed = {
+		tag = SOV
+	}
+	visible_when_empty = yes
+	visible = {
+		has_dynamic_modifier = { modifier = SOV_effects_from_media }
+	}	
+	
+	scripted_gui = SOV_media_gui
+}
+
+SOV_referendum_decisions_2 = {
+	allowed = {
+		tag = SOV
+	}
+	visible_when_empty = no
+	visible = {
+		OR={
+			has_completed_focus = SOV_great_victors_2
+			has_completed_focus = SOV_novorossiya_at_hand_2
+			has_completed_focus = SOV_destroy_ukraine
+			has_completed_focus = SOV_annex_donbass
+			has_completed_focus = SOV_expanding_our_borders
+		}
+	}	
+}
+
+SOV_army_reform_decisions = {
+	allowed = {
+		tag = SOV
+		has_start_date < 2022.1.1
+	}
+	visible_when_empty = no
+	visible = {
+		OR={
+			has_completed_focus = SOV_army_modernisation
+			has_country_flag = SOV_army_reform_decisions_flag
+		}
+	}	
+}
+
+SOV_parliament_gui_decision_category = {
+	icon = generic_political_actions
+	priority = 99
+	allowed = {
+		original_tag = SOV
+	}
+	visible_when_empty = yes
+	visible = {
+		has_global_flag = SOV_parliament_gui_active_flag
+	}
+	scripted_gui = russia_parliament_gui
+}
+
+SOV_securing_the_federation = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible_when_empty = no
+	visible = {
+		has_completed_focus = SOV_russia_united_QM
+	}	
+}
+
+SOV_foreign_subversive_activities = {
+	priority = 99
+
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = SOV
+	}
+	visible_when_empty = no
+	visible = {
+#		alexander_bortnikov_is_leader = yes
+		is_subject = no
+		has_country_flag = SOV_can_do_foreign_subversive_activities_flag
+	}
+}
+
+SOV_stopping_boris_nadezhdin = {
+	priority = 99
+
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = SOV
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = SOV_stopping_boris_nadezhdin_enabled
+	}
+	scripted_gui = SOV_stopping_boris_nadezhdin_window
+}

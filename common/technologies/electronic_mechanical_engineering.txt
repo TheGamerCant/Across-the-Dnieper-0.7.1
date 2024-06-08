@@ -1,0 +1,994 @@
+technologies = {
+	four_g_satellite = {
+
+		# small boost to research speed
+		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = radio 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = increase_in_ram_capabilities 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.35
+		start_year = 2010
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.05
+		coordination_bonus = 0.03
+		army_intel_to_others = -2.0
+		navy_intel_to_others = -2.0
+		airforce_intel_to_others = -2.0
+		
+		path = {
+			leads_to_tech = radar_building_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = radio_upgrades_1 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.35
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+
+		folder = {
+			name = support_folder
+			position = { x = 11 y = 9 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 5
+				date > "2018.8.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	radio_upgrades_1 = {
+
+		path = {
+			leads_to_tech = radio_upgrades_2 
+			research_cost_coeff = 1
+		}
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.02
+		
+		army_org_factor = 0.02
+		
+		research_cost = 1.2
+		
+		
+		start_year = 2014
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radio_upgrades_2 = {
+
+		path = {
+			leads_to_tech = radio_upgrades_3 
+			research_cost_coeff = 1
+		}
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.02
+		
+		army_org_factor = 0.02
+		
+		research_cost = 1.2
+		
+		
+		start_year = 2016
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radio_upgrades_3 = {
+
+		path = {
+			leads_to_tech = radio_upgrades_4
+			research_cost_coeff = 1
+		}
+		land_reinforce_rate = 0.01
+		coordination_bonus = 0.02
+		
+		army_org_factor = 0.02
+		
+		research_cost = 1.2
+		
+		
+		start_year = 2018
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radio_upgrades_4 = {
+
+		path = {
+			leads_to_tech = radio_upgrades_5
+			research_cost_coeff = 1
+		}
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.035
+		
+		army_org_factor = 0.05
+		
+		research_cost = 1.5
+		
+		
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radio_upgrades_5 = {
+
+		path = {
+			leads_to_tech = radio_upgrades_6
+			research_cost_coeff = 1
+		}
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.035
+		
+		army_org_factor = 0.05
+		
+		research_cost = 1.5
+		
+		
+		start_year = 2022
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radio_upgrades_6 = {
+
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.04
+		
+		army_org_factor = 0.05
+		
+		research_cost = 1.5
+		
+		
+		start_year = 2024
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radar_building_1 = {
+
+		# 
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+		path = {
+			leads_to_tech = radar_building_2 
+			research_cost_coeff = 1
+		}
+		
+		start_year = 2014
+		
+		anti_air = {
+			air_attack = 0.03
+		}
+		anti_air_brigade = {
+			air_attack = 0.03
+		}
+		static_anti_air_hit_chance_factor = 0.05
+		
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 4
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radar_building_2 = {
+
+		# can build radars/radar boost in air/sea combat depends on radar level
+
+		path = {
+			leads_to_tech = radar_building_3 
+			research_cost_coeff = 1
+		}
+		research_cost =1
+		start_year = 2016
+		
+		anti_air = {
+			air_attack = 0.03
+		}
+		anti_air_brigade = {
+			air_attack = 0.03
+		}
+		static_anti_air_hit_chance_factor = 0.05
+	
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "2016.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+	}
+	
+	radar_building_3 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+
+
+		path = {
+			leads_to_tech = radar_building_4 
+			research_cost_coeff = 1
+		}
+		
+		anti_air = {
+			air_attack = 0.03
+		}
+		anti_air_brigade = {
+			air_attack = 0.03
+		}
+		static_anti_air_hit_chance_factor = 0.05
+		
+		research_cost = 1
+		start_year = 2018
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+			modifier = {
+				date < "2018.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radar_building_4 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+
+		anti_air = {
+			air_attack = 0.08
+		}
+		anti_air_brigade = {
+			air_attack = 0.08
+		}
+		static_anti_air_hit_chance_factor = 0.2
+		
+		path = {
+			leads_to_tech = radar_building_5 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.3
+		start_year = 2020
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "2020.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radar_building_5 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+		anti_air = {
+			air_attack = 0.08
+		}
+		anti_air_brigade = {
+			air_attack = 0.08
+		}
+		static_anti_air_hit_chance_factor = 0.2
+		
+		path = {
+			leads_to_tech = radar_building_6 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.3
+		start_year = 2022
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 4
+			}
+			modifier = {
+				date < "2022.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	radar_building_6 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+		
+		anti_air = {
+			air_attack = 0.08
+		}
+		anti_air_brigade = {
+			air_attack = 0.08
+		}
+		static_anti_air_hit_chance_factor = 0.2
+		
+		research_cost = 1.3
+		start_year = 2024
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	increase_in_ram_capabilities = {
+
+		# small boost to research speed
+		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = quad_processors 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		
+		start_year = 2014
+		research_cost = 2.0
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	quad_processors = {
+
+		# small boost to research speed
+		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = five_g_satellites 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_fire_control_system
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 2016
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "2016.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "2018.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	five_g_satellites = {
+
+		# small boost to research speed
+		research_speed_factor = 0.08
+		path = {
+			leads_to_tech = quantum_computing_breakthroughs 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = advanced_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 2020
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "2020.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "2022.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	quantum_computing_breakthroughs = {
+
+		# small boost to research speed
+		research_speed_factor = 0.12
+		
+		path = {
+			leads_to_tech = advanced_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 2024
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "2024.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	basic_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 2016
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption = {
+
+		# encryption 2
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		research_cost = 1
+		start_year = 2020
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption = {
+
+		# encryption 3
+		encryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		research_cost = 1
+		start_year = 2024
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption = {
+
+		# decryption 1
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		research_cost = 1.5
+		start_year = 2016
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption = {
+
+		# decryption 2
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		research_cost = 1.5
+		start_year = 2020
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption = {
+
+		# decryption 3
+		decryption = 1
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+			
+			always = no
+		}
+		research_cost = 1.5
+		start_year = 2024
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				factor = 3
+
+				tag = GER
+			}
+			modifier = {
+				factor = 3
+
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+}

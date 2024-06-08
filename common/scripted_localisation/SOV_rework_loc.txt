@@ -1,0 +1,3165 @@
+defined_text = {
+	name = media_check_if_advisor_cost
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_advisor_cost_tt"
+    }
+}
+
+defined_text = {
+	name = media_check_if_trade_opinion
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_trade_opinion_tt"
+    }
+}
+
+defined_text = {
+	name = media_check_if_war_support
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_war_support_casualties_tt"
+    }
+}
+
+defined_text = {
+	name = media_check_if_morale
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_morale_tt"
+    }
+}
+
+defined_text = {
+	name = media_check_if_pp
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_pp_tt"
+    }
+}
+
+defined_text = {
+	name = media_check_if_stab
+
+	text = {
+        trigger = {
+			has_country_flag = SOV_media_information_warfare_enabled
+        }
+        localization_key = "SOV_media_stab_tt"
+    }
+}
+
+defined_text = {
+    name = SOV_current_leader_surname
+	
+	text = {
+        trigger = {
+            has_country_leader = { name = "Vladimir Putin" ruling_only = yes }
+        }
+        localization_key = "Putin"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Yevgeny Prigozhin" ruling_only = yes }
+        }
+        localization_key = "Prigozhin"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Sergey Shoigu" ruling_only = yes }
+        }
+        localization_key = "Shoigu"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Alexander Bortnikov" ruling_only = yes }
+        }
+        localization_key = "Bortnikov"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Nikolai Patrushev" ruling_only = yes }
+        }
+        localization_key = "Patrushev"
+    }
+	
+	#RUSSIAN LOC
+	
+	text = {
+        trigger = {
+            has_country_leader = { name = "Владимир Путин" ruling_only = yes }
+        }
+        localization_key = "Путин"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Евгений Пригожин" ruling_only = yes }
+        }
+        localization_key = "Пригожин"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Сергей Шойгу" ruling_only = yes }
+        }
+        localization_key = "Шойгу"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Александр Бортников" ruling_only = yes }
+        }
+        localization_key = "Бортников"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Николай Патрушев" ruling_only = yes }
+        }
+        localization_key = "Патрушев"
+    }
+	
+	#UKRAINIAN LOC
+	
+	text = {
+        trigger = {
+            has_country_leader = { name = "Володимир Путін" ruling_only = yes }
+        }
+        localization_key = "Путін"
+    }
+    text = {
+        trigger = {
+            has_country_leader = { name = "Євген Пригожин" ruling_only = yes }
+        }
+        localization_key = "Пригожин"
+    }
+	text = {
+        trigger = {
+            has_country_leader = { name = "Сергій Шойгу" ruling_only = yes }
+        }
+        localization_key = "Шойгу"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Олександр Бортніков" ruling_only = yes }
+        }
+        localization_key = "Бортніков"
+    }
+	text = {
+		trigger = {
+            has_country_leader = { name = "Микола Патрушев" ruling_only = yes }
+        }
+        localization_key = "Патрушев"
+    }
+
+	text = {
+
+        localization_key = "[ROOT.GetLeader]"
+    }
+}
+
+defined_text = {
+    name = SOV_get_leader_event_picture
+	
+    text = {
+        trigger = {
+			vladimir_putin_is_leader = yes
+        }
+        localization_key = GFX_report_event_SOV_putin_desk
+    }
+	text = {
+        trigger = {
+			sergey_shoigu_is_leader = yes
+        }
+        localization_key = GFX_report_event_SOV_shoigu
+    }
+	text = {
+        trigger = {
+            alexander_bortnikov_is_leader = yes
+        }
+        localization_key = GFX_report_event_SOV_bortnikov
+    }
+	text = {
+        trigger = {
+			nikolai_patrushev_is_leader = yes
+        }
+        localization_key = GFX_report_event_SOV_patrushev
+    }
+	text = {
+        localization_key = SOV_document_event
+    }
+
+}
+
+defined_text = {
+    name = get_east_con_good_bad
+	
+    text = {
+        trigger = {
+			has_government = eastern_conservative  
+        }
+        localization_key = "G"
+    }
+
+    text = {
+        localization_key = "R"
+    }
+}
+
+defined_text = {
+    name = get_ultranat_good_bad
+	
+    text = {
+        trigger = {
+			has_government = ultranationalist  
+        }
+        localization_key = "G"
+    }
+
+    text = {
+        localization_key = "R"
+    }
+}
+
+defined_text = {
+    name = get_east_lib_good_bad
+	
+    text = {
+        trigger = {
+			has_government = eastern_liberal  
+        }
+        localization_key = "G"
+    }
+
+    text = {
+        localization_key = "R"
+    }
+}
+
+defined_text = {
+    name = get_liberal_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_liberal_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_liberal_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_liberal_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_liberal_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_liberal_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_liberal_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_liberal_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_liberal_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_liberal_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_liberal_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_liberal_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_liberal_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_liberal_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_liberal_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_liberal_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_liberal_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_liberal_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_liberal_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_liberal_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_liberal_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_liberal_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_liberal_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_liberal_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_liberal_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_liberal_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_liberal_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_liberal_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_liberal_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_liberal_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_liberal_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_liberal_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+    name = get_technocrat_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_technocrat_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_technocrat_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_technocrat_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_technocrat_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_technocrat_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_technocrat_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_technocrat_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_technocrat_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_technocrat_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_technocrat_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_technocrat_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_technocrat_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_technocrat_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_technocrat_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_technocrat_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_technocrat_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_technocrat_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_technocrat_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_technocrat_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_technocrat_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_technocrat_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_technocrat_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_technocrat_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_technocrat_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_technocrat_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_technocrat_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_technocrat_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_technocrat_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_technocrat_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_technocrat_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_technocrat_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+    name = get_oil_and_gas_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_oil_and_gas_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_oil_and_gas_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_oil_and_gas_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_oil_and_gas_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_oil_and_gas_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_oil_and_gas_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_oil_and_gas_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_oil_and_gas_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_oil_and_gas_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_oil_and_gas_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_oil_and_gas_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_oil_and_gas_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_oil_and_gas_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_oil_and_gas_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_oil_and_gas_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_oil_and_gas_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_oil_and_gas_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_oil_and_gas_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_oil_and_gas_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+    name = get_siloviki_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_siloviki_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_siloviki_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_siloviki_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_siloviki_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_siloviki_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_siloviki_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_siloviki_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_siloviki_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_siloviki_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_siloviki_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_siloviki_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_siloviki_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_siloviki_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_siloviki_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_siloviki_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_siloviki_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_siloviki_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_siloviki_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_siloviki_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_siloviki_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_siloviki_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_siloviki_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_siloviki_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_siloviki_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_siloviki_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_siloviki_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_siloviki_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_siloviki_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_siloviki_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_siloviki_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_siloviki_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+    name = get_putinist_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_putinist_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_putinist_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_putinist_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_putinist_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_putinist_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_putinist_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_putinist_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_putinist_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_putinist_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_putinist_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_putinist_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_putinist_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_putinist_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_putinist_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_putinist_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_putinist_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_putinist_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_putinist_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_putinist_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_putinist_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_putinist_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_putinist_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_putinist_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_putinist_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_putinist_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_putinist_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_putinist_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_putinist_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_putinist_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_putinist_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_putinist_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+    name = get_nationalist_faction_leader_name
+	
+    text = {
+        trigger = {
+			has_country_flag = alexei_navalny_nationalist_leader_flag
+			NOT = { has_country_flag = alexei_navalny_not_active_flag }
+        }
+        localization_key = "SOV_alexei_navalny"
+    }
+	text = {
+        trigger = {
+			has_country_flag = grigory_yavlinsky_nationalist_leader_flag
+			NOT = { has_country_flag = grigory_yavlinsky_not_active_flag }
+        }
+        localization_key = "SOV_grigory_yavlinsky"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_medvedev_nationalist_leader_flag
+			NOT = { has_country_flag = dmitry_medvedev_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_medvedev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = ramzan_kadyrov_nationalist_leader_flag
+			NOT = { has_country_flag = ramzan_kadyrov_not_active_flag }
+        }
+        localization_key = "SOV_ramzan_kadyrov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_girkin_nationalist_leader_flag
+			NOT = { has_country_flag = igor_girkin_not_active_flag }
+        }
+        localization_key = "SOV_igor_vsevolodovich_girkin_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yevgeny_prigozhin_nationalist_leader_flag
+			NOT = { has_country_flag = yevgeny_prigozhin_not_active_flag }
+        }
+        localization_key = "SOV_yevgeny_prigozhin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_chemezov_nationalist_leader_flag
+			NOT = { has_country_flag = sergey_chemezov_not_active_flag }
+        }
+        localization_key = "SOV_sergey_chemezov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_nemtsov_nationalist_leader_flag
+			NOT = { has_country_flag = boris_nemtsov_not_active_flag }
+        }
+        localization_key = "SOV_boris_nemtsov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = yuri_kovalchuk_nationalist_leader_flag
+			NOT = { has_country_flag = yuri_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_yuri_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_kovalchuk_nationalist_leader_flag
+			NOT = { has_country_flag = mikhail_kovalchuk_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_kovalchuk"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_zolotov_nationalist_leader_flag
+			NOT = { has_country_flag = viktor_zolotov_not_active_flag }
+        }
+        localization_key = "SOV_viktor_zolotov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergei_shoigu_nationalist_leader_flag
+			NOT = { has_country_flag = sergei_shoigu_not_active_flag }
+        }
+        localization_key = "SOV_sergey_shoygu_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexei_miller_nationalist_leader_flag
+			NOT = { has_country_flag = alexei_miller_not_active_flag }
+        }
+        localization_key = "SOV_alexei_miller"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_utkin_nationalist_leader_flag
+			NOT = { has_country_flag = dmitry_utkin_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_utkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = arkady_rotenberg_nationalist_leader_flag
+			NOT = { has_country_flag = arkady_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_arkady_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = boris_rotenberg_nationalist_leader_flag
+			NOT = { has_country_flag = boris_rotenberg_not_active_flag }
+        }
+        localization_key = "SOV_boris_rotenberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_kiriyenko_nationalist_leader_flag
+			NOT = { has_country_flag = sergey_kiriyenko_not_active_flag }
+        }
+        localization_key = "SOV_sergey_kiriyenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = herman_gref_nationalist_leader_flag
+			NOT = { has_country_flag = herman_gref_not_active_flag }
+        }
+        localization_key = "SOV_herman_gref"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_bortnikov_nationalist_leader_flag
+			NOT = { has_country_flag = alexander_bortnikov_not_active_flag }
+        }
+        localization_key = "SOV_alexander_bortnikov_rework"
+    }
+	text = {
+        trigger = {
+			has_country_flag = nikolai_patrushev_nationalist_leader_flag
+			NOT = { has_country_flag = nikolai_patrushev_not_active_flag }
+        }
+        localization_key = "SOV_nikolai_patrushev"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_vaino_nationalist_leader_flag
+			NOT = { has_country_flag = anton_vaino_not_active_flag }
+        }
+        localization_key = "SOV_anton_vaino"
+    }
+	text = {
+        trigger = {
+			has_country_flag = dmitry_kozak_nationalist_leader_flag
+			NOT = { has_country_flag = dmitry_kozak_not_active_flag }
+        }
+        localization_key = "SOV_dmitry_kozak"
+    }
+	text = {
+        trigger = {
+			has_country_flag = mikhail_mishustin_nationalist_leader_flag
+			NOT = { has_country_flag = mikhail_mishustin_not_active_flag }
+        }
+        localization_key = "SOV_mikhail_mishustin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = igor_sechin_nationalist_leader_flag
+			NOT = { has_country_flag = igor_sechin_not_active_flag }
+        }
+        localization_key = "SOV_igor_sechin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = maxim_katz_nationalist_leader_flag
+			NOT = { has_country_flag = maxim_katz_not_active_flag }
+        }
+        localization_key = "SOV_maxim_katz"
+    }
+	text = {
+        trigger = {
+			has_country_flag = gennady_timchenko_nationalist_leader_flag
+			NOT = { has_country_flag = gennady_timchenko_not_active_flag }
+        }
+        localization_key = "SOV_gennady_timchenko"
+    }
+	text = {
+        trigger = {
+			has_country_flag = anton_siluanov_nationalist_leader_flag
+			NOT = { has_country_flag = anton_siluanov_not_active_flag }
+        }
+        localization_key = "SOV_anton_siluanov"
+    }
+	text = {
+        trigger = {
+			has_country_flag = alexander_dugin_nationalist_leader_flag
+			NOT = { has_country_flag = alexander_dugin_not_active_flag }
+        }
+        localization_key = "SOV_alexandr_dugin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = sergey_naryshkin_nationalist_leader_flag
+			NOT = { has_country_flag = sergey_naryshkin_not_active_flag }
+        }
+        localization_key = "SOV_sergey_naryshkin"
+    }
+	text = {
+        trigger = {
+			has_country_flag = viktor_vekselberg_nationalist_leader_flag
+			NOT = { has_country_flag = viktor_vekselberg_not_active_flag }
+        }
+        localization_key = "SOV_viktor_vekselberg"
+    }
+	text = {
+        trigger = {
+			has_country_flag = denis_manturov_nationalist_leader_flag
+			NOT = { has_country_flag = denis_manturov_not_active_flag }
+        }
+        localization_key = "SOV_denis_manturov"
+    }
+    text = {
+        localization_key = "SOV_no_leader"
+    }
+}
+
+defined_text = {
+	name = get_navalny_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_navalny_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_yavlinsky_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_grigory_yavlinsky_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_medvedev_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_medvedev_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_kadyrov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_ramzan_kadyrov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_girkin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_girkin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_prigozhin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yevgeny_prigozhin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_chemezov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_chemezov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_nemtsov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_nemtsov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_yuri_kovalchuk_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_yuri_kovalchuk_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_mikhail_kovalchuk_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_kovalchuk_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_zolotov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_zolotov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_shoigu_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergei_shoigu_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_miller_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexei_miller_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_utkin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_utkin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_rotenberg_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_arkady_rotenberg_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_boris_rotenberg_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_boris_rotenberg_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_kiriyenko_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_kiriyenko_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_gref_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_herman_gref_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_bortnikov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_bortnikov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_patrushev_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_nikolai_patrushev_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_vaino_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_vaino_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_kozak_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_dmitry_kozak_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_mishustin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_mikhail_mishustin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_sechin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_igor_sechin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_katz_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_maxim_katz_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_timchenko_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_gennady_timchenko_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_siluanov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_anton_siluanov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_dugin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_alexander_dugin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_naryshkin_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_sergey_naryshkin_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_vekselberg_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_viktor_vekselberg_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_manturov_faction
+
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 1 compare = equals }
+		}
+		localization_key = "SOV_liberal_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 2 compare = equals }
+		}
+		localization_key = "SOV_technocrat_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 3 compare = equals }
+		}
+		localization_key = "SOV_oil_and_gas_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 4 compare = equals }
+		}
+		localization_key = "SOV_siloviki_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 5 compare = equals }
+		}
+		localization_key = "SOV_putinist_faction"
+	}
+	text = {
+		trigger={
+			check_variable = { var = SOV_denis_manturov_faction value = 6 compare = equals }
+		}
+		localization_key = "SOV_nationalist_faction"
+	}
+	 text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_shoigu_status
+
+	text = {
+		trigger={
+			SOV_sergey_shoygu_rework = { has_character_flag = SOV_character_has_been_imprisoned }
+		}
+		localization_key = "SOV_CHARACTER_IMPRISONED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_shoygu_rework = { has_character_flag = SOV_character_has_fled }
+		}
+		localization_key = "SOV_CHARACTER_HAS_FLED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_shoygu_rework = { has_character_flag = SOV_character_has_died }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DIED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_shoygu_rework = { has_character_flag = SOV_character_has_disappeared }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DISAPPEARED_LOC"
+	}
+	text = {
+        localization_key = "SOV_UNKNOWN_LOCATION_LOC"
+    }
+}
+
+defined_text = {
+	name = get_gerasimov_status
+
+	text = {
+		trigger={
+			SOV_valery_gerasimov_rework = { has_character_flag = SOV_character_has_been_imprisoned }
+		}
+		localization_key = "SOV_CHARACTER_IMPRISONED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_valery_gerasimov_rework = { has_character_flag = SOV_character_has_fled }
+		}
+		localization_key = "SOV_CHARACTER_HAS_FLED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_valery_gerasimov_rework = { has_character_flag = SOV_character_has_died }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DIED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_valery_gerasimov_rework = { has_character_flag = SOV_character_has_disappeared }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DISAPPEARED_LOC"
+	}
+	text = {
+        localization_key = "SOV_UNKNOWN_LOCATION_LOC"
+    }
+}
+
+defined_text = {
+	name = has_mishustin_been_pm
+
+	text = {
+		trigger={
+			has_country_flag = SOV_mishustin_has_been_pm_flag
+		}
+		localization_key = "mishustin_needs_to_be_tracked_down_loc"
+	}
+	text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_mishustin_status
+
+	text = {
+		trigger={
+			SOV_mikhail_mishustin_rework = { has_character_flag = SOV_character_has_been_imprisoned }
+		}
+		localization_key = "SOV_CHARACTER_IMPRISONED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_mikhail_mishustin_rework = { has_character_flag = SOV_character_has_fled }
+		}
+		localization_key = "SOV_CHARACTER_HAS_FLED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_mikhail_mishustin_rework = { has_character_flag = SOV_character_has_died }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DIED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_mikhail_mishustin_rework = { has_character_flag = SOV_character_has_disappeared }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DISAPPEARED_LOC"
+	}
+	text = {
+        localization_key = "SOV_UNKNOWN_LOCATION_LOC"
+    }
+}
+
+defined_text = {
+	name = get_medvedev_status
+
+	text = {
+		trigger={
+			SOV_dmitry_medvedev_rework = { has_character_flag = SOV_character_has_been_imprisoned }
+		}
+		localization_key = "SOV_CHARACTER_IMPRISONED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_dmitry_medvedev_rework = { has_character_flag = SOV_character_has_fled }
+		}
+		localization_key = "SOV_CHARACTER_HAS_FLED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_dmitry_medvedev_rework = { has_character_flag = SOV_character_has_died }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DIED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_dmitry_medvedev_rework = { has_character_flag = SOV_character_has_disappeared }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DISAPPEARED_LOC"
+	}
+	text = {
+        localization_key = "SOV_UNKNOWN_LOCATION_LOC"
+    }
+}
+
+defined_text = {
+	name = get_chemezov_status
+
+	text = {
+		trigger={
+			SOV_sergey_chemezov = { has_character_flag = SOV_character_has_been_imprisoned }
+		}
+		localization_key = "SOV_CHARACTER_IMPRISONED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_chemezov = { has_character_flag = SOV_character_has_fled }
+		}
+		localization_key = "SOV_CHARACTER_HAS_FLED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_chemezov = { has_character_flag = SOV_character_has_died }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DIED_LOC"
+	}
+	text = {
+		trigger={
+			SOV_sergey_chemezov = { has_character_flag = SOV_character_has_disappeared }
+		}
+		localization_key = "SOV_CHARACTER_HAS_DISAPPEARED_LOC"
+	}
+	text = {
+        localization_key = "SOV_UNKNOWN_LOCATION_LOC"
+    }
+}
+
+defined_text = {
+	name = get_russian_commander_in_syria
+
+	text = {
+		trigger={
+			SOV = { has_completed_focus = SOV_send_gerasimov_to_syria }
+		}
+		localization_key = "Gerasimov"
+	}
+	text = {
+        localization_key = "Surovikin"
+    }
+}
+
+defined_text = {
+	name = get_bakhmut_focus_name
+
+	text = {
+		trigger={
+			has_global_flag = Wagner_mutiny_happened_flag
+		}
+		localization_key = "SOV_push_for_bakhmut_1"
+	}
+	text = {
+        localization_key = "SOV_push_for_bakhmut_2"
+    }
+}

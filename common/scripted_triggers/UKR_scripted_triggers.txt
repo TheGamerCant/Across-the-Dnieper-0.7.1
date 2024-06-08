@@ -1,0 +1,511 @@
+UKR_is_poroshenko_ai={
+	OR={
+		has_country_flag = UKR_POROSHENKO_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_behavior
+			option = POROSHENKO
+		}
+		AND={
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = UKR_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+}
+
+UKR_is_tymoshenko_ai={
+	OR={
+		has_country_flag = UKR_TYMOSHENKO_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_behavior
+			option = TYMOSHENKO
+		}
+	}
+}
+
+UKR_is_yarosh_ultranat_ai={
+	OR={
+		has_country_flag = UKR_YAROSH_ULTRANAT_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_behavior
+			option = YAROSH_ULTRANAT
+		}
+	}
+}
+
+UKR_is_yarosh_fascist_ai={
+	OR={
+		has_country_flag = UKR_YAROSH_FASCIST_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_behavior
+			option = YAROSH_FASCIST
+		}
+	}
+}
+
+UKR_is_stay_and_fight_ai={
+	OR={
+		has_country_flag = UKR_STAY_AND_FIGHT_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_war_behavior
+			option = STAY_AND_FIGHT
+		}
+		AND={
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = UKR_ai_war_behavior
+				option = DEFAULT
+			}
+		}
+	}
+}
+
+UKR_is_dishonour_before_death_ai={
+	OR={
+		has_country_flag = UKR_DISHONOUR_BEFORE_DEATH_AI_FLAG
+		has_game_rule = {
+			rule = UKR_ai_war_behavior
+			option = DISHONOUR_BEFORE_DEATH
+		}
+		has_game_rule = {
+			rule = UKR_ai_war_behavior
+			option = DISHONOUR_BEFORE_DEATH_QUICK_COLLAPSE
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_akarpatskia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = akarpatskia_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_akarpatskia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = akarpatskia_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_cherkasy = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = cherkasy_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_cherkasy = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = cherkasy_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_chernihiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = chernihiv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_chernihiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = chernihiv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_chernivtsi = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = chernihiv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_chernivtsi = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = chernihiv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_crimea = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = crimea_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_crimea = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = crimea_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_dnipro = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = dnipro_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_dnipro = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = dnipro_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_donetsk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = donetsk_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_donetsk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = donetsk_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_ivano_frankivsk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = ivano_frankivsk_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_ivano_frankivsk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = ivano_frankivsk_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_kharkiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kharkiv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_kharkiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kharkiv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_kherson = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kherson_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_kherson = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kherson_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_khmelnytskyi = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = khmelnytskyi_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_khmelnytskyi = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = khmelnytskyi_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_kirovohrad = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kirovohrad_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_kirovohrad = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kirovohrad_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_kyiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kyiv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_kyiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = kyiv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_luhansk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = luhansk_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_luhansk = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = luhansk_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_lviv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = lviv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_lviv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = lviv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_mykolaiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = mykolaiv_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_mykolaiv = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = mykolaiv_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_odessa = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = odessa_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_odessa = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = odessa_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_poltava = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = poltava_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_poltava = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = poltava_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_rivne = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = rivne_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_rivne = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = rivne_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_sumy = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = sumy_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_sumy = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = sumy_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_ternopil = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = ternopil_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_ternopil = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = ternopil_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_vinnytsia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = vinnytsia_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_vinnytsia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = vinnytsia_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+
+UKR_is_in_full_control_of_volyn = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = volyn_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_volyn = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = volyn_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}
+
+UKR_is_in_full_control_of_zaporizhia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = zaporizhia_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_zaporizhia = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = zaporizhia_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}	
+
+UKR_is_in_full_control_of_zhytomyr = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = zhytomyr_oblast_flag }
+			ROOT = { has_full_control_of_state = PREV }
+		}
+	}
+}
+UKR_has_no_control_of_zhytomyr = {
+	all_state={
+		OR={
+			NOT = { has_state_flag = zhytomyr_oblast_flag }
+			ROOT = { NOT = { has_full_control_of_state = PREV } }
+		}
+	}
+}

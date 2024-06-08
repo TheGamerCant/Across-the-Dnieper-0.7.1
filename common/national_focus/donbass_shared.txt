@@ -1,0 +1,2038 @@
+focus_tree = {
+    id = donbass_shared
+	continuous_focus_position = { x = 30 y = 780 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LHK
+		}
+		modifier = {
+			add = 10
+			tag = KHK
+		}
+		modifier = {
+			add = 10
+			tag = ODS
+		}
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+#		modifier = {
+#			add = 10
+#			tag = DON
+#		}
+	}
+	
+	shared_focus = DONBASS_the_fight_against_nazism
+	shared_focus = DONBASS_glory_to_the_republic
+	shared_focus = DONBASS_the_novorossiya_project
+}
+
+focus_tree = {
+    id = donetsk_temporary_tree
+	continuous_focus_position = { x = 200 y = 780 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DON
+		}
+	}
+	
+	shared_focus = DONBASS_the_fight_against_nazism
+	shared_focus = DONBASS_glory_to_the_republic
+	shared_focus = DONBASS_the_novorossiya_project
+	shared_focus = DON_lessons_of_donetsk_airport
+	shared_focus = DON_shelling_from_residential_areas
+}
+
+shared_focus = {
+	id = DONBASS_the_novorossiya_project
+	icon = GFX_focus_DONBASS_the_novorossiya_project
+	x = 10
+	y = 6
+	
+	offset = {
+		x = 12
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_focus_tree = donetsk_temporary_tree
+		}
+	}
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			has_global_flag = donbass_war_is_ongoing
+		}
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_the_novorossiya_project
+					progress > 0
+				}
+			}
+		}
+		
+		NOT = { has_global_flag = donbass_war_is_ongoing }
+	}
+	
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_the_novorossiya_project }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		ROOT={
+			add_political_power = 100
+			add_popularity = {
+				ideology = eastern_conservative 
+				popularity = 0.1
+			}
+			if={
+				limit = { has_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state } }
+				hidden_effect={
+					remove_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state }
+					add_dynamic_modifier = { modifier = DONBASS_the_novorossiya_project_modifier }
+					
+					subtract_from_variable = { DONBASS_BCOAS_political_power_cost = 0.2 }
+				}
+				custom_effect_tooltip = DONBASS_the_novorossiya_project_tt
+			}
+		}
+		every_other_country={
+			limit = { is_donbass_country = yes }
+			add_political_power = 25
+			add_popularity = {
+				ideology = eastern_conservative 
+				popularity = 0.1
+			}
+			if={
+				limit = { has_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state } }
+				hidden_effect={
+					remove_dynamic_modifier = { modifier = DONBASS_bastard_child_of_a_state }
+					add_dynamic_modifier = { modifier = DONBASS_the_novorossiya_project_modifier }
+					
+					subtract_from_variable = { DONBASS_BCOAS_political_power_cost = 0.2 }
+				}
+				custom_effect_tooltip = DONBASS_the_novorossiya_project_tt
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_shared_expertise
+	icon = GFX_focus_DONBASS_pool_our_industries
+	x = -1
+	y = 1
+	
+	cost = 100
+	ai_will_do = {
+		base = 1
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_shared_expertise
+					progress > 0
+				}
+			}
+		}
+	}
+	
+	prerequisite = { focus = DONBASS_the_novorossiya_project }
+	relative_position_id = DONBASS_the_novorossiya_project
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_shared_expertise }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		every_country={
+			limit = { is_donbass_country = yes }
+			add_research_slot = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_pool_our_industries
+	icon = GFX_focus_DONBASS_pool_our_industries
+	x = 0
+	y = 2
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_pool_our_industries
+					progress > 0
+				}
+			}
+		}
+	}
+	
+	prerequisite = { focus = DONBASS_shared_expertise }
+	relative_position_id = DONBASS_shared_expertise
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_pool_our_industries }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		every_country={
+			limit = { is_donbass_country = yes }
+			add_to_variable = { DONBASS_BCOAS_industrial_capacity_factory = 0.12 }
+			custom_effect_tooltip = DONBASS_pool_our_industries_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_look_to_the_sea
+	icon = GFX_focus_DONBASS_look_to_the_sea
+	x = 1
+	y = 1
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_look_to_the_sea
+					progress > 0
+				}
+			}
+		}
+		
+		any_country={
+			is_donbass_country = yes
+			any_state = {
+				is_owned_by = PREV
+				is_coastal = yes
+			}
+		}
+	}
+	
+	prerequisite = { focus = DONBASS_the_novorossiya_project }
+	relative_position_id = DONBASS_the_novorossiya_project
+	
+	bypass = {
+		OR={
+			any_other_country = { has_completed_focus = DONBASS_look_to_the_sea }
+			NOT={
+				any_country={
+					is_donbass_country = yes
+					any_state = {
+						is_owned_and_controlled_by = PREV
+						is_coastal = yes
+					}
+				}
+			}
+		}
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		ROOT={
+			navy_experience = 100
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 75
+				producer = SOV
+			}
+			
+			add_to_variable = { DONBASS_BCOAS_industrial_capacity_dockyard = 0.1 }
+			custom_effect_tooltip = DONBASS_look_to_the_sea_tt
+		}
+	
+		every_other_country={
+			limit = { is_donbass_country = yes }
+			navy_experience = 50
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 75
+				producer = SOV
+			}
+			
+			add_to_variable = { DONBASS_BCOAS_industrial_capacity_dockyard = 0.1 }
+			custom_effect_tooltip = DONBASS_look_to_the_sea_tt
+		}
+		
+		every_country={
+			limit = { is_donbass_country = yes any_state = { is_owned_and_controlled_by = PREV is_coastal = yes } }
+			random_owned_controlled_state={
+				limit = { is_coastal = yes }
+			
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				increase_state_gdp_growth_by_2_5 = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_unifying_propaganda
+	icon = GFX_focus_DONBASS_the_novorossiya_project
+	x = 0
+	y = 2
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_unifying_propaganda
+					progress > 0
+				}
+			}
+		}
+	}
+	
+	prerequisite = { focus = DONBASS_look_to_the_sea }
+	relative_position_id = DONBASS_look_to_the_sea
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_unifying_propaganda }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		ROOT={
+			add_political_power = 60
+			
+			add_to_variable = { DONBASS_BCOAS_ruling_party_drift = 0.12 }
+			custom_effect_tooltip = DONBASS_unifying_propaganda_tt
+		}
+		
+		every_other_country={
+			limit = { is_donbass_country = yes }
+			add_political_power = 25
+			
+			add_to_variable = { DONBASS_BCOAS_ruling_party_drift = 0.1 }
+			custom_effect_tooltip = DONBASS_unifying_propaganda_tt_2
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_joint_administration
+	icon = GFX_focus_DONBASS_joint_administration
+	x = 0
+	y = 2
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_joint_administration
+					progress > 0
+				}
+			}
+		}
+	}
+	
+	prerequisite = { focus = DONBASS_the_novorossiya_project }
+	relative_position_id = DONBASS_the_novorossiya_project
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_joint_administration }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		ROOT={
+			add_political_power = 60
+			
+			subtract_from_variable = { DONBASS_BCOAS_political_power_cost = 0.3 }
+			custom_effect_tooltip = DONBASS_joint_administration_tt_1
+		}
+		
+		every_other_country={
+			limit = { is_donbass_country = yes }
+			add_political_power = 25
+			subtract_from_variable = { DONBASS_BCOAS_political_power_cost = 0.2 }
+			custom_effect_tooltip = DONBASS_joint_administration_tt_2
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_new_russia
+	icon = GFX_focus_DONBASS_the_novorossiya_project
+	x = 0
+	y = 2
+	
+	cost = 70
+	ai_will_do = {
+		base = 0
+	}
+	available = {
+		can_do_novorossiya_project_foci = yes
+		NOT={
+			any_other_country={
+				focus_progress = {
+					focus = DONBASS_new_russia
+					progress > 0
+				}
+			}
+		}
+		
+		has_war = no
+	}
+	
+	prerequisite = { focus = DONBASS_unifying_propaganda }
+	prerequisite = { focus = DONBASS_joint_administration }
+	prerequisite = { focus = DONBASS_pool_our_industries }
+	relative_position_id = DONBASS_joint_administration
+	
+	bypass = {
+		any_other_country = { has_completed_focus = DONBASS_new_russia }
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		hidden_effect={
+			every_country={
+				limit = { is_donbass_country = yes exists = yes}
+				every_character = {
+					set_nationality = ROOT
+				}
+				
+				every_state={
+					limit = { is_core_of = PREV }
+					add_core_of = ROOT
+					remove_core_of = PREV
+				}
+				every_state={
+					limit = { is_claimed_by= PREV }
+					add_claim_by = ROOT
+					remove_claim_by = PREV
+				}
+				
+				ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+				set_cosmetic_tag = NOV
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = dnipro_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = dnipro_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = dnipro_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = donetsk_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = donetsk_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = donetsk_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = kharkiv_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = kharkiv_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = kharkiv_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = kherson_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = kherson_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = kherson_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = luhansk_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = luhansk_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = luhansk_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = mykolaiv_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = mykolaiv_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = mykolaiv_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = odessa_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = odessa_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = odessa_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+			
+			if={
+				limit = { any_controlled_state = { has_state_flag = zaporizhia_oblast_flag } }
+				every_state = {  
+					limit = { has_state_flag = zaporizhia_oblast_flag }
+					add_core_of = ROOT
+				}
+			}
+			else={
+				every_state = {  
+					limit = { has_state_flag = zaporizhia_oblast_flag }
+					add_claim_by = ROOT
+				}
+			}
+		}
+		
+		effect_tooltip = { set_cosmetic_tag = NOV }
+		
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+
+shared_focus = {
+	id = DONBASS_glory_to_the_republic
+	dynamic = yes 
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_
+	}
+	
+	
+	x = 6
+	y = 0
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			has_global_flag = donbass_war_is_ongoing
+		}
+	}
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+		
+		add_popularity = {
+			ideology = eastern_conservative 
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_ukrainian_collaborators
+	icon = GFX_focus_DONBASS_ukrainian_collaborators
+	x = 1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_glory_to_the_republic }
+	relative_position_id = DONBASS_glory_to_the_republic
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = DONBASS_ukrainian_collaborators_idea
+	}
+}
+
+shared_focus = {
+	id = DONBASS_peace_and_bread
+	icon = GFX_focus_DONBASS_peace_and_bread
+	x = 0
+	y = 2
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_ukrainian_collaborators }
+	relative_position_id = DONBASS_ukrainian_collaborators
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_stability = 0.15
+	}
+}
+
+shared_focus = {
+	id = DONBASS_independence_day_parades
+	dynamic = yes 
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_
+	}
+	
+	x = 3
+	y = 1
+	
+	cost = 48
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_glory_to_the_republic }
+	relative_position_id = DONBASS_glory_to_the_republic
+	available = {
+		date > 2015.4.1
+		has_war = no
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		if={
+			limit = { has_start_date < 2022.01.01 }
+			country_event = { id = donbass_mutual.2 hours = 3 }
+		}
+		else={
+			effect_tooltip={
+				country_event = { id = donbass_mutual.2 hours = 3 }
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_our_own_administration
+	dynamic = yes 
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_our_own_administration_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_our_own_administration_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_our_own_administrationc_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_our_own_administration_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_DONBASS_our_own_administration
+	}
+	x = 1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 0
+	}
+	prerequisite = { focus = DONBASS_ukrainian_collaborators }
+	prerequisite = { focus = DONBASS_independence_day_parades }
+	relative_position_id = DONBASS_ukrainian_collaborators
+	mutually_exclusive = { focus = DONBASS_rely_on_russia }
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		swap_ideas={
+			remove_idea = DONBASS_ukrainian_collaborators_idea
+			add_idea = DONBASS_ukrainian_collaborators_idea_2
+		}
+		
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = 0.2
+				localization = DONBASS_our_own_administration
+			}
+			
+			SOV={
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = DONBASS_seeking_autonomy
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_new_political_elite
+	icon = GFX_focus_DONBASS_new_political_elite
+	x = 1
+	y = 1
+	
+	cost = 48
+	ai_will_do = {
+		base = 0
+	}
+	prerequisite = { focus = DONBASS_our_own_administration }
+	relative_position_id = DONBASS_our_own_administration
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		swap_ideas={
+			remove_idea = DONBASS_ukrainian_collaborators_idea_2
+			add_idea = DONBASS_ukrainian_collaborators_idea_3
+		}
+		
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = DONBASS_new_political_elite
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_domestic_industries
+	icon = GFX_focus_DONBASS_domestic_arms
+	x = 0
+	y = 2
+	
+	cost = 48
+	ai_will_do = {
+		base = 0
+	}
+	prerequisite = { focus = DONBASS_our_own_administration }
+	relative_position_id = DONBASS_our_own_administration
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = DONBASS_domestic_industries_idea
+	}
+}
+
+
+shared_focus = {
+	id = DONBASS_rely_on_russia
+	icon = GFX_focus_DONBASS_russian_military_bases
+	x = -1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_ukrainian_collaborators }
+	relative_position_id = DONBASS_ukrainian_collaborators
+	mutually_exclusive = { focus = DONBASS_our_own_administration }
+	available = {
+	
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		swap_ideas={
+			remove_idea = DONBASS_ukrainian_collaborators_idea
+			add_idea = DONBASS_reliance_on_russia
+		}
+		
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = -0.15
+				localization = DONBASS_rely_on_russia
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_little_green_men
+	icon = GFX_focus_DONBASS_russian_military_bases
+	x = 0
+	y = 2
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_rely_on_russia }
+	prerequisite = { focus = DONBASS_all_power_to_the_party }
+	relative_position_id = DONBASS_rely_on_russia
+	available = {
+	
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		swap_ideas={
+			remove_idea = DONBASS_reliance_on_russia
+			add_idea = DONBASS_reliance_on_russia_2
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_destroy_all_opposition
+	icon = GFX_focus_DONBASS_the_fight_against_nazism
+	x = -1
+	y = 1
+	
+	cost = 24
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_glory_to_the_republic }
+	relative_position_id = DONBASS_glory_to_the_republic
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_popularity = { ideology = eastern_conservative popularity = 0.2 }
+	}
+}
+
+shared_focus = {
+	id = DONBASS_all_power_to_the_party
+	dynamic = yes
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_
+	}
+	x = 0
+	y = 2
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_destroy_all_opposition }
+	relative_position_id = DONBASS_destroy_all_opposition
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = DONBASS_total_control_of_the_republic
+		add_popularity = {
+			ideology = eastern_conservative 
+			popularity = 0.05
+		}
+		
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = DONBASS_work_for_the_republic
+	dynamic = yes
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_
+	}
+	
+	x = -5
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_glory_to_the_republic }
+	relative_position_id = DONBASS_glory_to_the_republic
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		if={
+			limit={
+				has_idea = free_trade_unions
+			}
+			swap_ideas={
+				remove_idea = free_trade_unions
+				add_idea = unions_banned
+			}
+		}
+		else_if={
+			limit={
+				has_idea = government_trade_unions
+			}
+			swap_ideas={
+				remove_idea = government_trade_unions
+				add_idea = unions_banned
+			}
+		}
+		else={
+			add_ideas = unions_banned
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_old_soviet_factories
+	icon = GFX_focus_DONBASS_domestic_arms
+	x = -1
+	y = 1
+	
+	cost = 70
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_work_for_the_republic }
+	relative_position_id = DONBASS_work_for_the_republic
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		every_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }
+			random_select_amount = 2
+			
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			increase_state_gdp_growth_by_3 = yes
+		}
+		
+		every_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }
+			random_select_amount = 1
+			
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_introduce_price_caps
+	icon = GFX_focus_DONBASS_introduce_price_caps
+	x = 0
+	y = 2
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_old_soviet_factories }
+	relative_position_id = DONBASS_old_soviet_factories
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		decrease_inflation_rate_by_4 = yes
+		add_ideas = DONBASS_price_caps
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = DONBASS_dig_deeper
+	dynamic = yes
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_work_for_the_republic_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_
+	}
+	
+	x = 1
+	y = 1
+	
+	cost = 45
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_work_for_the_republic }
+	relative_position_id = DONBASS_work_for_the_republic
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = DONBASS_dig_deeper
+			bonus = 1
+			uses = 2
+			category = excavation_tech
+		}
+		add_tech_bonus = {
+			name = DONBASS_dig_deeper
+			bonus = 0.6
+			uses = 1
+			category = construction_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_fertile_soil
+	dynamic = yes
+	
+	icon = {
+		trigger = {
+			OR={
+				tag = NOV
+				has_completed_focus = DONBASS_new_russia
+			}
+		}
+		value = GFX_focus_DONBASS_glory_to_the_republic_novorossiya
+	}
+	icon = {
+		trigger = {
+			tag = DON
+		}
+		value = GFX_focus_DONBASS_fertile_soil_donetsk
+	}
+	icon = {
+		trigger = {
+			tag = LHK
+		}
+		value = GFX_focus_DONBASS_fertile_soil_lugansk
+	}
+	icon = {
+		trigger = {
+			tag = KHK
+		}
+		value = GFX_focus_DONBASS_fertile_soil_kharkov
+	}
+	icon = {
+		trigger = {
+			tag = ODS
+		}
+		value = GFX_focus_DONBASS_fertile_soil_odessa
+	}
+	
+	icon = {
+		value = GFX_focus_DONBASS_fertile_soil
+	}
+	
+	x = -1
+	y = 1
+	
+	cost = 28
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_dig_deeper }
+	relative_position_id = DONBASS_dig_deeper
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		every_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }	
+			add_extra_state_shared_building_slots = 2
+			increase_state_gdp_growth_by_1 = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_russian_resource_companies
+	icon = GFX_focus_DONBASS_russian_resource_companies
+	x = 1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_dig_deeper }
+	prerequisite = { focus = DONBASS_rely_on_russia }
+	relative_position_id = DONBASS_dig_deeper
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state={
+			prioritize = { 195 145 155 94 320 291 152 173 }
+			add_resource = { 
+				type = oil
+				amount = 18
+			}
+			increase_state_gdp_growth_by_2 = yes
+		}
+		
+		random_owned_controlled_state={
+			prioritize = { 186 166 94 89 159 214 }
+			add_resource = { 
+				type = steel
+				amount = 30
+			}
+			increase_state_gdp_growth_by_2 = yes
+		}
+		
+		random_owned_controlled_state={
+			add_resource = { 
+				type = aluminium
+				amount = 7
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = DONBASS_the_fight_against_nazism
+	icon = GFX_focus_DONBASS_the_fight_against_nazism
+	x = 20
+	y = 0
+	
+	cost = 28
+	ai_will_do = {
+		base = 1000			#Do this first
+	}
+	offset = {
+		x = 17
+		y = 8
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			tag = DON
+			has_focus_tree = donetsk
+		}
+	}
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_war_support = 0.05
+		add_manpower = 12000
+		if={
+			limit = { NOT = { tag = NOV } }
+			hidden_effect={
+				division_template = {
+					name = "Donbass Militia"
+					division_names_group = DON_INF_01
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }	
+						irregular_infantry = { x = 1 y = 2 }
+						artillery = { x = 2 y = 0 }
+					}
+				}			
+				for_loop_effect = {
+					end = 6
+					value = temp
+					random_controlled_state = {
+						limit={ OR={ is_claimed_by = ROOT is_core_of = ROOT } }
+						create_unit = {
+							division = "name = \"People's Militia\" division_template = \"Donbass Militia\" start_experience_factor = 0.02" 
+							owner = ROOT
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = DONBASS_the_fight_against_nazism_tt
+		}
+		else={
+			hidden_effect={
+				division_template = {
+					name = "Donbass Militia"
+					division_names_group = DON_INF_01
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }	
+						irregular_infantry = { x = 1 y = 2 }
+						artillery = { x = 2 y = 0 }
+					}
+				}			
+				for_loop_effect = {
+					end = 12
+					value = temp
+					random_controlled_state = {
+						limit={ OR={ is_claimed_by = ROOT is_core_of = ROOT } }
+						create_unit = {
+							division = "name = \"People's Militia\" division_template = \"Donbass Militia\" start_experience_factor = 0.02" 
+							owner = ROOT
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = DONBASS_the_fight_against_nazism_tt_2
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_urban_warfare
+	icon = GFX_focus_DONBASS_urban_warfare
+	x = -3
+	y = 1
+	
+	cost = 30
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_the_fight_against_nazism }
+	relative_position_id = DONBASS_the_fight_against_nazism
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		custom_effect_tooltip = DONBASS_urban_warfare_tt
+		hidden_effect = { set_technology = { DONBASS_urban_warfare_tech = 1 popup = no } }
+	}
+}
+
+shared_focus = {
+	id = DONBASS_seize_ukrainian_equipment
+	icon = GFX_focus_DONBASS_seize_ukrainian_equipment
+	x = 0
+	y = 1
+	
+	cost = 48
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_urban_warfare }
+	relative_position_id = DONBASS_urban_warfare
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 680
+			producer = UKR
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment_1
+			amount = 220
+			producer = UKR
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 200
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment_1
+			amount = 50
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = apc_equipment_1
+			amount = 50
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_anti_tank_equipment_1
+			amount = 20
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_anti_air_equipment_1
+			amount = 20
+			producer = UKR
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_mandatory_conscription
+	icon = GFX_focus_DONBASS_mandatory_conscription
+	x = 1
+	y = 1
+	
+	cost = 30
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_the_fight_against_nazism }
+	relative_position_id = DONBASS_the_fight_against_nazism
+	mutually_exclusive = { focus = DONBASS_russian_training }
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_to_variable = { impromptu_militias_conscription = 0.06 }
+		custom_effect_tooltip = DONBASS_mandatory_conscription_tt
+		if={
+			limit = { has_start_date < 2022.01.01 }
+			add_timed_idea = { idea = DONBASS_mobilisation days = 120 }
+		}
+		else={
+			effect_tooltip={
+				add_timed_idea = { idea = DONBASS_mobilisation days = 120 }
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_grab_whatever_we_can
+	icon = GFX_focus_DONBASS_grab_whatever_we_can
+	x = 0
+	y = 1
+	
+	cost = 45
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_mandatory_conscription }
+	relative_position_id = DONBASS_mandatory_conscription
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 2200
+			producer = ROOT
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_russian_training
+	icon = GFX_focus_DONBASS_russian_training
+	x = -1
+	y = 1
+	
+	cost = 30
+	ai_will_do = {
+		factor = 0		#AI will never choose this option
+	}
+	prerequisite = { focus = DONBASS_the_fight_against_nazism }
+	relative_position_id = DONBASS_the_fight_against_nazism
+	mutually_exclusive = { focus = DONBASS_mandatory_conscription }
+	available = {
+		OR={
+			NOT = { has_global_flag = donbass_war_is_ongoing }
+			is_puppet_of = SOV
+			is_in_faction_with = SOV
+			SOV = { has_war_with = UKR }
+		}
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = DONBASS_russian_training_idea
+		
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = -0.1
+				localization = DONBASS_russian_training
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_russian_officers
+	icon = GFX_focus_DONBASS_russian_officers
+	x = 0
+	y = 1
+	
+	cost = 45
+	ai_will_do = {
+
+	}
+	prerequisite = { focus = DONBASS_russian_training }
+	relative_position_id = DONBASS_russian_training
+	available = {
+		OR={
+			NOT = { has_global_flag = donbass_war_is_ongoing }
+			is_puppet_of = SOV
+			is_in_faction_with = SOV
+			SOV = { has_war_with = UKR }
+		}
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_to_variable = { impromptu_militias_experience_gain_army_factor = 0.2 }
+		add_to_variable = { impromptu_militias_command_power_gain_mult = 0.2 }
+		custom_effect_tooltip = DONBASS_russian_officers_tt
+		
+		army_experience = 50
+		
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = -0.2
+				localization = DONBASS_russian_officers
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = DONBASS_central_command
+	icon = GFX_focus_DONBASS_central_command
+	x = 3
+	y = 1
+	
+	cost = 14
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_the_fight_against_nazism }
+	relative_position_id = DONBASS_the_fight_against_nazism
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 25
+		add_command_power = 50
+	}
+}
+
+shared_focus = {
+	id = DONBASS_lessons_of_war
+	icon = GFX_focus_DONBASS_lessons_of_war
+	x = 0
+	y = 1
+	
+	cost = 32
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_central_command }
+	relative_position_id = DONBASS_central_command
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_to_variable = { impromptu_militias_army_org_factor = 0.04 }
+		add_to_variable = { impromptu_militias_army_morale_factor = 0.04 }
+		custom_effect_tooltip = DONBASS_lessons_of_war_tt
+	}
+}
+
+shared_focus = {
+	id = DONBASS_to_fight_a_modern_war
+	icon = GFX_focus_DONBASS_to_fight_a_modern_war
+	x = 0
+	y = 3
+	
+	cost = 80
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_lessons_of_war }
+	prerequisite = { focus = DONBASS_seize_ukrainian_equipment }
+	prerequisite = { focus = DONBASS_grab_whatever_we_can focus = DONBASS_russian_officers }
+	relative_position_id = DONBASS_the_fight_against_nazism
+	available = {
+
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		add_to_variable = { impromptu_militias_army_attack_factor = 0.12 }
+		add_to_variable = { impromptu_militias_army_speed_factor = 0.2 }
+		add_to_variable = { impromptu_militias_army_core_defence_factor = 0.03 }
+		subtract_from_variable = { impromptu_militias_ai_focus_defense_factor = 0.3 }
+		custom_effect_tooltip = DONBASS_to_fight_a_modern_war_tt
+		
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_russian_military_bases
+	icon = GFX_focus_DONBASS_russian_military_bases
+	x = -1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_russian_officers }
+	prerequisite = { focus = DONBASS_seize_ukrainian_equipment }
+	relative_position_id = DONBASS_russian_officers
+	available = {
+		OR={
+			NOT = { has_global_flag = donbass_war_is_ongoing }
+			is_puppet_of = SOV
+			is_in_faction_with = SOV
+			SOV = { has_war_with = UKR }
+		}
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		every_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }
+			random_select_amount = 2
+			
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			if={
+				limit = { infrastructure < 5 }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+			increase_state_gdp_growth_by_2 = yes
+		}
+		if={
+			limit = { is_puppet_of = SOV }
+			add_autonomy_ratio = {
+				value = -0.2
+				localization = DONBASS_russian_military_bases
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = DONBASS_domestic_arms
+	icon = GFX_focus_DONBASS_domestic_arms
+	x = 1
+	y = 1
+	
+	cost = 60
+	ai_will_do = {
+		base = 1
+	}
+	prerequisite = { focus = DONBASS_grab_whatever_we_can }
+	prerequisite = { focus = DONBASS_lessons_of_war }
+	relative_position_id = DONBASS_grab_whatever_we_can
+	available = {
+		OR={
+			has_war = no
+			custom_trigger_tooltip={
+				tooltip = DONBASS_domestic_arms_tt
+				NOT={
+					any_state={
+						NOT = { is_owned_by = ROOT }
+						OR={
+							is_core_of = ROOT
+							is_claimed_by = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	completion_reward = {
+		random_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }
+			
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			
+			increase_state_gdp_growth_by_2_5 = yes
+		}
+		
+		random_controlled_state={
+			limit = { OR = { is_core_of = ROOT is_claimed_by = ROOT } }
+			
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			
+			increase_state_gdp_growth_by_1 = yes
+		}
+	}
+}

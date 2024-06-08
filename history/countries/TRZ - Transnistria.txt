@@ -1,0 +1,60 @@
+﻿capital = 268
+
+load_soviet_doctrine = yes
+create_country_leader = {
+	name = "Yevgeny Shevchuk"
+	desc = "Test Transnistria"
+	ideology = generic_eastern_conservative
+	picture = gfx/leaders/TRZ/Portrait_Yevgeny_Shevchuk.dds
+	expire = 2016.12.16
+}
+
+2016.12.16 = {
+	create_country_leader = {
+		name = "Vadim Krasnoselsky"
+		desc = "Test Transnistria"
+		ideology = generic_eastern_conservative
+		picture = gfx/leaders/TRZ/Portrait_Vadim_Krasnoselsky.dds
+	}
+}
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.6
+
+add_ideas = {
+	extensive_conscription
+	state_controlled_press
+	martial_law
+	centrally_planned_economy
+	unions_restricted
+	bipolarist
+	womens_rights_traditional_values
+	lgbtq_rights_banned
+	minority_rights_minor_inequality
+	nationalism_laws_armed_neutrality
+	firearm_laws_restricted
+	alchohol_narcotics_laws_largely_regulated
+
+
+	TRZ_breakaway_state
+	TRZ_the_eternal_occupation
+}
+
+set_convoys = 0
+
+give_military_access = SOV
+
+set_politics = {
+	ruling_party = eastern_conservative
+	last_election = "2011.12.12"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	eastern_liberal = 10
+	populist = 5
+	social_democracy = 10
+	eastern_conservative = 75
+}

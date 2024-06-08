@@ -1,0 +1,87 @@
+﻿capital = 397
+
+load_soviet_doctrine = yes
+
+create_country_leader = {
+	name = "Filip Vujanovic"
+	desc = ""
+	picture = gfx/leaders/MNT/Portrait_Filip_Vujanović.png
+	ideology = montenegro_democrats
+	expire = 2018.4.15
+}
+
+create_country_leader = {
+	name = "Bratislav Dikic"
+	desc = ""
+	picture = gfx/leaders/MNT/Portrait_Bratislav_Dikić.png
+	ideology = new_serb_democracy
+	expire = 2018.4.15
+}
+
+2022.1.1 = {
+	create_country_leader = {
+		name = "Milo Đukanovic"
+		desc = ""
+		picture = gfx/leaders/MNT/Portrait_Milo_Đukanović.png
+		ideology = montenegro_democrats
+	}
+
+	set_politics = {
+		ruling_party = neoliberal
+		last_election = 2018.4.15
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		populist = 3
+		libertarian = 33
+		social_democracy = 8
+		neoliberal = 54
+		eastern_conservative = 2
+
+}
+}
+
+set_research_slots = 1
+set_stability = 0.6
+set_war_support = 0.53
+
+set_convoys = 56
+
+set_politics = {
+	ruling_party = neoliberal
+	last_election = "2013.4.7"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neoliberal = 51.21
+	eastern_conservative = 48.79
+
+}
+
+add_ideas = {
+	free_trade_unions
+	neutral
+	religion_law_religious
+	womens_rights_traditional_values
+	lgbtq_rights_civil_unions
+	firearm_laws_restricted
+	nationalism_laws_armed_neutrality
+	minority_rights_legal_protections
+	oligarchy
+
+	MNT_dunakovics_regime
+}
+
+set_variable = { MNT_mm_stability = -0.2 }
+set_variable = { MNT_mm_consumer_goods = 0.15 }
+set_variable = { MNT_mm_dockyard = -0.3 }
+set_variable = { MNT_mm_factory = -0.3 }
+set_variable = { MNT_mm_efficiency_gain = -0.13 }
+set_variable = { MNT_mm_max_efficiency = -0.14 }
+set_variable = { MNT_mm_ppc = 0.1 }
+
+add_dynamic_modifier = { modifier = MNT_montenegrin_malaise }

@@ -1,0 +1,288 @@
+ideas ={
+	hidden_ideas={
+		POL_beryl_modernisation_package_hidden_idea = {
+			name = "POL_outdated_land_forces_modifier"
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+					soft_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		
+		POL_cost_effective_designs_hidden_idea = {
+			name = "POL_outdated_land_forces_modifier"
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		POL_cost_effective_designs_the_eagle_soars_hidden_idea = {
+			name = "POL_outdated_land_forces_modifier"
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.125
+					instant = yes
+				}
+			}
+		}
+		
+		POL_donald_tusk_hidden_idea={
+			name = POL_donald_tusk
+			
+			modifier={
+				neoliberal_drift = 0.1
+				political_power_factor = 0.15
+				political_advisor_cost_factor = -0.15
+				stability_factor = 0.1
+				western_acceptance = 50
+				improve_relations_maintain_cost_factor = -0.2
+			}
+		}
+		
+		POL_ewa_kopacz_shoes_to_fill_hidden_idea={
+			name = POL_ewa_kopacz
+			
+			modifier={
+				stability_weekly = -0.001
+				political_power_gain = -0.1
+			}
+		}
+		
+		POL_beata_szydlo_hidden_idea={
+			name = POL_beata_szydlo
+			
+			modifier={
+				political_power_gain = 0.15
+				neoconservative_drift = 0.08
+				war_support_factor = 0.1
+				stability_factor = -0.03
+			}
+		}
+		
+		POL_mateusz_morawiecki_hidden_idea={
+			name = POL_mateusz_morawiecki
+			
+			modifier={
+				consumer_goods_factor = -0.075
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		POL_jaroslaw_kaczynski_hidden_idea={
+			name = POL_jaroslaw_kaczynski
+			
+			modifier={
+				political_power_factor = 0.2
+				neoconservative_drift = 0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+	}
+
+	country = {
+		POL_PO_PSL_coalition = {
+			removal_cost = -1
+
+			picture = POL_PO_PSL_coalition
+
+			modifier = {
+				political_power_cost = 0.1
+			}
+		}
+		
+		POL_PO_PSL_LEFT_coalition = {
+			removal_cost = -1
+
+			picture = POL_PO_PSL_LEFT_coalition
+
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.05
+			}
+		}
+		POL_PiS_kukiz_coalition = {
+			removal_cost = -1
+
+			picture = POL_PiS_kukiz_coalition
+
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.05
+			}
+		}
+		
+		POL_PiS_konfederacja_coalition = {
+			removal_cost = -1
+
+			picture = POL_PiS_konfederacja_coalition
+
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.05
+			}
+		}
+		
+		POL_divided_executive = {
+			removal_cost = -1
+			
+			available = { POL_are_president_and_pm_different_ideologies = yes }
+
+			picture = POL_divided_executive
+
+			modifier = {
+				political_power_cost = 0.3
+				stability_weekly = -0.002
+				
+				custom_modifier_tooltip = POL_divided_executive_tt
+			}
+		}
+
+		POL_recovered_territories = {
+			removal_cost = -1
+
+			picture = GFX_idea_POL_Recovered_Teritories
+
+			modifier = {
+				dockyard_donations = 2
+				industrial_factory_donations = 10
+				military_factory_donations = 4
+				recruitable_population_factor = 0.2
+				global_building_slots_factor = 0.25
+			}
+		}
+		
+		POL_visegrad_trade = {
+			removal_cost = -1
+			picture = SLO_visegrad_member
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+				production_speed_buildings_factor = 0.06
+				production_speed_rail_way_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		POL_continued_growth = {
+			removal_cost = -1
+			picture = POL_continued_growth
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_gain = 0.27
+				research_speed_factor = 0.03
+			}
+		}
+		
+		POL_cut_coal_subsidies = {
+			removal_cost = -1
+			picture = POL_cut_coal_subsidies
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+				ruling_party_drift = -0.01
+			}
+		}
+		
+		POL_religious_population = {
+			removal_cost = -1
+			picture = POL_religious_population
+			
+			modifier = {
+				war_support_factor = 0.05
+				neoconservative_drift = 0.08
+				populist_drift = 0.03
+			}
+		}
+		
+		POL_religious_population_2 = {
+			removal_cost = -1
+			picture = POL_religious_population
+			
+			modifier = {
+				war_support_factor = 0.05
+				neoconservative_drift = 0.1
+				populist_drift = 0.05
+				ultranationalist_drift = 0.02
+			}
+		}
+		
+		POL_progressive_youth = {
+			removal_cost = -1
+			picture = POL_progressive_youth
+			
+			modifier = {
+				neoliberal_drift = 0.05
+				social_democracy_drift = 0.02
+				eastern_conservative_drift = -0.03
+			}
+		}
+		
+		POL_control_of_the_media = {
+			removal_cost = -1
+			picture = POL_control_of_the_media
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.03
+				ruling_party_drift = 0.02
+			}
+		}
+		
+		POL_constitutional_crisis_idea = {
+			removal_cost = -1
+			picture = POL_constitutional_crisis
+
+			modifier = {
+				political_power_cost = 0.2
+				stability_weekly = -0.003
+				ruling_party_drift = -0.02
+			}
+		}
+		
+		POL_constitutional_crisis_idea_2 = {
+			removal_cost = -1
+			picture = POL_constitutional_crisis
+
+			modifier = {
+				stability_weekly = -0.002
+				ruling_party_drift = -0.02
+			}
+		}
+		
+		POL_control_of_the_courts = {
+			removal_cost = -1
+			picture = POL_control_of_the_courts
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		
+		POL_childbirth_subsidies = {
+			removal_cost = -1
+			picture = SOV_government_subsidies_for_childbirth
+
+			modifier = {
+				political_power_gain = 0.08
+				ruling_party_drift = 0.06
+				consumer_goods_factor = 0.03
+				monthly_population = 0.08
+			}
+		}
+	}
+}

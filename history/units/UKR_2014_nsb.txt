@@ -1,0 +1,1056 @@
+﻿focus = {
+	current = "UKR_protests_in_the_streets"
+	progress = 39
+}
+
+division_template = {
+	name = "1st Tank Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 135
+	regiments = {
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_armor = { x = 2 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }  
+		mot_recon = { x = 0 y = 3 }  
+		engineer  = { x = 0 y = 4 }  
+	}
+}
+
+
+division_template = {
+	name = "17th Tank Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 97
+	regiments = {
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_armor = { x = 2 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }  
+		mot_recon = { x = 0 y = 3 }  
+		engineer  = { x = 0 y = 4 }  
+	}
+}
+
+division_template = {
+	name = "19th Missile Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 137
+	regiments = {
+		rocket_artillery_brigade = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+		rocket_artillery_brigade = { x = 0 y = 2 }
+		rocket_artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }   
+	}
+}
+
+division_template = {
+	name = "27th Rocket Artillery Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 165
+	regiments = {
+		rocket_artillery_brigade = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+		rocket_artillery_brigade = { x = 0 y = 2 }
+		rocket_artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }   
+	}
+}
+
+division_template = {
+	name = "107th Rocket Artillery Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 170
+	regiments = {
+		rocket_artillery_brigade = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+		rocket_artillery_brigade = { x = 0 y = 2 }
+		rocket_artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+		engineer = { x = 0 y = 1 }  
+		maintenance_company = { x = 0 y = 2 }   
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "26th Artillery Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 138
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }   
+	}
+}
+
+division_template = {
+	name = "55th Artillery Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 100
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		rocket_artillery_brigade = { x = 0 y = 3 }
+		rocket_artillery_brigade = { x = 0 y = 4 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		logistics_company = { x = 0 y = 1 }  
+		signal_company = { x = 0 y = 2 }   
+	}
+}
+
+division_template = {
+	name = "24th Mechanized Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 225
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "28th Mechanized Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 226
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "30th Mechanized Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 91
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "72nd Mechanized Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 132
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+
+
+division_template = {
+	name = "93rd Mechanized Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 103
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "92nd Assault Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 102
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon  = { x = 0 y = 1 }
+		engineer = {x = 0 y = 2}
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "128th Mountain Assault Brigade"
+	division_names_group = UKR_INF_01
+	template_counter = 164
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+	support = {
+		artillery  = { x = 0 y = 1 }
+		anti_air = {x = 0 y = 2}
+		recon = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Special Operations Center East"
+	division_names_group = UKR_INF_01
+	template_counter = 92
+	regiments = {
+		elite_special_forces = { x = 0 y = 0}
+		elite_special_forces = { x = 0 y = 1}
+		elite_special_forces = { x = 1 y = 0}
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Special Operations Center South"
+	division_names_group = UKR_INF_01
+	template_counter = 93
+	regiments = {
+		elite_special_forces = { x = 0 y = 0}
+		elite_special_forces = { x = 0 y = 1}
+		elite_special_forces = { x = 1 y = 0}
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Special Operations Center West"
+	division_names_group = UKR_INF_01
+	template_counter = 94
+	regiments = {
+		elite_special_forces = { x = 0 y = 0}
+		elite_special_forces = { x = 0 y = 1}
+		elite_special_forces = { x = 1 y = 0}
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "54th Reconnaissance Battalion"
+	division_names_group = UKR_INF_01
+	template_counter = 171
+	regiments = {
+		irregular_infantry  = { x = 0 y = 0 }
+		irregular_infantry  = { x = 0 y = 1 }
+		irregular_infantry  = { x = 1 y = 0 }
+		mechanized  = { x = 1 y = 1 }
+		mechanized  = { x = 1 y = 2 }
+		mechanized  = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+        mot_recon = { x = 0 y = 1}
+	}
+}
+
+
+division_template = {
+	name = "74th Reconnaissance Battalion"
+	division_names_group = UKR_INF_01
+	template_counter = 101
+	regiments = {
+		irregular_infantry  = { x = 0 y = 0 }
+		irregular_infantry  = { x = 0 y = 1 }
+		irregular_infantry  = { x = 1 y = 0 }
+		mechanized  = { x = 1 y = 1 }
+		mechanized  = { x = 1 y = 2 }
+		mechanized  = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+        mot_recon = { x = 0 y = 1}
+	}
+}
+
+units = {
+
+	#Special Operations Center West
+
+	division = {
+		location = 17660
+		name = "8th Special Forces Regiment"
+		division_template = "Special Operations Center West"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.67
+		start_manpower_factor = 0.95
+	}
+
+	#Special Operations Center South
+
+	division = {
+		location = 11069
+		name = "73rd Maritime Special Purpose Regiment"
+		division_template = "Special Operations Center South"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.67
+		start_manpower_factor = 0.95
+	}
+
+	#Special Operations Center East
+
+	division = {
+		location = 12455
+		name = "3rd Separate Special Purpose Regiment"
+		division_template = "Special Operations Center East"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.67
+		start_manpower_factor = 0.95
+	}
+
+	#24th Mechanized Brigade
+
+	division = {
+		location = 7871
+		name = "1st Mechanized Battalion"
+		division_template = "24th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 7871
+		name = "2nd Mechanized Battalion"
+		division_template = "24th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 7871
+		name = "3rd Mechanized Battalion"
+		division_template = "24th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#28th Mechanized Brigade
+
+	division = {
+		location = 4520
+		name = "1st Mechanized Battalion"
+		division_template = "28th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 4520
+		name = "2nd Mechanized Battalion"
+		division_template = "28th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 4520
+		name = "3rd Mechanized Battalion"
+		division_template = "28th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#30th Mechanized Brigade
+
+	division = {
+		location = 4485
+		name = "1st Mechanized Battalion"
+		division_template = "30th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 4485
+		name = "2nd Mechanized Battalion"
+		division_template = "30th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 4485
+		name = "3rd Mechanized Battalion"
+		division_template = "30th Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#72nd Mechanized Brigade
+
+	division = {
+		location = 1011
+		name = "1st Mechanized Battalion"
+		division_template = "72nd Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 1011
+		name = "2nd Mechanized Battalion"
+		division_template = "72nd Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 1011
+		name = "3rd Mechanized Battalion"
+		division_template = "72nd Mechanized Brigade"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#92nd Assault Brigade
+
+	division = {
+		location = 4312
+		name = "1st Mechanized Battalion"
+		division_template = "92nd Assault Brigade"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	division = {
+		location = 4312
+		name = "2nd Mechanized Battalion"
+		division_template = "92nd Assault Brigade"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#93rd Mechanized Brigade
+
+	division = {
+		location = 14519
+		name = "1st Mechanized Battalion"
+		division_template = "93rd Mechanized Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	
+	division = {
+		location = 14519
+		name = "2nd Mechanized Battalion"
+		division_template = "93rd Mechanized Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+	
+	division = {
+		location = 14519
+		name = "3rd Mechanized Battalion"
+		division_template = "93rd Mechanized Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#128th Mountain Assault Brigade
+
+	division = {
+		location = 7198
+		name = "1st Mountain Assault Battalion"
+		division_template = "128th Mountain Assault Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 7198
+		name = "2nd Mountain Assault Battalion"
+		division_template = "128th Mountain Assault Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 7198
+		name = "15th Separate Mountain Assault Battalion"
+		division_template = "128th Mountain Assault Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.65
+		start_manpower_factor = 0.9
+	}
+
+	#1st Tank Brigade
+
+	division = {
+		location = 10995
+		name = "1st Tank Battalion"
+		division_template = "1st Tank Brigade"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+	division = {
+		location = 10995
+		name = "2nd Tank Battalion"
+		division_template = "1st Tank Brigade"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+	division = {
+		location = 10995
+		name = "3rd Tank Battalion"
+		division_template = "1st Tank Brigade"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+	division = {
+		location = 10995
+		name = "4th Tank Battalion"
+		division_template = "1st Tank Brigade"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+
+	#17th Tank Brigade
+
+	division = {
+		location = 2118
+		name = "1st Tank Battalion"
+		division_template = "17th Tank Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
+	}
+
+	division = {
+		location = 2118
+		name = "2nd Tank Battalion"
+		division_template = "17th Tank Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 2118
+		name = "3rd Tank Battalion"
+		division_template = "17th Tank Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 2118
+		name = "4th Tank Battalion"
+		division_template = "17th Tank Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	
+	#19th Missile Brigade
+
+	division = {
+		location = 17660
+		name = "1st Artillery Battalion"
+		division_template = "19th Missile Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 17660
+		name = "2nd Artillery Battalion"
+		division_template = "19th Missile Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 17660
+		name = "3rd Artillery Battalion"
+		division_template = "19th Missile Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 17660
+		name = "4th Artillery Battalion"
+		division_template = "19th Missile Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	#26th Artillery Brigade
+
+	division = {
+		location = 12247
+		name = "1st Artillery Battalion"
+		division_template = "26th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 12247
+		name = "2nd Artillery Battalion"
+		division_template = "26th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 12247
+		name = "3rd Artillery Battalion"
+		division_template = "26th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+		
+	#27th Rocket Artillery Brigade
+
+	division = {
+		location = 16917
+		name = "1st Artillery Battalion"
+		division_template = "27th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 16917
+		name = "2nd Artillery Battalion"
+		division_template = "27th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 16917
+		name = "3rd Artillery Battalion"
+		division_template = "27th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 16917
+		name = "4th Artillery Battalion"
+		division_template = "27th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	
+	#55th Artillery Brigade
+
+	division = {
+		location = 18398
+		name = "1st Artillery Battalion"
+		division_template = "55th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 18398
+		name = "2nd Artillery Battalion"
+		division_template = "55th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 18398
+		name = "3rd Artillery Battalion"
+		division_template = "55th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 18398
+		name = "4th Artillery Battalion"
+		division_template = "55th Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	#107th Rocket Artillery Brigade
+
+	division = {
+		location = 6389
+		name = "1st Artillery Battalion"
+		division_template = "107th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 6389
+		name = "2nd Artillery Battalion"
+		division_template = "107th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 6389
+		name = "3rd Artillery Battalion"
+		division_template = "107th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		location = 6389
+		name = "4th Artillery Battalion"
+		division_template = "107th Rocket Artillery Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	
+	#54th Reconnaissance Battalion
+
+	division = {
+		location = 4485
+		name = "54th Reconnaissance Battalion"
+		division_template = "54th Reconnaissance Battalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+
+	#74th Reconnaissance Battalion
+
+	division = {
+		location = 14519
+		name = "74th Reconnaissance Battalion"
+		division_template = "74th Reconnaissance Battalion"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.9
+	}
+}
+
+### Starting Production ###	
+instant_effect = {
+	add_equipment_to_stockpile = {	
+		type = infantry_equipment
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_equipment
+		amount = 243
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 550
+	}
+	add_equipment_to_stockpile = {
+		type = apc_equipment
+		amount = 205
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment
+		amount = 69
+	}
+	add_equipment_to_stockpile = {
+		type = t80_chasis
+		variant_name = "T-80"
+		amount = 300
+	}
+	add_equipment_to_stockpile = {
+		type = t72_chasis
+		variant_name = "T-72"
+		amount = 160
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 980
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 450
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment
+		amount = 1250
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_equipment
+		amount = 90
+	}
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment
+		amount = 200
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "UKR"
+		}
+		requested_factories = 5
+		progress = 0.73
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 2
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rocket_artillery_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_tank_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_air_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mechanized_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = apc_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 50
+	}
+}

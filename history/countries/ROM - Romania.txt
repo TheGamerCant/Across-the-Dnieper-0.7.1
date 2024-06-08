@@ -1,0 +1,132 @@
+﻿capital = 358
+
+load_nato_doctrine = yes
+
+#Characters
+
+recruit_character = ROM_liviu_dragnea
+recruit_character = ROM_victor_ponta
+recruit_character = ROM_titus_corlatean
+recruit_character = ROM_daniel_chitoiu
+recruit_character = ROM_daniel_petrescu
+recruit_character = ROM_nicolae_ciuca
+recruit_character = ROM_lucian_foca
+
+
+ add_ideas = {
+	ROM_liviu_dragnea
+	ROM_titus_corlatean
+	ROM_daniel_chitoiu
+
+	ROM_daniel_petrescu
+
+	eu_member
+#        ROM_political_divide
+#		ROM_Pontas_allience
+#		ROM_szekelyfold
+#		ROM_Jandarmeria
+#		ROM_Legacy_of_the_Romanian_Revolution
+#		ROM_Recovering_from_2008_economic_crisis
+#		ROM_Military_Corruption
+#		ROM_Outdated_infrastructure
+
+	  religion_law_religious
+    womens_rights_equality
+    lgbtq_rights_tolerated
+    minority_rights_legal_protections
+    alcohol_narotics_laws_highly_regulated
+    firearms_laws_banned
+		nationalism_laws_interventionist
+}
+
+ create_country_leader = {
+	name = "Traian Basescu"
+	desc = ""
+	ideology = pdl
+	expire = 2014.6.7
+	picture = gfx/leaders/ROM/Portrait_Traian_Băsescu.dds
+	traits = { }
+}
+ create_country_leader = {
+	name = "Klaus Iohannis"
+	desc = ""
+	ideology = pnl
+	expire = 2024.6.7
+	picture = gfx/leaders/ROM/Portrait_Klaus_Iohannis.dds
+	traits = { }
+}
+ create_country_leader = {
+	name = "Vadim Tudor"
+	desc = ""
+	ideology = generic_ultranationalist
+	expire = 2015.6.7
+	picture = gfx/leaders/ROM/Portrait_vadim_tudor.dds
+	traits = { }
+}
+ create_country_leader = {
+	name = "Victor Ponta"
+	desc = ""
+	ideology = generic_social_democracy
+	expire = 2024.6.7
+	picture = gfx/leaders/ROM/Portrait_victor_ponta.dds
+	traits = { }
+}
+
+set_country_flag = ponta_cabinet_ii #this is for cabinet assignment
+
+ 2018.1.1 = {
+
+	set_politics = {
+		ruling_party = eastern_liberal
+		last_election = 2012.11.24
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		ultranationalist = 1
+		eastern_liberal = 38
+		populist = 1
+		libertarian = 7
+		social_democracy = 22
+		neoliberal = 15
+		neoconservative = 5
+		eastern_conservative = 11
+    }
+
+}
+
+set_research_slots = 4
+set_stability = 0.1
+set_war_support = 0.75
+
+
+
+set_convoys = 56
+
+add_ai_strategy = {
+    type = alliance
+    id = "POL"
+    value = 100
+}
+
+set_politics = {
+	ruling_party = libertarian
+	last_election = "2009.12.6"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	eastern_conservative = 3
+	eastern_liberal = 5
+	moderate_communist = 0
+	populist = 1
+	social_democracy = 25
+	neoliberal = 10
+	neoconservative = 10
+	ultranationalist = 1
+    theocracy_ideology = 1
+	libertarian = 40
+	absolute_monarchy_ideology = 4
+}

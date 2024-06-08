@@ -1,0 +1,578 @@
+defined_text = {
+    name = get_military_spending_status
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_5
+        }
+       localization_key = "military_spending_is_extreme"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_4
+        }
+       localization_key = "military_spending_is_high"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_3
+        }
+       localization_key = "military_spending_is_medium"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_2
+        }
+       localization_key = "military_spending_is_low"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_1
+        }
+       localization_key = "military_spending_is_minimal"
+    }
+}
+
+defined_text = {
+    name = get_intelligence_spending_status
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_5
+        }
+       localization_key = "intelligence_spending_is_extreme"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_4
+        }
+       localization_key = "intelligence_spending_is_high"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_3
+        }
+       localization_key = "intelligence_spending_is_medium"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_2
+        }
+       localization_key = "intelligence_spending_is_low"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_1
+        }
+       localization_key = "intelligence_spending_is_minimal"
+    }
+}
+
+defined_text = {
+    name = get_education_spending_status
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_5
+        }
+       localization_key = "education_spending_is_extreme"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_4
+        }
+       localization_key = "education_spending_is_high"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_3
+        }
+       localization_key = "education_spending_is_medium"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_2
+        }
+       localization_key = "education_spending_is_low"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_1
+        }
+       localization_key = "education_spending_is_minimal"
+    }
+}
+
+defined_text = {
+    name = get_public_services_spending_status
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_5
+        }
+       localization_key = "public_services_spending_is_extreme"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_4
+        }
+       localization_key = "public_services_spending_is_high"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_3
+        }
+       localization_key = "public_services_spending_is_medium"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_2
+        }
+       localization_key = "public_services_spending_is_low"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_1
+        }
+       localization_key = "public_services_spending_is_minimal"
+    }
+}
+
+
+defined_text = {
+    name = get_effects_from_inflation_localisation
+	
+    text = {
+        trigger = {
+			has_idea = ATD_inflation_1
+        }
+       localization_key = "ATD_inflation_1_modifiers"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_inflation_2
+        }
+       localization_key = "ATD_inflation_2_modifiers"
+    }
+	
+	text = {
+        trigger = {
+			has_idea = ATD_inflation_3
+        }
+       localization_key = "ATD_inflation_3_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_inflation_4
+        }
+       localization_key = "ATD_inflation_4_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_inflation_5
+        }
+       localization_key = "ATD_inflation_5_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_inflation_6
+        }
+       localization_key = "ATD_inflation_6_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_inflation_7
+        }
+       localization_key = "ATD_inflation_7_modifiers"
+    }
+}
+
+defined_text = {
+    name = get_effects_from_real_gdp_pc_localisation
+	
+    text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_1
+        }
+       localization_key = "ATD_real_gdp_pc_1_modifiers"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_2
+        }
+       localization_key = "ATD_real_gdp_pc_2_modifiers"
+    }
+	
+	text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_3
+        }
+       localization_key = "ATD_real_gdp_pc_3_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_4
+        }
+       localization_key = "ATD_real_gdp_pc_4_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_5
+        }
+       localization_key = "ATD_real_gdp_pc_5_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_6
+        }
+       localization_key = "ATD_real_gdp_pc_6_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_real_gdp_pc_7
+        }
+       localization_key = "ATD_real_gdp_pc_7_modifiers"
+    }
+}
+
+defined_text = {
+    name = get_effects_from_gdp_pc_localisation
+	
+    text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_1
+        }
+       localization_key = "ATD_gdp_pc_1_modifiers"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_2
+        }
+       localization_key = "ATD_gdp_pc_2_modifiers"
+    }
+	
+	text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_3
+        }
+       localization_key = "ATD_gdp_pc_3_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_4
+        }
+       localization_key = "ATD_gdp_pc_4_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_5
+        }
+       localization_key = "ATD_gdp_pc_5_modifiers"
+    }
+	text = {
+        trigger = {
+			has_idea = ATD_gdp_pc_6
+        }
+       localization_key = "ATD_gdp_pc_6_modifiers"
+    }
+}
+
+defined_text = {
+    name = stimulous_package_has_enough_political_power
+	
+    text = {
+        trigger = {
+			has_political_power < 120
+        }
+       localization_key = "R"
+    }
+	
+    text = {
+       localization_key = "Y"
+    }
+}
+
+defined_text = {
+    name = can_do_stimulous_packages
+	
+    text = {
+        trigger = {
+			NOT = { has_country_flag = cannot_launch_stimulous_pacakges }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = has_recently_done_a_stimulous_package
+	
+    text = {
+        trigger = {
+			NOT = { has_country_flag = has_recently_done_a_stimulous_pacakge_flag }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+       localization_key = "texticon_cross"
+    }
+}
+
+
+defined_text = {
+    name = inflation_has_enough_political_power
+	
+    text = {
+        trigger = {
+			has_political_power < 50
+        }
+       localization_key = "R"
+    }
+	
+    text = {
+       localization_key = "Y"
+    }
+}
+
+defined_text = {
+    name = inflation_can_modify_inflation_rate
+	
+    text = {
+        trigger = {
+			NOT = { has_country_flag = cannot_modify_inflation_rate }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = inflation_has_recently_modified_inflation
+	
+    text = {
+        trigger = {
+			NOT = { has_country_flag = has_recently_modified_inflation_rate }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = is_erdogan_not_your_leader
+	
+    text = {
+        trigger = {
+			NOT = { recep_tayyip_erdogan_is_leader = YES }
+        }
+       localization_key = "texticon_tick"
+    }
+	
+    text = {
+       localization_key = "texticon_cross"
+    }
+}
+
+defined_text = {
+    name = inflation_good_or_bad
+	
+    text = {
+        trigger = {
+			OR={
+				check_variable = { var = ROOT.inflation_rate value = 7.5 compare = greater_than_or_equals }
+				check_variable = { var = ROOT.inflation_rate value = 1 compare = less_than_or_equals }
+				check_variable = { var = ROOT.real_gdp_growth value = 0 compare = less_than_or_equals }
+			}
+        }
+        localization_key = "R"
+    }
+	
+    text = {
+		localization_key = "G"
+    }
+}
+
+defined_text = {
+    name = get_military_spending_effects
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_5
+        }
+       localization_key = "military_spending_is_extreme_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_4
+        }
+       localization_key = "military_spending_is_high_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_3
+        }
+       localization_key = "military_spending_is_medium_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_2
+        }
+       localization_key = "military_spending_is_low_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_military_spending_idea_1
+        }
+       localization_key = "military_spending_is_minimal_effects"
+    }
+}
+
+defined_text = {
+    name = get_intelligence_spending_effects
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_5
+        }
+       localization_key = "intelligence_spending_is_extreme_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_4
+        }
+       localization_key = "intelligence_spending_is_high_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_3
+        }
+       localization_key = "intelligence_spending_is_medium_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_2
+        }
+       localization_key = "intelligence_spending_is_low_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_intelligence_spending_idea_1
+        }
+       localization_key = "intelligence_spending_is_minimal_effects"
+    }
+}
+
+defined_text = {
+    name = get_education_spending_effects
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_5
+        }
+       localization_key = "education_spending_is_extreme_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_4
+        }
+       localization_key = "education_spending_is_high_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_3
+        }
+       localization_key = "education_spending_is_medium_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_2
+        }
+       localization_key = "education_spending_is_low_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_education_spending_idea_1
+        }
+       localization_key = "education_spending_is_minimal_effects"
+    }
+}
+
+defined_text = {
+    name = get_public_services_spending_effects
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_5
+        }
+       localization_key = "public_services_spending_is_extreme_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_4
+        }
+       localization_key = "public_services_spending_is_high_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_3
+        }
+       localization_key = "public_services_spending_is_medium_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_2
+        }
+       localization_key = "public_services_spending_is_low_effects"
+    }
+	
+    text = {
+        trigger = {
+			has_idea = ATD_public_services_spending_idea_1
+        }
+       localization_key = "public_services_spending_is_minimal_effects"
+    }
+}

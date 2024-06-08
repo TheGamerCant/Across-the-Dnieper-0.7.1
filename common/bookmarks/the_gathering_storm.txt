@@ -1,0 +1,58 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2022.2.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "UKR"
+		default = no
+		
+		"UKR"={
+			minor = yes
+			history = "UKR_GATHERING_STORM_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Ukraine_2022_bg
+			}
+			focuses = {
+				UKR_the_fight_is_here
+				UKR_the_ukrainian_government_in_exile
+				UKR_dishonour_before_death
+			}
+		}
+
+		"SOV"={
+			minor = yes
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Russia_2022_bg
+			}
+			focuses = {
+				SOV_great_victors_2
+				SOV_the_quagmire
+				SOV_the_angry_patriots
+			}
+		}
+
+		"BLR"={
+			minor = yes
+			history = "BLR_GATHERING_STORM_DESC"
+			ideology = eastern_conservative
+			ideas = {
+				Belarus_2022_bg
+			}
+
+			focuses = {
+				BLR_the_last_dictator_of_europe
+				BLR_Union_state
+				BLR_the_flames_of_revolution
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

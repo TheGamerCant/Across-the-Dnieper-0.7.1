@@ -1,0 +1,130 @@
+defined_text = {
+    name = get_western_front_status
+	
+	text = {
+        trigger = {
+			has_global_flag =  smo_western_front_open
+        }
+        localization_key = "smo_front_is_active"
+    }
+
+	text = {
+        localization_key = "smo_front_is_closed"
+    }
+}
+
+defined_text = {
+    name = get_northern_front_status
+	
+	text = {
+        trigger = {
+			has_global_flag =  smo_northern_front_open
+        }
+        localization_key = "smo_front_is_active"
+    }
+
+	text = {
+        localization_key = "smo_front_is_closed"
+    }
+}
+
+
+defined_text = {
+    name = get_eastern_front_status
+	
+	text = {
+        trigger = {
+			has_global_flag =  smo_eastern_front_open
+        }
+        localization_key = "smo_front_is_active"
+    }
+
+	text = {
+        localization_key = "smo_front_is_closed"
+    }
+}
+
+
+defined_text = {
+    name = get_donbass_front_status
+	
+	text = {
+        trigger = {
+			has_global_flag =  smo_donbass_front_open
+        }
+        localization_key = "smo_front_is_active"
+    }
+
+	text = {
+        localization_key = "smo_front_is_closed"
+    }
+}
+
+
+defined_text = {
+    name = get_southern_front_status
+	
+	text = {
+        trigger = {
+			has_global_flag =  smo_southern_front_open
+        }
+        localization_key = "smo_front_is_active"
+    }
+
+	text = {
+        localization_key = "smo_front_is_closed"
+    }
+}
+
+defined_text = {
+    name = get_smo_name
+	
+	text = {
+        trigger = {
+			OR={
+				original_tag = SOV
+				is_in_faction_with = SOV
+				is_puppet_of = SOV
+			}
+        }
+        localization_key = "special_military_operation"
+    }
+
+	text = {
+        localization_key = "russian_invasion_of_ukraine"
+    }
+}
+
+defined_text = {
+    name = get_a_harsh_war_status
+	
+	text = {
+        trigger = {
+			has_global_flag = a_harsh_war_active_flag
+        }
+        localization_key = "a_harsh_war_active_loc"
+    }
+
+	text = {
+        localization_key = ""
+    }
+}
+
+
+defined_text = {
+    name = get_smo_bg
+	
+	text = {
+        trigger = {
+			original_tag = UKR
+        }
+        localization_key = "GFX_smo_ukr_bg"
+    }
+
+	text = {
+        trigger = {
+			original_tag = SOV
+        }
+        localization_key = "GFX_smo_bg"
+    }
+}

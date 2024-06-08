@@ -1,0 +1,1355 @@
+UKR_spawn_donbass_countries={
+	if={
+		limit = {
+			OR={
+				has_country_flag = UKR_historical_path_for_gov 
+				has_country_flag = UKR_appeasing_the_russians
+				AND={
+					is_historical_focus_on = yes
+					is_ai = yes
+					NOT={
+						OR={
+							UKR_is_yarosh_ultranat_ai = yes
+							UKR_is_yarosh_fascist_ai = yes
+						}
+					}
+				}
+			}
+		}
+		every_state={
+			limit = { has_state_flag = donetsk_oblast_flag }
+			add_core_of = DON
+			
+			DON = { transfer_state = PREV }
+		}
+		every_state={
+			limit = { has_state_flag = luhansk_oblast_flag }
+			add_core_of = LHK
+			
+			LHK = { transfer_state = PREV }
+		}
+		if = {
+			limit = { DON = { is_ai = yes } }
+
+			every_state={
+				limit = { OR = { state = 208 state = 186 state = 173 state = 174 state = 159 state = 152 state = 155 } }
+
+				add_dynamic_modifier = {
+					modifier = DONBASS_heavily_defended_area
+					scope = UKR
+					days = 150
+				}
+			}
+		}
+
+		DON = { 
+			if={
+				limit = { has_dlc = "No Step Back" }
+				load_oob = DON_moderate_nsb
+			}
+			else={
+				load_oob = DON_moderate
+			}
+#						unlock_national_focus = DON_storm_the_rsa
+#						unlock_national_focus = DON_appoint_new_leadership
+#						unlock_national_focus = DON_hold_referendum_rallies
+#						unlock_national_focus = DON_demand_russian_peacekeeping_troops
+#						complete_national_focus = DON_glory_to_the_republic
+		}
+		LHK = { 
+			load_oob = LHK_moderate
+		}
+		every_country={
+			limit = { OR = { original_tag = DON original_tag = SOV original_tag = UKR } }
+			country_event = { id = donetsk.5 days = 22 }
+		}
+		every_country = {
+			limit = { OR = { original_tag = DON original_tag = LHK original_tag = ODS original_tag = KHK } }
+			country_event = { id = donbass_mutual.3 days = 5 }
+		}
+		if={
+			limit = { 
+				army_manpower_in_state = { state = 89 amount < 7500 } 
+				army_manpower_in_state = { state = 94 amount < 7500 }
+				is_ai = no
+			}
+			every_state={
+				limit = { has_state_flag = kharkiv_oblast_flag }
+				add_core_of = KHK
+				
+				KHK = { transfer_state = PREV }
+			}
+			KHK = { 
+				load_oob = KHK_moderate
+			}
+		}
+		if={
+			limit = { 
+				army_manpower_in_state = { state = 199 amount < 7500 } 
+				army_manpower_in_state = { state = 269 amount < 7500 }
+				is_ai = no
+			}	
+			every_state={
+				limit = { has_state_flag = odessa_oblast_flag }
+				add_core_of = ODS
+			}
+			ODS = { 
+				transfer_state = 269
+				transfer_state = 320
+				transfer_state = 287
+				transfer_state = 291
+				transfer_state = 322
+				load_oob = ODS_moderate
+			}
+		}
+	}
+	else={				#Novorossiya
+		every_state={
+			limit = {
+				OR={
+					has_state_flag = donetsk_oblast_flag
+					has_state_flag = zaporizhia_oblast_flag
+					has_state_flag = luhansk_oblast_flag
+				}	
+			}
+			add_core_of = NOV
+			
+			NOV = { transfer_state = PREV }
+		}
+		
+		NOV = {
+			transfer_state = 152
+			transfer_state = 174
+			transfer_state = 159
+			transfer_state = 186
+			transfer_state = 173
+			if={
+				limit = { has_dlc = "No Step Back" }
+				load_oob = DON_moderate_nsb
+			}
+			else={
+				load_oob = DON_moderate
+			}
+			load_oob = LHK_moderate
+			load_oob = NOV_rebel
+		}
+		UKR={
+			set_province_controller = 18302
+			set_province_controller = 1166
+			set_province_controller = 4771
+			set_province_controller = 13399
+			set_province_controller = 11188
+			set_province_controller = 200
+			set_province_controller = 7395
+			
+			set_province_controller = 12187
+			set_province_controller = 13190
+			set_province_controller = 4359
+			set_province_controller = 2851
+			set_province_controller = 6231
+			set_province_controller = 5649
+		}
+		174 = { set_state_controller_to = UKR }
+		159 = { set_state_controller_to = UKR }
+		173 = { set_state_controller_to = UKR }
+		every_state={
+			limit = {
+				OR={
+					has_state_flag = dnipro_oblast_flag
+					has_state_flag = kherson_oblast_flag
+					has_state_flag = mykolaiv_oblast_flag
+					has_state_flag = odessa_oblast_flag
+					has_state_flag = kirovohrad_oblast_flag
+					has_state_flag = kharkiv_oblast_flag
+				}	
+			}
+			add_claim_by = NOV
+		}
+		DON = { every_unit_leader = { set_nationality = NOV } }
+		LHK = { every_unit_leader = { set_nationality = NOV } }
+		NOV={
+			create_country_leader = {
+				name = "Pavel Gubarev"
+				desc = ""
+				ideology = donetsk_party
+				picture = gfx/leaders/DON/Portrait_Pavel_Gubarev.png
+				traits = {  }
+			}
+			
+			add_dynamic_modifier = { modifier = NOVOROSSIYA_secret_start_boost days = 6 }
+		}
+		if={
+			limit = { 
+				army_manpower_in_state = { state = 89 amount < 7500 } 
+				army_manpower_in_state = { state = 94 amount < 7500 }
+				is_ai = no
+			}
+			NOV = { 
+				load_oob = KHK_moderate
+			}
+			UKR={
+				set_province_controller = 7182
+				set_province_controller = 10013
+				set_province_controller = 13115
+				set_province_controller = 3279
+				set_province_controller = 17405
+				set_province_controller = 12384
+				set_province_controller = 9708
+				set_province_controller = 8990
+				set_province_controller = 17241
+				set_province_controller = 953
+				set_province_controller = 4234
+			}
+		}
+		if={
+			limit = { 
+				army_manpower_in_state = { state = 199 amount < 7500 } 
+				army_manpower_in_state = { state = 269 amount < 7500 }
+				is_ai = no
+			}
+			every_state={
+				limit = { has_state_flag = odessa_oblast_flag }
+				add_core_of = ODS
+			}
+			ODS = { 
+				transfer_state = 269
+				transfer_state = 320
+				transfer_state = 287
+				transfer_state = 291
+				transfer_state = 322
+				load_oob = ODS_moderate
+			}
+			
+		}
+	}
+}
+
+make_borders_look_nice={
+	set_variable = { global.donbass_countries_states_owned = 0 }
+	every_state={
+		limit={
+			CONTROLLER={
+				OR={
+					tag = DON
+					tag = LHK
+				}
+			}
+		}
+		
+		add_to_variable = { global.donbass_countries_states_owned = 1 }
+	}
+	
+	if={
+		limit = { has_global_flag = donetsk_has_capitulated }
+		every_state={
+			limit = { has_state_flag = luhansk_oblast_flag }
+			UKR = { transfer_state = PREV }
+		}
+		
+		if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 1 compare = equals }
+			}
+			LHK = { transfer_state = 159 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 2 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 3 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 }			
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 4 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 5 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 transfer_state = 154 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 6 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 transfer_state = 154 transfer_state = 136 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 7 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 131 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 8 compare = equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 131 transfer_state = 109 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 9 compare = greater_than_or_equals }
+			}
+			LHK = { transfer_state = 159 transfer_state = 152 transfer_state = 174 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 131 transfer_state = 109 transfer_state = 103 }
+		}
+	}
+	else_if={
+		limit = { has_global_flag = luhansk_has_capitulated }
+		every_state={
+			limit = { has_state_flag = donetsk_oblast_flag }
+			UKR = { transfer_state = PREV }
+		}
+		
+		if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 1 compare = equals }
+			}
+			DON = { transfer_state = 208 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 2 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 3 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 4 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 5 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 transfer_state = 306 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 6 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 transfer_state = 306 transfer_state = 166 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 7 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 8 compare = equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 transfer_state = 195 }
+		}
+		else_if={
+			limit = {
+				check_variable = { var = global.donbass_countries_states_owned value = 9 compare = greater_than_or_equals }
+			}
+			DON = { transfer_state = 208 transfer_state = 186 transfer_state = 173 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 transfer_state = 195 transfer_state = 135 }
+		}
+	}
+	else={
+		if={
+			limit={
+				OR={
+					country_exists = DON
+					country_exists = LHK
+				}
+			}
+			
+			every_state={
+				limit = { OR={ has_state_flag = donetsk_oblast_flag has_state_flag = luhansk_oblast_flag } }
+				UKR = { transfer_state = PREV }
+			}
+			
+			if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 3 compare = equals }
+				}
+				LHK = { transfer_state = 174 }
+				DON = { transfer_state = 186 transfer_state = 173 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 4 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 }
+				DON = { transfer_state = 186 transfer_state = 173 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 5 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 }
+				DON = { transfer_state = 186 transfer_state = 173 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 6 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 7 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 8 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 9 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 10 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 11 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 12 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 13 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 14 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 transfer_state = 131 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 15 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 transfer_state = 131 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 16 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 transfer_state = 131 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 transfer_state = 195}
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 17 compare = equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 transfer_state = 131 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 transfer_state = 195 transfer_state = 135 }
+			}
+			else_if={
+				limit = {
+					check_variable = { var = global.donbass_countries_states_owned value = 18 compare = greater_than_or_equals }
+				}
+				LHK = { transfer_state = 174 transfer_state = 159 transfer_state = 152 transfer_state = 155 transfer_state = 154 transfer_state = 136 transfer_state = 109 transfer_state = 131 transfer_state = 103 }
+				DON = { transfer_state = 186 transfer_state = 173 transfer_state = 208 transfer_state = 230 transfer_state = 306 transfer_state = 166 transfer_state = 146 transfer_state = 195 transfer_state = 135 }
+			}
+		}
+	}
+	
+
+	
+	
+	#Keep this at the bottom
+	if={
+		limit = { has_global_flag = donetsk_has_capitulated }
+		UKR = { annex_country = { target = DON transfer_troops = no } }
+	}
+	
+	if={
+		limit = { has_global_flag = luhansk_has_capitulated }
+		UKR = { annex_country = { target = LHK transfer_troops = no } }
+	}
+	
+	if={
+		limit = { has_global_flag = kharkiv_has_capitulated }
+		UKR = { annex_country = { target = KHK transfer_troops = no } }
+	}
+	
+	if={
+		limit = { has_global_flag = odesa_has_capitulated }
+		UKR = { annex_country = { target = ODS transfer_troops = no } }
+	}
+	
+	if={
+		limit = { has_global_flag = novorossiya_has_capitulated }
+		UKR = { annex_country = { target = NOV transfer_troops = no } }
+	}
+	clear_variable = global.donbass_countries_states_owned
+}
+
+load_russian_occupation={
+	hidden_effect={
+		UGE = {
+			every_state={
+				limit = {
+					OR={
+						has_state_flag = akarpatskia_oblast_flag
+						has_state_flag = cherkasy_oblast_flag
+						has_state_flag = chernihiv_oblast_flag
+						has_state_flag = chernivtsi_oblast_flag
+						has_state_flag = crimea_oblast_flag
+						has_state_flag = dnipro_oblast_flag
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = ivano_frankivsk_oblast_flag
+						has_state_flag = kharkiv_oblast_flag
+						has_state_flag = kherson_oblast_flag
+						has_state_flag = khmelnytskyi_oblast_flag
+						has_state_flag = kirovohrad_oblast_flag
+						has_state_flag = kyiv_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+						has_state_flag = lviv_oblast_flag
+						has_state_flag = mykolaiv_oblast_flag
+						has_state_flag = odessa_oblast_flag
+						has_state_flag = poltava_oblast_flag
+						has_state_flag = rivne_oblast_flag
+						has_state_flag = sumy_oblast_flag
+						has_state_flag = ternopil_oblast_flag
+						has_state_flag = vinnytsia_oblast_flag
+						has_state_flag = volyn_oblast_flag
+						has_state_flag = zaporizhia_oblast_flag
+						has_state_flag = zhytomyr_oblast_flag
+					}
+				}
+				add_core_of = PREV
+			}
+		}
+		country_lock_all_division_template = no
+	
+		remove_dynamic_modifier = { modifier = UKR_armed_forces_of_ukraine_soviet_doctrine }
+		remove_dynamic_modifier = { modifier = UKR_armed_forces_of_ukraine_reforming }
+		remove_dynamic_modifier = { modifier = UKR_armed_forces_of_ukraine_western_doctrine }
+		remove_dynamic_modifier = { modifier = UKR_air_force_of_ukraine }
+		remove_dynamic_modifier = { modifier = UKR_air_force_of_ukraine_reforming }
+		remove_dynamic_modifier = { modifier = UKR_navy_of_ukraine }
+		remove_dynamic_modifier = { modifier = UKR_sotn_oligarchs }
+		remove_dynamic_modifier = { modifier = UKR_sotn_nationalists }
+		remove_dynamic_modifier = { modifier = UKR_sotn_pro_russians }
+		remove_dynamic_modifier = { modifier = UKR_sotn_liberals }
+		
+		set_cosmetic_tag = UKR_russian_puppet
+		set_global_flag = ukraine_rada_disbanded
+		
+		add_ideas = {
+			ROU_unstable_government
+			
+			oligarchy
+			martial_law
+			limited_conscription
+			
+			state_controlled_press
+			bipolarist
+			unions_restricted
+			womens_rights_traditional_values
+			lgbtq_rights_behind_closed_doors
+			minority_rights_minor_inequality
+			nationalism_laws_pacifist
+			firearm_laws_restricted
+			alchohol_narcotics_laws_largely_regulated
+			religion_law_religious
+		}
+		
+		remove_ideas = UKR_valerii_zaluzhnui
+		remove_ideas = UKR_oleksandr_syrskyi
+		remove_ideas = UKR_serhiy_popko
+		remove_ideas = UKR_mykhailo_zabrodskyi
+		remove_ideas = UKR_serhiy_drozdov
+		remove_ideas = UKR_serhiy_hayduk
+		
+		if={
+			limit = {
+				has_game_rule = {
+					rule = UKR_ai_war_behavior
+					option = DISHONOUR_BEFORE_DEATH_QUICK_COLLAPSE
+				}
+			}
+			add_ideas = UKR_collapse_quickly
+		}
+		
+		if={
+			limit= { NOT = { has_completed_focus = UKR_dishonour_before_death } }
+			complete_national_focus = UKR_dishonour_before_death
+		}
+	}
+}
+
+remove_cores={
+	hidden_effect={
+		random_country={
+			limit = { has_cosmetic_tag = UKR_russian_puppet }
+			set_variable = { global.russian_occupied_ukraine_tag = THIS }
+			every_state={
+				limit={ 
+					NOT = { state = 92 } 
+					OR={
+						has_state_flag = akarpatskia_oblast_flag
+						has_state_flag = cherkasy_oblast_flag
+						has_state_flag = chernihiv_oblast_flag
+						has_state_flag = chernivtsi_oblast_flag
+						has_state_flag = crimea_oblast_flag
+						has_state_flag = dnipro_oblast_flag
+						has_state_flag = donetsk_oblast_flag
+						has_state_flag = ivano_frankivsk_oblast_flag
+						has_state_flag = kharkiv_oblast_flag
+						has_state_flag = kherson_oblast_flag
+						has_state_flag = khmelnytskyi_oblast_flag
+						has_state_flag = kirovohrad_oblast_flag
+						has_state_flag = kyiv_oblast_flag
+						has_state_flag = luhansk_oblast_flag
+						has_state_flag = lviv_oblast_flag
+						has_state_flag = mykolaiv_oblast_flag
+						has_state_flag = odessa_oblast_flag
+						has_state_flag = poltava_oblast_flag
+						has_state_flag = rivne_oblast_flag
+						has_state_flag = sumy_oblast_flag
+						has_state_flag = ternopil_oblast_flag
+						has_state_flag = vinnytsia_oblast_flag
+						has_state_flag = volyn_oblast_flag
+						has_state_flag = zaporizhia_oblast_flag
+						has_state_flag = zhytomyr_oblast_flag
+					}
+				}
+				remove_core_of = PREV
+				add_claim_by = PREV
+				
+				force_enable_resistance = { 
+					clear = no
+					occupier = var:global.russian_occupied_ukraine_tag
+					occupied = UGE
+				}
+				start_resistance = UGE
+				
+				
+				set_variable_to_random = {
+					var = resistance_to_add
+					min = 35
+					max = 50
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = compliance_to_add
+					min = 0
+					max = 5
+					integer = yes
+				}
+				
+				set_resistance = var:resistance_to_add
+				set_compliance = var:compliance_to_add
+				
+				clear_variable = resistance_to_add
+				clear_variable = compliance_to_add
+			}
+			country_lock_all_division_template = no
+			clear_variable = global.russian_occupied_ukraine_tag 
+		}
+	}
+}
+
+russia_ukraine_peace={		#This is total Ukrainian victory
+	SOV = { white_peace = UKR news_event = { id = atd_news.54 days = 2 } }
+	clear_russia_ukraine_war_state_modifiers = yes
+	clr_global_flag = russia_ukraine_war
+	clr_global_flag = a_harsh_war_active_flag
+	every_state={
+		limit={
+			OWNER={
+				OR={
+					tag = SOV
+					is_in_faction_with = SOV
+					is_puppet_of = SOV
+				}
+			}
+			OR={
+				has_state_flag = akarpatskia_oblast_flag
+				has_state_flag = cherkasy_oblast_flag
+				has_state_flag = chernihiv_oblast_flag
+				has_state_flag = chernivtsi_oblast_flag
+				has_state_flag = crimea_oblast_flag
+				has_state_flag = dnipro_oblast_flag
+				has_state_flag = donetsk_oblast_flag
+				has_state_flag = ivano_frankivsk_oblast_flag
+				has_state_flag = kharkiv_oblast_flag
+				has_state_flag = kherson_oblast_flag
+				has_state_flag = khmelnytskyi_oblast_flag
+				has_state_flag = kirovohrad_oblast_flag
+				has_state_flag = kyiv_oblast_flag
+				has_state_flag = luhansk_oblast_flag
+				has_state_flag = lviv_oblast_flag
+				has_state_flag = mykolaiv_oblast_flag
+				has_state_flag = odessa_oblast_flag
+				has_state_flag = poltava_oblast_flag
+				has_state_flag = rivne_oblast_flag
+				has_state_flag = sumy_oblast_flag
+				has_state_flag = ternopil_oblast_flag
+				has_state_flag = vinnytsia_oblast_flag
+				has_state_flag = volyn_oblast_flag
+				has_state_flag = zaporizhia_oblast_flag
+				has_state_flag = zhytomyr_oblast_flag
+			}
+		}
+		UKR = { transfer_state = PREV }
+	}
+	country_event = { id = super.2 }
+}
+
+UKR_HUR_setup = {
+	set_variable = { UKR.executive_successful_operation_chance_modifier = 20 }
+	set_variable = { UKR.executive_forces_morale_modifier = 40 }
+	set_variable = { UKR.executive_strategy_modifier = 60 }
+
+	set_variable = { UKR.can_do_hur_mission = 1 }
+
+	set_variable = { UKR.borisovka_controller = 1 }
+	set_variable = { UKR.gorkovsky_tsapovka_shchetinovka_controller = 1 }
+	set_variable = { UKR.belgorod_controller = 1 }
+	set_variable = { UKR.shebeniko_controller = 1 }
+
+	set_variable = { UKR.required_rifles_incursion = 100 }
+	set_variable = { UKR.given_rifles_incursion = 0 }
+
+	set_variable = { UKR.required_manpower_incursion = 100 }
+	set_variable = { UKR.given_manpower_incursion = 0 }
+
+	set_variable = { UKR.required_apc_incursion = 4 }
+	set_variable = { UKR.given_apc_incursion = 0 }
+
+	set_variable = { UKR.required_mechanized_incursion = 5 }
+	set_variable = { UKR.given_mechanized_incursion = 0 }
+
+	set_variable = { UKR.required_cp_incursion = 50 }
+	
+	add_to_array = { HUR_assassination_array = "Illia Kyva" }
+	add_to_array = { HUR_assassination_array = "Mikhail Filiponenko" }
+	add_to_array = { HUR_assassination_array = "Sergei Gorenko" }
+
+	set_variable = { UKR.rvc_frame = 1 }
+	set_variable = { UKR.frl_frame = 1 }
+	set_variable = { UKR.pvc_frame = 1 }
+	set_variable = { UKR.bvc_frame = 1 }
+	set_variable = { UKR.gvc_frame = 1 }
+	set_variable = { UKR.kkr_frame = 1 }
+	set_variable = { UKR.gnl_frame = 1 }
+	set_variable = { UKR.sob_frame = 1 }
+}
+
+UKR_HUR_belgorod_clear_flags = {
+	clr_country_flag = UKR_HUR_borisovka_selected
+	clr_country_flag = UKR_HUR_gorkovsky_tsapovka_shchetinovka_selected
+	clr_country_flag = UKR_HUR_belgorod_selected
+	clr_country_flag = UKR_HUR_shebeniko_selected
+}
+
+UKR_HUR_belgorod_incursion_calculate = {
+	set_temp_variable = { temp_var_percent_of_success = 25 } #25 is base value
+	add_to_temp_variable = { temp_var_percent_of_success = ROOT.executive_successful_operation_chance_modifier }
+
+	set_temp_variable_to_random = {
+		var = temp_var_random_chance
+		min = -15
+		max = 15
+		integer = yes
+	}
+
+	add_to_temp_variable = { temp_var_percent_of_success = temp_var_random_chance }
+
+	if = {
+		limit = {
+			AND = {
+				check_variable = { temp_var_percent_of_success > 50 }
+				check_variable = { temp_var_percent_of_success < 60 }
+			}
+
+		}
+
+		random_list = {
+			50 = {
+				country_event = { id = ukraine_hur.1 hours = 5 }
+			}
+			50 = {
+				country_event = { id = ukraine_hur.2 hours = 5 }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_var_percent_of_success < 50 }
+		}
+
+		random_list = {
+			20 = {
+				country_event = { id = ukraine_hur.1 hours = 5 }
+			}
+			80 = {
+				country_event = { id = ukraine_hur.2 hours = 5 }
+			}
+		}
+	}
+	else = {
+		random_list = {
+			80 = {
+				country_event = { id = ukraine_hur.1 hours = 5 }
+			}
+			20 = {
+				country_event = { id = ukraine_hur.2 hours = 5 }
+			}
+		}
+	}
+}
+
+UKR_setup_military_aid_variables = {
+	set_variable = { UKR.UKR_ma_usa_variable = 80 }
+	set_variable = { UKR.UKR_ma_uk_variable = 70 }
+	set_variable = { UKR.UKR_ma_ger_variable = 85 }
+	set_variable = { UKR.UKR_ma_tur_variable = 65 }
+
+	set_variable = { UKR.UKR_ma_usa_success_variable = 70 }
+	set_variable = { UKR.UKR_ma_uk_success_variable = 75 }
+	set_variable = { UKR.UKR_ma_ger_success_variable = 80 }
+	set_variable = { UKR.UKR_ma_tur_success_variable = 70 }
+}
+
+UKR_clear_military_aid_countries = {
+	clr_country_flag = UKR_ma_usa_selected
+	clr_country_flag = UKR_ma_uk_selected
+	clr_country_flag = UKR_ma_ger_selected
+	clr_country_flag = UKR_ma_tur_selected
+}
+
+UKR_set_HUR_map_to_zero={
+	set_variable = { UKR.UKR_HUR_current_tab = 0 }
+	set_variable = { UKR.UKR_HUR_belgorod_button_frame = 1 }
+	set_variable = { UKR.UKR_HUR_crimea_button_frame = 1 }
+}
+
+UKR_set_HUR_map_to_one={
+	set_variable = { UKR.UKR_HUR_current_tab = 1 }
+	set_variable = { UKR.UKR_HUR_belgorod_button_frame = 2 }
+	set_variable = { UKR.UKR_HUR_crimea_button_frame = 1 }
+}
+
+UKR_set_HUR_map_to_two={
+	set_variable = { UKR.UKR_HUR_current_tab = 2 }
+	set_variable = { UKR.UKR_HUR_belgorod_button_frame = 1 }
+	set_variable = { UKR.UKR_HUR_crimea_button_frame = 2 }
+}
+
+UKR_clear_military_aid_equipment = {
+	clr_country_flag = UKR_ma_selected_himars
+	clr_country_flag = UKR_ma_selected_abrams
+	clr_country_flag = UKR_ma_selected_bradleys
+	clr_country_flag = UKR_ma_selected_humvees
+	clr_country_flag = UKR_ma_selected_m113
+	clr_country_flag = UKR_ma_selected_spartans
+	clr_country_flag = UKR_ma_selected_challengers
+	clr_country_flag = UKR_ma_selected_leopards
+	clr_country_flag = UKR_ma_selected_marders
+}
+UKR_clear_military_aid_sender = {
+	clr_country_flag = UKR_ma_receiving_from_usa
+	clr_country_flag = UKR_ma_receiving_from_uk
+	clr_country_flag = UKR_ma_receiving_from_ger
+	clr_country_flag = UKR_ma_receiving_from_tur
+}
+
+UKR_calculate_military_aid = {
+	hidden_effect = {
+		activate_mission = UKR_ma_holding_talks
+		
+		#Set variable dependant on country 
+		if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_usa }
+	
+			set_temp_variable = { military_aid_added_up = UKR_ma_usa_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_usa_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_uk }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_uk_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_uk_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_ger }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_ger_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_ger_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_tur }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_tur_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_tur_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+		}
+		
+
+		#Calculate if deal will be reached or not
+
+		if = {
+			limit = { check_variable = { military_aid_added_up < 15 } }
+	
+			random_list = {
+				15 = {
+					country_event = { id = ukraine_ma.1 days = 6 }
+				}
+				85 = {
+					country_event = { id = ukraine_ma.3 days = 6 }
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				AND = {
+					check_variable = { military_aid_added_up > 15 } 
+					check_variable = { military_aid_added_up < 45 } 
+				}
+				
+			}
+	
+			random_list = {
+				40 = {
+					country_event = { id = ukraine_ma.1 days = 6 }
+				}
+				60 = {
+					country_event = { id = ukraine_ma.3 days = 6 }
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				AND = {
+					check_variable = { military_aid_added_up > 45 } 
+					check_variable = { military_aid_added_up < 65 } 
+				}
+				
+			}
+	
+			random_list = {
+				65 = {
+					country_event = { id = ukraine_ma.1 days = 6 }
+				}
+				35 = {
+					country_event = { id = ukraine_ma.3 days = 6 }
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { military_aid_added_up > 64 } 
+			}
+	
+			random_list = {
+				85 = {
+					country_event = { id = ukraine_ma.1 days = 6 }
+				}
+				15 = {
+					country_event = { id = ukraine_ma.3 days = 6 }
+				}
+			}
+		}
+	}
+}
+
+UKR_give_military_aid = {
+	#hidden_effect = {
+		#Set variable dependant on country 
+
+		if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_usa }
+	
+			set_temp_variable = { military_aid_added_up = UKR_ma_usa_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_usa_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+			divide_temp_variable = { military_aid_added_up = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_uk }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_uk_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_uk_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+			divide_temp_variable = { military_aid_added_up = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_ger }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_ger_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_ger_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+			divide_temp_variable = { military_aid_added_up = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_tur }
+
+			set_temp_variable = { military_aid_added_up = UKR_ma_tur_success_variable }
+	
+			add_to_temp_variable = { military_aid_added_up = UKR_ma_tur_variable }
+			divide_temp_variable = { military_aid_added_up = 2 }
+			divide_temp_variable = { military_aid_added_up = 100 }
+		}
+
+		if = {
+			limit = { has_country_flag = UKR_ma_selected_himars }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_himars }
+
+			if = {
+				limit = { has_dlc = "No Step Back" }
+				if = {
+					limit = { NOT = { has_tech = railway_gun } }
+					set_technology = { railway_gun = 1 }
+				}
+				for_loop_effect = {
+					end = military_aid_added_up
+					value = temp
+					create_railway_gun = {
+						equipment = railway_gun_equipment_1
+						name = "HIMARS"
+					}
+				}
+			}
+
+			else = {
+				multiply_temp_variable = { military_aid_added_up = 12 }
+				
+				add_equipment_to_stockpile = { 
+					type = artillery_equipment_3
+					amount = military_aid_added_up
+					producer = USA
+				}
+				add_equipment_to_stockpile = { 
+					type = motorized_rocket_equipment_2
+					amount = military_aid_added_up
+					producer = USA
+				}
+				add_equipment_to_stockpile = { 
+					type = rocket_artillery_equipment_1
+					amount = military_aid_added_up
+					producer = USA
+				}
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_abrams }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_abrams }
+
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = { 
+					type = abrams_chasis
+					variant_name = "M1A1 Abrams"
+					amount = military_aid_added_up
+					producer = USA
+				}
+			}
+			else={
+				add_equipment_to_stockpile = { 
+					type = m1_abrams_equipment
+					amount = military_aid_added_up
+					producer = USA
+				}
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_bradleys }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_bradleys }
+
+			add_equipment_to_stockpile = { 
+				type = mechanized_equipment
+				variant_name = "M2A2 ODS Bradleys"
+				amount = military_aid_added_up
+				producer = USA
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_humvees }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_humvees }
+
+			add_equipment_to_stockpile = { 
+				type = motorized_equipment_1
+				variant_name = "Humvee"
+				amount = military_aid_added_up
+				producer = USA
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_spartans }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_spartans }
+
+			add_equipment_to_stockpile = { 
+				type = apc_equipment
+				variant_name = "FV103 Spartan"
+				amount = military_aid_added_up
+				producer = ENG
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_m113 }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_m113 }
+
+			add_equipment_to_stockpile = { 
+				type = apc_equipment
+				variant_name = "M113"
+				amount = military_aid_added_up
+				producer = USA
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_challengers }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_challengers }
+
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = { 
+					type = challenger2_chasis
+					variant_name = "Challenger 2"
+					amount = military_aid_added_up
+					producer = ENG
+				}
+			}
+			else={
+				add_equipment_to_stockpile = { 
+					type = challenger_2_equipment
+					amount = military_aid_added_up
+					producer = ENG
+				}
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_leopards }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_leopards }
+
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = { 
+					type = leopard2_chasis
+					variant_name = "Leopard 2A5"
+					amount = military_aid_added_up
+					producer = GER
+				}
+			}
+			else={
+				add_equipment_to_stockpile = { 
+					type = leopard_2_equipment
+					amount = military_aid_added_up
+					producer = GER
+				}
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_marders }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_marders }
+
+			add_equipment_to_stockpile = { 
+				type = mechanized_equipment
+				variant_name = "Schützenpanzer Marder 1"
+				amount = military_aid_added_up
+				producer = GER
+			}
+		}
+
+		else_if = {
+			limit = { has_country_flag = UKR_ma_selected_f16 }
+
+			multiply_temp_variable = { military_aid_added_up = UKR_max_f16 }
+
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_equipment_to_stockpile = { 
+					type = small_plane_airframe_1
+					variant_name = "F-16C"
+					amount = military_aid_added_up
+					producer = USA
+				}
+			}
+			else={
+				add_equipment_to_stockpile = { 
+					type = fighter_equipment_1
+					amount = military_aid_added_up
+					producer = USA
+				}
+			}
+
+
+		}
+
+		clr_country_flag = aid_deal_going_on
+	#}
+}
+
+UKR_ma_decrese_willingness_5 = {
+	custom_effect_tooltip = UKR_ma_decrese_willingness_5_tt
+	hidden_effect = {
+		if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_usa }
+	
+			add_to_variable = { UKR_ma_usa_variable = -5 }
+			clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_uk }
+	
+			add_to_variable = { UKR_ma_uk_variable = -5 }
+			clamp_variable = { var = UKR_ma_uk_variable min = 0 max = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_ger }
+	
+			add_to_variable = { UKR_ma_ger_variable = -5 }
+			clamp_variable = { var = UKR_ma_ger_variable min = 0 max = 100 }
+		}
+		else_if = {
+			limit = { has_country_flag = UKR_ma_receiving_from_tur }
+	
+			add_to_variable = { UKR_ma_tur_variable = -5 }
+			clamp_variable = { var = UKR_ma_tur_variable min = 0 max = 100 }
+		}
+	}
+}
+
+UKR_ma_decrese_willingness_5_all = {
+	custom_effect_tooltip = UKR_ma_decrese_willingness_5_all_tt
+	hidden_effect = {
+		add_to_variable = { UKR_ma_usa_variable = -5 }
+		add_to_variable = { UKR_ma_uk_variable = -5 }
+		add_to_variable = { UKR_ma_ger_variable = -5 }
+		add_to_variable = { UKR_ma_tur_variable = -5 }
+
+		clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_uk_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_ger_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_tur_variable min = 0 max = 100 }
+	}
+}
+
+UKR_ma_decrese_willingness_10_all = {
+	custom_effect_tooltip = UKR_ma_decrese_willingness_10_all_tt
+	hidden_effect = {
+		add_to_variable = { UKR_ma_usa_variable = -10 }
+		add_to_variable = { UKR_ma_uk_variable = -10 }
+		add_to_variable = { UKR_ma_ger_variable = -10 }
+		add_to_variable = { UKR_ma_tur_variable = -10 }
+
+		clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_uk_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_ger_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_tur_variable min = 0 max = 100 }
+	}
+}
+
+UKR_ma_decrese_willingness_3_all = {
+	custom_effect_tooltip = UKR_ma_decrese_willingness_3_all_tt
+	hidden_effect = {
+		add_to_variable = { UKR_ma_usa_variable = -3 }
+		add_to_variable = { UKR_ma_uk_variable = -3 }
+		add_to_variable = { UKR_ma_ger_variable = -3 }
+		add_to_variable = { UKR_ma_tur_variable = -3 }
+
+		clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_uk_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_ger_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_tur_variable min = 0 max = 100 }
+	}
+}
+
+UKR_ma_increse_willingness_5_all = {
+	custom_effect_tooltip = UKR_ma_increse_willingness_5_all_tt
+	hidden_effect = {
+		add_to_variable = { UKR_ma_usa_variable = 5 }
+		add_to_variable = { UKR_ma_uk_variable = 5 }
+		add_to_variable = { UKR_ma_ger_variable = 5 }
+		add_to_variable = { UKR_ma_tur_variable = 5 }
+
+		clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_uk_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_ger_variable min = 0 max = 100 }
+		clamp_variable = { var = UKR_ma_tur_variable min = 0 max = 100 }
+	}
+}
+
+UKR_ma_increse_willingness_5_usa = {
+	custom_effect_tooltip = UKR_ma_increse_willingness_5_usa_tt
+	hidden_effect = {
+		add_to_variable = { UKR_ma_usa_variable = 5 }
+		clamp_variable = { var = UKR_ma_usa_variable min = 0 max = 100 }
+	}
+}

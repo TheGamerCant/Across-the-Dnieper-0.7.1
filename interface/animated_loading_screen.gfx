@@ -1,0 +1,413 @@
+spriteTypes = {
+	FrameAnimatedSpriteType = {
+		name = "GFX_loading_screen_overlay"
+		textureFile = "/gfx/main_menu/image_overlay.png"
+		noOfFrames = 4
+		alwaystransparent = no
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_1"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_1.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_2"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_2.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_3"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_3.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_4"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_4.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_5"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_5.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_6"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_6.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_7"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_7.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_8"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_8.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_9"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_9.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_10"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_10.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_11"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_11.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_12"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_12.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Single_player_frame_13"
+		textureFile = "/gfx/main_menu/singleplayer_animated/Single_player_frame_13.png"
+		noOfFrames = 180
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_1"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_1.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_2"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_2.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_3"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_3.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_4"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_4.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_5"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_5.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_6"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_6.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_7"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_7.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_8"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_8.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_9"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_9.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_10"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_10.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_11"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_11.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_12"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_12.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_13"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_13.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Multi_player_frame_14"
+		textureFile = "/gfx/main_menu/multiplayer_animated/Multi_player_frame_14.png"
+		noOfFrames = 211
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_1"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_1.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_2"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_2.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_3"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_3.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_4"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_4.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_5"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_5.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_6"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_6.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_7"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_7.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_8"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_8.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_9"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_9.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_10"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_10.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_11"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_11.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_12"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_12.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_Exit_game_frame_13"
+		textureFile = "/gfx/main_menu/exit_game_animated/Exit_game_frame_13.png"
+		noOfFrames = 68
+		alwaystransparent = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

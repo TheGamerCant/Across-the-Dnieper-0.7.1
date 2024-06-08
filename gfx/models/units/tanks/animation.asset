@@ -1,0 +1,40 @@
+
+animation = {
+	name = "SOV_T72_idle_animation"
+	file = "SOV_T72_idle.anim"
+}
+animation = {
+	name = "SOV_T72_moving_animation"
+	file = "SOV_T72_moving.anim"
+}
+animation = {
+	name = "SOV_T72_attack_animation"
+	file = "SOV_T72_attack.anim"
+}
+
+animation = {
+	name = "UKR_T72_idle_animation"
+	file = "UKR_T72_idle.anim"
+}
+animation = {
+	name = "UKR_T72_moving_animation"
+	file = "UKR_T72_moving.anim"
+}
+animation = {
+	name = "UKR_T72_attack_animation"
+	file = "UKR_T72_attack.anim"
+}
+
+
+animation = {
+	name = "Abrams_idle_animation"
+	file = "Abrams_idle.anim"
+}
+animation = {
+	name = "Abrams_moving_animation"
+	file = "Abrams_moving.anim"
+}
+animation = {
+	name = "Abrams_attack_animation"
+	file = "Abrams_attack.anim"
+}

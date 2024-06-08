@@ -1,0 +1,276 @@
+guiTypes = {
+	containerWindowType = {
+		name = "money_gui_expanded"
+		position = { x = 0 y = -500 }	
+		size = { width=609 height=700 }
+		orientation = center
+		origo = upper_left
+		moveable = yes
+		click_to_front = yes
+		clipping = yes
+		
+		background ={
+			name ="gdp_mechanics_proper"
+			spriteType = "GFX_economy_bg_609_x_700"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}		
+		
+		instantTextboxType = {
+			name = "economic_overview_title_text_box"
+			position = { x = 20 y = 30 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "economic_overview_title_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "military_spending_text_box"
+			position = { x = 50 y = 74 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "military_spending_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+	
+		instantTextboxType = {
+			name = "intelligence_spending_text_box"
+			position = { x = 50 y = 99 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "intelligence_spending_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "education_spending_text_box"
+			position = { x = 50 y = 124 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "education_spending_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "public_services_spending_text_box"
+			position = { x = 50 y = 149 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "public_services_spending_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "military_spending_box"
+			position = { x = 14 y = 74 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "military_spending_tt"
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "intelligence_spending_box"
+			position = { x = 14 y = 99 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "intelligence_spending_tt"
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "education_spending_box"
+			position = { x = 14 y = 124 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "education_spending_tt"
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "public_services_spending_box"
+			position = { x = 14 y = 149 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "public_services_spending_tt"
+			scale = 0.6
+		}
+		
+		instantTextboxType = {
+			name = "gdp_from_states_text_box"
+			position = { x = 50 y = 184 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "gdp_from_states_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "gdp_from_other_text_box"
+			position = { x = 50 y = 209 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "gdp_from_other_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "total_gdp_text_box"
+			position = { x = 52 y = 234 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "total_gdp_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		iconType = {
+			name = "gdp_per_capita_box"
+			position = { x = 14 y = 274 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "gdp_pc_tt"
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "inflation_box"
+			position = { x = 14 y = 339 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "inflation_tt"
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "real_gdp_box"
+			position = { x = 14 y = 364 }
+			spriteType = "GFX_button_open_tt"
+			pdx_tooltip = "real_gdp_tt"
+			scale = 0.6
+		}
+		
+		instantTextboxType = {
+			name = "gdp_per_capita_text_box"
+			position = { x = 50 y = 274 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "gdp_per_capita_text"
+			maxWidth = 550
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "expected_gdp_per_capita_growth_text_box"
+			position = { x = 50 y = 299 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "expected_gdp_per_capita_growth_text"
+			maxWidth = 550
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "inflation_rate_text_box"
+			position = { x = 50 y = 339 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "inflation_rate_text"
+			maxWidth = 550
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "real_gdp_growth_text_box"
+			position = { x = 50 y = 364 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "real_gdp_growth_text"
+			maxWidth = 550
+			maxHeight = 100
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "economic_actions_title_text_box"
+			position = { x = 20 y = 442 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "economic_actions_title_text"
+			maxWidth = 400
+			maxHeight = 100
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "increase_inflation_button"
+			position = { x= 20 y = 490 }
+			quadTextureSprite = "GFX_button_261x34_2"
+			buttonFont = "hoi_16mbs"
+			buttonText = "increase_inflation_button_text"
+			pdx_tooltip = "increase_inflation_tt"
+		}
+		
+		buttonType = {
+			name = "decrease_inflation_button"
+			position = { x= 20 y = 530 }
+			quadTextureSprite = "GFX_button_261x34_2"
+			buttonFont = "hoi_16mbs"
+			buttonText = "decrease_inflation_button_text"
+			pdx_tooltip = "decrease_inflation_tt"
+		}
+		
+		buttonType = {
+			name = "economic_stimulous_package_button"
+			position = { x= 20 y = 570 }
+			quadTextureSprite = "GFX_button_261x34_2"
+			buttonFont = "hoi_16mbs"
+			buttonText = "economic_stimulous_package_button_text"
+			pdx_tooltip = "economic_stimulous_package_tt"
+		}
+		
+		buttonType = {
+			name = "open_state_gdp_button"
+			position = { x= 0 y = 0 }
+			quadTextureSprite = "GFX_button_261x34_2"
+			buttonFont = "hoi_16mbs"
+			buttonText = "open_state_gdp_button_text"
+		}
+		
+		buttonType = {
+			name = "close_button"
+			position = { x = 578 y = 3 }
+			quadTextureSprite = "GFX_closebutton"
+			buttonFont = ""
+			shortcut = "ESCAPE"
+			scale = 0.86
+		}
+	}
+}
